@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-aayush_shrestha/project1/read_html_table.py
+read_html_table.py
 Read HTML tables from a URL or file and save them as CSV.
 """
 
