@@ -13,8 +13,10 @@
 - I used only the standard libraries and no external libraries were used.
 
 ## Usage
-- we can run the program by adding url of the website containing tables.
-
+- I used my computer's terminal to run the code.
+- we can run the script by adding url of the website containing tables.
+- Any URL should work in the place of wikipedia URL
+  
 ### Example with a Wikipedia URL
 ```bash
 python3 read_html_table.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages
