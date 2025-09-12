@@ -1,0 +1,1 @@
+print(len(".................How many legs does a table have?.................."))
