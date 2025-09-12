@@ -19,6 +19,11 @@ import urllib.request
 from html.parser import HTMLParser
 
 class TableParser(HTMLParser):
+    """
+    A custom parser that extracts HTML tables into Python lists.
+    - self.tables will contain all tables found.
+    - Each table is a list of rows, each row is a list of cells.
+    """
     def __init__(self):
         super().__init__()
         self.in_table = False
