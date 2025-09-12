@@ -1,17 +1,19 @@
 # HTML Table to CSV Converter
 
-This project provides a Python program that reads in tables from an HTML page (either from the web or from a saved local file) and converts them into CSV files. The generated CSV files can be opened in any spreadsheet program such as Microsoft Excel, LibreOffice, or Google Sheets.
+- This program extracts tables from any HTML page (local file or online URL) and saves them as CSV files. Each table in the HTML becomes a separate CSV file that can be opened in spreadsheet software like Excel or Google Sheets.
 
-## Files
-- `read_html_table.py` — Python script that parses tables from an HTML page.
-- `table_1.csv`, `table_2.csv`, … — CSV files generated from the HTML tables.
-- `README.md` — Documentation and usage instructions.
+## How It Works
+
+1. Reads HTML content from a URL or local file.
+2. Uses a custom HTML parser to identify `<table>` elements.
+3. Extracts rows and cells into Python lists.
+4. Saves each table into a CSV file named `table_1.csv`, `table_2.csv`, etc.
 
 ## Requirements
-- Python 3 (no external libraries required — only standard Python modules are used).
+- I used only the standard libraries and no external libraries were used.
 
 ## Usage
-Run the script with a URL or a local HTML file:
+- we can run the program by adding url of the website containing tables.
 
 ### Example with a Wikipedia URL
 ```bash
