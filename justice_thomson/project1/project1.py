@@ -1,4 +1,4 @@
-# read_html_tables.py
+# project1.py
 # This program reads HTML from a URL or local file, parses all tables found,
 # saves the HTML to disk (if from URL), and saves each table's contents as separate
 # CSV files named <base>_<i>.csv, where <base> is derived from the URL or filename.
@@ -12,19 +12,12 @@
 # It is general and works on any HTML with tables, extracting all of them.
 #
 # Instructions to run:
-# 1. Save this file as read_html_tables.py
-# 2. Run: python read_html_tables.py <URL or FILENAME>
+# 1. Save this file as project1.py
+# 2. Run: python project1.py <URL or FILENAME>
 #    - If URL (starts with http/https), fetches from web and saves <base>.html.
 #    - If FILENAME, reads from local disk (does not save a copy of HTML).
 # 3. Output: Saves <base>_<i>.csv for each table i, and <base>.html if from URL.
 # 4. To use with git: git init (if new repo), git add read_html_tables.py, git commit -m "Add HTML tables to CSVs program"
-#
-# Example:
-# python read_html_tables.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages
-# This will save Comparison_of_programming_languages.html and several CSVs like Comparison_of_programming_languages_1.csv, etc.
-# The main table (general comparison) will be one of them (likely _2.csv, depending on page structure).
-# Then open the CSVs in a spreadsheet.
-
 import sys
 import urllib.request
 from urllib.parse import urlparse
@@ -133,3 +126,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
