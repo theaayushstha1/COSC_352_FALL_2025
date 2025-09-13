@@ -87,6 +87,6 @@ if html_content:
         print(f"Saved Table {idx+1} to {csv_filename}")
 else:
     print("No HTML content retrieved.")
-#TO TEST PROGRAM RUN: python project1.py "https://en.wikipedia.org/wiki/Deltora_Quest_(TV_series)" 
+#TO TEST PROGRAM RUN: python project1.py "https://en.wikipedia.org/wiki/Deltora_Quest_(TV_series)" OR python project1.py "https://en.wikipedia.org/wiki/List_of_programming_languages"
 #The quotation marks were necessary to since powershell kept misinterpreting the parentheses in the URL.
 #Also chose Deltora Quest since it 1. Has a table similar to the programming languages page 2. Was a random show with a wikipage i thought of
