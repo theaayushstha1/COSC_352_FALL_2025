@@ -122,8 +122,7 @@ def main():
             writer.writerows(table_rows)
         print(f"Saved CSV: {csv_file} ({len(table_rows)} rows)")
 
-    print(f"\nExtracted {len(parser.tables)} table(s). For the Wikipedia page, the main 'General comparison' table is likely in one of the CSVs (check contents to match).")
-
 if __name__ == "__main__":
     main()
+
 
