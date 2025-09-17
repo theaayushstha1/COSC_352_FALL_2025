@@ -1,4 +1,4 @@
-# Project 2 – Dockerized HTML Table Extractor
+# Project 2 
 
 This project packages **Project 1** (HTML → CSV extractor) into a Docker container.
 
