@@ -1,14 +1,11 @@
-# Use a lightweight Python image
-FROM python:3.10-slim
+# Use standard Python image
+FROM python:3.9
 
-# Set working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy your Python script into the container
+# Copy the Python script
 COPY read_html_table.py .
 
-# Install any dependencies your script needs
-RUN pip install --no-cache-dir requests beautifulsoup4
-
-# Set the entrypoint so the script runs automatically
+# Default command (can override at runtime)
 ENTRYPOINT ["python", "read_html_table.py"]
