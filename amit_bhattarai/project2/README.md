@@ -1,7 +1,10 @@
-# Project 2: Docker Container for Project 1
+# Project 2 – Dockerized HTML Table Extractor
 
-## Build the Docker image
-docker build -t table-extractor .
+This project packages **Project 1** (HTML → CSV extractor) into a Docker container.
 
-## Run the Docker image
-docker run --rm table-extractor
+## Build
+
+From inside the `project2` directory:
+
+```bash
+docker build -t project1_docker .
