@@ -1,11 +1,11 @@
-# Use standard Python image
+# Standard Python image
 FROM python:3.9
 
-# Set working directory
+# Working directory
 WORKDIR /app
 
-# Copy the Python script
+# Copied the Python script from project1 
 COPY read_html_table.py .
 
-# Default command (can override at runtime)
+# Default command to read urls
 ENTRYPOINT ["python", "read_html_table.py"]
