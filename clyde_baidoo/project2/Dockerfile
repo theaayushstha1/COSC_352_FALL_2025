@@ -6,8 +6,8 @@
 
 # Want to help us make this template better? Share your feedback here: https://forms.gle/ybq9Krt8jtBL3iCk7
 
-ARG PYTHON_VERSION=3.13.3
-FROM python:${PYTHON_VERSION}-slim as base
+ARG PYTHON_VERSION=3.10
+FROM python:${PYTHON_VERSION}-slim
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -15,6 +15,8 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Keeps Python from buffering stdout and stderr to avoid situations where
 # the application crashes without emitting any logs due to buffering.
 ENV PYTHONUNBUFFERED=1
+
+RUN mkdir -p /app && chmod -R 777 /app
 
 WORKDIR /app
 
@@ -34,18 +36,16 @@ RUN adduser \
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.
 # Leverage a bind mount to requirements.txt to avoid having to copy them into
 # into this layer.
-RUN --mount=type=cache,target=/root/.cache/pip \
-    --mount=type=bind,source=requirements.txt,target=requirements.txt \
-    python -m pip install -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # Switch to the non-privileged user to run the application.
 USER appuser
 
 # Copy the source code into the container.
-COPY . .
+COPY project1/webpage_to_csv.py .
 
 # Expose the port that the application listens on.
 EXPOSE 8000
 
 # Run the application.
-CMD python project1.py "https://en.wikipedia.org/wiki/Comparison_of_programming_languages"
+CMD ["python3", "webpage_to_csv.py"]
