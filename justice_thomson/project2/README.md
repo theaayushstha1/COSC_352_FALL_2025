@@ -1,6 +1,5 @@
 # Project2 Docker Usage
 
-This project packages `project2.py` into a Docker container so you can run it easily without worrying about installing Python or dependencies.
 
 ## Build the Docker Image
 
