@@ -14,4 +14,4 @@
 - In the parent directory (clyde_baidoo);
 - run (docker build -f project2/Dockerfile -t webpage-to-csv-app .) to build the container //ignore parenthesis
 - docker images - to verify your successful image built
-- run (docker run -w /tmp webpage-to-csv-app python /app/webpage_to_csv.py <url>) eg. (docker run -w /tmp webpage-to-csv-app python /app/webpage_to_csv.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages)
+- run (docker run -w /tmp webpage-to-csv-app python /app/webpage_to_csv.py url) eg. (docker run -w /tmp webpage-to-csv-app python /app/webpage_to_csv.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages)
