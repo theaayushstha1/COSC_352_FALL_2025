@@ -8,4 +8,4 @@ WORKDIR /app
 COPY project2.py .
 
 # Run the Python script
-CMD ["python", "project2.py"]
+CMD ["python", "project2.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages"]
