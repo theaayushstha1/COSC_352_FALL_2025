@@ -1,44 +1,62 @@
-# Project2: Dockerized Web Scraper
+\# Project 2 – HTML Table Parser
 
-A Python web scraper that extracts HTML tables and saves them as CSV files, containerized with Docker.
+&nbsp;
 
-## Features
+This project uses a Python script inside a Docker container to extract tables from a webpage (or local HTML file) and save them as CSV files.
 
-- Scrapes web pages and downloads HTML content
-- Extracts all tables from HTML and saves as CSV files
-- Fully containerized with Docker
-- Cross-platform compatibility
 
-## Usage
 
-### Build the Docker image:
-\```bash
-docker build -t web-scraper .
-\```
+\# Files Included
 
-### Run the scraper:
-\```bash
-# Save files to host machine
-docker run -v $(pwd)/output:/app/output web-scraper "YOUR_URL_HERE"
 
-# Example:
-docker run -v $(pwd)/output:/app/output web-scraper "https://example.com/page-with-tables.html"
-\```
 
-### Output
-- HTML file: `[page_name].html`
-- CSV files: `[page_name]_table_[number].csv`
+\- `read\_html\_table.py` – Python script for parsing HTML tables
 
-## Requirements
+\- `Dockerfile` – Docker configuration to run the script
 
-- Docker installed on your system
-- Internet connection for web scraping
+\- `README.md` – Instructions
 
-## Dependencies
 
-- Python 3.11
-- pandas
-- lxml
-- html5lib
-- beautifulsoup4
+
+
+
+
+
+\# How to Build the Docker Image
+
+
+
+Run this inside the `project2/sakina\_shrestha/` folder:
+
+
+
+```bash
+
+docker build -t html-table-parser .
+
+
+
+How to Run the Script
+
+
+
+docker run --rm -v "${PWD}:/app" html-table-parser python3 /app/read\_html\_table.py "https://en.wikipedia.org/wiki/Comparison\_of\_programming\_languages" table
+
+
+
+This command will:
+
+
+
+Download the webpage
+
+
+
+Extract up to 5 tables
+
+
+
+Save them as table\_1.csv, table\_2.csv, etc. in your current folder
+
+
 
