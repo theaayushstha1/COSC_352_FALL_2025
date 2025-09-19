@@ -1,5 +1,5 @@
 # Use standard Python image
-FROM python:3.9
+FROM python:3.9 -slim
 
 # Set working directory
 WORKDIR /app
@@ -8,4 +8,4 @@ WORKDIR /app
 COPY project2.py .
 
 # Run the Python script
-CMD ["python", "project2.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages"]
+CMD ["python", "project2.py']
