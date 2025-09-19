@@ -119,11 +119,13 @@ def save_tables_csv(tables):
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python read_html_table.py <URL|FILENAME>")
-        sys.exit(1)
+    # if len(sys.argv) != 2:
+    #     print("Usage: python read_html_table.py <URL|FILENAME>")
+    #     sys.exit(1)
     
-    source = sys.argv[1]
+    # source = sys.argv[1]
+    
+    source = "https://en.wikipedia.org/wiki/LeBron_James"
     
     try:
         # Fetch HTML
