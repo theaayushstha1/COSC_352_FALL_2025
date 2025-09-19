@@ -176,24 +176,11 @@ def extract_tables_from_url(url):
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
-        
-        # Actually make the HTTP request
-        request = Request(url, headers=headers)
-        with urlopen(request) as response:
-            content = response.read()
-            
-            # Try to get encoding from Content-Type header
-            content_type = response.headers.get('Content-Type', '')
-            encoding = 'utf-8'  # default
-            if 'charset=' in content_type:
-                encoding = content_type.split('charset=')[1].split(';')[0].strip()
-        
-        # Decode the content
-        try:
-            html_content = content.decode(encoding)
-        except UnicodeDecodeError:
-            # Fallback to utf-8 with error handling
-            html_content = content.decode('utf-8', errors='replace')
+            try:
+                html_content = content.decode(encoding)
+            except UnicodeDecodeError:
+                # Fallback to utf-8 with error handling
+                html_content = content.decode('utf-8', errors='replace')
         
         # Parse HTML and extract tables
         parser = TableExtractor()
