@@ -12,3 +12,4 @@ COPY project2.py .
 
 # Default: run the script, but let you pass arguments
 ENTRYPOINT ["python", "project2.py"]
+# Run code as docker run <image name> <url with table to extract>
