@@ -1,7 +1,7 @@
 ===========================================
 Student: aayush_shrestha
 Directory: aayush_shrestha/project2
-Timestamp: Tue Sep 23 08:25:07 EDT 2025
+Timestamp: Tue Sep 23 09:26:49 EDT 2025
 ===========================================
 ✅ Found Dockerfile
 
@@ -16,14 +16,14 @@ Step 1/4 : FROM python:3.9
  ---> 0e912faabcb7
 Step 2/4 : WORKDIR /app
  ---> Using cache
- ---> a3424d7acfab
+ ---> 41fe72610e14
 Step 3/4 : COPY read_html_table.py .
- ---> 27ead4101aed
+ ---> 70bedd2a74ab
 Step 4/4 : ENTRYPOINT ["python", "read_html_table.py"]
- ---> Running in c9930572774a
- ---> Removed intermediate container c9930572774a
- ---> 838935f01e05
-Successfully built 838935f01e05
+ ---> Running in de842cd6c6dd
+ ---> Removed intermediate container de842cd6c6dd
+ ---> d95beb7f9edd
+Successfully built d95beb7f9edd
 Successfully tagged aayush_shrestha_project2:latest
 ✅ Build successful
 

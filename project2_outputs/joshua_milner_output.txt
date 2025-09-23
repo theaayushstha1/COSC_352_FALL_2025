@@ -1,7 +1,7 @@
 ===========================================
 Student: joshua_milner
 Directory: joshua_milner/project2
-Timestamp: Tue Sep 23 08:25:09 EDT 2025
+Timestamp: Tue Sep 23 09:27:04 EDT 2025
 ===========================================
 ✅ Found Dockerfile
 
@@ -15,40 +15,20 @@ Sending build context to Docker daemon   12.8kB
 Step 1/8 : FROM python:3.12-slim
  ---> 12201b64d1f1
 Step 2/8 : WORKDIR /app
- ---> Running in 1aa9ac819122
- ---> Removed intermediate container 1aa9ac819122
- ---> 544478e8b4db
+ ---> Running in b4d15fbba579
+ ---> Removed intermediate container b4d15fbba579
+ ---> bf4696c3dd7c
 Step 3/8 : COPY table_2_csv.py .
- ---> 32d588548ed2
+ ---> a6002b76f809
 Step 4/8 : RUN mkdir -p /app/output
- ---> Running in 733d9678e9b2
- ---> Removed intermediate container 733d9678e9b2
- ---> 0a20c81a6144
+ ---> Running in f7c15ae44691
+ ---> Removed intermediate container f7c15ae44691
+ ---> 411758096d24
 Step 5/8 : RUN adduser --disabled-password --gecos "" --no-create-home scraper
- ---> Running in ca11c690d5aa
+ ---> Running in fd89c4c6d594
 usermod: no changes
- ---> Removed intermediate container ca11c690d5aa
- ---> 9e0073d60ed3
-Step 6/8 : RUN chown -R scraper:scraper /app
- ---> Running in 92df3f76e437
- ---> Removed intermediate container 92df3f76e437
- ---> 04507d0a1fa5
-Step 7/8 : USER scraper
- ---> Running in 5fa8443c487c
- ---> Removed intermediate container 5fa8443c487c
- ---> e28b26447215
-Step 8/8 : ENTRYPOINT ["python", "table_2_csv.py"]
- ---> Running in 174ee3a87ea1
- ---> Removed intermediate container 174ee3a87ea1
- ---> 18185cba7567
-Successfully built 18185cba7567
-Successfully tagged joshua_milner_project2:latest
-✅ Build successful
-
-Running container...
-==========================================
-Usuage: python table_2_csv.py <url_or_path> [outdir]
-❌ Container run failed or timed out
+context canceled
+❌ Build failed
 
 ===========================================
 

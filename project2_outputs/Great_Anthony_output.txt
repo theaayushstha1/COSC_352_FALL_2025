@@ -1,7 +1,7 @@
 ===========================================
 Student: Great_Anthony
 Directory: Great_Anthony/project2
-Timestamp: Tue Sep 23 08:25:04 EDT 2025
+Timestamp: Tue Sep 23 09:25:38 EDT 2025
 ===========================================
 ✅ Found Dockerfile
 
@@ -15,9 +15,9 @@ Sending build context to Docker daemon  10.75kB
 Step 1/8 : FROM python:3.9-slim
  ---> cd1bc6ceeccd
 Step 2/8 : WORKDIR /app
- ---> Running in 87168c9f2718
- ---> Removed intermediate container 87168c9f2718
- ---> e16849ef7d21
+ ---> Running in 70318befc5d9
+ ---> Removed intermediate container 70318befc5d9
+ ---> 3a08231b7995
 Step 3/8 : COPY requirements.txt* ./
 COPY failed: no source files were specified
 ❌ Build failed

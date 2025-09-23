@@ -1,7 +1,7 @@
 ===========================================
 Student: jordan_winters
 Directory: jordan_winters/project2
-Timestamp: Tue Sep 23 08:25:09 EDT 2025
+Timestamp: Tue Sep 23 09:27:04 EDT 2025
 ===========================================
 ✅ Found Dockerfile
 
@@ -15,9 +15,9 @@ Sending build context to Docker daemon  2.048kB
 Step 1/4 : FROM python:3.9
  ---> 0e912faabcb7
 Step 2/4 : WORKDIR /app
- ---> Running in a58ecf05df4c
- ---> Removed intermediate container a58ecf05df4c
- ---> 41fe72610e14
+ ---> Running in 186120aed12b
+ ---> Removed intermediate container 186120aed12b
+ ---> 36f33097d837
 Step 3/4 : COPY test.py .
 COPY failed: file not found in build context or excluded by .dockerignore: stat test.py: file does not exist
 ❌ Build failed

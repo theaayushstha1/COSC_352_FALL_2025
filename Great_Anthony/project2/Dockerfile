@@ -7,13 +7,13 @@ WORKDIR /app
 COPY requirements.txt* ./
 
 # Install Python dependencies
-RUN pip install --no-cache-dir \
-    pandas \
-    numpy \
-    matplotlib \
-    seaborn \
-    openpyxl \
-    xlsxwriter
+# RUN pip install --no-cache-dir \
+#     pandas \
+#     numpy \
+#     matplotlib \
+#     seaborn \
+#     openpyxl \
+#     xlsxwriter
 
 # Copy your project files
 COPY Lang2.py ./

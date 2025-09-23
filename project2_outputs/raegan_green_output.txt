@@ -1,7 +1,7 @@
 ===========================================
 Student: raegan_green
 Directory: raegan_green/project2
-Timestamp: Tue Sep 23 08:25:11 EDT 2025
+Timestamp: Tue Sep 23 09:27:05 EDT 2025
 ===========================================
 ✅ Found Dockerfile
 
@@ -16,14 +16,14 @@ Step 1/4 : FROM python:3.9-slim
  ---> cd1bc6ceeccd
 Step 2/4 : WORKDIR /app
  ---> Using cache
- ---> e16849ef7d21
+ ---> 3a08231b7995
 Step 3/4 : COPY hello.py .
- ---> e588db52d768
+ ---> 7e16ea009681
 Step 4/4 : ENTRYPOINT ["python", "hello.py"]
- ---> Running in e1168a3b62ed
- ---> Removed intermediate container e1168a3b62ed
- ---> ed696e61b735
-Successfully built ed696e61b735
+ ---> Running in 4c8dbce5aab3
+ ---> Removed intermediate container 4c8dbce5aab3
+ ---> f4783ae69154
+Successfully built f4783ae69154
 Successfully tagged raegan_green_project2:latest
 ✅ Build successful
 
