@@ -1,24 +1,11 @@
-# Use Python 3.11 slim image
-FROM python:3.11-slim
+# Use official Python image
+FROM python:3.12-slim
 
-# Set working directory
+# Set working directory inside container
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    && rm -rf /var/lib/apt/lists/*
+# Copy your project files into the container
+COPY . .
 
-# Copy requirements file
-COPY requirements.txt .
-
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the script
-COPY scraper.py .
-
-# Create output directory
-RUN mkdir -p /app/output
-
-# Set the entrypoint
-ENTRYPOINT ["python", "scraper.py"]
+# Run your Python script when the container starts
+CMD ["python", "table.py"]
