@@ -1,0 +1,44 @@
+===========================================
+Student: clyde_baidoo
+Directory: clyde_baidoo/project2
+Timestamp: Tue Sep 23 08:25:08 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: clyde_baidoo_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon   5.12kB
+Step 1/12 : ARG PYTHON_VERSION=3.10
+Step 2/12 : FROM python:${PYTHON_VERSION}-slim
+ ---> 2bee8804ef72
+Step 3/12 : ENV PYTHONDONTWRITEBYTECODE=1
+ ---> Using cache
+ ---> e9ccc8646b38
+Step 4/12 : ENV PYTHONUNBUFFERED=1
+ ---> Using cache
+ ---> c8bdfb56d578
+Step 5/12 : RUN mkdir -p /app && chmod -R 777 /app
+ ---> Using cache
+ ---> 6b9b67c97088
+Step 6/12 : WORKDIR /app
+ ---> Using cache
+ ---> 6c7f7432095b
+Step 7/12 : ARG UID=10001
+ ---> Using cache
+ ---> 5a8ef4e2453d
+Step 8/12 : RUN adduser     --disabled-password     --gecos ""     --home "/nonexistent"     --shell "/sbin/nologin"     --no-create-home     --uid "${UID}"     appuser
+ ---> Using cache
+ ---> e40ad12d9641
+Step 9/12 : USER appuser
+ ---> Using cache
+ ---> f583d9eaa048
+Step 10/12 : COPY project1/webpage_to_csv.py .
+COPY failed: file not found in build context or excluded by .dockerignore: stat project1/webpage_to_csv.py: file does not exist
+❌ Build failed
+
+===========================================
+

@@ -1,0 +1,42 @@
+===========================================
+Student: rohan_sainju
+Directory: rohan_sainju/project2
+Timestamp: Tue Sep 23 08:25:11 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: rohan_sainju_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  354.3kB
+Step 1/4 : FROM python:3.9-slim
+ ---> cd1bc6ceeccd
+Step 2/4 : WORKDIR /app
+ ---> Running in b73a626600da
+ ---> Removed intermediate container b73a626600da
+ ---> 040422d82724
+Step 3/4 : COPY . /app
+ ---> 5e3bc699182b
+Step 4/4 : CMD ["python", "test.py", "page.html"]
+ ---> Running in 39d1c2ca5695
+ ---> Removed intermediate container 39d1c2ca5695
+ ---> e6891ed11fe3
+Successfully built e6891ed11fe3
+Successfully tagged rohan_sainju_project2:latest
+✅ Build successful
+
+Running container...
+==========================================
+Saved page.html
+Saved table_1.csv
+Saved table_2.csv
+Saved table_3.csv
+Saved table_4.csv
+Saved table_5.csv
+✅ Container run completed
+
+===========================================
+

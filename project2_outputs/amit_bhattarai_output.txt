@@ -1,0 +1,37 @@
+===========================================
+Student: amit_bhattarai
+Directory: amit_bhattarai/project2
+Timestamp: Tue Sep 23 08:25:07 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: amit_bhattarai_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  7.168kB
+Step 1/4 : FROM python:3.9
+ ---> 0e912faabcb7
+Step 2/4 : WORKDIR /app
+ ---> Running in 7723821864b1
+ ---> Removed intermediate container 7723821864b1
+ ---> d0a95dbfc6ff
+Step 3/4 : COPY read_html_table.py .
+ ---> 12d95f38364e
+Step 4/4 : ENTRYPOINT ["python", "read_html_table.py"]
+ ---> Running in 9719e647ff9b
+ ---> Removed intermediate container 9719e647ff9b
+ ---> f3247ed3d698
+Successfully built f3247ed3d698
+Successfully tagged amit_bhattarai_project2:latest
+✅ Build successful
+
+Running container...
+==========================================
+Usage: python3 read_html_table.py <URL|FILENAME>
+❌ Container run failed or timed out
+
+===========================================
+

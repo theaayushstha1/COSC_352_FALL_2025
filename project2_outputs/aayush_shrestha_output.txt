@@ -1,0 +1,36 @@
+===========================================
+Student: aayush_shrestha
+Directory: aayush_shrestha/project2
+Timestamp: Tue Sep 23 08:25:07 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: aayush_shrestha_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  561.2kB
+Step 1/4 : FROM python:3.9
+ ---> 0e912faabcb7
+Step 2/4 : WORKDIR /app
+ ---> Using cache
+ ---> a3424d7acfab
+Step 3/4 : COPY read_html_table.py .
+ ---> 27ead4101aed
+Step 4/4 : ENTRYPOINT ["python", "read_html_table.py"]
+ ---> Running in c9930572774a
+ ---> Removed intermediate container c9930572774a
+ ---> 838935f01e05
+Successfully built 838935f01e05
+Successfully tagged aayush_shrestha_project2:latest
+✅ Build successful
+
+Running container...
+==========================================
+Usage: python read_html_table.py <URL_or_file>
+✅ Container run completed
+
+===========================================
+

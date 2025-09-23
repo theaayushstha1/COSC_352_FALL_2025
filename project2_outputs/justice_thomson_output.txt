@@ -1,0 +1,33 @@
+===========================================
+Student: justice_thomson
+Directory: justice_thomson/project2
+Timestamp: Tue Sep 23 08:25:10 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: justice_thomson_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  9.216kB
+Step 1/3 : FROM python:3.9-slim
+ ---> cd1bc6ceeccd
+Step 2/3 : COPY project2.py .
+ ---> 357ad581ddf2
+Step 3/3 : CMD ["python", "project2.py"]
+ ---> Running in 48808f419256
+ ---> Removed intermediate container 48808f419256
+ ---> 7ce43b865391
+Successfully built 7ce43b865391
+Successfully tagged justice_thomson_project2:latest
+✅ Build successful
+
+Running container...
+==========================================
+Usage: python project1.py <URL or FILENAME>
+❌ Container run failed or timed out
+
+===========================================
+

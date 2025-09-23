@@ -1,0 +1,6 @@
+===========================================
+Student: Abdulai_Hallowell
+Directory: Abdulai_Hallowell/project2
+Timestamp: Tue Sep 23 08:25:04 EDT 2025
+===========================================
+❌ No project2 directory found

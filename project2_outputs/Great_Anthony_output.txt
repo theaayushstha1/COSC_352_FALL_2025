@@ -1,0 +1,26 @@
+===========================================
+Student: Great_Anthony
+Directory: Great_Anthony/project2
+Timestamp: Tue Sep 23 08:25:04 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: great_anthony_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  10.75kB
+Step 1/8 : FROM python:3.9-slim
+ ---> cd1bc6ceeccd
+Step 2/8 : WORKDIR /app
+ ---> Running in 87168c9f2718
+ ---> Removed intermediate container 87168c9f2718
+ ---> e16849ef7d21
+Step 3/8 : COPY requirements.txt* ./
+COPY failed: no source files were specified
+❌ Build failed
+
+===========================================
+

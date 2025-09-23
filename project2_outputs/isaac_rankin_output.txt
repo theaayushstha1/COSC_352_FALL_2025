@@ -1,0 +1,93 @@
+===========================================
+Student: isaac_rankin
+Directory: isaac_rankin/project2
+Timestamp: Tue Sep 23 08:25:08 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: isaac_rankin_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon  49.66kB
+Step 1/4 : FROM python:3.9-slim-buster
+ ---> bb1bad240fdf
+Step 2/4 : WORKDIR /app
+ ---> Running in dbe27957ac2c
+ ---> Removed intermediate container dbe27957ac2c
+ ---> a8656fc43b56
+Step 3/4 : COPY . /app
+ ---> 23010a8d9e81
+Step 4/4 : CMD ["python", "read_html_table.py"]
+ ---> Running in f42b90d18647
+ ---> Removed intermediate container f42b90d18647
+ ---> 9896a21d814e
+Successfully built 9896a21d814e
+Successfully tagged isaac_rankin_project2:latest
+✅ Build successful
+
+Running container...
+==========================================
+Fetched HTML (1764840 chars)
+Tokenized into 65961 tokens
+Found 54 tables
+Saved 1 rows to table_data.csv
+Saved 12 rows to table_data.csv
+Saved 1 rows to table_data.csv
+Saved 5 rows to table_data.csv
+Saved 25 rows to table_data.csv
+Saved 20 rows to table_data.csv
+Saved 9 rows to table_data.csv
+Saved 17 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 8 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 5 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 5 rows to table_data.csv
+Saved 5 rows to table_data.csv
+Saved 5 rows to table_data.csv
+Saved 5 rows to table_data.csv
+Saved 4 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 3 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 6 rows to table_data.csv
+Saved 2 rows to table_data.csv
+Saved 6 rows to table_data.csv
+Saved 6 rows to table_data.csv
+✅ Container run completed
+
+===========================================
+
