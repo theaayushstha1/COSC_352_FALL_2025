@@ -1,0 +1,36 @@
+===========================================
+Student: raegan_green
+Directory: raegan_green/project2
+Timestamp: Tue Sep 23 09:27:05 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: raegan_green_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon   7.68kB
+Step 1/4 : FROM python:3.9-slim
+ ---> cd1bc6ceeccd
+Step 2/4 : WORKDIR /app
+ ---> Using cache
+ ---> 3a08231b7995
+Step 3/4 : COPY hello.py .
+ ---> 7e16ea009681
+Step 4/4 : ENTRYPOINT ["python", "hello.py"]
+ ---> Running in 4c8dbce5aab3
+ ---> Removed intermediate container 4c8dbce5aab3
+ ---> f4783ae69154
+Successfully built f4783ae69154
+Successfully tagged raegan_green_project2:latest
+✅ Build successful
+
+Running container...
+==========================================
+Usage: python hello.py <url>
+❌ Container run failed or timed out
+
+===========================================
+
