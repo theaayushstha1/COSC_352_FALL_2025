@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Project 3 - HTML Table Extractor
-# Author: Amit Bhattarai
 
 # Exit on error
 set -e
