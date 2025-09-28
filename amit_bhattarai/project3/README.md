@@ -4,7 +4,7 @@ This project downloads webpages, extracts HTML tables into CSV files using the P
 
 ## Usage
 
-Make script executable:
+Run the script by:
 
 ```bash
 chmod +x bash_script_project3.sh
