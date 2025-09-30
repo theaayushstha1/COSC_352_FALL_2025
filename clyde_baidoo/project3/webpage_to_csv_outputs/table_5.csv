@@ -1,0 +1,10 @@
+Language,Ad hoc,Parametric,Subtype,Coercion
+Javascript,No,No,Yes (duck typing),Yes
+Typescript,Yes,Yes,Yes,Yes
+Dart,No,Yes,Yes,Yes
+Python,No,Yes,Yes (duck typing),Yes
+Java,Yes (overloading),Yes,Yes,Yes
+Go,No,Yes,Yes,Yes
+Rust,Yes (traits),"Yes (bounded, generics)",Yes (trait objects),Yes (type coercions)
+C++,Yes (overloading),Yes (templates),Yes,Yes
+C,No,No,No,Yes
