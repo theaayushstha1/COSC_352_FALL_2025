@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Use standard Python image
 FROM python:3.9-slim
 
@@ -21,4 +20,3 @@ COPY project2.py .
 
 # Run the Python script
 CMD ["python", "project2.py"]
->>>>>>> aa93084233a50bda956d028dd41fdf8762e20b10
