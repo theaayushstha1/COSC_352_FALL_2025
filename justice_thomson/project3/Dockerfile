@@ -16,8 +16,9 @@ ENTRYPOINT ["python", "project2.py"]
 =======
 FROM python:3.9-slim
 
-COPY project2.py .
+COPY project3.py .
 
 # Run the Python script
-CMD ["python", "project2.py"]
+CMD ["python", "project3.py"]
+
 
