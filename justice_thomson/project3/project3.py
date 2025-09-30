@@ -11,8 +11,8 @@
 # It is general and works on any HTML with tables, extracting all of them.
 #
 # Instructions to run:
-# 1. Save this file as project1.py
-# 2. Run: python project1.py <URL or FILENAME>
+# 1. Save this file as project3.py
+# 2. Run: python project3.py <URL or FILENAME>
 #    - If URL (starts with http/https), fetches from web and saves <base>.html.
 #    - If FILENAME, reads from local disk (does not save a copy of HTML).
 # 3. Output: Saves <base>_<i>.csv for each table i, and <base>.html if from URL.
@@ -79,7 +79,7 @@ def get_base_name(source, is_url):
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python project1.py <URL or FILENAME>", file=sys.stderr)
+        print("Usage: python project3.py <URL or FILENAME>", file=sys.stderr)
         sys.exit(1)
 
     source = sys.argv[1]
@@ -122,3 +122,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
