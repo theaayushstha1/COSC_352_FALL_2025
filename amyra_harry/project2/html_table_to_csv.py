@@ -1,108 +1,137 @@
-def strip_tags(text):
-    # Remove HTML tags from a string by skipping characters between '<' and '>'
-    result = ''
-    in_tag = False
-    # Iterate over each character in the text and entering or exiting tags
-    for c in text:
-        if c == '<':
-            in_tag = True  
-        elif c == '>':
-            in_tag = False  
-        elif not in_tag:
-            result += c  
-    return result.strip()
+import http.client
+import ssl
+import csv
+from urllib.parse import urlparse
+import sys
+import os
+
+def fetch_html_from_url(url):
+    """Fetch HTML using http.client (supports HTTPS)."""
+    parsed = urlparse(url)
+    scheme = parsed.scheme or "http"
+    host = parsed.hostname
+    path = parsed.path or "/"
+
+    if parsed.query:
+        path += "?" + parsed.query
+
+    if scheme == "https":
+        conn = http.client.HTTPSConnection(host, context=ssl.create_default_context())
+    else:
+        conn = http.client.HTTPConnection(host)
+
+    headers = {"User-Agent": "Mozilla/5.0"}
+    conn.request("GET", path, headers=headers)
+    response = conn.getresponse()
+    html = response.read().decode("utf-8", errors="ignore")
+    conn.close()
+    return html
+
 
 def find_all_tables(html):
-    # Find all <table>...</table> blocks in the HTML source
+    """Find <table>...</table> blocks in HTML (case-insensitive)."""
     tables = []
     pos = 0
-    # Finding the tables and their positions in the html string
+    html_lower = html.lower()
     while True:
-        table_start = html.find('<table', pos)  
-        if table_start == -1:
-            break  
-        table_end = html.find('</table>', table_start)  
-        if table_end == -1:
-            break  
-        table_html = html[table_start:table_end+8]  
-        tables.append(table_html)
-        pos = table_end + 8  
+        start = html_lower.find("<table", pos)
+        if start == -1:
+            break
+        end = html_lower.find("</table>", start)
+        if end == -1:
+            break
+        tables.append(html[start:end+8])
+        pos = end + 8
     return tables
 
+
 def parse_table(table_html):
-    # Parse a single table's HTML and extract rows and columns as a list of lists
+    """Extract rows and cells from a table (basic parsing)."""
     rows = []
+    table_lower = table_html.lower()
     pos = 0
     while True:
-        tr_start = table_html.find('<tr', pos)  
-        if tr_start == -1:
-            break  
-        tr_end = table_html.find('</tr>', tr_start)  
-        if tr_end == -1:
-            break  
-        tr_html = table_html[tr_start:tr_end]  
-        # Find all <td> (table data) and <th> (table header) cells in this row
-        cols = []
-        col_pos = 0
+        row_start = table_lower.find("<tr", pos)
+        if row_start == -1:
+            break
+        row_end = table_lower.find("</tr>", row_start)
+        if row_end == -1:
+            break
+
+        row_html = table_html[row_start:row_end]
+        row = []
+
+        # Look for <td> and <th>
+        cell_pos = 0
+        row_lower = row_html.lower()
         while True:
-            td_start = tr_html.find('<td', col_pos)
-            th_start = tr_html.find('<th', col_pos)
-            # Determine which comes first: <td> or <th>
+            td_start = row_lower.find("<td", cell_pos)
+            th_start = row_lower.find("<th", cell_pos)
             if td_start == -1 and th_start == -1:
-                break  
+                break
             if td_start == -1 or (th_start != -1 and th_start < td_start):
-                tag_start = th_start
-                tag = '<th'
+                tag_end = "</th>"
+                start = th_start
             else:
-                tag_start = td_start
-                tag = '<td'
-            tag_end = tr_html.find('>', tag_start)  
-            if tag_end == -1:
-                break  
-            cell_start = tag_end + 1
-            cell_end = tr_html.find('</', cell_start)  
-            if cell_end == -1:
-                break  
-            cell = tr_html[cell_start:cell_end]  
-            cols.append(strip_tags(cell))  
-            col_pos = cell_end  
-        if cols:
-            rows.append(cols)  
-        pos = tr_end + 5  
+                tag_end = "</td>"
+                start = td_start
+
+            start = row_lower.find(">", start) + 1
+            end = row_lower.find(tag_end, start)
+            if end == -1:
+                break
+
+            cell_content = row_html[start:end].strip()
+            row.append(cell_content)
+
+            cell_pos = end + len(tag_end)
+        rows.append(row)
+
+        pos = row_end + 5
     return rows
 
-def write_csv(rows, filename):
-    # Write a list of rows (list of lists) to a CSV file
-    with open(filename, 'w', encoding='utf-8') as f:
-        for row in rows:
-            csv_row = []
-            for cell in row:
-                # Escape double quotes by doubling them
-                cell = cell.replace('"', '""')
-                # If cell contains a comma or quote, wrap it in quotes
-                if ',' in cell or '"' in cell:
-                    cell = f'"{cell}"'
-                csv_row.append(cell)
-            f.write(','.join(csv_row) + '\n')  # Write the row as CSV
 
-def html_tables_to_csv(html_file):
-    # Main function: reads HTML file, extracts all tables, writes each to a CSV file
-    with open(html_file, 'r', encoding='utf-8') as f:
-        html = f.read()
-    tables = find_all_tables(html)  # Get all tables in the HTML
+def safe_filename(url, table_index):
+    """Turn URL into a safe file name."""
+    parsed = urlparse(url)
+    name = parsed.netloc + parsed.path
+    if not name:
+        name = "output"
+    # Replace bad characters with underscores
+    name = name.replace("/", "_").replace("?", "_").replace("=", "_").replace("&", "_")
+    return f"{name}_table_{table_index}.csv"
+
+
+def export_to_csv(table_data, filename):
+    """Write table rows into a CSV file."""
+    with open(filename, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerows(table_data)
+
+
+def html_tables_to_csv(url):
+    """Fetch HTML, parse tables, and export each one to CSV."""
+    print(f"Fetching: {url}")
+    html = fetch_html_from_url(url)
+    tables = find_all_tables(html)
+    print(f"Found {len(tables)} tables")
+
     if not tables:
         print("No tables found.")
         return
-    for idx, table_html in enumerate(tables):
-        rows = parse_table(table_html)  # Parse each table into rows
+
+    for i, t in enumerate(tables, 1):
+        rows = parse_table(t)
         if rows:
-            csv_file = f'output_table_{idx+1}.csv'  
-            write_csv(rows, csv_file) 
-            print(f"Table {idx+1} written to {csv_file}")
+            filename = safe_filename(url, i)
+            export_to_csv(rows, filename)
+            print(f"Saved {filename}")
 
-# Example usage:
-# html_tables_to_csv('Comparison_of_programming_languages.html')
 
-# To use with any HTML file:
 if __name__ == "__main__":
-    html_tables_to_csv('Comparison_of_programming_languages.html')
+    if len(sys.argv) > 1:
+        url = sys.argv[1]  # Take URL from command line
+    else:
+        url = input("Enter a URL (http:// or https://): ").strip()
+
+    html_tables_to_csv(url)

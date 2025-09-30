@@ -7,7 +7,7 @@ WORKDIR /app
 # 3. Copy dependency list first (so Docker caches dependencies)
 #COPY requirements.txt .
 #3. copy comparison file first
-COPY Comparison_of_programming_languages.html /app/
+#COPY Comparison_of_programming_languages.html /app/
 # 4. Install dependencies
 #RUN pip install -r requirements.txt
 
