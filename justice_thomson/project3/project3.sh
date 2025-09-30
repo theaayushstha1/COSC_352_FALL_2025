@@ -1,4 +1,4 @@
-#!/bin/bash
+]633;E;echo '#!/usr/bin/env bash';81b4f940-1789-4a75-8783-80ebc42c7db9]633;C#!/usr/bin/env bash
 
 # Check if an argument (comma-separated list of URLs) is provided
 if [ $# -ne 1 ]; then
@@ -27,9 +27,17 @@ mkdir -p "$OUTPUT_DIR"
 IFS=',' read -r -a URLS <<< "$1"
 
 # Process each URL
+# Process each URL
 for URL in "${URLS[@]}"; do
     echo "Processing $URL..."
-    docker run -v "$(pwd)/$OUTPUT_DIR:/app" $IMAGE_NAME "$URL"
+
+    # Make a URL-specific subdirectory (domain + path, sanitized)
+    SAFE_DIR=$(echo "$URL" | sed -E 's#https?://##; s#[^A-Za-z0-9]+#_#g')
+    TARGET_DIR="$OUTPUT_DIR/$SAFE_DIR"
+    mkdir -p "$TARGET_DIR"
+
+    # Run the extractor into that subdirectory
+    docker run --rm -v "$(pwd)/$TARGET_DIR:/app" $IMAGE_NAME "$URL"
 done
 
 # Create a zip file of the output directory
