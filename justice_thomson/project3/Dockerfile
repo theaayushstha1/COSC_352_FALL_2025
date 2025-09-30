@@ -11,7 +11,7 @@ COPY project3.py .
 
 
 # Default: run the script, but let you pass arguments
-ENTRYPOINT ["python", "project2.py"]
+ENTRYPOINT ["python", "project3.py"]
 # Run code as docker run <image name> <url with table to extract>
 =======
 FROM python:3.9-slim
@@ -20,5 +20,6 @@ COPY project3.py .
 
 # Run the Python script
 CMD ["python", "project3.py"]
+
 
 
