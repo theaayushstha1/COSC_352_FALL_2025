@@ -36,3 +36,4 @@ done
 ZIP_FILE="csv_outputs.zip"
 zip -r "$ZIP_FILE" "$OUTPUT_DIR"
 echo "Created zip file: $ZIP_FILE"
+
