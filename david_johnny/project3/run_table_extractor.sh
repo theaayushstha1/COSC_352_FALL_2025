@@ -11,10 +11,15 @@
 
 set -euo pipefail
 
+# Resolve script directory so paths are reliable regardless of CWD
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Configurable variables
 IMAGE_NAME="project2_table_extractor:latest"
-PROJECT2_DIR="project2"
-OUT_ROOT="extracted_csvs"
+# project2 dir is sibling of project3
+PROJECT2_DIR="$SCRIPT_DIR/../project2"
+# place outputs inside the project3 directory so they are easy to find
+OUT_ROOT="$SCRIPT_DIR/extracted_csvs"
 TS=$(date +"%Y%m%d_%H%M%S")
 OUT_DIR="$OUT_ROOT/$TS"
 ZIP_FILE="$OUT_ROOT/extracted_csvs_${TS}.zip"
@@ -59,75 +64,35 @@ for raw in "$@"; do
 
     # Sanitize URL
     prefix=$(sanitize "$url")
-    echo "Processing $url -> prefix $prefix"
+  # Create a temporary output directory for Docker under the script dir so mounts
+  # are consistent and easy to inspect.
+  HOST_TMP_BASE="$SCRIPT_DIR/.tmp"
+  mkdir -p "$HOST_TMP_BASE"
+  HOST_TMP_DIR="$HOST_TMP_BASE/${TS}_${prefix}"
+  mkdir -p "$HOST_TMP_DIR"
 
-    # Create a temporary output directory for Docker
-    if [ "${DEBUG:-0}" = "1" ]; then
-      HOST_TMP_DIR="$PWD/debug_tmp_${TS}_$prefix"
-      mkdir -p "$HOST_TMP_DIR"
-    else
-      HOST_TMP_DIR=$(mktemp -d)
+    # Use --mount with a host path under the repo so Docker will write CSVs directly
+    # into the host folder (mounted at /output). Run the bundled script from /app.
+    DOCKER_ENV_ARGS=( )
+    if [ "${TABLE_CLASS+set}" = set ]; then
+      DOCKER_ENV_ARGS+=( -e "TABLE_CLASS=$TABLE_CLASS" )
     fi
-
-    # Convert to Docker-compatible path
-    UNAME_OUT="$(uname -s)"
-    # Helper: produce a Windows-style path when possible on MSYS/MinGW/Cygwin
-    get_win_path() {
-      local p="$1"
-      # Prefer cygpath if available (reliable)
-      if command -v cygpath >/dev/null 2>&1; then
-        cygpath -w "$p"
-        return
-      fi
-
-      # If realpath exists, check if it supports -w/--windows
-      if command -v realpath >/dev/null 2>&1; then
-        if realpath --help 2>&1 | grep -Eq "(-w|--windows)"; then
-          realpath -w "$p"
-          return
-        fi
-        # Try pwd -W (available in some MSYS environments)
-        if command -v pwd >/dev/null 2>&1; then
-          # run in a subshell to avoid changing cwd
-          (cd "$p" 2>/dev/null && pwd -W) && return
-        fi
-        # As a last resort use realpath without -w (POSIX path)
-        realpath "$p" 2>/dev/null && return
-      fi
-
-      # Default: return the original path (POSIX style)
-      printf '%s' "$p"
-    }
-
-    if [[ "$UNAME_OUT" == MINGW* || "$UNAME_OUT" == MSYS* || "$UNAME_OUT" == CYGWIN* ]]; then
-      HOST_TMP_DIR_WIN=$(get_win_path "$HOST_TMP_DIR")
-    else
-      # Linux / macOS
-      HOST_TMP_DIR_WIN="$HOST_TMP_DIR"
-    fi
-
-    # Debug logging: show resolved host paths used for the Docker mount
-    echo "HOST_TMP_DIR (POSIX) = $HOST_TMP_DIR"
-    echo "HOST_TMP_DIR_WIN (for docker mount) = $HOST_TMP_DIR_WIN"
-
-  # Run Docker container: mount host temp dir at /output, run the image's python script
-  # with working dir set to /output so it writes CSVs straight to the mounted folder.
-  # Capture stdout/stderr to files inside the temp dir for debugging.
-  docker run --rm -v "$HOST_TMP_DIR_WIN":/output -w /output "$IMAGE_NAME" sh -c "python /app/project1.py '$url'" > "$HOST_TMP_DIR/container_stdout.log" 2> "$HOST_TMP_DIR/container_stderr.log" || true
-
-    # Print container logs (first 200 lines) if present to aid debugging
-    if [ -s "$HOST_TMP_DIR/container_stdout.log" ]; then
+    # Force the container to write CSVs into /output (the mounted host folder)
+    DOCKER_ENV_ARGS+=( -e "OUTPUT_DIR=/output" )
+    # Use --mount with the host path directly to avoid -v quoting issues on Windows
+    # Capture container stdout/stderr into the host temp dir so we can debug if it fails
+  # Run with a shell that cds into /output to avoid using -w which can be rewritten
+  # by MSYS/Git Bash into an unintended Windows path (e.g. C:/Program Files/Git/output).
+  docker run --rm "${DOCKER_ENV_ARGS[@]}" --mount type=bind,source="$HOST_TMP_DIR",target=/output "$IMAGE_NAME" --entrypoint sh -c "cd /output && python /app/project1.py '$url'" >"$HOST_TMP_DIR/container_stdout.log" 2>"$HOST_TMP_DIR/container_stderr.log"
+    rc=$?
+    if [ $rc -ne 0 ]; then
+      echo "Docker run failed for $url (rc=$rc). Dumping logs:"
       echo "--- container stdout ---"
       sed -n '1,200p' "$HOST_TMP_DIR/container_stdout.log" || true
-      echo "--- end container stdout ---"
-    fi
-    if [ -s "$HOST_TMP_DIR/container_stderr.log" ]; then
       echo "--- container stderr ---"
       sed -n '1,200p' "$HOST_TMP_DIR/container_stderr.log" || true
-      echo "--- end container stderr ---"
+      exit $rc
     fi
-
-
     # Move CSV files to final output directory
     shopt -s nullglob
     found=false
@@ -135,20 +100,20 @@ for raw in "$@"; do
         if [ -f "$f" ]; then
             base=$(basename "$f")
             mv "$f" "$OUT_DIR/${prefix}_$base"
-            echo "Saved $OUT_DIR/${prefix}_$base"
+            if [ "${QUIET:-0}" != "1" ]; then
+              echo "Saved $OUT_DIR/${prefix}_$base"
+            fi
             found=true
         fi
     done
-    if [ "$found" = false ]; then
-        echo "No table_*.csv files produced for $url"
+  if [ "$found" = false ]; then
+    if [ "${QUIET:-0}" != "1" ]; then
+      echo "No table_*.csv files produced for $url"
     fi
+  fi
 
     # Clean up temp dir
-    if [ "${DEBUG:-0}" = "1" ]; then
-      echo "DEBUG=1: preserving temp dir $HOST_TMP_DIR for inspection"
-    else
-      rm -rf "$HOST_TMP_DIR"
-    fi
+    rm -rf "$HOST_TMP_DIR"
 done
 done
 # Collect all sanitized site names for naming the zip
@@ -171,9 +136,27 @@ site_prefix=$(echo "$site_prefix" | cut -c1-60)
 
 ZIP_FILE="$OUT_ROOT/${site_prefix}_${TS}.zip"
 # Create zip archive
-pushd "$OUT_ROOT" >/dev/null
-zip -r "$(basename "$ZIP_FILE")" "$TS" >/dev/null
-popd >/dev/null
+if command -v zip >/dev/null 2>&1; then
+  pushd "$OUT_ROOT" >/dev/null
+  zip -r "$(basename "$ZIP_FILE")" "$TS" >/dev/null
+  popd >/dev/null
+else
+  # Fallback: use Python stdlib to create the zip if `zip` is unavailable
+  python - <<PY
+import os,zipfile
+out_root = os.path.abspath("$OUT_ROOT")
+ts = "$TS"
+zip_path = os.path.join(out_root, os.path.basename("$ZIP_FILE"))
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as z:
+    base_dir = os.path.join(out_root, ts)
+    for root, dirs, files in os.walk(base_dir):
+        for f in files:
+            full = os.path.join(root, f)
+            arcname = os.path.join(ts, os.path.relpath(full, base_dir))
+            z.write(full, arcname)
+print(zip_path)
+PY
+fi
 
 echo "All done. CSV files are in $OUT_DIR and archive is $ZIP_FILE"
 
