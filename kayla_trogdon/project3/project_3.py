@@ -1,5 +1,6 @@
-import csv
+import sys
 import os
+import csv
 import requests
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse
@@ -44,6 +45,32 @@ class WikiTableParser(HTMLParser):
             if cleaned_data:
                 self.current_row.append(cleaned_data)
 
+def fetch_and_extract_all_tables(url):
+    """
+    Fetch the Wikipedia page and extract all tables.
+    """
+    try:
+        print("Fetching Wikipedia page...")
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        
+        print(f"Page fetched successfully! Content length: {len(response.text)} characters")
+        
+        print("Parsing HTML content and extracting all tables...")
+        parser = WikiTableParser()
+        parser.feed(response.text)
+        
+        return parser.all_table_data
+        
+    except requests.RequestException as e:
+        print(f"Error fetching the webpage: {e}")
+        return None
+    except Exception as e:
+        print(f"Error parsing HTML: {e}")
+        return None
 
 def get_website_prefix(url):
     """
@@ -73,137 +100,81 @@ def get_website_prefix(url):
         # For other domains, take first 3-5 characters
         return domain.split('.')[0][:5].lower()
 
-
-def fetch_and_extract_all_tables(url):
-    """
-    Fetch the Wikipedia page and extract all tables.
-    """
+def save_to_csv(table_data, filepath):
+    import os
+    # Print the path for debugging
+    print(f"Attempting to save to: {filepath}")
+    # Try to create parent directory with permissions
     try:
-        print("Fetching Wikipedia page...")
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()
-        
-        print(f"Page fetched successfully! Content length: {len(response.text)} characters")
-        
-        print("Parsing HTML content and extracting all tables...")
-        parser = WikiTableParser()
-        parser.feed(response.text)
-        
-        return parser.all_table_data
-        
-    except requests.RequestException as e:
-        print(f"Error fetching the webpage: {e}")
-        return None
-    except Exception as e:
-        print(f"Error parsing HTML: {e}")
-        return None
-
-def save_to_csv(table_data, filename):
-    """
-    Save the extracted table data to a CSV file.
-    Was Modified to handle Docker
-    """
+        os.makedirs(os.path.dirname(filepath), exist_ok=True)
+    except Exception as dir_e:
+        print(f"Error creating directory: {dir_e}")
+        return False
     try:
-        output_dir = 'website_tables'
-        os.makedirs(output_dir, exist_ok=True)
-        filepath = os.path.join(output_dir, filename)
-
-
         with open(filepath, 'w', newline='', encoding='utf-8') as csv_file:
             writer = csv.writer(csv_file)
             for row in table_data:
                 writer.writerow(row)
-        
-        print(f"CSV file '{filename}' created successfully!")
+        print(f"CSV file '{filepath}' created successfully!")
         print(f"Extracted {len(table_data)} rows")
         return True
-        
     except Exception as e:
         print(f"Error saving to CSV: {e}")
         return False
-    
-
-def process_single_website(url):
-    """
-    Process a single website and return the table data and prefix.
-    """
-    print(f"\n{'='*60}")
-    print(f"Processing: {url}")
-    print(f"{'='*60}")
-    
-    prefix = get_website_prefix(url)
-    all_table_data = fetch_and_extract_all_tables(url)
-    
-    if all_table_data:
-        print(f"\nSuccessfully extracted data from {len(all_table_data)} tables")
-        
-        # Loop through each table's data and save it to a unique CSV file
-        for i, table in enumerate(all_table_data):
-            filename = f'{prefix}_table{i+1}.csv'
-            print(f"\nProcessing table {i+1}...")
-            if save_to_csv(table, filename):
-                print(f"✅ Table {i+1} data successfully exported to '{filename}'")
-            else:
-                print(f"❌ Failed to save data for table {i+1}")
-    else:
-        print("\n❌ Failed to extract any table data")
-    
-    return len(all_table_data) if all_table_data else 0
-
-
 
 def main(url_lst=None):
-    '''
-    Processing multiple websites and extract tables from each. 
-    Takes in a list of URLs from the Environment variable in Dockerfile
-    '''
-    env_urls = os.getenv("DEFAULT_URLS")
+    # Wikipedia URL for programming languages comparison
+    if url_lst is None: 
+        print("No URL provided.")
+        return
+    global_table_counter = 1
+    # Get output directory from environment or default
+    output_base = os.environ.get("OUTPUT_DIR", "website_tables")
+    os.makedirs(output_base, exist_ok=True)
 
-    if env_urls: 
-        #WOULD be running in Docker, using environment variable
-        url_lst = [url.strip() for url in env_urls.split(',') if url.strip()]
-        print(f"Using URLs from environment variable: {len(url_lst)} URLs")
-    elif not url_lst:
-        # Default URLs if empty list provided
-        url_lst = [
-            "https://en.wikipedia.org/wiki/Comparison_of_programming_languages",
-            "https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites",
-            "https://www.tiobe.com/tiobe-index/"
-        ]
-        print("No URLs provided, using default URLs...")
-    
-    total_tables = 0
-    successful_sites = 0
-    
-    print(f"Starting to process {len(url_lst)} website(s)...")
-    
-    for url in url_lst:
-        try:
-            tables_found = process_single_website(url)
-            if tables_found > 0:
-                successful_sites += 1
-                total_tables += tables_found
-        except Exception as e:
-            print(f"\n❌ Error processing {url}: {e}")
-    
+    # Process each URL
+    for idx, url in enumerate(url_lst):
+        print(f"\n{'='*60}")
+        print(f"Processing URL {idx+1}/{len(url_lst)}: {url}")
+        print(f"{'='*60}")
+
+        all_table_data = fetch_and_extract_all_tables(url)
+
+        if all_table_data:
+            print(f"Successfully extracted data from {len(all_table_data)} tables")
+
+            # Get website prefix for this URL
+            website_prefix = get_website_prefix(url)
+
+            # Create site-specific output directory
+            site_dir = os.path.join(output_base, f"site_{idx+1}")
+            os.makedirs(site_dir, exist_ok=True)
+
+            # Loop through each table's data and save it with website prefix
+            for i, table in enumerate(all_table_data):
+                filename = os.path.join(site_dir, f'{website_prefix}_table{global_table_counter}.csv')
+                print(f"\nProcessing table {i+1}...")
+                if save_to_csv(table, filename):
+                    print(f"✅ Table {i+1} data successfully exported to '{filename}'")
+                    global_table_counter += 1
+                else:
+                    print(f"❌ Failed to save data for table {i+1}")
+        else:
+            print(f"No tables found on this page")
+
     print(f"\n{'='*60}")
-    print(f"SUMMARY:")
-    print(f"Successfully processed: {successful_sites}/{len(url_lst)} websites")
-    print(f"Total tables extracted: {total_tables}")
-    print(f"{'='*60}")
+    print(f"SUMMARY: Successfully saved {global_table_counter - 1} tables total")
+    print(f"{'='*60}\n")
 
 if __name__ == "__main__":
+    if len(sys.argv) > 1: 
 
-    if os.getenv('DEFAULT_URLS'): 
-        main(None)
-    else:
+        url = sys.argv[1]
+        main([url])
+    elif os.getenv('DEFAULT_URLS'): 
         print("THIS THE HARDCODING PRINTING")
         a_website = "https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites"
         b_website = "https://www.tiobe.com/tiobe-index/"
         c_website = "https://github.com/quambene/pl-comparison"
-
         web_lst = [a_website, b_website, c_website]
         main(web_lst)
