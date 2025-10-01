@@ -19,9 +19,8 @@ def read_link(url):
         return ""
 
 class TableParser(HTMLParser):
-    def __init__(self, target_class=None):
+    def __init__(self):
         super().__init__()
-        self.target_class = target_class
         self.in_table = False
         self.in_row = False
         self.in_cell = False
@@ -32,12 +31,8 @@ class TableParser(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         if tag == "table":
-            # Convert attrs list -> dict for easy lookup
-            attr_dict = dict(attrs)
-            table_class = attr_dict.get("class", "")
-            if self.target_class is None or self.target_class in table_class.split():
-                self.in_table = True
-                self.current_table = []
+            self.in_table = True
+            self.current_table = []
         elif tag == "tr" and self.in_table:
             self.in_row = True
             self.current_row = []
@@ -60,7 +55,6 @@ class TableParser(HTMLParser):
     def handle_data(self, data):
         if self.in_cell:
             self.current_cell += data
-
 if len(sys.argv) < 2:
     print("Usage: python project1.py <URL>")
     sys.exit(1)
@@ -69,22 +63,23 @@ url = sys.argv[1]
 html_content = read_link(url)
 
 if html_content:
-    parser = TableParser(target_class="wikitable")  # filter for class="wikitable"
+    parser = TableParser()  # No class filter → grab ALL tables
     parser.feed(html_content)
 
-    print("Wikitable tables found:", len(parser.tables))
+    print("Tables found:", len(parser.tables))
 
-    for idx, table in enumerate(parser.tables):
-        print(f"Table {idx+1}:")
+    for idx, table in enumerate(parser.tables, start=1):
+        print(f"\nTable {idx}:")
         for row in table:
             print(" | ".join(row))
         print("-" * 40)
-        # Write each table to a CSV file
-        csv_filename = f"table_{idx+1}.csv"
-        with open(csv_filename, "w", newline='', encoding='utf-8') as csvfile:
+
+        # Save to CSV
+        csv_filename = f"table_{idx}.csv"
+        with open(csv_filename, "w", newline='', encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
             writer.writerows(table)
-        print(f"Saved Table {idx+1} to {csv_filename}")
+        print(f"Saved Table {idx} to {csv_filename}")
 else:
     print("No HTML content retrieved.")
 #TO TEST PROGRAM RUN: python project1.py "https://en.wikipedia.org/wiki/Deltora_Quest_(TV_series)" OR python project1.py "https://en.wikipedia.org/wiki/List_of_programming_languages"
