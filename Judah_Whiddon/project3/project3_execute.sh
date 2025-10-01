@@ -1,5 +1,4 @@
 #!/bin/bash
-# this is the Project 3 bash script
 
 # grab the first argument (comma-separated urls)
 urls=$1
