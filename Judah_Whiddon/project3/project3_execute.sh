@@ -1,41 +1,42 @@
 #!/bin/bash
-# lets the interpreter know this is a bash script
+# this is the Project 3 bash script
 
-# here im setting a variable called urls to whatever the user types in when they run the script
+# grab the first argument (comma-separated urls)
 urls=$1
 
-# this block is checking if the user forgot to give me urls.
-# if they did, it prints out a usage message and then exits with an error code
+# error check: make sure the user provided urls
 if [ -z "$urls" ]; then
     echo "Usage: $0 url1,url2,url3"
     exit 1
 fi
 
-# making a variable that holds the name of my output directory
+# define output directory inside project3
 output_dir="Judah_whiddon/project3/output_csvs"
 
-# uncomment the following line if you want a clean run of this script without csv's from a previous run
+# uncomment the following line if you want a clean run (delete old results)
 # rm -rf $output_dir
 
-# command to create the output folder
+# create the output folder if it doesn't exist
 mkdir -p $output_dir
 
-# this builds my docker image from project 2 so i can use it later
+# build the docker image from project2
 docker build -t project2_image ./Judah_whiddon/project2
 
-# loop through each url the user gave 
+# loop through each url provided
 for url in $(echo $urls | tr "," "\n")
 do
-    # turn the url into filename by removing unnecessary characters
+    echo "Processing $url ..."
+
+    # make a safe filename from the url
     filename=$(echo $url | sed 's|https\?://||' | sed 's|/|_|g')
 
-    # now actually run my docker container on this url, saving a csv to the output folder
+    # run the docker container: scraper takes url + output file
     docker run --rm -v $(pwd)/$output_dir:/app/output project2_image \
-        python Judah_Whiddon_project1.py "$url" "/app/output/${filename}.csv"
+        "$url" "/app/output/${filename}.csv"
 done
 
-# zip everything in the output folder into one file
+# zip the directory of results
 zip -r ${output_dir}.zip $output_dir
 
-# confirmation message to the user
+# final confirmation
 echo "Done! All CSVs are in ${output_dir}.zip"
