@@ -1,0 +1,34 @@
+===========================================
+Student: joshua_milner
+Directory: joshua_milner/project2
+Timestamp: Tue Sep 23 09:27:04 EDT 2025
+===========================================
+✅ Found Dockerfile
+
+Building Docker image: joshua_milner_project2
+==========================================
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+
+Sending build context to Docker daemon   12.8kB
+Step 1/8 : FROM python:3.12-slim
+ ---> 12201b64d1f1
+Step 2/8 : WORKDIR /app
+ ---> Running in b4d15fbba579
+ ---> Removed intermediate container b4d15fbba579
+ ---> bf4696c3dd7c
+Step 3/8 : COPY table_2_csv.py .
+ ---> a6002b76f809
+Step 4/8 : RUN mkdir -p /app/output
+ ---> Running in f7c15ae44691
+ ---> Removed intermediate container f7c15ae44691
+ ---> 411758096d24
+Step 5/8 : RUN adduser --disabled-password --gecos "" --no-create-home scraper
+ ---> Running in fd89c4c6d594
+usermod: no changes
+context canceled
+❌ Build failed
+
+===========================================
+

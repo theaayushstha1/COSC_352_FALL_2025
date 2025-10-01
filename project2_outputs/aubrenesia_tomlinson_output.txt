@@ -1,0 +1,6 @@
+===========================================
+Student: aubrenesia_tomlinson
+Directory: aubrenesia_tomlinson/project2
+Timestamp: Tue Sep 23 09:26:50 EDT 2025
+===========================================
+❌ No Dockerfile found in project2 directory

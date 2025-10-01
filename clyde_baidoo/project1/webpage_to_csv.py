@@ -1,6 +1,7 @@
 import urllib.request
 from html.parser import HTMLParser
 import csv
+import sys
 
 class TableParser(HTMLParser):
     def __init__(self):
@@ -63,7 +64,11 @@ def read_to_csv(html):
         print(f"Saved {filename}")
 
 def main():
-    url = input(str("Please enter url: "))
+    if len(sys.argv) < 2:
+        print("Usage: python webpage_to_csv.py <url>")
+        sys.exit(1)
+
+    url = sys.argv[1]
     html = read_from_webpage(url)
     read_to_csv(html)
 
