@@ -10,7 +10,6 @@
 # - Zip the output directory into a timestamped archive
 
 set -euo pipefail
-IFS=','
 
 # Configurable variables
 IMAGE_NAME="project2_table_extractor:latest"
@@ -43,58 +42,110 @@ fi
 # Helper: sanitize a URL into a filename-friendly prefix
 sanitize() {
   local url="$1"
-  # remove protocol
   url=${url#http://}
   url=${url#https://}
-  # take up to first slash
   url=${url%%/*}
-  # replace non-alphanumeric with _
-  echo "$url" | sed -E 's/[^A-Za-z0-9]+/_/g' | sed -E 's/^_+|_+$//g'
+  echo "$url" | sed -E 's/[^A-Za-z0-9]+/_/g' | sed -E 's/^_+|_+$//g' | cut -c1-40
 }
 
 # Run container for each URL
 for raw in "$@"; do
-  # Support either a single argument that's comma-separated or multiple args
   IFS=',' read -ra URLS <<< "$raw"
   for url in "${URLS[@]}"; do
     url=$(echo "$url" | sed -E 's/^ +| +$//g')
     if [ -z "$url" ]; then
-      continue
+        continue
     fi
+
+    # Sanitize URL
     prefix=$(sanitize "$url")
     echo "Processing $url -> prefix $prefix"
 
-    # Create a temporary container-specific output directory
-    TMP_OUT="/tmp/output"
+    # Create a temporary output directory for Docker
     HOST_TMP_DIR=$(mktemp -d)
 
-    # Run the docker container, mounting the host tmp dir as CWD so files are written there
-    # The Dockerfile's CMD runs project1.py with a default URL, but we will override it with our URL
-    docker run --rm -v "$HOST_TMP_DIR":/app -w /app "$IMAGE_NAME" bash -c "python project1.py '$url'"
+    # Convert to Docker-compatible path
+    UNAME_OUT="$(uname -s)"
+    # Helper: produce a Windows-style path when possible on MSYS/MinGW/Cygwin
+    get_win_path() {
+      local p="$1"
+      # Prefer cygpath if available (reliable)
+      if command -v cygpath >/dev/null 2>&1; then
+        cygpath -w "$p"
+        return
+      fi
 
-    # Move any generated table_*.csv files to final location with prefix
-    shopt -s nullglob || true
+      # If realpath exists, check if it supports -w/--windows
+      if command -v realpath >/dev/null 2>&1; then
+        if realpath --help 2>&1 | grep -Eq "(-w|--windows)"; then
+          realpath -w "$p"
+          return
+        fi
+        # Try pwd -W (available in some MSYS environments)
+        if command -v pwd >/dev/null 2>&1; then
+          # run in a subshell to avoid changing cwd
+          (cd "$p" 2>/dev/null && pwd -W) && return
+        fi
+        # As a last resort use realpath without -w (POSIX path)
+        realpath "$p" 2>/dev/null && return
+      fi
+
+      # Default: return the original path (POSIX style)
+      printf '%s' "$p"
+    }
+
+    if [[ "$UNAME_OUT" == MINGW* || "$UNAME_OUT" == MSYS* || "$UNAME_OUT" == CYGWIN* ]]; then
+      HOST_TMP_DIR_WIN=$(get_win_path "$HOST_TMP_DIR")
+    else
+      # Linux / macOS
+      HOST_TMP_DIR_WIN="$HOST_TMP_DIR"
+    fi
+    # Run Docker container
+    docker run --rm -v "$HOST_TMP_DIR_WIN":/app -w /app "$IMAGE_NAME" "$url"
+
+
+    # Move CSV files to final output directory
+    shopt -s nullglob
     found=false
     for f in "$HOST_TMP_DIR"/table_*.csv; do
-      if [ -f "$f" ]; then
-        base=$(basename "$f")
-        mv "$f" "$OUT_DIR/${prefix}_$base"
-        echo "Saved $OUT_DIR/${prefix}_$base"
-        found=true
-      fi
+        if [ -f "$f" ]; then
+            base=$(basename "$f")
+            mv "$f" "$OUT_DIR/${prefix}_$base"
+            echo "Saved $OUT_DIR/${prefix}_$base"
+            found=true
+        fi
     done
     if [ "$found" = false ]; then
-      echo "No table_*.csv files produced for $url"
+        echo "No table_*.csv files produced for $url"
     fi
 
-    # Clean up host tmp dir
+    # Clean up temp dir
     rm -rf "$HOST_TMP_DIR"
+done
+done
+# Collect all sanitized site names for naming the zip
+site_names=()
+for raw in "$@"; do
+  IFS=',' read -ra URLS <<< "$raw"
+  for url in "${URLS[@]}"; do
+    url=$(echo "$url" | sed -E 's/^ +| +$//g')
+    if [ -n "$url" ]; then
+      site_names+=("$(sanitize "$url")")
+    fi
   done
 done
 
-# Create zip
-pushd "$OUT_ROOT" >/dev/null 2>&1
-zip -r "extracted_csvs_${TS}.zip" "$TS" >/dev/null
-popd >/dev/null 2>&1
+# Join site names with underscores
+site_prefix=$(IFS=_; echo "${site_names[*]}")
+
+# Limit to 60 chars in case of many URLs
+site_prefix=$(echo "$site_prefix" | cut -c1-60)
+
+ZIP_FILE="$OUT_ROOT/${site_prefix}_${TS}.zip"
+# Create zip archive
+pushd "$OUT_ROOT" >/dev/null
+zip -r "$(basename "$ZIP_FILE")" "$TS" >/dev/null
+popd >/dev/null
 
 echo "All done. CSV files are in $OUT_DIR and archive is $ZIP_FILE"
+
