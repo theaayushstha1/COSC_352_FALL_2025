@@ -1,51 +1,17 @@
-Comparison ofprogramming languages
-"General comparison
-Assignment
-Basic syntax
-Basic instructions
-Comments
-Control flow
-Foreach loops
-While loops
-For loops
-Do-while
-Exception handling
-Enumerated types
-Algebraic data types
-Generators
-Anonymous functions
-Conditional expressions
-Arrays
-Associative arrays
-Scope
-String operations
-String functions
-Higher-order functions
-Filter
-Fold
-Map
-Type systems
-Dependent types
-List comprehension
-Object-oriented programming
-Object-oriented constructors
-Operators
-Ternary conditional operator
-Null coalescing operators
-Safe navigation operators
-Modulo operators"
-"Evaluation strategy
-List of ""Hello World"" programs"
-"Comparison of individuallanguages
-ALGOL 58's influence on ALGOL 60
-ALGOL 60: Comparisons with other languages
-ALGOL 68: Comparisons with other languages
-Compatibility of C and C++
-Comparison of Pascal and Borland Delphi
-Comparison of Object Pascal and C
-Comparison of Pascal and C
-Comparison of Java and C++
-Comparison of C# and Java
-Comparison of C# and Visual Basic .NET
-Comparison of Visual Basic and Visual Basic .NET"
-".mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:""[ ""}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:"" ]""}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}html.skin-theme-clientpref-night .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}@media(prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .navbar li a abbr{color:var(--color-base)!important}}@media print{.mw-parser-output .navbar{display:none!important}}vte"
+Websites,Popularity(unique visitors per month)&#91;1&#93;,Front-end(Client-side),Back-end(Server-side),Database
+Google&#91;2&#93;,"2,800,000,000","JavaScript, TypeScript","C, C++, Go,&#91;3&#93; Java, Python, Node","Bigtable,&#91;4&#93; MariaDB&#91;5&#93;"
+Facebook,"1,120,000,000","JavaScript, TypeScript, Flow","Hack/HHVM, PHP, Python, C++, Java, Erlang, D,&#91;6&#93; Haskell&#91;7&#93;","MariaDB, MySQL,&#91;8&#93; HBase, Cassandra&#91;9&#93;"
+YouTube,"1,100,000,000","JavaScript, TypeScript","Python, C, C++, Java,&#91;10&#93; Go&#91;11&#93;","Vitess, BigTable, MariaDB&#91;5&#93;"
+Yahoo,"750,000,000",JavaScript,PHP,"PostgreSQL, HBase, Cassandra, MongoDB,&#91;12&#93;"
+Etsy,"516,000,000(Total, not unique)&#91;13&#93;",JavaScript,PHP&#91;14&#93;,"MySQL, Redis&#91;15&#93;"
+Amazon,"2,400,000,000&#91;16&#93;",JavaScript,"Java, C++, Perl&#91;17&#93;","DynamoDB, RDS/Aurora, Redshift&#91;18&#93;"
+Wikipedia,"475,000,000",JavaScript,PHP,MariaDB&#91;19&#93;
+Fandom,"315,000,000&#91;20&#93;",JavaScript,PHP,MySQL
+X,"290,000,000",JavaScript,"C++, Java,&#91;21&#93; Scala,&#91;22&#93; Ruby (Ruby on Rails)",MySQL&#91;23&#93;
+Bing,"285,000,000",JavaScript,"C++, C#","Microsoft SQL Server, Cosmos DB"
+eBay,"285,000,000",JavaScript,"Java,&#91;24&#93; JavaScript,&#91;25&#93; Scala&#91;26&#93;",Oracle Database
+MSN,"280,000,000",JavaScript,C# (ASP.NET),Microsoft SQL Server
+LinkedIn,"260,000,000",JavaScript,"Java, JavaScript,&#91;27&#93; Scala",Venice&#91;28&#93;&#91;29&#93;
+Pinterest,"250,000,000",JavaScript,"Python (Django),&#91;30&#93; Erlang, Elixir&#91;31&#93;","MySQL, Redis&#91;32&#93;"
+WordPress.com,"240,000,000&#91;33&#93;",JavaScript,PHP&#91;34&#93;,MariaDB&#91;35&#93;
+Netflix,"223.090.000 (Subscribers, not visitors)",JavaScript,"Python, Java&#91;36&#93;","NMDB,&#91;37&#93; PostgreSQL"

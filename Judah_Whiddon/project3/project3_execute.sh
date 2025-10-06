@@ -19,7 +19,7 @@ output_dir="Judah_whiddon/project3/output_csvs"
 mkdir -p $output_dir
 
 # build the docker image from project2
-docker build -t project2_image ./Judah_whiddon/project2
+docker build -t project2_image ../project2
 
 # loop through each url provided
 for url in $(echo $urls | tr "," "\n")

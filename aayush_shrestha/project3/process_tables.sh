@@ -34,6 +34,8 @@ for URL in "${URL_ARRAY[@]}"; do
     docker run --rm -v "$(pwd)/$OUTPUT_DIR:/data" "$DOCKER_IMAGE" \
         "/data/${DOMAIN}.html" "/data/${DOMAIN}"
 
+    echo "docker run --rm -v $(pwd)/$OUTPUT_DIR:/data $DOCKER_IMAGE /data/${DOMAIN}.html /data/${DOMAIN}"
+
     echo "[INFO] Finished: $DOMAIN"
 done
 
