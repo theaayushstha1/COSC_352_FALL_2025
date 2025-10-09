@@ -17,7 +17,7 @@ ZIP_FILE="csv_output.zip"
 # Check if Docker image exists, otherwise build it
 if [[ -z "$(docker images -q $IMAGE_NAME 2>/dev/null)" ]]; then
     echo "Docker image $IMAGE_NAME not found. Building..."
-    docker build -t $IMAGE_NAME .
+    docker build -t $IMAGE_NAME ./project2
 fi
 
 # Prepare output directory
