@@ -1,0 +1,17 @@
+Websites,C#,C,C++,D,Elixir,Erlang,Go,Hack,Haskell,Java,JavaScript,Perl,PHP,Python,Ruby,Scala
+Google,No,Yes,Yes,No,No,No,Yes,No,No,Yes,Yes,No,No,Yes,No,No
+Facebook,No,No,Yes,Yes,No,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,No,No
+YouTube,No,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No
+Yahoo,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+Etsy,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+Amazon,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No
+Wikipedia,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+Fandom,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+X,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes
+Bing,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No
+eBay,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes
+MSN,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+LinkedIn,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes
+Pinterest,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No
+WordPress.com,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+Netflix,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No
