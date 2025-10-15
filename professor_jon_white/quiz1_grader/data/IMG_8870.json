@@ -1,0 +1,31 @@
+{
+  "name": "Ryan Anyangwe",
+  "matched_name": null,
+  "login_id": null,
+  "answer_text": "Left to right\n\nA turing is a theoretical thinking device. It reads and writes a set of rules, and offers different nodes. It matters because we can use it to help us understand how far computers can go, how to make our devices like phones, laptop and such go faster. Turing Complete for checking if the system is powerful enough to compute anything.\n\nif a program is complete it can return calculations and more. Java, Python, C++ are all complete turing languages, while HTML is not.",
+  "scores": {
+    "question_1": {
+      "score": 10,
+      "feedback": "You correctly identified it as a theoretical device/model, which is a good start. However, a Turing Machine is specifically a formal model with an infinite tape, a read/write head, a finite set of states, and a transition function\u2014not just a general \"thinking device.\""
+    },
+    "question_2": {
+      "score": 10,
+      "feedback": "You mentioned reading and writing and hinted at direction (\"Left to right\"), which shows partial understanding. For full credit, you needed to describe the tape, head movement left or right, state transitions based on the current symbol/state, and halting."
+    },
+    "question_3": {
+      "score": 10,
+      "feedback": "You noted that Turing Machines help us understand how far computers can go\u2014that\u2019s the core idea. However, the focus on making devices go faster is a misconception. Their importance is about computability and decidability (what can/cannot be computed), not performance."
+    },
+    "question_4": {
+      "score": 10,
+      "feedback": "Good intuition: Turing completeness means being powerful enough to compute anything. For full credit, clarify that this means the language can simulate a Turing Machine (given unbounded time and memory), typically via conditionals and unbounded iteration/recursion."
+    },
+    "question_5": {
+      "score": 20,
+      "feedback": "Nice examples. Java, Python, and C++ are Turing complete; HTML is not (it has no computation/looping by itself). Well done."
+    }
+  },
+  "total_score": 60,
+  "overall_feedback": "You have the right big-picture intuition: Turing Machines are theoretical models that help us reason about what can be computed, and Turing completeness captures that power in programming languages. To level up, focus on the precise mechanics (tape, head, states, transition function, halting) and the formal meaning of Turing completeness (ability to simulate a TM with unbounded resources). You\u2019re close\u2014tighten the definitions and avoid performance-based explanations, and you\u2019ll be in great shape.",
+  "grading_time_seconds": 96.19
+}

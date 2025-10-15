@@ -1,0 +1,31 @@
+{
+  "name": "Great-Anthony Unmakord",
+  "matched_name": "Great-Anthony Unmakord",
+  "login_id": "great_anthony",
+  "answer_text": "A turing machine is a machine that shows if a person is close to not knowing if a human or computer is answering/responding to a question. Its important to computer science because interrogation of humans and machines is a key thing in the field. What makes a language Turing complete is if it satisfies what I stated in the first sentence. If it can blur the line than it is Turing complete. An example of turing complete is Python, Java, An example of non turing is C Sharp.",
+  "scores": {
+    "question_1": {
+      "score": 0,
+      "feedback": "You described the Turing Test (distinguishing human vs. machine responses), not a Turing Machine. A Turing Machine is an abstract computational model with an infinite tape, a read/write head, a finite set of states, and a transition function."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "No explanation of the tape, head, states, or transition rules. To earn full credit, describe how the machine reads a symbol, writes a symbol, moves left/right, changes state, and halts based on its transition function."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "The importance given relates to the Turing Test. In CS, Turing Machines matter because they formalize computation, define what is computable, underpin decidability/complexity results (e.g., the Halting Problem), and motivate the Church\u2013Turing thesis."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "Turing completeness is not about fooling people. A language is Turing Complete if it can simulate a Turing Machine (i.e., supports unbounded memory and general control flow such as conditionals and unbounded loops/recursion)."
+    },
+    "question_5": {
+      "score": 10,
+      "feedback": "Partial credit: Python and Java are indeed Turing Complete. However, C# is also Turing Complete, so it is not a valid non\u2013Turing-complete example. Examples of non\u2013Turing-complete languages include HTML/CSS, regular expressions without backreferences, and some query or data description languages."
+    }
+  },
+  "total_score": 10,
+  "overall_feedback": "Thank you for the effort, Great-Anthony. You mixed up the Turing Machine with the Turing Test. Review the core model: an infinite tape, a read/write head, states, and a transition function. Understand why this model defines the limits of computation and how Turing completeness means a language can simulate that model. Your examples of Python and Java were correct, but be careful: C# is also Turing complete. With a focused review, you can quickly align these concepts\u2014let\u2019s chat if you\u2019d like a walkthrough.",
+  "grading_time_seconds": 104.71
+}

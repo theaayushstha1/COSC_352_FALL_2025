@@ -1,0 +1,31 @@
+{
+  "name": "David Johnny",
+  "matched_name": "David Johnny",
+  "login_id": "david_johnny",
+  "answer_text": "David Johnny\n\na method\nTuring Machine is something (crossed out) that can recognize and solve problems/equations. when a program (crossed out) it is important to Computer Science we as programmers use the tuning machine format to figure out problems using code.\n\nIf a programming language is \"Turing Complete\", then that means it should essentially be able to solve most of if not all logic problems. Turing Complete languages are like Java, Python, and C#. NON Turing Complete languages include HTML and CSS as you can't essentially \"solve\" problems with them.",
+  "scores": {
+    "question_1": {
+      "score": 10,
+      "feedback": "You recognized that a Turing machine relates to solving problems, which is a start. However, a Turing machine is an abstract mathematical model of computation with a tape, a read/write head, a finite set of states, and a transition function\u2014not just a general \u201cmethod.\u201d Define those core components to be fully correct."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "You did not explain the mechanism. A full answer should describe how the machine reads a symbol on an infinite tape, writes/overwrites, moves left or right, changes state according to a transition function, and halts (accept/reject) or runs forever."
+    },
+    "question_3": {
+      "score": 10,
+      "feedback": "You indicated it\u2019s important for programmers, but the key reason is deeper: Turing machines formalize what computation is, underpin decidability/undecidability (e.g., the Halting Problem), and give us a framework for proving what can and cannot be computed. Mentioning these foundations would complete the answer."
+    },
+    "question_4": {
+      "score": 10,
+      "feedback": "You wrote that Turing-complete languages can solve most or all logic problems. Closer: a language is Turing Complete if it can simulate a universal Turing machine (typically requiring unbounded memory and general control flow like loops/recursion). Note that not all problems are solvable (undecidable problems remain unsolvable)."
+    },
+    "question_5": {
+      "score": 20,
+      "feedback": "Good examples. Java, Python, and C# are Turing Complete. HTML and CSS (without scripting) are not computational languages and are generally considered non\u2013Turing Complete."
+    }
+  },
+  "total_score": 50,
+  "overall_feedback": "David, you show the right intuition that Turing machines and Turing completeness relate to the power to compute, and your examples are solid. To strengthen your understanding, focus on the concrete mechanics of a Turing machine (tape, head, states, transitions) and why that model defines computability and its limits. Clarify that Turing completeness is about simulating a universal Turing machine with unbounded memory, not solving every problem. You\u2019re on the right track\u2014tighten the definitions and you\u2019ll be in great shape.",
+  "grading_time_seconds": 81.68
+}
