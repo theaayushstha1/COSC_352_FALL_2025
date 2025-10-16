@@ -1,0 +1,8 @@
+Language,Async/await,Multithreading,Channels
+Javascript,Yes,Yes (web workers),No
+Typescript,Yes,Yes (web workers),No
+Python,Yes (asyncio),Yes (multiprocessing with IPC; thread and threading but GIL),No
+Java,Yes,Yes (java.lang.Thread),Yes (java.nio.channels.Channels)
+Go,Yes (via channels),Yes (goroutines),Yes (chan)
+Rust,"Yes (async-std, tokio)","Yes (std::thread, tokio, rayon)",Yes (std::sync::mpsc)
+C++,Yes (std::async),"Yes (std::thread, std::execution)",No

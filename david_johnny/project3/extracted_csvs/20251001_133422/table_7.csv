@@ -1,0 +1,6 @@
+Language,Double free,Use after free (dangling pointer),Null dereferencing,Buffer overflow
+Java,No (GC),No (GC),Yes (NullPointerException),No
+Go,No (GC),No (GC),Yes (nil pointer dereference),No
+Rust,No (ownership rules),No (borrowing rules),No (std::option::Option),No
+C++,Yes,Yes,Yes,Yes
+C,Yes,Yes,Yes,Yes

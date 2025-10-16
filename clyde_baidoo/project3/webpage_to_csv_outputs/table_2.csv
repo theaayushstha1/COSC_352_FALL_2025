@@ -1,0 +1,10 @@
+Language,Compiled/interpreted,Process virtual machine (VM),Garbage collector (GC),Build time
+Javascript,JIT,"Yes (web browser, Node.js)",Yes,-
+Typescript,JIT,"Yes (web browser, Node.js)",Yes,-
+Dart,JIT/AOT,Yes (web) / No (mobile),Yes,-
+Python,interpreted,Yes,Yes (reference counting),-
+Java,JIT,Yes (JVM),Yes (tracing),faster
+Go,AOT,No,Yes,faster
+Rust,AOT,No,No,slower
+C++,AOT,No,No,slower
+C,AOT,No,No,slower

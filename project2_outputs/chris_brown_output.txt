@@ -1,6 +1,0 @@
-===========================================
-Student: chris_brown
-Directory: chris_brown/project2
-Timestamp: Tue Sep 23 09:26:50 EDT 2025
-===========================================
-❌ No project2 directory found
