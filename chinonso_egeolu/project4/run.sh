@@ -1,7 +1,6 @@
 #!/bin/bash
-
 # Docker image name
-IMAGE_NAME="scala-homicide-analyzer"
+IMAGE_NAME="baltimore-homicide-analysis"
 
 # Check if image exists, build if not
 if ! docker images | grep -q "$IMAGE_NAME"; then
