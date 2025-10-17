@@ -1,17 +1,20 @@
-FROM openjdk:21-jdk
+# Dockerfile for Project 4 (Scala 3 on JDK 21)
+FROM openjdk:21-jdk-slim
 
-# Install Scala (using official distribution)
-RUN apt-get update && apt-get install -y wget unzip
-RUN wget https://downloads.lightbend.com/scala/3.5.1/scala3-3.5.1.zip && \
-    unzip scala3-3.5.1.zip && \
-    mv scala3-3.5.1 /usr/local/scala && \
-    rm scala3-3.5.1.zip
-ENV PATH="${PATH}:/usr/local/scala/bin"
+# Install dependencies needed to fetch Scala and enable HTTPS
+RUN apt-get update && apt-get install -y --no-install-recommends wget unzip ca-certificates &&         rm -rf /var/lib/apt/lists/*
 
-# Copy and compile the Scala file
-COPY Project4.scala /app/
+# Install Scala 3
+ENV SCALA_VERSION=3.5.1
+RUN wget -q https://downloads.lightbend.com/scala/${SCALA_VERSION}/scala3-${SCALA_VERSION}.zip &&         unzip -q scala3-${SCALA_VERSION}.zip &&         mv scala3-${SCALA_VERSION} /usr/local/scala &&         rm -f scala3-${SCALA_VERSION}.zip
+ENV PATH="/usr/local/scala/bin:${PATH}"
+
+# App code
 WORKDIR /app
+COPY Project4.scala /app/Project4.scala
+
+# Compile
 RUN scalac Project4.scala
 
-# Run the program
+# Default command runs the Scala program
 CMD ["scala", "Project4"]
