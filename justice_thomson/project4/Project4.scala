@@ -1,6 +1,7 @@
 import java.net.{URL, HttpURLConnection}
 import scala.io.Source
 import scala.util.matching.Regex
+import scala.util.matching.Regex.Match
 
 object Project4 {
   // Simple HTTP fetch with a UA header to avoid 403s
@@ -19,28 +20,29 @@ object Project4 {
     val url = "https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html"
     val html = fetch(url)
 
-    // Strip tags and normalize
+    // Strip tags and normalize whitespace
     val noTags = "<[^>]+>".r.replaceAllIn(html, "")
-    val cleanText = noTags.replaceAll("\r", "")
-    val lines = cleanText.split("\n").map(_.trim).filter(_.nonEmpty)
+    val cleanText = noTags.replaceAll("\r", "").replaceAll("\\s+", " ")
 
-    // Rows typically begin like: "001 01/05/25 ..."
+    // Pattern for 2025 entries
     case class Entry(month: Int, hasCamera: Boolean, isClosed: Boolean)
 
-    // Use raw (triple-quoted) regex strings
-    val pattern: Regex = """^(\d{3})\s+(\d{2})/(\d{2})/(\d{2})\b.*$""".r
+    val pattern: Regex = """(\d{3})\s+(\d{2}/\d{2}/25)\b""".r
     val cameraRe: Regex = """(?i)\b\d+\s*cameras?\b""".r
-    val closedRe:  Regex = """(?i)\bclosed\b""".r
+    val closedRe: Regex = """(?i)\bclosed\b""".r
 
-    val entries = lines.flatMap { line =>
-      line match {
-        case pattern(_, mm, _, _) =>
-          val month = mm.toInt
-          val hasCam = cameraRe.findFirstIn(line).isDefined
-          val isClosed = closedRe.findFirstIn(line).isDefined
-          Some(Entry(month, hasCam, isClosed))
-        case _ => None
-      }
+    val matches: List[Match] = pattern.findAllMatchIn(cleanText).toList
+
+    val entries = (0 until matches.length).flatMap { i =>
+      val m = matches(i)
+      val start = m.start
+      val end = if (i + 1 < matches.length) matches(i + 1).start else cleanText.length
+      val line = cleanText.substring(start, end).trim
+      val date = m.group(2)
+      val mm = date.split("/")(0).toInt
+      val hasCam = cameraRe.findFirstIn(line).isDefined
+      val isClosed = closedRe.findFirstIn(line).isDefined
+      Some(Entry(mm, hasCam, isClosed))
     }
 
     // ---------- Question 1 ----------
