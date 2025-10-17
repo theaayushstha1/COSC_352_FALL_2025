@@ -1,5 +1,4 @@
 import java.net.{URL, HttpURLConnection}
-import java.nio.charset.StandardCharsets
 import scala.io.Source
 import scala.util.matching.Regex
 
@@ -20,25 +19,25 @@ object Project4 {
     val url = "https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html"
     val html = fetch(url)
 
-    // Remove HTML tags and normalize whitespace
+    // Strip tags and normalize
     val noTags = "<[^>]+>".r.replaceAllIn(html, "")
     val cleanText = noTags.replaceAll("\r", "")
     val lines = cleanText.split("\n").map(_.trim).filter(_.nonEmpty)
 
-    // The blog lists rows that typically begin with a 3-digit incident counter like "001 01/01/25 ..."
-    // We'll parse (month, hasCamera, isClosed) from such lines.
+    // Rows typically begin like: "001 01/05/25 ..."
     case class Entry(month: Int, hasCamera: Boolean, isClosed: Boolean)
 
-    // Example-ish pattern: "123 02/05/25 Victim Name 25 M ... 2 cameras ... Closed"
-    // We capture: (counter) (MM)/(DD)/(YY) then leave the rest loose for simple keyword checks.
+    // Use raw (triple-quoted) regex strings
     val pattern: Regex = """^(\d{3})\s+(\d{2})/(\d{2})/(\d{2})\b.*$""".r
+    val cameraRe: Regex = """(?i)\b\d+\s*cameras?\b""".r
+    val closedRe:  Regex = """(?i)\bclosed\b""".r
 
     val entries = lines.flatMap { line =>
       line match {
         case pattern(_, mm, _, _) =>
           val month = mm.toInt
-          val hasCam = "(?i)\b\d+\s*cameras?\b".r.findFirstIn(line).isDefined
-          val isClosed = "(?i)\bclosed\b".r.findFirstIn(line).isDefined
+          val hasCam = cameraRe.findFirstIn(line).isDefined
+          val isClosed = closedRe.findFirstIn(line).isDefined
           Some(Entry(month, hasCam, isClosed))
         case _ => None
       }
@@ -50,7 +49,7 @@ object Project4 {
     val byMonth = entries.groupBy(_.month).view.mapValues(_.length).toMap
     (1 to 12).foreach { m =>
       val count = byMonth.getOrElse(m, 0)
-      println(s"${months(m-1)}: ${count}")
+      println(s"${months(m-1)}: $count")
     }
 
     // ---------- Question 2 ----------
@@ -63,8 +62,8 @@ object Project4 {
 
     def pct(n: Int, d: Int): String = if (d == 0) "0%" else f"${(n.toDouble/d*100)}%.1f%%"
 
-    println(s"Total parsed incidents: ${total}")
-    println(s"With cameras: ${withCam}, Closed with cameras: ${closedWith} (${pct(closedWith, withCam)})")
-    println(s"Without cameras: ${withoutCam}, Closed without cameras: ${closedWithout} (${pct(closedWithout, withoutCam)})")
+    println(s"Total parsed incidents: $total")
+    println(s"With cameras: $withCam, Closed with cameras: $closedWith (${pct(closedWith, withCam)})")
+    println(s"Without cameras: $withoutCam, Closed without cameras: $closedWithout (${pct(closedWithout, withoutCam)})")
   }
 }
