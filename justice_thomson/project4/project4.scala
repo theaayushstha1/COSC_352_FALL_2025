@@ -3,7 +3,7 @@ import scala.util.matching.Regex
 
 object Project4 {
   def main(args: Array[String]): Unit = {
-    val url = "https://chamspage.blogspot.com/2024/01/2024-baltimore-city-homicide-list.html"
+    val url = "https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html"
     val html = Source.fromURL(url).mkString
     val cleanText = """<[^>]+>""".r.replaceAllIn(html, "")  // Remove HTML tags
     val lines = cleanText.split("\n").map(_.trim).filter(_.nonEmpty).filter(l => l.matches("^\\d{3}.*"))
@@ -25,7 +25,7 @@ object Project4 {
     }
 
     // Question 1
-    println("Question 1: How many homicides occurred in each month of 2024?")
+    println("Question 1: How many homicides occurred in each month of 2025?")
     val months = Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
     val countByMonth = entries.groupBy(_.month).map { case (m, es) => (m, es.size) }
     for (m <- 1 to 12) {
@@ -34,7 +34,7 @@ object Project4 {
     }
 
     // Question 2
-    println("\nQuestion 2: What is the impact of surveillance cameras on case closure rates in 2024 homicides?")
+    println("\nQuestion 2: What is the impact of surveillance cameras on case closure rates in 2025 homicides?")
     val total = entries.size
     val withCamera = entries.count(_.hasCamera)
     val withoutCamera = total - withCamera
@@ -46,4 +46,3 @@ object Project4 {
     println(s"Closed cases without cameras: $closedWithout / $withoutCamera (${if (withoutCamera > 0) (closedWithout.toDouble / withoutCamera * 100).round else 0}%)")
   }
 }
-
