@@ -32,4 +32,4 @@ COPY Project4.scala /app/Project4.scala
 RUN mkdir -p out && scalac -d out Project4.scala
 
 # --- Run program by default ---
-CMD ["scala", "-classpath", "out", "Project4"]
+CMD ["java", "-cp", "/usr/local/scala3/lib/*:out", "Project4"]
