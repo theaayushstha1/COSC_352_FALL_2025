@@ -29,4 +29,7 @@ Insight: Highest closure rate category = Blunt Force at 100.00%; lowest = Other 
 
 From this folder (contains Dockerfile and run.sh):
 
+## How to Run
+Execute the script: ./run.sh
+
 
