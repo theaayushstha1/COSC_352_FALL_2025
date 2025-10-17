@@ -9,6 +9,6 @@ export DOCKER_BUILDKIT=1
 echo "🛠️  Building Docker image ${IMAGE_NAME}..."
 docker build -t "${IMAGE_NAME}" -f Dockerfile .
 
-echo "🚀 Running container..."
+echo " Running container..."
 # --rm to auto-remove, --network default so it can reach the internet
 docker run --rm "${IMAGE_NAME}"
