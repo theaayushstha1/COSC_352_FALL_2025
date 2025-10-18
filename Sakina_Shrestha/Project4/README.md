@@ -1,14 +1,14 @@
 # Project 4 — Sakina Shrestha
 
-Native Scala program that fetches the public Baltimore homicide list from chamspage and answers two original questions with only standard Scala/Java. [Data source updates over time; numbers shown below are sample results from a recent run.] 
+Native Scala program that fetches the public Baltimore homicide list from chamspage and answers two original questions with only standard Scala.
 
 ## Questions answered
 
 - Q1: How do case closure rates differ when a surveillance camera is present versus absent at the intersection? (also reports average victim age)  
 
-WITH camera: count=23 closed=9 rate=39.13% avgAge=35.17391304347826
+WITH camera: count=23 closed=9 rate=39.13% avgAge=35.17
 
-WITHOUT camera: count=76 closed=25 rate=32.89% avgAge=35.486486486486484
+WITHOUT camera: count=76 closed=25 rate=32.89% avgAge=35.486
 
 Insight: Presence of cameras corresponds to a 6.24% absolute difference in closure rate.
 
@@ -16,11 +16,11 @@ Insight: Presence of cameras corresponds to a 6.24% absolute difference in closu
 
 Blunt Force: count=1 closed=1 rate=100.00% avgAge=43.0
 
-Other: count=13 closed=2 rate=15.38% avgAge=44.69230769230769
+Other: count=13 closed=2 rate=15.38% avgAge=44.69
 
-Shooting: count=76 closed=25 rate=32.89% avgAge=32.851351351351354
+Shooting: count=76 closed=25 rate=32.89% avgAge=32.851
 
-Stabbing: count=9 closed=6 rate=66.67% avgAge=42.22222222222222
+Stabbing: count=9 closed=6 rate=66.67% avgAge=42.22
 
 Insight: Highest closure rate category = Blunt Force at 100.00%; lowest = Other at 15.38%.
 
@@ -28,4 +28,8 @@ Insight: Highest closure rate category = Blunt Force at 100.00%; lowest = Other 
 ## Quickstart
 
 From this folder (contains Dockerfile and run.sh):
+
+## How to Run
+Execute the script: ./run.sh
+
 
