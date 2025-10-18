@@ -39,9 +39,6 @@ The script will check if the Docker image exists, build the image if needed, run
 - Filters for statistical relevance (minimum 3 cases per neighborhood)
 - Provides both raw numbers and percentages for easy interpretation
 
-## Author
-Created for COSC 44031 - Fall 2025
-Morgan State University
 
 ## Data Acknowledgment
 Homicide data maintained by Chams at https://chamspage.blogspot.com/
