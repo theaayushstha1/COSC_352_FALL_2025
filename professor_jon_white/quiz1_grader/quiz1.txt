@@ -1,0 +1,1 @@
+Explain what a Turing Machine is, how it works and why it is important to Computer Science.   What does it mean when we call a programming language “Turing Complete” and give some examples of both Turing Complete and Non Turing Complete Programming Languages.

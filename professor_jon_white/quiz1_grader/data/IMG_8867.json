@@ -1,0 +1,31 @@
+{
+  "name": "Raegan Green",
+  "matched_name": "Raegan Green",
+  "login_id": "raegan_green",
+  "answer_text": "Raegan Green  Quiz #1   10/14\n\nA Turing machine is a machine that determines whether a computer can solve any problem given enough time and memory. This is important to computer science because our machines should be able to solve various problems we give it. It means that it is able to solve any computational problem when given\n\nTuring complete:\nJava, Python, Kotlin, Ruby, JavaScript, React\n\nNon-Turing complete\nSQL Golang, ?",
+  "scores": {
+    "question_1": {
+      "score": 10,
+      "feedback": "You gesture at the idea that it captures what can be solved with enough time and memory, which touches computability. However, a Turing Machine is specifically an abstract model with an infinite tape, a read/write head, a finite set of states, and a transition function\u2014not a device that \u2018determines\u2019 if a computer can solve any problem."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "No description of the mechanism. To earn full credit, explain that the machine reads a symbol on the tape, uses its current state and that symbol to write a symbol, move the head left or right, and change state according to a transition function, and may halt."
+    },
+    "question_3": {
+      "score": 10,
+      "feedback": "You note that it matters for solving problems, which is a start. For full credit, connect it to the foundations of computability: defining the limits of what can be computed (decidable vs. undecidable problems), providing a universal model of computation, and informing language and machine design."
+    },
+    "question_4": {
+      "score": 10,
+      "feedback": "Partial. You imply it can \u2018solve any computational problem,\u2019 which is too strong. Turing Complete means a language can simulate a Turing Machine (given unbounded memory/time), not that it solves every problem\u2014some problems are uncomputable."
+    },
+    "question_5": {
+      "score": 10,
+      "feedback": "Mixed. Java, Python, Kotlin, Ruby, and JavaScript are Turing-complete\u2014good. React is a library, not a language. In the non\u2013Turing-complete list: standard SQL (without procedural extensions) is typically not Turing-complete, but Go/Golang is Turing-complete, so that\u2019s incorrect. For non\u2013Turing-complete examples, HTML, CSS, and basic regular expressions are better choices."
+    }
+  },
+  "total_score": 40,
+  "overall_feedback": "Raegan, I appreciate your intuition that Turing Machines connect to what problems are solvable, and you listed several correct Turing-complete languages. To strengthen your understanding, focus on the concrete mechanics of a Turing Machine (tape, head, states, transitions) and why that model underpins computability theory. Be precise with Turing completeness: it means being able to simulate a Turing Machine with unbounded memory, not \u2018solving any problem.\u2019 For examples, distinguish languages and libraries, and ensure non\u2013Turing-complete choices truly lack the ability to simulate a TM. You\u2019re on the right path\u2014tightening definitions and adding operational details will boost your score significantly.",
+  "grading_time_seconds": 96.24
+}

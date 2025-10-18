@@ -69,10 +69,29 @@ url = sys.argv[1]
 html_content = read_link(url)
 
 if html_content:
-    parser = TableParser(target_class="wikitable")  # filter for class="wikitable"
+    # Allow configuring which table class to filter for via the TABLE_CLASS env var:
+    # - If TABLE_CLASS is unset -> default to 'wikitable' (preserve previous behavior)
+    # - If TABLE_CLASS is set to an empty string -> parse all tables (no class filter)
+    import os
+    table_class_env = os.environ.get("TABLE_CLASS", None)
+    if table_class_env is None:
+        target_class = "wikitable"
+    elif table_class_env == "":
+        target_class = None
+    else:
+        target_class = table_class_env
+
+    parser = TableParser(target_class=target_class)
     parser.feed(html_content)
 
     print("Wikitable tables found:", len(parser.tables))
+
+    import os
+
+    # Allow controlling output directory from environment. If OUTPUT_DIR is set,
+    # write CSVs there; otherwise write to current working directory.
+    output_dir = os.environ.get("OUTPUT_DIR", ".")
+    os.makedirs(output_dir, exist_ok=True)
 
     for idx, table in enumerate(parser.tables):
         print(f"Table {idx+1}:")
@@ -81,10 +100,11 @@ if html_content:
         print("-" * 40)
         # Write each table to a CSV file
         csv_filename = f"table_{idx+1}.csv"
-        with open(csv_filename, "w", newline='', encoding='utf-8') as csvfile:
+        out_path = os.path.join(output_dir, csv_filename)
+        with open(out_path, "w", newline='', encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerows(table)
-        print(f"Saved Table {idx+1} to {csv_filename}")
+        print(f"Saved Table {idx+1} to {out_path}")
 else:
     print("No HTML content retrieved.")
 #TO TEST PROGRAM RUN: python project1.py "https://en.wikipedia.org/wiki/Deltora_Quest_(TV_series)" OR python project1.py "https://en.wikipedia.org/wiki/List_of_programming_languages"

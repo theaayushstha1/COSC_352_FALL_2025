@@ -235,7 +235,7 @@ def run_extraction(source_path):
 
 if __name__ == "__main__":
     # Command line usage - check if URL/file provided as argument
-    if len(sys.argv) >= 1:
+    if len(sys.argv) > 1:
         run_extraction(sys.argv[1])
     else:
         # Default example if no arguments provided

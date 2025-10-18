@@ -1,0 +1,31 @@
+{
+  "name": "Eion Capen",
+  "matched_name": "Eion Capen",
+  "login_id": "eion_capen",
+  "answer_text": "1. a turning machine is a multy funcniel devi made by alan turning kinda like the first ai that goes through a problem one by one in a thinking for mat.\n\n2. it work by analizing a problem and breaking it down into lillte problem working across the board. Shown by my proffessor it work by going back and forward through different sets rangeing from a - n if needed. placing each block of data in its nessory place.\n\n3 that it can go through a interface in order completing the task at hand learning as it goes\n\n4 Python\n\n5 HTML",
+  "scores": {
+    "question_1": {
+      "score": 10,
+      "feedback": "Partial credit. You recognized Alan Turing and that a Turing machine steps through problems, but it\u2019s not an AI or a general multi-function device. It\u2019s an abstract mathematical model of computation (states, tape, head, transition rules)."
+    },
+    "question_2": {
+      "score": 10,
+      "feedback": "Partial credit. You mentioned moving back and forth, which hints at the tape motion. A full answer should state: a head reads a symbol on an (unbounded) tape, writes a symbol, moves left or right, and changes state according to a transition function until it halts."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "This does not address why Turing machines matter. You should explain that they formalize what is computable, underpin the Church\u2013Turing thesis, and let us reason about decidability and the limits of algorithms."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "No definition provided. A language is Turing Complete if it can simulate a Turing machine (i.e., express any computable function given enough time and memory), typically requiring unbounded memory and conditional/looping constructs."
+    },
+    "question_5": {
+      "score": 10,
+      "feedback": "Partial credit. Python is Turing complete; HTML by itself is not. For full credit, give multiple examples or clearly label categories. Examples: TC\u2014C, Java, Python, JavaScript, Brainf*ck. Non-TC\u2014HTML, JSON, regular expressions without backreferences, SQL (in some standards), CSS (without tricks/extensions)."
+    }
+  },
+  "total_score": 30,
+  "overall_feedback": "Eion, I appreciate your effort and the intuition that a Turing machine proceeds step by step. To grow, anchor your understanding in the formal model: an infinite tape, a read/write head, a finite set of states, and a transition function. Be sure you can explain why this model is foundational\u2014what it tells us about the limits of computation\u2014and define Turing completeness precisely. Your examples section had the right idea (Python vs. HTML); add more examples and label them clearly next time. You\u2019re on the right track\u2014tighten the definitions and you\u2019ll do great.",
+  "grading_time_seconds": 113.28
+}
