@@ -66,14 +66,14 @@ object Main extends App {
     // --------------------------
     println("\n===== Baltimore Homicide Analysis =====\n")
 
-    println("Question 1: Which street has the highest number of homicide cases?")
+    println("Question 1: Name one street with one of the highest number of homicide cases?")
     topStreet match {
       case Some((street, count)) => println(s"$street : $count cases")
       case None => println("No street data found.")
     }
 
     println()
-    println("Question 2: Total number of homicide cases that have been closed:")
+    println("Question 2: What is total number of homicide cases that have been closed:")
     println(closedCases)
 
     println("\n=======================================\n")
