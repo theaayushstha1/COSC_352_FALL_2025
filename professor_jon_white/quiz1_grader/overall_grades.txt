@@ -1,0 +1,69 @@
+Searching for grading JSON files in data directory...
+Found 21 JSON files to process
+
+Processing: IMG_8863.json
+Processing: IMG_8864.json
+Processing: IMG_8865.json
+Processing: IMG_8866.json
+Processing: IMG_8867.json
+Processing: IMG_8868.json
+Processing: IMG_8869.json
+Processing: IMG_8870.json
+Processing: IMG_8871.json
+Processing: IMG_8872.json
+Processing: IMG_8873.json
+Processing: IMG_8874.json
+Processing: IMG_8875.json
+Processing: IMG_8876.json
+Processing: IMG_8877.json
+Processing: IMG_8878.json
+Processing: IMG_8879.json
+Processing: IMG_8880.json
+Processing: IMG_8881.json
+Processing: IMG_8882.json
+Processing: IMG_8883.json
+
+✓ CSV report created: grade_report.csv
+Total students: 21
+
+Grade Summary:
+  Average Score: 39.05/100
+  Highest Score: 93/100
+  Lowest Score: 11/100
+
+Per-Question Averages:
+  Question 1: 7.81/20
+  Question 2: 4.95/20
+  Question 3: 6.52/20
+  Question 4: 7.24/20
+  Question 5: 12.52/20
+
+================================================================================
+ALL STUDENT GRADES
+================================================================================
+Student Name                     Q1   Q2   Q3   Q4   Q5  Total
+--------------------------------------------------------------------------------
+Aayush Shrestha                  16    8    6    8   17     55
+Amit Bhattacharji                16   17   18   18   19     88
+CLYDE BADOO                       6    2    6    1    6     21
+Christian Douglass               12    6    6   10   20     54
+Christian Ibsen                   2    1    3    0    6     12
+Crystal Cole                      3    0    3    2   16     24
+David Johnny                      8    2    8   11   18     47
+Eion Capen                        8    6    3    2   16     35
+Great-Anthony Unmakord            4    0    4    3    8     19
+Isaac Rankin                     14    8   10    6   17     55
+Kaleb Dunn                        2    1    5    3    0     11
+Kayla Trogdon                     4    4    4    4   10     26
+Kyndal Maclin                     3    2    2    3    8     18
+Minya Harry                       6    4    6   12   18     46
+REDACTED                          6    3    6    8    6     29
+Raegan Green                      6    2    6   10    7     31
+Randolph Scott                    6    2    0    4    1     13
+Ryan Anyague                     12   10   13   16   18     69
+Schking Belisauge                 4    2    3    3   14     26
+Unknown Student                  18   18   19   18   20     93
+Unknown Student                   8    6    6   10   18     48
+--------------------------------------------------------------------------------
+AVERAGE                         7.8  5.0  6.5  7.2 12.5   39.0
+================================================================================

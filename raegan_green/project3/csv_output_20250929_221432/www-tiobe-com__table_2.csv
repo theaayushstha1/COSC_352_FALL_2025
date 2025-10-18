@@ -1,0 +1,31 @@
+Position,Programming Language,Ratings
+21,Classic Visual Basic,0.93%
+22,COBOL,0.91%
+23,Lisp,0.77%
+24,Ruby,0.76%
+25,Swift,0.73%
+26,Prolog,0.67%
+27,SAS,0.65%
+28,Dart,0.62%
+29,Objective-C,0.49%
+30,Julia,0.47%
+31,Lua,0.43%
+32,Scala,0.38%
+33,Haskell,0.37%
+34,(Visual) FoxPro,0.34%
+35,TypeScript,0.33%
+36,VBScript,0.27%
+37,PL/SQL,0.26%
+38,ABAP,0.22%
+39,Solidity,0.20%
+40,Elixir,0.18%
+41,PowerShell,0.18%
+42,ML,0.17%
+43,V,0.16%
+44,GAMS,0.16%
+45,Bash,0.16%
+46,Transact-SQL,0.15%
+47,Ladder Logic,0.15%
+48,Zig,0.14%
+49,LabVIEW,0.14%
+50,Erlang,0.14%

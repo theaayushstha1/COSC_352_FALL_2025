@@ -1,0 +1,10 @@
+Language,Memory safety,Type safety,Null safety,Data race safety
+Javascript,Yes (GC),weak,No,Yes (single-threaded)
+Typescript,Yes (GC),strong (in strict mode),Yes,Yes (single-threaded)
+Dart,Yes (GC),strong,Yes,Yes (single-threaded)
+Python,Yes (GC),strong,No,Yes (single-threaded)
+Java,Yes (GC),strong,No,No
+Go,Yes (GC),strong,No,Yes
+Rust,"Yes (RAII, ownership)",strong,Yes,Yes
+C++,Partially (RAII),weak,No,No
+C,No,weak,No,No

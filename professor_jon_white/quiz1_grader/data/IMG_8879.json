@@ -1,0 +1,31 @@
+{
+  "name": "Aayush Shrestha",
+  "matched_name": "Aayush Shrestha",
+  "login_id": "aayush_shrestha",
+  "answer_text": "Quiz 1\nName: Aayush Shrestha\n\n-> Turing Machine is theoritical model of computation which is used to define what an algorithm is and what it means for a problem to be computable.\n\nTuring machine works like this; it reads symbol from a single line of algorithm and checks the condition based on if else the. if the condition satisfies it moves on to next step/ if false it exits and terminate the process until the end result is obtained.\n\nwhen a programming language is turing complete it means it's able to define the algorithm and understand the problem behind it and finally make the problem more computable and easier,\n\nTuring Machine is important to computer Science because it helps in interpting the problem much faster and increase the accuracy by making it computable\n\nExample Turing Complete & Non-Turing Complete programing:\n\nJava\nC++\nC\n\nJSon\nHML",
+  "scores": {
+    "question_1": {
+      "score": 20,
+      "feedback": "Clear and correct: you identified a Turing Machine as a theoretical model of computation used to formalize algorithms and computability. Nice job."
+    },
+    "question_2": {
+      "score": 10,
+      "feedback": "Partial. You mention reading symbols and making decisions, but a Turing Machine specifically has an infinite tape, a read/write head that moves left or right, a finite set of states, and a transition function that writes, moves, and changes state until it halts. It\u2019s not just an if/else that exits on false."
+    },
+    "question_3": {
+      "score": 10,
+      "feedback": "Partial. You connect TMs to computability, which is good, but speed/accuracy isn\u2019t the key point. Their importance is in defining the limits of computation (what can/can\u2019t be solved), proving undecidability (e.g., the Halting Problem), and showing the equivalence of general-purpose models of computation."
+    },
+    "question_4": {
+      "score": 10,
+      "feedback": "Partial. Turing Complete means a language can simulate a universal Turing Machine (i.e., compute any computable function given unbounded time/memory). It\u2019s not about \u201cunderstanding the problem,\u201d but about having unbounded looping/recursion and memory."
+    },
+    "question_5": {
+      "score": 20,
+      "feedback": "Correct examples. Java, C++, and C are Turing-complete. JSON and HTML (markup/data formats without unbounded control flow) are non\u2013Turing-complete."
+    }
+  },
+  "total_score": 70,
+  "overall_feedback": "Aayush, you show a solid grasp of the high-level idea of Turing Machines and gave good examples of TC vs. non-TC languages. To reach the next level, focus on the concrete mechanics (tape, head, states, transition function, halting) and the formal significance: TMs define computability and help us prove limits like undecidability. For Turing completeness, emphasize the ability to simulate a universal TM and the need for unbounded control flow/memory. Keep going\u2014you\u2019re on the right track.",
+  "grading_time_seconds": 93.75
+}

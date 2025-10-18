@@ -1,0 +1,31 @@
+{
+  "name": "Christian Ibsen",
+  "matched_name": "Christian Ibsen",
+  "login_id": "christian_ibsen",
+  "answer_text": "Christian Ibsen\nOct - 14 - 2025\n\nA turing machine is a process that takes excess code and makes it more present. it is important because without it the processing time for code to execute is high. When a language is compiled it makes it so the code is easily executable\n\nTuring complete;\nPython\nJava\nC#\n\nNon-Turing!\nScala\n#",
+  "scores": {
+    "question_1": {
+      "score": 0,
+      "feedback": "This defines a Turing machine as a process that cleans up code, which is not correct. A Turing machine is an abstract mathematical model of computation consisting of an infinite tape, a read/write head, a finite set of states, and a transition function."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "No description of the tape, head movements, reading/writing symbols, or state transitions. To earn credit, explain that the machine follows a transition function to read a symbol, write a symbol, move left/right, and change state."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "The importance was framed in terms of execution speed and compilation, which isn\u2019t the role of Turing machines. They matter because they define what is computable at all and let us reason about decidability and limits of algorithms."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "Equating Turing completeness with being compiled is a misconception. A language is Turing Complete if it can simulate a Turing machine (e.g., supports unbounded memory and conditional/looping/recursion), regardless of whether it\u2019s compiled or interpreted."
+    },
+    "question_5": {
+      "score": 10,
+      "feedback": "Partial credit. Python, Java, and C# are good examples of Turing-complete languages. However, \u201cScala\u201d is also Turing complete, and \u201c#\u201d is not a valid example. Non\u2013Turing-complete examples would include HTML, CSS, or a pure regular-expression engine; limited SQL without recursion is another."
+    }
+  },
+  "total_score": 10,
+  "overall_feedback": "Christian, I appreciate you giving concrete language examples\u2014your instincts there are solid. The core concepts, though, are mixed up. Turing machines aren\u2019t about cleaning or compiling code; they\u2019re the fundamental model we use to define what can be computed. Review the mechanics (tape, head, states, transition function) and how Turing completeness means a language can simulate that model. With those anchors, your explanations will become precise and industry-ready. I encourage you to revisit your notes and we can chat in office hours to solidify this\u2014once it clicks, many other CS topics will make much more sense.",
+  "grading_time_seconds": 87.2
+}

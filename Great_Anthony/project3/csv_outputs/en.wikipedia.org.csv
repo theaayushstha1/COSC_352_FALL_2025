@@ -1,0 +1,33 @@
+Table_Number,Websites,Popularity (unique visitors per month)[1],Front-end (Client-side),Back-end (Server-side),Database,C#,C,C++,D,Elixir,Erlang,Go,Hack,Haskell,Java,JavaScript,Perl,PHP,Python,Ruby,Scala
+1,Google[2],2800000000,"JavaScript, TypeScript","C, C++, Go,[3] Java, Python, Node","Bigtable,[4] MariaDB[5]",,,,,,,,,,,,,,,,
+1,Facebook,1120000000,"JavaScript, TypeScript, Flow","Hack/HHVM, PHP, Python, C++, Java, Erlang, D,[6] Haskell[7]","MariaDB, MySQL,[8] HBase, Cassandra[9]",,,,,,,,,,,,,,,,
+1,YouTube,1100000000,"JavaScript, TypeScript","Python, C, C++, Java,[10] Go[11]","Vitess, BigTable, MariaDB[5]",,,,,,,,,,,,,,,,
+1,Yahoo,750000000,JavaScript,PHP,"PostgreSQL, HBase, Cassandra, MongoDB,[12]",,,,,,,,,,,,,,,,
+1,Etsy,"516,000,000 (Total, not unique)[13]",JavaScript,PHP[14],"MySQL, Redis[15]",,,,,,,,,,,,,,,,
+1,Amazon,"2,400,000,000[16]",JavaScript,"Java, C++, Perl[17]","DynamoDB, RDS/Aurora, Redshift[18]",,,,,,,,,,,,,,,,
+1,Wikipedia,475000000,JavaScript,PHP,MariaDB[19],,,,,,,,,,,,,,,,
+1,Fandom,"315,000,000[20]",JavaScript,PHP,MySQL,,,,,,,,,,,,,,,,
+1,X,290000000,JavaScript,"C++, Java,[21] Scala,[22] Ruby (Ruby on Rails)",MySQL[23],,,,,,,,,,,,,,,,
+1,Bing,285000000,JavaScript,"C++, C#","Microsoft SQL Server, Cosmos DB",,,,,,,,,,,,,,,,
+1,eBay,285000000,JavaScript,"Java,[24] JavaScript,[25] Scala[26]",Oracle Database,,,,,,,,,,,,,,,,
+1,MSN,280000000,JavaScript,C# (ASP.NET),Microsoft SQL Server,,,,,,,,,,,,,,,,
+1,LinkedIn,260000000,JavaScript,"Java, JavaScript,[27] Scala",Venice[28][29],,,,,,,,,,,,,,,,
+1,Pinterest,250000000,JavaScript,"Python (Django),[30] Erlang, Elixir[31]","MySQL, Redis[32]",,,,,,,,,,,,,,,,
+1,WordPress.com,"240,000,000[33]",JavaScript,PHP[34],MariaDB[35],,,,,,,,,,,,,,,,
+1,Netflix,"223.090.000 (Subscribers, not visitors)",JavaScript,"Python, Java[36]","NMDB,[37] PostgreSQL",,,,,,,,,,,,,,,,
+2,Google,,,,,No,Yes,Yes,No,No,No,Yes,No,No,Yes,Yes,No,No,Yes,No,No
+2,Facebook,,,,,No,No,Yes,Yes,No,Yes,No,Yes,Yes,Yes,No,No,Yes,Yes,No,No
+2,YouTube,,,,,No,Yes,Yes,No,No,No,Yes,No,No,Yes,No,No,No,Yes,No,No
+2,Yahoo,,,,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+2,Etsy,,,,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+2,Amazon,,,,,No,No,Yes,No,No,No,No,No,No,Yes,No,Yes,No,No,No,No
+2,Wikipedia,,,,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+2,Fandom,,,,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+2,X,,,,,No,No,Yes,No,No,No,No,No,No,Yes,No,No,No,No,Yes,Yes
+2,Bing,,,,,Yes,No,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No
+2,eBay,,,,,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes
+2,MSN,,,,,Yes,No,No,No,No,No,No,No,No,No,No,No,No,No,No,No
+2,LinkedIn,,,,,No,No,No,No,No,No,No,No,No,Yes,Yes,No,No,No,No,Yes
+2,Pinterest,,,,,No,No,No,No,Yes,Yes,No,No,No,No,No,No,No,Yes,No,No
+2,WordPress.com,,,,,No,No,No,No,No,No,No,No,No,No,No,No,Yes,No,No,No
+2,Netflix,,,,,No,No,No,No,No,No,No,No,No,Yes,No,No,No,Yes,No,No

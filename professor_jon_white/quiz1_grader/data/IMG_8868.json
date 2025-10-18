@@ -1,0 +1,31 @@
+{
+  "name": "Kayla Trogdon",
+  "matched_name": "Kayla Trogdon",
+  "login_id": "kayla_trogdon",
+  "answer_text": "Kayla Trogdon (10/14)\nCSC 352\n\nTURING LANGUAGE:\nC++\nJava\nPython\n\nNON-TURING LANGUAGES:\nHTML/CSS\nROS+\nGolang\n\nTURING Machine:\na computing environment that\u2019s able to create virtual machines w/in the language\u2019s native library.\n\nHow:\nit take in data, complies the data &/ prompting in the language to do requested actions, outputs the actions programmed w/in the virtual machine.\n\nIt\u2019s important in Computer Science it gives the programmer a space to code w/out being precautious of the backend environment that is running the developed program.\n\n\u201cTuring Complete\u201d: the programming language was able to effectively disperse an output from the prompts/ development of the program in a virtual machine.",
+  "scores": {
+    "question_1": {
+      "score": 0,
+      "feedback": "This defines a virtual machine, not a Turing Machine. A Turing Machine is a mathematical model of computation consisting of an infinite tape, a read/write head, a finite set of states, and a transition function."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "Your description reflects compiling and running programs, not the TM mechanics. A TM repeatedly reads a tape symbol, writes a symbol, moves the head left or right, and changes state according to its transition function, halting when it reaches a halting state."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "Importance is not about providing a coding environment. TMs matter because they characterize what is computable (Church\u2013Turing thesis), let us reason about decidability/undecidability (e.g., the Halting Problem), and underpin complexity theory and language design."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "Turing completeness is not about producing output in a VM. A language is Turing Complete if it can simulate a Turing Machine (informally: has conditional branching and unbounded memory/loops or recursion)."
+    },
+    "question_5": {
+      "score": 10,
+      "feedback": "You provided examples in both categories. C++, Java, and Python are Turing Complete; HTML/CSS are typically non\u2013Turing complete. However, Go (Golang) is Turing Complete, so listing it as non\u2013Turing is incorrect. \"ROS+\" is unclear. Additional correct non\u2013TC examples: JSON, regular expressions without backreferences."
+    }
+  },
+  "total_score": 10,
+  "overall_feedback": "Kayla, I appreciate the effort and the organization of your answer. However, the core concepts were conflated with virtual machines and compilation. Please revisit Turing Machines as a simple but powerful mathematical model (tape, head, states, transition function) and why they matter for computability and decidability. Also refine your understanding of Turing completeness and examples\u2014Go is Turing complete; HTML/CSS are not. With these corrections, you\u2019ll have a strong foundation for reasoning about what programs and languages can and cannot do.",
+  "grading_time_seconds": 164.04
+}
