@@ -1,1 +1,1 @@
-//No external plugins used
+// no external plugins needed
