@@ -50,58 +50,31 @@ build_and_run_project4() {
     image_name=$(echo "$image_name" | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:]_-')
 
     echo "  Building Docker image: $image_name"
-    {
-        echo "=== BUILD OUTPUT ==="
-        echo ""
-    } >> "$OUTPUT_FILE"
 
-    if docker build -t "$image_name" "$project_path" >> "$OUTPUT_FILE" 2>&1; then
+    if docker build -t "$image_name" "$project_path" > /dev/null 2>&1; then
         echo "  Build successful"
-        {
-            echo ""
-            echo "=== BUILD SUCCESSFUL ==="
-            echo ""
-        } >> "$OUTPUT_FILE"
     else
         echo "  Build failed"
-        {
-            echo ""
-            echo "=== BUILD FAILED ==="
-            echo ""
-        } >> "$OUTPUT_FILE"
+        echo "ERROR: Build failed" >> "$OUTPUT_FILE"
         return
     fi
 
     # Run Docker container
     echo "  Running container..."
-    {
-        echo "=== RUN OUTPUT ==="
-        echo ""
-    } >> "$OUTPUT_FILE"
 
     if timeout 60s docker run --rm "$image_name" >> "$OUTPUT_FILE" 2>&1; then
         echo "  Run successful"
-        {
-            echo ""
-            echo "=== RUN SUCCESSFUL ==="
-            echo ""
-        } >> "$OUTPUT_FILE"
+        echo "" >> "$OUTPUT_FILE"
     else
         local exit_code=$?
         if [ $exit_code -eq 124 ]; then
             echo "  Run timed out (60s limit)"
-            {
-                echo ""
-                echo "=== RUN TIMED OUT (60 seconds) ==="
-                echo ""
-            } >> "$OUTPUT_FILE"
+            echo "(TIMED OUT - 60 seconds)" >> "$OUTPUT_FILE"
+            echo "" >> "$OUTPUT_FILE"
         else
             echo "  Run failed"
-            {
-                echo ""
-                echo "=== RUN FAILED ==="
-                echo ""
-            } >> "$OUTPUT_FILE"
+            echo "(RUN FAILED)" >> "$OUTPUT_FILE"
+            echo "" >> "$OUTPUT_FILE"
         fi
     fi
 
