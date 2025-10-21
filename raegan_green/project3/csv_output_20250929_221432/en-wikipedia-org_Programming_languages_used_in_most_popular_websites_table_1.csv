@@ -1,0 +1,17 @@
+Websites,Popularity(unique visitors per month)[1],Front-end(Client-side),Back-end(Server-side),Database
+Google[2],"2,800,000,000","JavaScript, TypeScript","C, C++, Go,[3] Java, Python, Node","Bigtable,[4] MariaDB[5]"
+Facebook,"1,120,000,000","JavaScript, TypeScript, Flow","Hack/HHVM, PHP, Python, C++, Java, Erlang, D,[6] Haskell[7]","MariaDB, MySQL,[8] HBase, Cassandra[9]"
+YouTube,"1,100,000,000","JavaScript, TypeScript","Python, C, C++, Java,[10] Go[11]","Vitess, BigTable, MariaDB[5]"
+Yahoo,"750,000,000",JavaScript,PHP,"PostgreSQL, HBase, Cassandra, MongoDB,[12]"
+Etsy,"516,000,000(Total, not unique)[13]",JavaScript,PHP[14],"MySQL, Redis[15]"
+Amazon,"2,400,000,000[16]",JavaScript,"Java, C++, Perl[17]","DynamoDB, RDS/Aurora, Redshift[18]"
+Wikipedia,"475,000,000",JavaScript,PHP,MariaDB[19]
+Fandom,"315,000,000[20]",JavaScript,PHP,MySQL
+X,"290,000,000",JavaScript,"C++, Java,[21] Scala,[22] Ruby (Ruby on Rails)",MySQL[23]
+Bing,"285,000,000",JavaScript,"C++, C#","Microsoft SQL Server, Cosmos DB"
+eBay,"285,000,000",JavaScript,"Java,[24] JavaScript,[25] Scala[26]",Oracle Database
+MSN,"280,000,000",JavaScript,C# (ASP.NET),Microsoft SQL Server
+LinkedIn,"260,000,000",JavaScript,"Java, JavaScript,[27] Scala",Venice[28][29]
+Pinterest,"250,000,000",JavaScript,"Python (Django),[30] Erlang, Elixir[31]","MySQL, Redis[32]"
+WordPress.com,"240,000,000[33]",JavaScript,PHP[34],MariaDB[35]
+Netflix,"223.090.000 (Subscribers, not visitors)",JavaScript,"Python, Java[36]","NMDB,[37] PostgreSQL"

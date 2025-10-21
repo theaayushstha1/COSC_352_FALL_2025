@@ -1,0 +1,18 @@
+Project 3 – HTML Table Extraction with Docker
+
+This project automates running the Project 2 table extractor against multiple web pages inside a Docker container.
+The script (project3.sh) will:
+
+Accept a comma-separated list of URLs.
+
+Build the Docker image from Project 2 if it doesn’t already exist.
+
+Run the extractor once per URL.
+
+Save all output CSVs into a csv_outputs/ directory.
+
+Bundle all CSVs into a csv_outputs.zip archive.
+MAke script executable:
+chmod +x project3.sh
+Example run:
+./project3.sh "https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population,https://en.wikipedia.org/wiki/2024_Summer_Olympics_medal_table,https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites"

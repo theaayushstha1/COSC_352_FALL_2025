@@ -1,0 +1,11 @@
+# Lang2.py Docker Container
+
+## Project Description
+Docker container for running Lang2.py script that processes CSV data tables.
+
+## Quick Start
+
+### Build the Docker Image
+```bash
+cd project2/[YourName]
+docker build -t lang2-app .
