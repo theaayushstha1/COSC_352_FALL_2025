@@ -1,0 +1,31 @@
+{
+  "name": "Randolph Scott",
+  "matched_name": "Randolph Scott",
+  "login_id": "randolph_scott",
+  "answer_text": "10/13/25\n\nAn turing machine is a set of rules that can solve problems with any symbol in it when\n1) We call a language turing complete we're saying that it has successfully solved said problem and completed it. An example of Turing Complete is an completed and solved 2 table of math equations. An Non Turing complete example is you coding an program that says \"Hello world!\".",
+  "scores": {
+    "question_1": {
+      "score": 10,
+      "feedback": "You recognized that a Turing Machine is governed by a set of rules, which is a start. However, a clear definition should mention the tape, read/write head, a finite set of states, and a transition function. It\u2019s not about \u201cany symbol in it,\u201d but about how it reads/writes symbols on an infinite tape."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "No explanation of the mechanics. A strong answer would describe the tape, head that reads/writes/moves left or right, state transitions based on the current state and symbol, and halting."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "The response does not address why Turing Machines matter. You should connect them to the theory of computation: they formalize what is computable, define decidability/undecidability, and underpin limits like the Halting Problem."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "This is incorrect. Turing completeness does not mean a language has solved a particular problem. It means the language can simulate a Turing Machine (i.e., can compute any computable function given enough time and memory, typically via conditionals and unbounded loops/recursion)."
+    },
+    "question_5": {
+      "score": 0,
+      "feedback": "No valid examples of languages were provided. Examples: Turing-complete\u2014C, Python, JavaScript, Scheme, Brainf*ck. Non\u2013Turing-complete\u2014regular expressions (in their pure, theoretical form), SQL without recursion, HTML/CSS, or finite-state machines."
+    }
+  },
+  "total_score": 10,
+  "overall_feedback": "Randolph, I appreciate your effort and the instinct to describe a system of rules\u2014that\u2019s part of the idea. To grow here, focus on the concrete mechanics: a Turing Machine uses an infinite tape, a read/write head, and a transition function over states and symbols. Understanding that model explains why Turing completeness matters: a language is Turing complete if it can simulate that machine, enabling general computation. Next time, add specific mechanics, significance to CS, and precise examples of languages. You\u2019ve got the right curiosity\u2014let\u2019s channel it into sharper definitions and examples.",
+  "grading_time_seconds": 103.75
+}

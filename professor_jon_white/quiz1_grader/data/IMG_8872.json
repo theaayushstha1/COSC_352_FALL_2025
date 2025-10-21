@@ -1,0 +1,31 @@
+{
+  "name": "Crystal Cole",
+  "matched_name": "Crystal Cole",
+  "login_id": "crystal_coke",
+  "answer_text": "[crossed out text at top]\nA turing machine is a machine that is able to pass as a person. Back in the day it was very obvious if you were talking to a machine so the turing test was made. So basically it's when you can communicate with a machine without knowing it is. When a programming language is turing complete it means that a language can can make systems that can pass the turing test. some example of turing complete language are C++, C, java, some example of non-turing complete language is: SQL and html.\n\nCrystal Cole\nOct 14, 2025\nCOSC 352, Jon White Quiz 1",
+  "scores": {
+    "question_1": {
+      "score": 0,
+      "feedback": "You described the Turing Test (a machine passing as a human) rather than a Turing Machine. A Turing Machine is an abstract computational model with an infinite tape, a read/write head, a finite set of states, and a transition function."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "No description of the tape, head movements (left/right), reading/writing symbols, state transitions, or halting. Those mechanics explain how a Turing Machine performs computation."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "Importance wasn\u2019t addressed. Turing Machines matter because they define computability (Church\u2013Turing thesis), let us reason about decidability/undecidability, complexity, and the limits of what programs can do."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "Turing Completeness is not about passing the Turing Test. It means a language can simulate any Turing Machine (i.e., compute any computable function) given enough time and memory\u2014typically requiring conditional branching and unbounded memory."
+    },
+    "question_5": {
+      "score": 20,
+      "feedback": "Good examples. C, C++, and Java are Turing-complete. HTML is non\u2013Turing-complete. SQL is often taught as non\u2013Turing-complete in its pure relational form (though some dialects gain completeness via extensions)."
+    }
+  },
+  "total_score": 20,
+  "overall_feedback": "Crystal, I appreciate you giving concrete examples at the end\u2014those are on target. However, most of your response conflates the Turing Test with the Turing Machine. The Turing Machine is a theoretical model of computation (tape, head, states), not a test for human-like conversation. Review the mechanics of the model and why it defines the boundary of what\u2019s computable; then connect that to the definition of Turing completeness. You\u2019re close on the examples\u2014build from that by sharpening the core concepts. I\u2019m confident you can correct this with a focused review.",
+  "grading_time_seconds": 93.96
+}

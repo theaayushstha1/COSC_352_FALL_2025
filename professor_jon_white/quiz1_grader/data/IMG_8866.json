@@ -1,0 +1,31 @@
+{
+  "name": "Kyndal Maclin",
+  "matched_name": "Kyndal Maclin",
+  "login_id": "kyndal_maclin",
+  "answer_text": "1). a turing machine helps to find faster outputs throughout the program\n\n2). it means that it runs and executes the code in the most clear way\n\n3). python, java, javascript, c+, sql, c",
+  "scores": {
+    "question_1": {
+      "score": 0,
+      "feedback": "This is not an accurate definition. A Turing Machine is an abstract mathematical model of computation consisting of an infinite tape, a read/write head, a finite set of states, and a transition function. It defines what it means to compute, not how to make programs faster."
+    },
+    "question_2": {
+      "score": 0,
+      "feedback": "Not addressed. How it works: the machine reads the symbol under the head, uses a transition rule to write a symbol, move the head left or right, and change state; it repeats until it halts. That step-by-step process is the core mechanism."
+    },
+    "question_3": {
+      "score": 0,
+      "feedback": "Not addressed. Importance: Turing Machines underpin computability theory (what can/cannot be computed), the Church\u2013Turing thesis, decidability results (e.g., the Halting Problem), and they inform language and compiler design."
+    },
+    "question_4": {
+      "score": 0,
+      "feedback": "Your description is incorrect. A language is Turing Complete if it can simulate a universal Turing Machine\u2014i.e., given enough time and memory, it can compute any computable function (typically requiring conditionals and unbounded loops/recursion)."
+    },
+    "question_5": {
+      "score": 10,
+      "feedback": "Partial credit. Python, Java, JavaScript, and C/C++ (you wrote \"c+,\") are Turing-complete. Standard SQL is generally non\u2013Turing-complete (though some implementations add features that make it TC). You did not clearly separate which are TC vs non-TC. Clear non-TC examples: HTML, CSS, JSON, or regular expressions without backreferences."
+    }
+  },
+  "total_score": 10,
+  "overall_feedback": "Kyndal, I appreciate the effort to list some languages, and you included at least one non\u2013Turing-complete example. However, your answers show confusion about what a Turing Machine is and why it matters. Please review the core definition (tape, head, states, transition rules), how it operates step by step, and why it forms the foundation of computability and language power. Revisit what Turing completeness means (ability to simulate a universal TM) and practice classifying languages with clear justification. I encourage you to rework this after reviewing the notes or stopping by office hours\u2014I\u2019m confident you can master these fundamentals.",
+  "grading_time_seconds": 100.61
+}

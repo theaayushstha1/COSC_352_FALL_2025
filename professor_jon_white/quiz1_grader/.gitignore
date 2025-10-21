@@ -1,0 +1,48 @@
+# Environment files
+.env
+.venv/
+venv/
+env/
+
+# Backup files
+*~
+*.bak
+*.backup
+backups/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Generated PDFs
+pdfs/
+
+# Data files (optional - uncomment if you don't want to track graded files)
+# data/*.json
+# data/*.png
+# data/*_grade.log
+# data/*_regrade.log

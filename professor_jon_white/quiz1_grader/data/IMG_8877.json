@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "matched_name": null,
+  "login_id": null,
+  "answer_text": "A Turing machine is a theoretical model of computation which is used to define what an algorithm is and what it means for a problem to be computable.\n\nHow it works: It reads symbols from a single, infinite tape and follows a simple set of rules based on its current state & the symbol it reads, then writes a new symbol and moves left or right and then stops when the job is done\n\nWhy it\u2019s important: It is used to define what an algorithm is and what it means for a problem to be computable. If a Turing machine can\u2019t solve a problem, no computer can.\n\nA Turing Complete programming language is a language that has the same theoretical power as a turing machine, which means it can be used to write a program that can solve any computational problem given enough time and memory.\n\nExamples:\nTuring complete (can solve any problem): Python, Java, C++, C, PHP\nNon Turing Complete (limited in power)\nHTML (just for display)\nJSON (just for data)",
+  "scores": {
+    "question_1": {
+      "score": 20,
+      "feedback": "Excellent definition. You correctly identify a Turing machine as a theoretical model of computation used to formalize algorithms and computability."
+    },
+    "question_2": {
+      "score": 20,
+      "feedback": "Clear and accurate. You mention the tape, read/write of symbols, state-based rules, head movement left/right, and halting. That captures the core mechanics."
+    },
+    "question_3": {
+      "score": 20,
+      "feedback": "Well explained. You connect Turing machines to defining computability and the limits of what computers can do. Nice nod to the Church\u2013Turing perspective."
+    },
+    "question_4": {
+      "score": 20,
+      "feedback": "Spot on. You state that a Turing-complete language has the same power as a Turing machine and can express any computable algorithm given enough time and memory."
+    },
+    "question_5": {
+      "score": 20,
+      "feedback": "Great examples. Python/Java/C/C++/PHP are Turing complete; HTML and JSON are not since they are markup/data, not general computation."
+    }
+  },
+  "total_score": 100,
+  "overall_feedback": "Outstanding work. Your explanations are concise, technically accurate, and show real conceptual understanding\u2014from the mechanics of the machine to the broader significance for computability and language power. As you refine phrasing, prefer \u201cany computable problem\u201d rather than \u201cany problem\u201d to emphasize real-world resource limits and undecidable problems. Keep thinking this clearly\u2014you\u2019re building exactly the kind of foundation that will serve you well in advanced CS and industry.",
+  "grading_time_seconds": 55.02
+}
