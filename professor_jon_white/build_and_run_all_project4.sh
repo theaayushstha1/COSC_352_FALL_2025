@@ -39,7 +39,7 @@ build_and_run_project4() {
 
     # Check if Dockerfile exists
     if [ ! -f "$project_path/Dockerfile" ]; then
-        echo "  ⚠️  No Dockerfile found, skipping..."
+        echo "  WARNING: No Dockerfile found, skipping..."
         echo "ERROR: No Dockerfile found" >> "$OUTPUT_FILE"
         echo ""
         return
@@ -49,21 +49,21 @@ build_and_run_project4() {
     local image_name="project4_${student_name}"
     image_name=$(echo "$image_name" | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:]_-')
 
-    echo "  🔨 Building Docker image: $image_name"
+    echo "  Building Docker image: $image_name"
     {
         echo "=== BUILD OUTPUT ==="
         echo ""
     } >> "$OUTPUT_FILE"
 
     if docker build -t "$image_name" "$project_path" >> "$OUTPUT_FILE" 2>&1; then
-        echo "  ✅ Build successful"
+        echo "  Build successful"
         {
             echo ""
             echo "=== BUILD SUCCESSFUL ==="
             echo ""
         } >> "$OUTPUT_FILE"
     else
-        echo "  ❌ Build failed"
+        echo "  Build failed"
         {
             echo ""
             echo "=== BUILD FAILED ==="
@@ -73,14 +73,14 @@ build_and_run_project4() {
     fi
 
     # Run Docker container
-    echo "  🚀 Running container..."
+    echo "  Running container..."
     {
         echo "=== RUN OUTPUT ==="
         echo ""
     } >> "$OUTPUT_FILE"
 
     if timeout 60s docker run --rm "$image_name" >> "$OUTPUT_FILE" 2>&1; then
-        echo "  ✅ Run successful"
+        echo "  Run successful"
         {
             echo ""
             echo "=== RUN SUCCESSFUL ==="
@@ -89,14 +89,14 @@ build_and_run_project4() {
     else
         local exit_code=$?
         if [ $exit_code -eq 124 ]; then
-            echo "  ⚠️  Run timed out (60s limit)"
+            echo "  Run timed out (60s limit)"
             {
                 echo ""
                 echo "=== RUN TIMED OUT (60 seconds) ==="
                 echo ""
             } >> "$OUTPUT_FILE"
         else
-            echo "  ❌ Run failed"
+            echo "  Run failed"
             {
                 echo ""
                 echo "=== RUN FAILED ==="
@@ -138,7 +138,7 @@ for project_dir in "${project4_dirs[@]}"; do
 done
 
 echo "======================================"
-echo "✅ All projects processed!"
+echo "All projects processed!"
 echo "======================================"
 echo ""
 echo "Output saved to: $OUTPUT_FILE"
