@@ -46,3 +46,4 @@ Orchestrates the entire workflow
 -- checks if Docker image exists 
     -- if not, builds the Docker image
 -- Runs the scala analysis inside the Docker container
+         
