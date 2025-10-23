@@ -1,0 +1,38 @@
+[
+  {
+    "year": 2020,
+    "sixty_plus_count": 109,
+    "total": 257,
+    "share_pct": 42.4
+  },
+  {
+    "year": 2021,
+    "sixty_plus_count": 63,
+    "total": 293,
+    "share_pct": 21.5
+  },
+  {
+    "year": 2022,
+    "sixty_plus_count": 14,
+    "total": 329,
+    "share_pct": 4.3
+  },
+  {
+    "year": 2023,
+    "sixty_plus_count": 17,
+    "total": 252,
+    "share_pct": 6.7
+  },
+  {
+    "year": 2024,
+    "sixty_plus_count": 11,
+    "total": 196,
+    "share_pct": 5.6
+  },
+  {
+    "year": 2025,
+    "sixty_plus_count": 8,
+    "total": 108,
+    "share_pct": 7.4
+  }
+]
