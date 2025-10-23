@@ -1,5 +1,6 @@
 import org.jsoup.Jsoup
 import scala.jdk.CollectionConverters._
+import java.io._
 
 case class Homicide(no: String, date: String, name: String, age: Option[Int], address: String, notes: String, criminalHistory: String, camera: String, caseClosed: String)
 
@@ -15,7 +16,51 @@ object Main {
     }
   }
 
+  def writeCsv(entries: List[Homicide], path: String): Unit = {
+    val pw = new PrintWriter(new File(path))
+    try {
+      // header
+      pw.println("no,date,name,age,address,notes,criminalHistory,camera,caseClosed")
+      entries.foreach { e =>
+        val ageStr = e.age.map(_.toString).getOrElse("")
+        // escape double quotes by doubling them and wrap fields that contain commas/quotes/newlines in quotes
+        def esc(s: String) = {
+          if (s == null) ""
+          else if (s.contains(",") || s.contains("\"") || s.contains("\n")) {
+            val inner = s.replace("\"", "\"\"")
+            s"\"$inner\""
+          } else s
+        }
+        val line = List(e.no, e.date, e.name, ageStr, e.address, e.notes, e.criminalHistory, e.camera, e.caseClosed).map(esc).mkString(",")
+        pw.println(line)
+      }
+    } finally pw.close()
+  }
+
+  def writeJson(entries: List[Homicide], path: String): Unit = {
+    val pw = new PrintWriter(new File(path))
+    try {
+      pw.println("[")
+      entries.zipWithIndex.foreach { case (e, idx) =>
+        def jq(s: String) = {
+          if (s == null) "" else s.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
+        }
+        val agePart = e.age.map(a => a.toString).getOrElse("null")
+        val obj = s"  {\"no\": \"${jq(e.no)}\", \"date\": \"${jq(e.date)}\", \"name\": \"${jq(e.name)}\", \"age\": ${agePart}, \"address\": \"${jq(e.address)}\", \"notes\": \"${jq(e.notes)}\", \"criminalHistory\": \"${jq(e.criminalHistory)}\", \"camera\": \"${jq(e.camera)}\", \"caseClosed\": \"${jq(e.caseClosed)}\" }"
+        val suf = if (idx == entries.size - 1) "" else ","
+        pw.println(obj + suf)
+      }
+      pw.println("]")
+    } finally pw.close()
+  }
+
   def main(args: Array[String]): Unit = {
+    // parse optional --output=csv or --output=json and optional --out-file=PATH (use '-' for stdout)
+    val outputArg = args.find(_.startsWith("--output="))
+    val outputMode = outputArg.map(_.substring("--output=".length)).getOrElse("stdout")
+    val outFileArg = args.find(_.startsWith("--out-file="))
+    val outFileOpt = outFileArg.map(_.substring("--out-file=".length))
+
     val doc = Jsoup.connect(url).userAgent("Mozilla/5.0").get()
     val rows = doc.select("#homicidelist tbody tr").asScala
 
@@ -41,9 +86,58 @@ object Main {
       }
     }.toList
 
+    // If outputMode is csv or json, write the parsed entries to file (outFileOpt) or default file and exit
+    def writeByMode(mode: String, entries: List[Homicide], outPathOpt: Option[String]): Unit = {
+      val default = if (mode == "csv") "homicides_2025.csv" else "homicides_2025.json"
+      outPathOpt match {
+        case Some("-") =>
+          // write to stdout
+          if (mode == "csv") {
+            // print CSV to stdout
+            println("no,date,name,age,address,notes,criminalHistory,camera,caseClosed")
+            entries.foreach { e =>
+              val ageStr = e.age.map(_.toString).getOrElse("")
+              def esc(s: String) = {
+                if (s == null) ""
+                else if (s.contains(",") || s.contains("\"") || s.contains("\n")) {
+                  val inner = s.replace("\"", "\"\"")
+                  s"\"$inner\""
+                } else s
+              }
+              val line = List(e.no, e.date, e.name, ageStr, e.address, e.notes, e.criminalHistory, e.camera, e.caseClosed).map(esc).mkString(",")
+              println(line)
+            }
+          } else {
+            // json to stdout
+            print("[")
+            entries.zipWithIndex.foreach { case (e, idx) =>
+              def jq(s: String) = if (s == null) "" else s.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n")
+              val agePart = e.age.map(a => a.toString).getOrElse("null")
+              val obj = s"{\"no\": \"${jq(e.no)}\", \"date\": \"${jq(e.date)}\", \"name\": \"${jq(e.name)}\", \"age\": ${agePart}, \"address\": \"${jq(e.address)}\", \"notes\": \"${jq(e.notes)}\", \"criminalHistory\": \"${jq(e.criminalHistory)}\", \"camera\": \"${jq(e.camera)}\", \"caseClosed\": \"${jq(e.caseClosed)}\" }"
+              val suf = if (idx == entries.size - 1) "" else ","
+              print(obj + suf)
+            }
+            println("]")
+          }
+        case Some(path) =>
+          if (mode == "csv") writeCsv(entries, path) else writeJson(entries, path)
+          println(s"Wrote ${entries.size} records to $path")
+        case None =>
+          val out = default
+          if (mode == "csv") writeCsv(entries, out) else writeJson(entries, out)
+          println(s"Wrote ${entries.size} records to $out")
+      }
+    }
+
+    outputMode.toLowerCase match {
+      case "csv" => writeByMode("csv", entries, outFileOpt); return
+      case "json" => writeByMode("json", entries, outFileOpt); return
+      case _ => // continue with existing stdout analysis
+    }
+
     // Question 1: Top address blocks by homicide count (hotspots)
     println("Question 1: Top homicide hotspots (address block) in 2025")
-    val byAddress = entries.groupBy(_.address).mapValues(_.size).toList.sortBy(-_._2)
+    val byAddress = entries.groupBy(_.address).view.mapValues(_.size).toList.sortBy(-_._2)
     val top = byAddress.filter(_._1.nonEmpty).take(10)
     if (top.isEmpty) println("No data found for hotspots.")
     else {
