@@ -25,4 +25,4 @@ COPY the_article.scala .
 ENTRYPOINT ["sh", "-c", "mkdir -p /app/classes && scalac -d /app/classes the_article.scala && scala -cp /app/classes BaltimoreHomicideAnalysis \"$@\"", "--"]
 
 # default argument (can be overridden by `docker run ...`)
-CMD ["--output=stdout"]
+CMD ["--output=stdout"] 

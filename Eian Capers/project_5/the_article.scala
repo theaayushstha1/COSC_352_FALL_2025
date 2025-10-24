@@ -365,4 +365,4 @@ object BaltimoreHomicideAnalysis {
       writer.close()
     }
   }
-}
+} 
