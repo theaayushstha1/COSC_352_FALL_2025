@@ -1,5 +1,6 @@
 import org.jsoup.Jsoup
 import scala.jdk.CollectionConverters._
+import java.io.{File, PrintWriter}
 
 object BmoreHomicideStats {
 
@@ -16,18 +17,33 @@ object BmoreHomicideStats {
   )
 
   def main(args: Array[String]): Unit = {
+    // Parse output format
+    val outputFormat = args.find(_.startsWith("--output=")).map(_.split("=")(1).toLowerCase)
+
     val url = "https://chamspage.blogspot.com/"
     val homicides = fetchTableData(url)
 
     // Q1: Average age of victims in 2025
     val avgAge2025 = averageAgeInYear(homicides, 2025)
-    println(s"Question 1: What is the average age of victims in 2025?")
-    println(f"$avgAge2025%.1f")
-
     // Q2: How many cases in 2025 had surveillance cameras present?
     val surveillanceCases2025 = countSurveillanceCasesInYear(homicides, 2025)
-    println(s"\nQuestion 2: How many of the cases in 2025 had surveillance cameras present at the location of the crime?")
-    println(surveillanceCases2025)
+    
+
+    // Default output
+    val stdoutOutput =
+        f"""
+        |Question 1: What is the average age of victims in 2025?
+        |${avgAge2025}%.1f
+        |Question 2: How many of the cases in 2025 had surveillance cameras present at the location of the crime?
+        |$surveillanceCases2025
+        |""".stripMargin
+
+    outputFormat match {
+      case Some("csv") => formatCSV(homicides, avgAge2025, surveillanceCases2025)
+      case Some("json") => formatJSON(homicides, avgAge2025, surveillanceCases2025)
+      case _ =>
+        println(stdoutOutput)
+    }
   }
 
   // Fetch and parse homicide table data
@@ -85,4 +101,31 @@ object BmoreHomicideStats {
       h.surveillance.trim.contains("camera")
     )
   }
+
+  // CSV output
+  def formatCSV(homicides: List[HomicideData], avgAge: Double, surveillanceCount: Int): Unit = {
+    val writer = new PrintWriter(new File("BmoreHomicideStats.csv"))
+    try {
+        writer.println(f"Average age of victims of Baltimore homicide in 2025,${avgAge}%.1f")
+        writer.println(s"Cases in 2025 with cameras present at the scene,$surveillanceCount")
+
+      println("CSV wrote to BmoreHomicideStats.csv")
+    } finally writer.close()
+  }
+
+    // Write JSON file
+    def formatJSON(homicides: List[HomicideData], avgAge: Double, surveillanceCount: Int): Unit = {
+        val writer = new PrintWriter(new File("BmoreHomicideStats.json"))
+        try {
+        val summary =
+            s"""{
+            |  "average_age_2025": ${f"$avgAge%.1f"},
+            |  "surveillance_cases_2025": $surveillanceCount,
+            |}""".stripMargin
+
+        writer.println(summary)
+        println("JSON written to BmoreHomicideStats.json")
+        } finally writer.close()
+    }
+
 }
