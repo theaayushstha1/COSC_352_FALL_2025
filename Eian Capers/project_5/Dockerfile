@@ -16,22 +16,13 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt || true
 
-# Copy application files
+# Copy application files (DON'T copy info_death.csv - it will be mounted at runtime)
 COPY get_mine.py .
 COPY the_article.scala .
-COPY info_death.csv .
-
-
-RUN mkdir -p /app/classes
-# Compile Scala code
-# Compile Scala code into that directory at build time (safe/optional)
-RUN scalac the_article.scala
-
-
 
 # At container start: compile the scala source into /app/classes and run with that classpath.
 # The "--" after the sh -c script allows docker to pass runtime args into "$@" inside the script.
-ENTRYPOINT ["sh","-c","scalac -d classes the_article.scala && exec scala -cp classes BaltimoreHomicideAnalysis \"$@\"","--"]
+ENTRYPOINT ["sh", "-c", "mkdir -p /app/classes && scalac -d /app/classes the_article.scala && scala -cp /app/classes BaltimoreHomicideAnalysis \"$@\"", "--"]
 
 # default argument (can be overridden by `docker run ...`)
-CMD ["--output=csv"]
+CMD ["--output=stdout"]
