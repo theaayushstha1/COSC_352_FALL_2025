@@ -1,0 +1,15 @@
+{
+  "analysis": "Baltimore City Homicide Data",
+  "questions": {
+    "victims_under_18_in_2025": {
+      "count": 0
+    },
+    "case_status": {
+      "closed": 8,
+      "closed_percentage": 50,
+      "open": 8,
+      "open_percentage": 50,
+      "total": 16
+    }
+  }
+}
