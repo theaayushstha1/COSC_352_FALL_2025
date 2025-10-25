@@ -5,7 +5,7 @@ This project is a continuation of Project 4. It analyzes Baltimore City homicide
 1. How many homicides occurred in each month of 2025?
 2. What is the closure rate for incidents with and without surveillance cameras in 2025?
 
-Additionally, it supports outputting the parsed homicide data in CSV or JSON formats for use in future reports, via the --output flag.
+Additionally, it supports outputting the aggregated data from these questions in CSV or JSON formats for use in future reports, via the --output flag.
 
 The analysis is performed using a Scala program that fetches and parses the HTML content, extracts relevant entries for 2025, and computes the required statistics or outputs structured data.
 
@@ -24,36 +24,30 @@ The analysis is performed using a Scala program that fetches and parses the HTML
 2. Make `run.sh` executable if necessary: `chmod +x run.sh`.
 3. Execute `./run.sh` for default stdout output (question answers).
 4. For structured output:
-   - `./run.sh --output=csv`: Writes parsed data to `data.csv` in the current directory.
-   - `./run.sh --output=json`: Writes parsed data to `data.json` in the current directory.
+   - `./run.sh --output=csv`: Writes aggregated data to `data.csv` in the current directory.
+   - `./run.sh --output=json`: Writes aggregated data to `data.json` in the current directory.
 
 The script will build the Docker image and run the container, producing either stdout or files as specified.
 
 ## Data Format Explanation
-When using `--output=csv` or `--output=json`, the program outputs the parsed homicide entries in a structured format instead of the question answers. This was chosen to provide the raw crime data in a standardized, machine-readable way suitable for aggregation into reports, as hinted in the project guidelines. The format captures key structured fields while preserving the full descriptive text for comprehensive analysis.
+When using `--output=csv` or `--output=json`, the program outputs the aggregated data from the two questions instead of the raw entries. This was chosen to provide summarized insights in a standardized, machine-readable way suitable for aggregation into reports, as hinted in the project guidelines. The format focuses on the key results for easy combination with other datasets.
 
 ### CSV Format (data.csv)
-- **Headers**: number,date,month,hasCamera,isClosed,description
-- **Fields**:
-  - `number`: String, the homicide case number (e.g., "001").
-  - `date`: String, the date of the incident in MM/DD/25 format.
-  - `month`: Integer (1-12), extracted from the date for easy grouping.
-  - `hasCamera`: Boolean (true/false), true if the entry mentions surveillance cameras (e.g., "1 camera").
-  - `isClosed`: Boolean (true/false), true if the entry indicates the case is "Closed".
-  - `description`: String, the full remaining text of the entry, including victim name, age, location, cause, updates, suspects, motives, and other notes. This may contain commas or quotes, which are properly escaped/quoted in the CSV.
-- **Why this format?**: It balances structure (for querying/filtering on month, cameras, closure) with flexibility (full description for qualitative insights). CSV is widely supported for import into spreadsheets or data tools like pandas, enabling easy combination with other datasets for city-wide reports. Fields like month/hasCamera/isClosed directly support recomputing the project's question answers.
+- Structured as two sections separated by a blank line:
+  - **Question 1 Section**: Headers "month,count" with rows for each month (e.g., "January",13).
+  - **Question 2 Section**: Headers "metric,value" with rows for stats like "total_incidents",103; "with_cameras",15; etc., including percentages.
+- **Why this format?**: CSV is widely supported for import into spreadsheets or data tools like pandas. Separating sections allows easy parsing of each question's data independently, while keeping it in one file for simplicity. Metrics are quoted/escaped as needed.
 
 ### JSON Format (data.json)
-- **Structure**: An array of objects, where each object represents a homicide entry with the same fields as above:
-  ```json
-  [
-    {
-      "number": "001",
-      "date": "01/09/25",
-      "month": 1,
-      "hasCamera": false,
-      "isClosed": false,
-      "description": "Richie Briggs 36 5900 Dawalt Avenue Shooting victim"
-    },
-    ...
-  ]
+- An object with two keys:
+  - `"question1"`: Array of objects like [{"month":"January","count":13}, ...]
+  - `"question2"`: Object like {"total_incidents":103, "with_cameras":15, "closed_with_cameras":5, "closed_with_cameras_pct":"33.3%", ...}
+- **Why this format?**: JSON is ideal for programmatic use in reports or dashboards. It structures the aggregates hierarchically for easy access (e.g., via question keys), with escaped values for validity. This enables seamless integration with tools like JavaScript or Python, aligning with collective analysis goals.
+
+This format was selected to directly represent the insights from the questions, enabling quick recreation of visualizations or comparisons in reports. Only 2025 data is included.
+
+## Notes
+- The program parses the blog page content by stripping HTML tags, normalizing whitespace, truncating at footers, and using regex to extract/filter 2025 homicide entries (dates ending in /25).
+- Non-numeric entries (e.g., "XXX" for pending cases) are handled but excluded if not 2025.
+- The questions provide insights into temporal distribution and the potential impact of surveillance on case resolutions, which could inform policing strategies.
+- Tested in GitHub Codespaces environment.
