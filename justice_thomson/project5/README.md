@@ -30,7 +30,7 @@ The analysis is performed using a Scala program that fetches and parses the HTML
 The script will build the Docker image and run the container, producing either stdout or files as specified.
 
 ## Data Format Explanation
-When using `--output=csv` or `--output=json`, the program outputs the aggregated data from the two questions instead of the raw entries. This was chosen to provide summarized insights in a standardized, machine-readable way suitable for aggregation into reports, as hinted in the project guidelines. The format focuses on the key results for easy combination with other datasets.
+When using `--output=csv` or `--output=json`, the program outputs the aggregated data from the two questions instead of the raw entries. This was chosen to provide summarized insights in a standardized, machine-readable way suitable for aggregation into reports. The format focuses on the key results for easy combination with other datasets.
 
 ### CSV Format (data.csv)
 - Structured as two sections separated by a blank line:
