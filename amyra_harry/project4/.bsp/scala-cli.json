@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/Users/myra/Library/Application Support/Coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/Users/myra/Desktop/morgan/COSC_352_FALL_2025/amyra_harry/project4/.scala-build/ide-options-v2.json",
+    "--json-launcher-options",
+    "/Users/myra/Desktop/morgan/COSC_352_FALL_2025/amyra_harry/project4/.scala-build/ide-launcher-options.json",
+    "--envs-file",
+    "/Users/myra/Desktop/morgan/COSC_352_FALL_2025/amyra_harry/project4/.scala-build/ide-envs.json",
+    "/Users/myra/Desktop/morgan/COSC_352_FALL_2025/amyra_harry/project4"
+  ],
+  "version": "1.9.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
