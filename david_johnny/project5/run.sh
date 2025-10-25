@@ -41,9 +41,13 @@ fi
 # Run the container with output format parameter
 # Mount the current directory so files can be written to the host
 echo "Running Scala program inside Docker..."
+
+# Convert Windows path for Docker on Windows (Git Bash compatibility)
+WIN_DIRNAME=$(echo "$DIRNAME" | sed 's|^/\([a-z]\)/|\1:/|')
+
 if [ -n "$OUTPUT_FORMAT" ]; then
   echo "Output format: $OUTPUT_FORMAT"
-  docker run --rm -v "$DIRNAME:/app/output" "$IMAGE_NAME" bash -c "scala Main $OUTPUT_FORMAT && if [ -f homicide_analysis.csv ]; then cp homicide_analysis.csv /app/output; fi && if [ -f homicide_analysis.json ]; then cp homicide_analysis.json /app/output; fi"
+  docker run --rm -v "${WIN_DIRNAME}:/output" "$IMAGE_NAME" scala Main "$OUTPUT_FORMAT"
   
   # Inform user where to find the file
   if [ "$OUTPUT_FORMAT" = "csv" ] && [ -f "$DIRNAME/homicide_analysis.csv" ]; then

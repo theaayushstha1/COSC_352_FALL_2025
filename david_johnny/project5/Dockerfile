@@ -1,4 +1,3 @@
-
 # Use OpenJDK as base and install Scala
 FROM eclipse-temurin:17-jdk
 

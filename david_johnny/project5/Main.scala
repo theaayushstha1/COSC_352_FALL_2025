@@ -90,7 +90,13 @@ object Main {
 
   def outputCSV(total: Int, stabbing: Int, shooting: Int, other: Int,
                 violent: Int, closed: Int, stabbingClosed: Int, shootingClosed: Int): Unit = {
-    val filename = "homicide_analysis.csv"
+    // Try to write to /output first (Docker mount), fallback to current directory
+    val outputDir = new File("/output")
+    val filename = if (outputDir.exists() && outputDir.isDirectory) {
+      "/output/homicide_analysis.csv"
+    } else {
+      "homicide_analysis.csv"
+    }
     val writer = new PrintWriter(new File(filename))
     
     try {
@@ -120,7 +126,13 @@ object Main {
 
   def outputJSON(total: Int, stabbing: Int, shooting: Int, other: Int,
                  violent: Int, closed: Int, stabbingClosed: Int, shootingClosed: Int): Unit = {
-    val filename = "homicide_analysis.json"
+    // Try to write to /output first (Docker mount), fallback to current directory
+    val outputDir = new File("/output")
+    val filename = if (outputDir.exists() && outputDir.isDirectory) {
+      "/output/homicide_analysis.json"
+    } else {
+      "homicide_analysis.json"
+    }
     val writer = new PrintWriter(new File(filename))
     
     try {
