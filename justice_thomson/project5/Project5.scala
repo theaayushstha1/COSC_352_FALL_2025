@@ -23,12 +23,16 @@ object Project5 {
 
     // Strip tags and normalize whitespace
     val noTags = "<[^>]+>".r.replaceAllIn(html, "")
-    val cleanText = noTags.replaceAll("\r", "").replaceAll("\\s+", " ")
+    val normalized = noTags.replaceAll("\r", "").replaceAll("\\s+", " ")
 
-    // Pattern for 2025 entries
+    // Truncate at footer marker to exclude blog footers, archives, scripts, etc.
+    val footerStart = normalized.indexOf("Post a Comment")
+    val cleanText = if (footerStart > -1) normalized.substring(0, footerStart).trim else normalized.trim
+
+    // Pattern for all entries (2025 and non-2025, including XXX/???)
     case class Entry(number: String, date: String, month: Int, hasCamera: Boolean, isClosed: Boolean, description: String)
 
-    val pattern: Regex = """(\d{3})\s+(\d{2}/\d{2}/25)\b""".r
+    val pattern: Regex = """(\d{3}|XXX|\?\?\?)\s+(\d{2}/\d{2}/\d{2})\b""".r
     val cameraRe: Regex = """(?i)\b\d+\s*cameras?\b""".r
     val closedRe: Regex = """(?i)\bclosed\b""".r
 
@@ -41,36 +45,74 @@ object Project5 {
       val line = cleanText.substring(start, end).trim
       val number = m.group(1)
       val date = m.group(2)
-      val mm = date.split("/")(0).toInt
-      val description = line.substring(m.matched.length).trim
-      val hasCam = cameraRe.findFirstIn(line).isDefined
-      val isClosed = closedRe.findFirstIn(line).isDefined
-      Some(Entry(number, date, mm, hasCam, isClosed, description))
+      if (date.endsWith("/25")) {
+        val mm = date.split("/")(0).toInt
+        val description = line.substring(m.matched.length).trim
+        val hasCam = cameraRe.findFirstIn(line).isDefined
+        val isClosed = closedRe.findFirstIn(line).isDefined
+        Some(Entry(number, date, mm, hasCam, isClosed, description))
+      } else {
+        None
+      }
     }
 
     val outputOpt = if (args.nonEmpty && args(0).startsWith("--output=")) {
       Some(args(0).split("=")(1).toLowerCase)
     } else None
 
+    // Compute aggregates for questions
+    val months = Array("January","February","March","April","May","June","July","August","September","October","November","December")
+    val byMonth = entries.groupBy(_.month).view.mapValues(_.length).toMap
+    val monthlyCounts = (1 to 12).map { m =>
+      val count = byMonth.getOrElse(m, 0)
+      (months(m-1), count)
+    }
+
+    val total = entries.length
+    val withCam = entries.count(_.hasCamera)
+    val withoutCam = total - withCam
+    val closedWith = entries.count(e => e.hasCamera && e.isClosed)
+    val closedWithout = entries.count(e => !e.hasCamera && e.isClosed)
+
+    def pct(n: Int, d: Int): String = if (d == 0) "0%" else f"${(n.toDouble/d*100)}%.1f%%"
+
+    val closureStats = Map(
+      "total_incidents" -> total,
+      "with_cameras" -> withCam,
+      "closed_with_cameras" -> closedWith,
+      "closed_with_cameras_pct" -> pct(closedWith, withCam),
+      "without_cameras" -> withoutCam,
+      "closed_without_cameras" -> closedWithout,
+      "closed_without_cameras_pct" -> pct(closedWithout, withoutCam)
+    )
+
     def csvQuote(s: String): String = "\"" + s.replace("\"", "\"\"") + "\""
 
     outputOpt match {
       case Some("csv") =>
-        val header = "number,date,month,hasCamera,isClosed,description"
-        val rows = entries.map { e =>
-          Seq(e.number, e.date, e.month.toString, e.hasCamera.toString, e.isClosed.toString, e.description).map(csvQuote).mkString(",")
-        }
-        val csv = header + "\n" + rows.mkString("\n")
         val pw = new PrintWriter(new File("/app/output/data.csv"))
-        pw.write(csv)
+        pw.println("Question 1: How many homicides occurred in each month of 2025?")
+        pw.println("month,count")
+        monthlyCounts.foreach { case (month, count) =>
+          pw.println(s"${csvQuote(month)},$count")
+        }
+        pw.println("")
+        pw.println("Question 2: What is the closure rate for incidents with and without surveillance cameras in 2025?")
+        pw.println("metric,value")
+        closureStats.foreach { case (metric, value) =>
+          pw.println(s"${csvQuote(metric)},${csvQuote(value.toString)}")
+        }
         pw.close()
 
       case Some("json") =>
         def jsonEscape(s: String): String = s.replace("\\", "\\\\").replace("\"", "\\\"").replace("\n", "\\n").replace("\r", "\\r").replace("\t", "\\t")
-        val jsonEntries = entries.map { e =>
-          s"""{"number":"${jsonEscape(e.number)}","date":"${jsonEscape(e.date)}","month":${e.month},"hasCamera":${e.hasCamera},"isClosed":${e.isClosed},"description":"${jsonEscape(e.description)}"}"""
-        }
-        val json = "[" + jsonEntries.mkString(",") + "]"
+        val monthlyJson = monthlyCounts.map { case (month, count) =>
+          s"""{"month":"${jsonEscape(month)}","count":$count}"""
+        }.mkString("[", ",", "]")
+        val closureJson = closureStats.map { case (metric, value) =>
+          s""""${jsonEscape(metric)}":"${jsonEscape(value.toString)}""""
+        }.mkString("{", ",", "}")
+        val json = s"""{"question1":$monthlyJson,"question2":$closureJson}"""
         val pw = new PrintWriter(new File("/app/output/data.json"))
         pw.write(json)
         pw.close()
@@ -78,23 +120,12 @@ object Project5 {
       case _ =>
         // ---------- Question 1 ----------
         println("Question 1: How many homicides occurred in each month of 2025?")
-        val months = Array("January","February","March","April","May","June","July","August","September","October","November","December")
-        val byMonth = entries.groupBy(_.month).view.mapValues(_.length).toMap
-        (1 to 12).foreach { m =>
-          val count = byMonth.getOrElse(m, 0)
-          println(s"${months(m-1)}: $count")
+        monthlyCounts.foreach { case (month, count) =>
+          println(s"$month: $count")
         }
 
         // ---------- Question 2 ----------
         println("\nQuestion 2: What is the closure rate for incidents with and without surveillance cameras in 2025?")
-        val total = entries.length
-        val withCam = entries.count(_.hasCamera)
-        val withoutCam = total - withCam
-        val closedWith = entries.count(e => e.hasCamera && e.isClosed)
-        val closedWithout = entries.count(e => !e.hasCamera && e.isClosed)
-
-        def pct(n: Int, d: Int): String = if (d == 0) "0%" else f"${(n.toDouble/d*100)}%.1f%%"
-
         println(s"Total parsed incidents: $total")
         println(s"With cameras: $withCam, Closed with cameras: $closedWith (${pct(closedWith, withCam)})")
         println(s"Without cameras: $withoutCam, Closed without cameras: $closedWithout (${pct(closedWithout, withoutCam)})")
