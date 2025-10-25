@@ -1,3 +1,4 @@
+
 # Use OpenJDK as base and install Scala
 FROM eclipse-temurin:17-jdk
 
@@ -22,5 +23,5 @@ COPY Main.scala .
 # Compile the Scala program
 RUN scalac Main.scala
 
-# Run the program
+# Run the program (can be overridden with parameters)
 CMD ["scala", "Main"]
