@@ -1,0 +1,14 @@
+[
+  {"city": "Baltimore", "count": "4", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "0.00", "offense": "Homicide", "percent_diff": "0.0%", "avg_to_date": "4.00", "month": "01"},
+  {"city": "Baltimore", "count": "17", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "6.50", "offense": "Homicide", "percent_diff": "61.9%", "avg_to_date": "10.50", "month": "03"},
+  {"city": "Baltimore", "count": "2", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "-5.67", "offense": "Homicide", "percent_diff": "-73.9%", "avg_to_date": "7.67", "month": "04"},
+  {"city": "Baltimore", "count": "6", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "-1.25", "offense": "Homicide", "percent_diff": "-17.2%", "avg_to_date": "7.25", "month": "05"},
+  {"city": "Baltimore", "count": "3", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "-3.40", "offense": "Homicide", "percent_diff": "-53.1%", "avg_to_date": "6.40", "month": "06"},
+  {"city": "Baltimore", "count": "7", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "0.50", "offense": "Homicide", "percent_diff": "7.7%", "avg_to_date": "6.50", "month": "07"},
+  {"city": "Baltimore", "count": "2", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "-3.86", "offense": "Homicide", "percent_diff": "-65.9%", "avg_to_date": "5.86", "month": "08"},
+  {"city": "Baltimore", "count": "2", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "-3.38", "offense": "Homicide", "percent_diff": "-62.8%", "avg_to_date": "5.38", "month": "09"},
+  {"city": "Baltimore", "count": "2", "record_type": "monthly_counts", "year": "2025", "diff_from_avg": "-3.00", "offense": "Homicide", "percent_diff": "-60.0%", "avg_to_date": "5.00", "month": "10"},
+  {"city": "Baltimore", "record_type": "age_18_24_share", "percent_18_24": "28.6%", "age_18_24": "2", "gender": "Male", "total_known": "7", "year": "2025"},
+  {"city": "Baltimore", "record_type": "age_18_24_share", "percent_18_24": "0.0%", "age_18_24": "0", "gender": "Female", "total_known": "2", "year": "2025"},
+  {"record_type": "age_18_24_share_ratio", "city": "Baltimore", "year": "2025", "ratio_male_to_female": "Infinity"}
+]
