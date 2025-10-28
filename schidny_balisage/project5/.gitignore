@@ -1,0 +1,16 @@
+# Output files
+*.csv
+*.json
+
+# SBT specific
+target/
+project/target/
+project/project/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store

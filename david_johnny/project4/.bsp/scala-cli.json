@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "C:\\Users\\minot\\AppData\\Local\\Coursier\\data\\bin\\.scala-cli.aux.exe",
+    "bsp",
+    "--json-options",
+    "D:\\COSC_352_FALL_2025\\david_johnny\\project4\\.scala-build\\ide-options-v2.json",
+    "--json-launcher-options",
+    "D:\\COSC_352_FALL_2025\\david_johnny\\project4\\.scala-build\\ide-launcher-options.json",
+    "--envs-file",
+    "D:\\COSC_352_FALL_2025\\david_johnny\\project4\\.scala-build\\ide-envs.json",
+    "D:\\COSC_352_FALL_2025\\david_johnny\\project4"
+  ],
+  "version": "1.9.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}
