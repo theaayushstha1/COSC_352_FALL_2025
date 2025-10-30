@@ -1,0 +1,25 @@
+# Scala / sbt
+/target/
+/project/target/
+/project/project/
+/.bloop/
+
+# IntelliJ
+/.idea/
+*.iml
+
+# OS
+.DS_Store
+thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Output files
+homicides_*.csv
+homicides_*.json
+
+# Node / other
+node_modules/
+dist/*.swp

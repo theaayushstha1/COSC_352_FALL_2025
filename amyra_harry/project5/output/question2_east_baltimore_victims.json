@@ -1,0 +1,195 @@
+{
+  "query": "Question 2: How many people were killed in the East Baltimore region?",
+  "total": 27,
+  "records": [
+    {
+      "no": "007",
+      "date": "01/19/25",
+      "name": "Edward Johnson",
+      "age": "44",
+      "location": "3700 East Baltimore Street"
+    },
+    {
+      "no": "014",
+      "date": "02/02/25",
+      "name": "Troy Kavanaugh",
+      "age": "37",
+      "location": "2500 East Biddle Street"
+    },
+    {
+      "no": "021",
+      "date": "02/23/25",
+      "name": "Celvin Olivares-Portillo",
+      "age": "20",
+      "location": "4400 Eastern Avenue"
+    },
+    {
+      "no": "030",
+      "date": "03/18/25",
+      "name": "Shy'Keema Turner",
+      "age": "31",
+      "location": "700 East Preston Street"
+    },
+    {
+      "no": "049",
+      "date": "05/19/25",
+      "name": "Demetrius Phyall",
+      "age": "18",
+      "location": "2300 East Preston Street"
+    },
+    {
+      "no": "062",
+      "date": "06/17/25",
+      "name": "Isaiah Spicer",
+      "age": "29",
+      "location": "1900 East Lafayette Street"
+    },
+    {
+      "no": "086",
+      "date": "07/26/25",
+      "name": "Sirbryant Alston",
+      "age": "33",
+      "location": "1100 East Preston Street"
+    },
+    {
+      "no": "099",
+      "date": "09/19/25",
+      "name": "Taiquan Moss",
+      "age": "29",
+      "location": "1100 East 20th Street"
+    },
+    {
+      "no": "014",
+      "date": "01/26/24",
+      "name": "Kareem Gee",
+      "age": "20",
+      "location": "1200 East Preston Street"
+    },
+    {
+      "no": "019",
+      "date": "11/27/23",
+      "name": "Nigel Arrington",
+      "age": "25",
+      "location": "5300 Eastbury Avenue"
+    },
+    {
+      "no": "034",
+      "date": "03/02/24",
+      "name": "Alvin Ray Henry",
+      "age": "35",
+      "location": "1400 East Biddle Street"
+    },
+    {
+      "no": "044",
+      "date": "03/13/24",
+      "name": "Martinez Brown",
+      "age": "26",
+      "location": "1500 East 28th Street"
+    },
+    {
+      "no": "051",
+      "date": "04/02/24",
+      "name": "Marvin Washington",
+      "age": "22",
+      "location": "2300 East Lafayette Street"
+    },
+    {
+      "no": "053",
+      "date": "04/06/24",
+      "name": "Jose Castron-Merales",
+      "age": "38",
+      "location": "3700 East Lombard Street"
+    },
+    {
+      "no": "063",
+      "date": "05/06/24",
+      "name": "Garfield Redd",
+      "age": "33",
+      "location": "1 East 21st Street"
+    },
+    {
+      "no": "064",
+      "date": "05/09/24",
+      "name": "Janelle Desormeaux",
+      "age": "40",
+      "location": "2100 East Preston Street"
+    },
+    {
+      "no": "077",
+      "date": "06/05/24",
+      "name": "Travis Bell",
+      "age": "31",
+      "location": "2000 East 31st Street"
+    },
+    {
+      "no": "117",
+      "date": "08/01/24",
+      "name": "Ondrell Mayo Jr.",
+      "age": "36",
+      "location": "900 East Pataspco Avenue"
+    },
+    {
+      "no": "124",
+      "date": "08/17/24",
+      "name": "David Philpot",
+      "age": "74",
+      "location": "1700 Eastern Avenue"
+    },
+    {
+      "no": "130",
+      "date": "08/22/24",
+      "name": "Ronald Carroll",
+      "age": "46",
+      "location": "1900 East North Avenue"
+    },
+    {
+      "no": "144",
+      "date": "09/19/24",
+      "name": "Errique Neal",
+      "age": "26",
+      "location": "1100 East 20th Street"
+    },
+    {
+      "no": "150",
+      "date": "09/25/24",
+      "name": "Kevin Mejia",
+      "age": "27",
+      "location": "6300 Eastern Avenue"
+    },
+    {
+      "no": "160",
+      "date": "10/23/24",
+      "name": "Jose Rodriguez-Bustos",
+      "age": "26",
+      "location": "2600 East Baltimore Street"
+    },
+    {
+      "no": "173",
+      "date": "11/13/24",
+      "name": "Paul Lee",
+      "age": "33",
+      "location": "500 East Preston Street"
+    },
+    {
+      "no": "195",
+      "date": "12/26/24",
+      "name": "Deangelo West",
+      "age": "27",
+      "location": "4300 East Preston Street"
+    },
+    {
+      "no": "196",
+      "date": "09/20/24",
+      "name": "Malik Cottman",
+      "age": "46",
+      "location": "1200 East North Avenue"
+    },
+    {
+      "no": "198",
+      "date": "12/30/31",
+      "name": "Kyree Williams",
+      "age": "26",
+      "location": "1200 East Coldspring Lane"
+    }
+  ]
+}

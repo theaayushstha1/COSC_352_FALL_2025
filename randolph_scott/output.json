@@ -1,0 +1,5 @@
+[
+  {"crimeType": "Burglary", "count": 120},
+  {"crimeType": "Assault", "count": 75},
+  {"crimeType": "Theft", "count": 200}
+]
