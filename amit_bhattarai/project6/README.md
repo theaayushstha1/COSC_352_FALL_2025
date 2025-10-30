@@ -13,7 +13,21 @@ and answers two questions:
 2. What is the total number of homicide victims each year?
 
 ---
+## Scala vs Go — Key Differences
 
+| Feature | Scala (Project 5) | Go (Project 6) |
+|----------|-------------------|----------------|
+| **Runtime** | Runs on the JVM (needs Java) | Compiles to a standalone binary |
+| **Execution Speed** | Slower startup (JVM load time) | Instant startup |
+| **Dependencies** | Needs Java + Scala runtime | None — only Go binary |
+| **Syntax & Style** | Functional & object-oriented | Simpler, procedural |
+| **Error Handling** | Exceptions / Try-Catch | Explicit `error` returns |
+| **Concurrency** | Uses threads / futures | Uses lightweight goroutines |
+| **Build Size** | ~300 MB Docker image | ~20 MB Docker image |
+| **HTTP & I/O** | `java.net.http` | `net/http` |
+| **JSON/CSV Output** | Manual string building | Native `encoding/json`, `encoding/csv` |
+
+---
 ## How to Run
 ```bash
 ./run.sh               # prints to terminal
@@ -30,20 +44,4 @@ Includes CA certificates fix for HTTPS sites.
 Produces the same results as Project 5.
 ---
 
-## Scala vs Go — Key Differences
 
-| Feature | Scala (Project 5) | Go (Project 6) |
-|----------|-------------------|----------------|
-| **Runtime** | Runs on the JVM (needs Java) | Compiles to a standalone binary |
-| **Execution Speed** | Slower startup (JVM load time) | Instant startup |
-| **Dependencies** | Needs Java + Scala runtime | None — only Go binary |
-| **Syntax & Style** | Functional & object-oriented | Simpler, procedural |
-| **Error Handling** | Exceptions / Try-Catch | Explicit `error` returns |
-| **Concurrency** | Uses threads / futures | Uses lightweight goroutines |
-| **Build Size** | ~300 MB Docker image | ~20 MB Docker image |
-| **HTTP & I/O** | `java.net.http` | `net/http` |
-| **JSON/CSV Output** | Manual string building | Native `encoding/json`, `encoding/csv` |
-
----
-
-Both versions produce identical results, but the Go version is faster, simpler, and runs without requiring a JVM.
