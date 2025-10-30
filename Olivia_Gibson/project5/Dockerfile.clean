@@ -1,0 +1,17 @@
+FROM eclipse-temurin:17-jdk
+
+WORKDIR /app
+
+# Install sbt manually
+RUN apt-get update && \
+    apt-get install -y curl unzip && \
+    curl -L -o /tmp/sbt.zip https://github.com/sbt/sbt/releases/download/v1.9.7/sbt-1.9.7.zip && \
+    unzip /tmp/sbt.zip -d /opt && \
+    ln -s /opt/sbt/bin/sbt /usr/local/bin/sbt
+
+COPY . .
+
+RUN sbt compile
+
+CMD ["bash"]
+
