@@ -1,4 +1,27 @@
 #!/usr/bin/env python3
+"""
+read_html_table.py
+
+Reads all HTML <table> elements from a given webpage or local file,
+and saves them into CSV files that can be loaded into a spreadsheet.
+
+Usage:
+    python read_html_table.py <URL|FILENAME>
+
+Examples:
+    python read_html_table.py https://en.wikipedia.org/wiki/Comparison_of_programming_languages
+    python read_html_table.py saved_page.html
+
+Requirements:
+    - Python 3
+    - Standard library only (no external dependencies)
+
+Output:
+    - One CSV file per table found (table1.csv, table2.csv, ...)
+
+Author: <your name>
+"""
+
 import sys
 import os
 import urllib.request

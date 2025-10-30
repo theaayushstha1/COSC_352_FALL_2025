@@ -1,0 +1,14 @@
+{
+  "with_cctv": {
+    "closed": 32,
+    "open": 43,
+    "total": 75,
+    "closure_rate_pct": 42.7
+  },
+  "no_cctv": {
+    "closed": 73,
+    "open": 156,
+    "total": 229,
+    "closure_rate_pct": 31.9
+  }
+}
