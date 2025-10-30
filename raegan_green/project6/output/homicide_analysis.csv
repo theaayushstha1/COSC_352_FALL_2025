@@ -1,0 +1,225 @@
+Baltimore Homicide Analysis - Generated on 2025-10-28
+
+SUMMARY
+Total Records,190
+
+CASE CLOSURE RATES BY YEAR
+Year,Total Cases,Closed Cases,Open Cases,Closure Rate (%)
+2023,3,0,3,0
+2024,187,57,130,30
+
+VICTIM DISTRIBUTION BY AGE GROUP
+Age Group,Count,Percentage (%)
+Adults (31-50),84,44
+Young Adults (19-30),74,38
+Seniors (51+),16,8
+Teens (13-18),13,6
+Children (0-12),3,1
+
+YOUTH VIOLENCE STATISTICS
+Category,Count
+Children (0-12),3
+Teens (13-18),13
+Total Youth,16
+Youth Percentage,8%
+
+TOP 5 VICTIM AGES
+Age,Count
+30,10
+31,9
+24,8
+26,8
+25,8
+
+INDIVIDUAL HOMICIDE RECORDS
+Date,Name,Age,Address,Year,Case Closed
+01/24/23,Delroy Plummer,68,5200 Fairlawn Avenue,2023,No
+11/27/23,Nigel Arrington,25,5300 Eastbury Avenue,2023,No
+12/02/23,Reginald Evans,62,1300 North Central Avenue,2023,No
+01/02/24,Noah Gibson,16,1 Gorman Avenue,2024,No
+01/04/24,Antoine Johnson,31,1 North Eutaw Street,2024,Yes
+01/09/24,Quantae Arthur,33,3600 Belair Road,2024,No
+01/12/24,Deon Beasley,36,800 Washington Boulevard,2024,No
+01/14/24,Jazmyn Reed,30,I-83 North Exit 3,2024,Yes
+01/15/24,Dominic Wynn,39,2800 Mayfield Avenue,2024,No
+01/19/24,Charlie Cameron,30,5200 Fairlawn Avenue,2024,Yes
+01/19/24,Dequan Thomas,28,5200 Fairlawn Avenue,2024,Yes
+01/19/24,Willie Cameron Jr.,32,5200 Fairlawn Avenue,2024,No
+01/19/24,Malachi Carter-Bey,39,4500 Pennington Avenue,2024,No
+01/19/24,Mary Lou Schuman,60,4500 Pennington Avenue,2024,No
+01/23/24,Seron O'Neal,6,2000 Deering Avenue,2024,Yes
+01/26/24,Kareem Gee,20,1200 East Preston Street,2024,Yes
+01/27/24,Jibreal Payne,16,400 North Clinton Street,2024,Yes
+01/30/24,Sean Hennessy,34,1100 West Baltimore Street,2024,No
+01/30/24,Davon Brown,36,4000 Wilsby Avenue,2024,No
+02/01/24,Charles Banks,46,5200 Saybrook Road,2024,No
+02/02/24,D'Shawn Johnson,25,900 Coppin Court,2024,No
+02/03/24,Melvin White,55,3000 Edmondson Avenue,2024,Yes
+02/07/24,Odell Curtis,40,4400 Belair Road,2024,Yes
+02/07/24,Ricardo Brooks-Watters,32,4400 Belair Road,2024,Yes
+02/09/24,Milo Turner,30,6500 Parnell Avenue,2024,No
+02/09/24,James McDougald,34,2500 West Fairmont Avenue,2024,No
+02/16/24,Dwayne Flintall,38,900 North Carrollton Avenue,2024,No
+02/16/24,Darrian Williams,45,4000 Kathland Avenue,2024,No
+02/16/24,Rickey Cole,69,4000 Kathland Avenue,2024,No
+02/17/24,Amari Williams,20,200 Marion Street,2024,No
+02/20/24,Darcell Mitchell,19,800 West Lexington Street,2024,Yes
+02/29/24,Cormer Askins,16,800 Bethune Road,2024,No
+02/29/24,Bryant Williams,38,100 South Stockton Street,2024,No
+03/01/24,Johnny Small,55,5300 Frankford Avenue,2024,Yes
+03/02/24,Alvin Ray Henry,35,1400 East Biddle Street,2024,Yes
+03/05/24,Isiah Taylor,21,200 South Monstary Avenue,2024,No
+03/06/24,Denzel Brown,29,4000 Loch Raven Boulevard,2024,Yes
+03/07/24,Wayne Sawyer,41,200 Furrow Street,2024,No
+03/11/24,Rasheed Lindsey,24,3000 Spaulding Avenue,2024,No
+03/11/24,Unidentified Man,42,3100 Pulaski Highway,2024,Yes
+03/12/24,Timothy Peaks,58,1000 Glover Street,2024,No
+03/12/24,Justice Smallwood,33,1 South Chester Street,2024,No
+03/13/24,Christine Liddic-Rozzell,49,4000 Alto Road,2024,No
+03/13/24,Martinez Brown,26,1500 East 28th Street,2024,No
+03/15/24,Lenora Alston,35,1000 Fulton Street,2024,Yes
+03/15/24,Lamont Renwick,34,2000 Robb Street,2024,No
+03/15/24,Michael Chacon-Nataren,18,200 South Linwood Street,2024,No
+03/16/24,Christopher Yancey,21,1200 North Potomac Street,2024,No
+03/26/24,Eugene Fitzgerald,28,1800 Pennsylvania Avenue,2024,No
+04/01/24,Devron Tyner,17,200 East Pratt Street,2024,No
+04/02/24,Marvin Washington,22,2300 East Lafayette Street,2024,No
+04/06/24,Uneek Hassan Foust,31,1600 Bloomingdale Road,2024,No
+04/06/24,Jose Castron-Merales,38,3700 East Lombard Street,2024,No
+04/11/24,Devon Thomas,27,3400 Spellman Road,2024,Yes
+04/14/24,Kennard Murray,23,4900 Palmer Avenue,2024,No
+04/15/24,Robert Lee Johnson,37,400 North Bradford Street,2024,No
+04/18/24,Raymond McCoy,30,800 North Glover Street,2024,No
+04/21/24,Joseph Barranco,77,900 West University Parkway,2024,Yes
+04/24/24,Montez Barrett,23,1200 McCulloh Street,2024,Yes
+04/29/24,Anthony Pearson,43,4700 Garrison Boulevard,2024,No
+05/05/24,Lavontay Bishop,33,1000 Leadenhall Street,2024,No
+05/05/24,Sherman Anderson,25,3300 Reisterstown Road,2024,Yes
+05/06/24,Garfield Redd,33,1 East 21st Street,2024,Yes
+05/09/24,Janelle Desormeaux,40,2100 East Preston Street,2024,No
+05/12/24,Moses McKnight,42,3600 Leverton Avenue,2024,Yes
+05/14/24,Dondre Green,26,2700 Greenmount Avenue,2024,No
+05/19/24,Shelton Price,33,3000 Mayfield Avenue,2024,No
+05/20/24,Phillip Smith,39,3900 Ridgewood Avenue,2024,No
+05/25/24,Denzel Johnson,17,900 North Dukeland,2024,Yes
+05/27/24,Corey Robinson,41,2700 West Fairmont Avenue,2024,Yes
+05/29/24,Jamal Burden,24,5600 Bland Avenue,2024,No
+05/29/24,Marcus Brown,37,1500 Russell Street,2024,No
+06/01/24,Joe Lynch,55,5200 Reisterstown Road,2024,No
+06/02/24,Jarmal Harrid,34,500 West Mulberry Street,2024,No
+06/02/24,Terrell Johnson-Smith,32,900 Pennsylvania Avenue,2024,No
+06/05/24,Travis Bell,31,2000 East 31st Street,2024,No
+06/09/24,Said Raheem,31,2100 West Lexington Street,2024,No
+06/11/24,Navaeh Ferguson,17,3100 Chelsea Terrace,2024,No
+06/11/24,Deontay Townes,19,2600 Aisquith Street,2024,Yes
+06/12/24,Jordan Taylor,24,1700 Ramsay Street,2024,Yes
+06/14/24,Dennis Edmonds,39,4300 Bay Avenue,2024,Yes
+06/16/24,April Patterson,46,1800 Spence Street,2024,Yes
+06/16/24,Brandon Faison,19,800 North Warwick Avenue,2024,No
+06/18/24,Marvin Moore,42,1000 Stoddard Court,2024,Yes
+06/23/24,Paul Foxx,35,400 North Montford Avenue,2024,No
+06/24/24,Isaiah Gaines,20,2000 McKean Avenue,2024,No
+06/25/24,Carl Bodine,59,1000 Brantley Avenue,2024,Yes
+06/26/24,Kendall Montgomery,24,3300 Dolfield Avenue,2024,No
+06/29/24,Antoine Grant,38,4000 Fairfax Road,2024,No
+07/02/24,Donovan Fletcher,28,5300 Cordelia Avenue,2024,No
+07/03/24,Andrew Harvey Jr.,30,1600 Argyle Avenue,2024,No
+07/04/24,Kenshawn Goode,26,1700 West Baltimore Street,2024,No
+07/05/24,Corey Williams,31,2400 Woodbrook Avenue,2024,No
+07/05/24,Devin Lee Butler,33,2400 West Lafayette Avenue,2024,No
+07/06/24,Antoin Hines,47,1400 Traction Street,2024,No
+07/09/24,Pierre Grant,35,4600 Garrison Boulevard,2024,No
+07/09/24,Derrick Hawks,19,900 North Dukeland Street,2024,No
+07/10/24,Unidentified Man,21,2500 Lauretta Avenue,2024,No
+07/10/24,Cortez Lemon,14,4200 Frankford Road,2024,Yes
+07/10/24,Taron Whiting,21,2500 Lauretta Avenue,2024,No
+07/14/24,Sierra Johnson,38,800 Abbott Court,2024,Yes
+07/15/24,Ely Williams-Harr,27,1500 North Potomac Street,2024,No
+07/16/24,Theodore Burrell,20,2400 Frederick Avenue,2024,No
+07/18/24,John Parrish,18,3200 Lawnview Avenue,2024,Yes
+07/18/24,Brandon Tucker,43,1800 North Carey Street,2024,No
+07/19/24,Breaunna Cormley,12,500 North Kenwood Avenue,2024,No
+07/20/24,Alan Grant,30,2400 Loyola Northway,2024,No
+07/21/24,Jasper Davis,14,2300 Liberty Heights Avenue,2024,No
+07/25/24,Calvin Williams,36,3400 Garrison Boulevard,2024,No
+07/25/24,Christopher Williams,42,1900 Greenmount Avenue,2024,No
+07/26/24,Sean Sanders,22,1000 North Eden Street,2024,No
+07/28/24,Reginald Coffey,32,600 North Potomac Street,2024,No
+07/29/24,Carl Anthony,34,5200 St. Charles Avenue,2024,No
+08/01/24,Ondrell Mayo Jr.,36,900 East Pataspco Avenue,2024,Yes
+08/03/24,Aaron Frantom,39,100 North Mount Street,2024,No
+08/04/24,Tai'Vion Lathan,24,800 North Monroe Street,2024,No
+08/06/24,Brian Batty,31,1700 North Carey Street,2024,No
+08/09/24,Christian Donaldson,42,1100 West Lombard Street,2024,No
+08/10/24,Sean Henson Sr.,49,1100 Tiffany Court,2024,Yes
+08/15/24,Timothy Johnson,24,1 South Gilmor Street,2024,No
+08/16/24,Donnell Bristol,26,1400 North Decker Street,2024,No
+08/16/24,Carroll Wonson,56,600 Springfield Avenue,2024,Yes
+08/17/24,David Philpot,74,1700 Eastern Avenue,2024,Yes
+08/18/24,Anthony Martin,36,1300 Spring Street,2024,No
+08/20/24,Jermaine Parlow,32,300 South Franklintown Road,2024,No
+08/20/24,Rodney Lee,31,2700 Fisk Road,2024,No
+08/21/24,Brian Nesbitt,37,800 South Paca Street,2024,Yes
+08/21/24,Brian Graham,6,6300 Greenspring Avenue,2024,Yes
+08/22/24,Ronald Carroll,46,1900 East North Avenue,2024,Yes
+08/27/24,Travis Cooper,42,2800 Mayfield Avenue,2024,No
+09/01/24,Darrell Burton,38,800 Bonaparte Avenue,2024,No
+09/03/24,Tyreke Brown,22,1300 Russell Street,2024,No
+09/11/24,Richard Evans,41,1300 North Calhoun Street,2024,No
+09/14/24,Antonio Peoples,36,700 Aliceanna Street,2024,Yes
+09/14/24,Reginald Bernard Harrod,59,1100 Springfield Avenue,2024,No
+09/16/24,Melvin Rich III,36,1300 North Carey Street,2024,No
+09/17/24,Michael Simms,20,400 Bloom Street,2024,No
+09/17/24,Andre Dukes,29,7200 McClean Boulevard,2024,No
+09/18/24,Darryl Mitchell,30,4100 St. Georges Avenue,2024,No
+09/19/24,Errique Neal,26,1100 East 20th Street,2024,No
+09/20/24,Malik Cottman,46,1200 East North Avenue,2024,No
+09/21/24,George Massey,37,5100 Park Heights Avenue,2024,No
+09/21/24,Christian Leight,24,1100 Marshall Street,2024,No
+09/21/24,Ryan Cain,24,4600 York Road,2024,No
+09/22/24,Jasmine Simuel,33,2700 Pennsylvania Avenue,2024,Yes
+09/25/24,Kevin Mejia,27,6300 Eastern Avenue,2024,No
+09/29/24,Melvin Rogers,43,Wilhelm Street,2024,No
+10/02/24,Tavin Cooper,20,2500 McHenry Street,2024,Yes
+10/05/24,Jamil Richardson,25,500 Sheridan Avenue,2024,No
+10/05/24,Dion Huff,29,2500 Greenmount Avenue,2024,No
+10/07/24,Damien Parker,26,2300 Harford Road,2024,Yes
+10/09/24,Marques Reaves,26,1100 North Lakewood Avenue,2024,No
+10/10/24,Davon Gray,34,800 Gilrubin Court,2024,No
+10/10/24,Shyheim Hunt,25,800 Gilrubin Court,2024,No
+10/12/24,Elias Palmer,17,1200 South Haven Street,2024,No
+10/23/24,Jose Rodriguez-Bustos,26,2600 East Baltimore Street,2024,No
+10/24/24,Artez Collins,30,Boone Street,2024,No
+10/25/24,Abdullah Barber-El,21,1100 South Monroe Street,2024,No
+10/27/24,Marvin Wooten,46,1900 West Fayette Street,2024,No
+10/28/24,Amy Armstrong,28,3700 Toone Street,2024,Yes
+11/03/24,Solomon Wise,58,4200 Sheldon Avenue,2024,No
+11/06/24,Cameran Holt,19,1 West Hamburg Street,2024,Yes
+11/06/24,Bianca Nelson,30,1800 North Montford Avenue,2024,Yes
+11/06/24,Deandre Yelverton,36,2500 North Howard Street,2024,No
+11/07/24,Roger Hawkins,27,3700 Gwynn Oak Avenue,2024,No
+11/09/24,Ira Linton,46,4200 Powell Avenue,2024,Yes
+11/12/24,Isaiah Shackleford,22,Annapolis Road Exit of I-295,2024,No
+11/13/24,Paul Lee,33,500 East Preston Street,2024,Yes
+11/15/24,Laquarie Harvey,27,3600 Hayward Avenue,2024,No
+11/15/24,Joyce Gaskins,64,1600 Druid Hill Avenue,2024,Yes
+11/17/24,Kierra Tripp,28,800 North Wolfe Street,2024,No
+11/18/24,Marcus Holloway,40,1900 Edmondson Avenue,2024,Yes
+11/21/24,Leonardo Espinoza-Salomon,23,2300 Aisquith Street,2024,No
+11/21/24,Reginald Allen Jr.,29,3900 Dolfield Avenue,2024,No
+11/21/24,Gary Lee Matthews Jr.,34,4900 Frankford Avenue,2024,Yes
+11/23/24,Marquis Hill,25,5500 Hamlin Avenue,2024,No
+11/30/24,William Womack IV,30,1 South Eutaw Street,2024,No
+12/01/24,Montrell Smith,31,2200 North Monroe Street,2024,No
+12/02/24,Terry Nesbitt Jr.,38,3500 Clifton Avenue,2024,No
+12/07/24,Garrison Warren,56,1000 Wicklow Road,2024,No
+12/09/24,K'von McDowell,25,4000 West Belvedere Avenue,2024,No
+12/10/24,Bryan Stansbury,18,1100 Quantrill Way,2024,No
+12/14/24,Travon Benson,29,200 North Payson Street,2024,Yes
+12/16/24,Ibrahim Kamara,25,1200 West North Avenue,2024,No
+12/16/24,Ricky Forehand,44,1200 West Baltimore Street,2024,Yes
+12/16/24,Donte Bazemore,31,2600 East Chase Street,2024,No
+12/17/24,Krystal Prahampap,42,1000 Quantril Way,2024,Yes
+12/24/24,Kevin Morrison,17,1900 North Forest Park Avenue,2024,No
+12/26/24,Deangelo West,27,4300 East Preston Street,2024,Yes
+12/27/24,Tyree Countess,21,2100 Druid Hill Avenue,2024,Yes

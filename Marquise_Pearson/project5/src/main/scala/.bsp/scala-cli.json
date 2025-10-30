@@ -1,0 +1,20 @@
+{
+  "name": "scala-cli",
+  "argv": [
+    "/home/codespace/.local/share/coursier/bin/.scala-cli.aux",
+    "bsp",
+    "--json-options",
+    "/workspaces/COSC_352_FALL_2025/Marquise_Pearson/project5/src/main/scala/.scala-build/ide-options-v2.json",
+    "--json-launcher-options",
+    "/workspaces/COSC_352_FALL_2025/Marquise_Pearson/project5/src/main/scala/.scala-build/ide-launcher-options.json",
+    "--envs-file",
+    "/workspaces/COSC_352_FALL_2025/Marquise_Pearson/project5/src/main/scala/.scala-build/ide-envs.json",
+    "/workspaces/COSC_352_FALL_2025/Marquise_Pearson/project5/src/main/scala"
+  ],
+  "version": "1.9.1",
+  "bspVersion": "2.1.1",
+  "languages": [
+    "scala",
+    "java"
+  ]
+}

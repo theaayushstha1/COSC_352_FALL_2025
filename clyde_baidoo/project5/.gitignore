@@ -1,0 +1,6 @@
+# Scala / sbt build artifacts
+/target/
+/project5/target/
+/*.class
+/*.jar
+/*.zip
