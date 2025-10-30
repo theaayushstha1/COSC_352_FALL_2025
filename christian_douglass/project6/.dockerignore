@@ -1,0 +1,7 @@
+homicide
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+.git
