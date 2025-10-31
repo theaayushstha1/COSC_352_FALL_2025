@@ -87,3 +87,4 @@
 [info] sbt server started at local:///root/.sbt/1.0/server/4b695e5f5d8c757de8fc/sock
 [debug] Writing bsp connection file
 [info] started sbt server
+[debug] Forcing garbage collection...
