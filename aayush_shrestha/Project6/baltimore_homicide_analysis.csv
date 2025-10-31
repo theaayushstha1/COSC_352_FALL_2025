@@ -1,0 +1,58 @@
+BALTIMORE CITY HOMICIDE DATA ANALYSIS
+Total Homicides,25
+Overall Closure Rate,56.00%
+Critical Zones Count,1
+
+LOCATION HOTSPOTS ANALYSIS
+Location,Total Cases,Open Cases,Closed Cases,Closure Rate (%),Cameras Present,Avg Victim Age
+1200 block n broadway,3,2,1,33.33,2,26
+800 block w baltimore st,2,1,1,50.00,1,24
+3300 block greenmount ave,2,0,2,100.00,2,34
+4200 block park heights ave,2,1,1,50.00,1,39
+2100 block w pratt st,2,1,1,50.00,1,32
+1700 block e north ave,2,1,1,50.00,1,30
+2500 block e monument st,2,1,1,50.00,1,34
+1500 block w north ave,2,1,1,50.00,1,44
+900 block n carey st,2,1,1,50.00,1,46
+2200 block druid hill ave,1,0,1,100.00,1,24
+1100 block e monument st,1,0,1,100.00,0,39
+800 block n gay st,1,0,1,100.00,1,33
+1800 block n charles st,1,0,1,100.00,0,58
+3400 block w baltimore st,1,1,0,0.00,1,15
+1400 block w fayette st,1,1,0,0.00,0,71
+
+AGE GROUP ANALYSIS
+Age Group,Total Cases,Closed Cases,Open Cases,Closure Rate (%),Cameras Present
+Adults (26-40),9,6,3,66.67,5
+Middle Age (41-60),6,5,1,83.33,4
+Young Adults (18-25),5,3,2,60.00,3
+Minors (Under 18),3,0,3,0.00,2
+Seniors (61+),2,0,2,0.00,0
+
+RAW HOMICIDE DATA
+Number,Date Died,Name,Age,Address,Camera Present,Case Status
+1,01/05/25,John Smith,17,1200 block N Broadway,camera at intersection,Open
+2,01/12/25,Maria Garcia,34,1200 block N Broadway,None,Closed
+3,01/18/25,James Johnson,22,2500 block E Monument St,camera at intersection,Closed
+4,02/03/25,Robert Williams,45,2500 block E Monument St,None,Open
+5,02/14/25,Michael Brown,28,800 block W Baltimore St,camera at intersection,Closed
+6,03/07/25,David Jones,19,800 block W Baltimore St,None,Open
+7,03/22/25,Christopher Davis,56,1500 block W North Ave,camera at intersection,Closed
+8,04/10/25,Daniel Miller,31,1500 block W North Ave,None,Open
+9,05/15/25,Matthew Wilson,42,3300 block Greenmount Ave,camera at intersection,Closed
+10,06/20/25,Anthony Moore,25,3300 block Greenmount Ave,camera at intersection,Closed
+11,07/04/25,Donald Taylor,63,900 block N Carey St,None,Open
+12,07/18/25,Mark Anderson,29,900 block N Carey St,camera at intersection,Closed
+13,08/09/25,Steven Thomas,38,1700 block E North Ave,camera at intersection,Closed
+14,08/22/25,Paul Jackson,21,1700 block E North Ave,None,Open
+15,09/12/25,Andrew White,47,2100 block W Pratt St,camera at intersection,Closed
+16,09/25/25,Joshua Harris,16,2100 block W Pratt St,None,Open
+17,10/08/25,Kenneth Martin,52,4200 block Park Heights Ave,camera at intersection,Closed
+18,10/15/25,Kevin Thompson,26,4200 block Park Heights Ave,None,Open
+19,11/03/25,Brian Garcia,33,800 block N Gay St,camera at intersection,Closed
+20,11/20/25,George Martinez,71,1400 block W Fayette St,None,Open
+21,12/05/25,Edward Robinson,24,2200 block Druid Hill Ave,camera at intersection,Closed
+22,12/18/25,Ronald Clark,39,1100 block E Monument St,None,Closed
+23,01/10/25,Timothy Rodriguez,15,3400 block W Baltimore St,camera at intersection,Open
+24,02/20/25,Jason Lewis,58,1800 block N Charles St,None,Closed
+25,03/15/25,Jeffrey Lee,27,1200 block N Broadway,camera at intersection,Open
