@@ -1,0 +1,69 @@
+{
+  "query": "Question 1: How many people were stabbing victims in 2025?",
+  "total": 9,
+  "records": [
+    {
+      "no": "XXX",
+      "date": "05/05/25",
+      "name": "Troy Gaigler",
+      "age": "34",
+      "location": "1800 Portal Street"
+    },
+    {
+      "no": "050",
+      "date": "05/23/25",
+      "name": "Brandon Naylor",
+      "age": "38",
+      "location": "1800 North Woodyear Street"
+    },
+    {
+      "no": "056",
+      "date": "06/01/25",
+      "name": "Demetri Briscoe",
+      "age": "26",
+      "location": "3000 Westfield Avenue"
+    },
+    {
+      "no": "064",
+      "date": "06/21/25",
+      "name": "Tyrell John Curtis",
+      "age": "39",
+      "location": "100 South Broadway"
+    },
+    {
+      "no": "067",
+      "date": "06/30/25",
+      "name": "Donte Chase",
+      "age": "46",
+      "location": "700 Kenwood Avenue"
+    },
+    {
+      "no": "102",
+      "date": "09/25/25",
+      "name": "Michael Schuler",
+      "age": "34",
+      "location": "2200 Sidney Avenue"
+    },
+    {
+      "no": "107",
+      "date": "10/02/25",
+      "name": "Walter Aston",
+      "age": "47",
+      "location": "800 North Bond Street"
+    },
+    {
+      "no": "108",
+      "date": "10/07/25",
+      "name": "Terry Copes",
+      "age": "63",
+      "location": "100 West Garrett Street"
+    },
+    {
+      "no": "089",
+      "date": "06/25/24",
+      "name": "Carl Bodine",
+      "age": "59",
+      "location": "1000 Brantley Avenue"
+    }
+  ]
+}
