@@ -12,7 +12,7 @@ docker build -t baltimore-homicides-go .
 
 # Run container
 if [[ -n "$OUTPUT_FLAG" ]]; then
-  docker run --rm -v "$(pwd):/app" baltimore-homicides-go $OUTPUT_FLAG
+  docker run --rm -v "$(pwd):/app" baltimore-homicides-go "$OUTPUT_FLAG"
 else
-  docker run --rm -v "$(pwd):/app" baltimore-homicides-go
+  docker run --rm baltimore-homicides-go
 fi
