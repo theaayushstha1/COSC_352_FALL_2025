@@ -1,0 +1,58 @@
+{
+  "analysis_metadata": {
+    "source": "https://chamspage.blogspot.com/",
+    "total_victims_analyzed": 49
+  },
+  "question_1": {
+    "question": "What is the ratio of stabbing victims and shooting victims compared to the total?",
+    "total_victims": {
+      "count": 49,
+      "percentage": 100
+    },
+    "victim_breakdown": {
+      "other": {
+        "count": 4,
+        "percentage": 8.16326530612245
+      },
+      "shooting": {
+        "count": 44,
+        "percentage": 89.79591836734694
+      },
+      "stabbing": {
+        "count": 1,
+        "percentage": 2.0408163265306123
+      }
+    }
+  },
+  "question_2": {
+    "case_status_summary": {
+      "closed": {
+        "count": 17,
+        "percentage": 37.77777777777778
+      },
+      "open": {
+        "count": 28,
+        "percentage": 62.22222222222222
+      }
+    },
+    "detailed_breakdown": {
+      "shooting": {
+        "closed": 16,
+        "closed_percentage": 36.36363636363637,
+        "open": 28,
+        "total": 44
+      },
+      "stabbing": {
+        "closed": 1,
+        "closed_percentage": 100,
+        "open": 0,
+        "total": 1
+      }
+    },
+    "question": "Of these victims (stabbing or shooting), what is the ratio of closed cases?",
+    "violent_crimes_total": {
+      "count": 45,
+      "percentage": 100
+    }
+  }
+}
