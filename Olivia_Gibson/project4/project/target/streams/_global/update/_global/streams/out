@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mnot up to date. inChanged = true, force = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdating ProjectRef(uri("file:/C:/Users/olgib1/project4/project/"), "project4-build")...[0m
+[0m[[0m[0minfo[0m] [0m[0mUpdating project4-build[0m
+[0m[[0m[0minfo[0m] [0m[0mResolved project4-build dependencies[0m
+[0m[[0m[0minfo[0m] [0m[0mFetching artifacts of project4-build[0m
+[0m[[0m[0minfo[0m] [0m[0mFetched artifacts of project4-build[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone updating ProjectRef(uri("file:/C:/Users/olgib1/project4/project/"), "project4-build")[0m

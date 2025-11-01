@@ -1,0 +1,1600 @@
+{
+  "metadata": {
+    "generatedDate": "2025-10-28",
+    "totalRecords": 190,
+    "source": "http://chamspage.blogspot.com/2024/01/2024-baltimore-city-homicide-list.html"
+  },
+  "closureRates": [
+    {
+      "year": 2023,
+      "totalCases": 3,
+      "closedCases": 0,
+      "openCases": 3,
+      "closureRatePercent": 0
+    },
+    {
+      "year": 2024,
+      "totalCases": 187,
+      "closedCases": 57,
+      "openCases": 130,
+      "closureRatePercent": 30
+    }
+  ],
+  "ageGroupStatistics": [
+    {
+      "ageGroup": "Adults (31-50)",
+      "count": 84,
+      "percentageOfTotal": 44
+    },
+    {
+      "ageGroup": "Young Adults (19-30)",
+      "count": 74,
+      "percentageOfTotal": 38
+    },
+    {
+      "ageGroup": "Seniors (51+)",
+      "count": 16,
+      "percentageOfTotal": 8
+    },
+    {
+      "ageGroup": "Teens (13-18)",
+      "count": 13,
+      "percentageOfTotal": 6
+    },
+    {
+      "ageGroup": "Children (0-12)",
+      "count": 3,
+      "percentageOfTotal": 1
+    }
+  ],
+  "youthStatistics": {
+    "children": 3,
+    "teens": 13,
+    "totalYouth": 16,
+    "youthPercentage": 8
+  },
+  "topVictimAges": [
+    {
+      "age": 30,
+      "count": 10
+    },
+    {
+      "age": 31,
+      "count": 9
+    },
+    {
+      "age": 26,
+      "count": 8
+    },
+    {
+      "age": 24,
+      "count": 8
+    },
+    {
+      "age": 36,
+      "count": 8
+    }
+  ],
+  "homicideRecords": [
+    {
+      "date": "01/24/23",
+      "name": "Delroy Plummer",
+      "age": 68,
+      "address": "5200 Fairlawn Avenue",
+      "year": 2023,
+      "caseClosed": false
+    },
+    {
+      "date": "11/27/23",
+      "name": "Nigel Arrington",
+      "age": 25,
+      "address": "5300 Eastbury Avenue",
+      "year": 2023,
+      "caseClosed": false
+    },
+    {
+      "date": "12/02/23",
+      "name": "Reginald Evans",
+      "age": 62,
+      "address": "1300 North Central Avenue",
+      "year": 2023,
+      "caseClosed": false
+    },
+    {
+      "date": "01/02/24",
+      "name": "Noah Gibson",
+      "age": 16,
+      "address": "1 Gorman Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/04/24",
+      "name": "Antoine Johnson",
+      "age": 31,
+      "address": "1 North Eutaw Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/09/24",
+      "name": "Quantae Arthur",
+      "age": 33,
+      "address": "3600 Belair Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/12/24",
+      "name": "Deon Beasley",
+      "age": 36,
+      "address": "800 Washington Boulevard",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/14/24",
+      "name": "Jazmyn Reed",
+      "age": 30,
+      "address": "I-83 North Exit 3",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/15/24",
+      "name": "Dominic Wynn",
+      "age": 39,
+      "address": "2800 Mayfield Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/19/24",
+      "name": "Charlie Cameron",
+      "age": 30,
+      "address": "5200 Fairlawn Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/19/24",
+      "name": "Dequan Thomas",
+      "age": 28,
+      "address": "5200 Fairlawn Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/19/24",
+      "name": "Willie Cameron Jr.",
+      "age": 32,
+      "address": "5200 Fairlawn Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/19/24",
+      "name": "Malachi Carter-Bey",
+      "age": 39,
+      "address": "4500 Pennington Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/19/24",
+      "name": "Mary Lou Schuman",
+      "age": 60,
+      "address": "4500 Pennington Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/23/24",
+      "name": "Seron O'Neal",
+      "age": 6,
+      "address": "2000 Deering Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/26/24",
+      "name": "Kareem Gee",
+      "age": 20,
+      "address": "1200 East Preston Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/27/24",
+      "name": "Jibreal Payne",
+      "age": 16,
+      "address": "400 North Clinton Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "01/30/24",
+      "name": "Sean Hennessy",
+      "age": 34,
+      "address": "1100 West Baltimore Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "01/30/24",
+      "name": "Davon Brown",
+      "age": 36,
+      "address": "4000 Wilsby Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/01/24",
+      "name": "Charles Banks",
+      "age": 46,
+      "address": "5200 Saybrook Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/02/24",
+      "name": "D'Shawn Johnson",
+      "age": 25,
+      "address": "900 Coppin Court",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/03/24",
+      "name": "Melvin White",
+      "age": 55,
+      "address": "3000 Edmondson Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "02/07/24",
+      "name": "Odell Curtis",
+      "age": 40,
+      "address": "4400 Belair Road",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "02/07/24",
+      "name": "Ricardo Brooks-Watters",
+      "age": 32,
+      "address": "4400 Belair Road",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "02/09/24",
+      "name": "Milo Turner",
+      "age": 30,
+      "address": "6500 Parnell Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/09/24",
+      "name": "James McDougald",
+      "age": 34,
+      "address": "2500 West Fairmont Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/16/24",
+      "name": "Dwayne Flintall",
+      "age": 38,
+      "address": "900 North Carrollton Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/16/24",
+      "name": "Darrian Williams",
+      "age": 45,
+      "address": "4000 Kathland Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/16/24",
+      "name": "Rickey Cole",
+      "age": 69,
+      "address": "4000 Kathland Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/17/24",
+      "name": "Amari Williams",
+      "age": 20,
+      "address": "200 Marion Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/20/24",
+      "name": "Darcell Mitchell",
+      "age": 19,
+      "address": "800 West Lexington Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "02/29/24",
+      "name": "Cormer Askins",
+      "age": 16,
+      "address": "800 Bethune Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "02/29/24",
+      "name": "Bryant Williams",
+      "age": 38,
+      "address": "100 South Stockton Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/01/24",
+      "name": "Johnny Small",
+      "age": 55,
+      "address": "5300 Frankford Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "03/02/24",
+      "name": "Alvin Ray Henry",
+      "age": 35,
+      "address": "1400 East Biddle Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "03/05/24",
+      "name": "Isiah Taylor",
+      "age": 21,
+      "address": "200 South Monstary Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/06/24",
+      "name": "Denzel Brown",
+      "age": 29,
+      "address": "4000 Loch Raven Boulevard",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "03/07/24",
+      "name": "Wayne Sawyer",
+      "age": 41,
+      "address": "200 Furrow Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/11/24",
+      "name": "Rasheed Lindsey",
+      "age": 24,
+      "address": "3000 Spaulding Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/11/24",
+      "name": "Unidentified Man",
+      "age": 42,
+      "address": "3100 Pulaski Highway",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "03/12/24",
+      "name": "Timothy Peaks",
+      "age": 58,
+      "address": "1000 Glover Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/12/24",
+      "name": "Justice Smallwood",
+      "age": 33,
+      "address": "1 South Chester Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/13/24",
+      "name": "Christine Liddic-Rozzell",
+      "age": 49,
+      "address": "4000 Alto Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/13/24",
+      "name": "Martinez Brown",
+      "age": 26,
+      "address": "1500 East 28th Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/15/24",
+      "name": "Lenora Alston",
+      "age": 35,
+      "address": "1000 Fulton Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "03/15/24",
+      "name": "Lamont Renwick",
+      "age": 34,
+      "address": "2000 Robb Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/15/24",
+      "name": "Michael Chacon-Nataren",
+      "age": 18,
+      "address": "200 South Linwood Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/16/24",
+      "name": "Christopher Yancey",
+      "age": 21,
+      "address": "1200 North Potomac Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "03/26/24",
+      "name": "Eugene Fitzgerald",
+      "age": 28,
+      "address": "1800 Pennsylvania Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/01/24",
+      "name": "Devron Tyner",
+      "age": 17,
+      "address": "200 East Pratt Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/02/24",
+      "name": "Marvin Washington",
+      "age": 22,
+      "address": "2300 East Lafayette Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/06/24",
+      "name": "Uneek Hassan Foust",
+      "age": 31,
+      "address": "1600 Bloomingdale Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/06/24",
+      "name": "Jose Castron-Merales",
+      "age": 38,
+      "address": "3700 East Lombard Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/11/24",
+      "name": "Devon Thomas",
+      "age": 27,
+      "address": "3400 Spellman Road",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "04/14/24",
+      "name": "Kennard Murray",
+      "age": 23,
+      "address": "4900 Palmer Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/15/24",
+      "name": "Robert Lee Johnson",
+      "age": 37,
+      "address": "400 North Bradford Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/18/24",
+      "name": "Raymond McCoy",
+      "age": 30,
+      "address": "800 North Glover Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "04/21/24",
+      "name": "Joseph Barranco",
+      "age": 77,
+      "address": "900 West University Parkway",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "04/24/24",
+      "name": "Montez Barrett",
+      "age": 23,
+      "address": "1200 McCulloh Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "04/29/24",
+      "name": "Anthony Pearson",
+      "age": 43,
+      "address": "4700 Garrison Boulevard",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/05/24",
+      "name": "Lavontay Bishop",
+      "age": 33,
+      "address": "1000 Leadenhall Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/05/24",
+      "name": "Sherman Anderson",
+      "age": 25,
+      "address": "3300 Reisterstown Road",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "05/06/24",
+      "name": "Garfield Redd",
+      "age": 33,
+      "address": "1 East 21st Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "05/09/24",
+      "name": "Janelle Desormeaux",
+      "age": 40,
+      "address": "2100 East Preston Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/12/24",
+      "name": "Moses McKnight",
+      "age": 42,
+      "address": "3600 Leverton Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "05/14/24",
+      "name": "Dondre Green",
+      "age": 26,
+      "address": "2700 Greenmount Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/19/24",
+      "name": "Shelton Price",
+      "age": 33,
+      "address": "3000 Mayfield Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/20/24",
+      "name": "Phillip Smith",
+      "age": 39,
+      "address": "3900 Ridgewood Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/25/24",
+      "name": "Denzel Johnson",
+      "age": 17,
+      "address": "900 North Dukeland",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "05/27/24",
+      "name": "Corey Robinson",
+      "age": 41,
+      "address": "2700 West Fairmont Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "05/29/24",
+      "name": "Jamal Burden",
+      "age": 24,
+      "address": "5600 Bland Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "05/29/24",
+      "name": "Marcus Brown",
+      "age": 37,
+      "address": "1500 Russell Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/01/24",
+      "name": "Joe Lynch",
+      "age": 55,
+      "address": "5200 Reisterstown Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/02/24",
+      "name": "Jarmal Harrid",
+      "age": 34,
+      "address": "500 West Mulberry Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/02/24",
+      "name": "Terrell Johnson-Smith",
+      "age": 32,
+      "address": "900 Pennsylvania Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/05/24",
+      "name": "Travis Bell",
+      "age": 31,
+      "address": "2000 East 31st Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/09/24",
+      "name": "Said Raheem",
+      "age": 31,
+      "address": "2100 West Lexington Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/11/24",
+      "name": "Navaeh Ferguson",
+      "age": 17,
+      "address": "3100 Chelsea Terrace",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/11/24",
+      "name": "Deontay Townes",
+      "age": 19,
+      "address": "2600 Aisquith Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "06/12/24",
+      "name": "Jordan Taylor",
+      "age": 24,
+      "address": "1700 Ramsay Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "06/14/24",
+      "name": "Dennis Edmonds",
+      "age": 39,
+      "address": "4300 Bay Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "06/16/24",
+      "name": "April Patterson",
+      "age": 46,
+      "address": "1800 Spence Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "06/16/24",
+      "name": "Brandon Faison",
+      "age": 19,
+      "address": "800 North Warwick Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/18/24",
+      "name": "Marvin Moore",
+      "age": 42,
+      "address": "1000 Stoddard Court",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "06/23/24",
+      "name": "Paul Foxx",
+      "age": 35,
+      "address": "400 North Montford Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/24/24",
+      "name": "Isaiah Gaines",
+      "age": 20,
+      "address": "2000 McKean Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/25/24",
+      "name": "Carl Bodine",
+      "age": 59,
+      "address": "1000 Brantley Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "06/26/24",
+      "name": "Kendall Montgomery",
+      "age": 24,
+      "address": "3300 Dolfield Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "06/29/24",
+      "name": "Antoine Grant",
+      "age": 38,
+      "address": "4000 Fairfax Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/02/24",
+      "name": "Donovan Fletcher",
+      "age": 28,
+      "address": "5300 Cordelia Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/03/24",
+      "name": "Andrew Harvey Jr.",
+      "age": 30,
+      "address": "1600 Argyle Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/04/24",
+      "name": "Kenshawn Goode",
+      "age": 26,
+      "address": "1700 West Baltimore Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/05/24",
+      "name": "Corey Williams",
+      "age": 31,
+      "address": "2400 Woodbrook Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/05/24",
+      "name": "Devin Lee Butler",
+      "age": 33,
+      "address": "2400 West Lafayette Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/06/24",
+      "name": "Antoin Hines",
+      "age": 47,
+      "address": "1400 Traction Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/09/24",
+      "name": "Pierre Grant",
+      "age": 35,
+      "address": "4600 Garrison Boulevard",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/09/24",
+      "name": "Derrick Hawks",
+      "age": 19,
+      "address": "900 North Dukeland Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/10/24",
+      "name": "Unidentified Man",
+      "age": 21,
+      "address": "2500 Lauretta Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/10/24",
+      "name": "Cortez Lemon",
+      "age": 14,
+      "address": "4200 Frankford Road",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "07/10/24",
+      "name": "Taron Whiting",
+      "age": 21,
+      "address": "2500 Lauretta Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/14/24",
+      "name": "Sierra Johnson",
+      "age": 38,
+      "address": "800 Abbott Court",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "07/15/24",
+      "name": "Ely Williams-Harr",
+      "age": 27,
+      "address": "1500 North Potomac Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/16/24",
+      "name": "Theodore Burrell",
+      "age": 20,
+      "address": "2400 Frederick Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/18/24",
+      "name": "John Parrish",
+      "age": 18,
+      "address": "3200 Lawnview Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "07/18/24",
+      "name": "Brandon Tucker",
+      "age": 43,
+      "address": "1800 North Carey Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/19/24",
+      "name": "Breaunna Cormley",
+      "age": 12,
+      "address": "500 North Kenwood Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/20/24",
+      "name": "Alan Grant",
+      "age": 30,
+      "address": "2400 Loyola Northway",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/21/24",
+      "name": "Jasper Davis",
+      "age": 14,
+      "address": "2300 Liberty Heights Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/25/24",
+      "name": "Calvin Williams",
+      "age": 36,
+      "address": "3400 Garrison Boulevard",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/25/24",
+      "name": "Christopher Williams",
+      "age": 42,
+      "address": "1900 Greenmount Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/26/24",
+      "name": "Sean Sanders",
+      "age": 22,
+      "address": "1000 North Eden Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/28/24",
+      "name": "Reginald Coffey",
+      "age": 32,
+      "address": "600 North Potomac Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "07/29/24",
+      "name": "Carl Anthony",
+      "age": 34,
+      "address": "5200 St. Charles Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/01/24",
+      "name": "Ondrell Mayo Jr.",
+      "age": 36,
+      "address": "900 East Pataspco Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/03/24",
+      "name": "Aaron Frantom",
+      "age": 39,
+      "address": "100 North Mount Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/04/24",
+      "name": "Tai'Vion Lathan",
+      "age": 24,
+      "address": "800 North Monroe Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/06/24",
+      "name": "Brian Batty",
+      "age": 31,
+      "address": "1700 North Carey Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/09/24",
+      "name": "Christian Donaldson",
+      "age": 42,
+      "address": "1100 West Lombard Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/10/24",
+      "name": "Sean Henson Sr.",
+      "age": 49,
+      "address": "1100 Tiffany Court",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/15/24",
+      "name": "Timothy Johnson",
+      "age": 24,
+      "address": "1 South Gilmor Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/16/24",
+      "name": "Donnell Bristol",
+      "age": 26,
+      "address": "1400 North Decker Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/16/24",
+      "name": "Carroll Wonson",
+      "age": 56,
+      "address": "600 Springfield Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/17/24",
+      "name": "David Philpot",
+      "age": 74,
+      "address": "1700 Eastern Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/18/24",
+      "name": "Anthony Martin",
+      "age": 36,
+      "address": "1300 Spring Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/20/24",
+      "name": "Jermaine Parlow",
+      "age": 32,
+      "address": "300 South Franklintown Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/20/24",
+      "name": "Rodney Lee",
+      "age": 31,
+      "address": "2700 Fisk Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "08/21/24",
+      "name": "Brian Nesbitt",
+      "age": 37,
+      "address": "800 South Paca Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/21/24",
+      "name": "Brian Graham",
+      "age": 6,
+      "address": "6300 Greenspring Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/22/24",
+      "name": "Ronald Carroll",
+      "age": 46,
+      "address": "1900 East North Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "08/27/24",
+      "name": "Travis Cooper",
+      "age": 42,
+      "address": "2800 Mayfield Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/01/24",
+      "name": "Darrell Burton",
+      "age": 38,
+      "address": "800 Bonaparte Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/03/24",
+      "name": "Tyreke Brown",
+      "age": 22,
+      "address": "1300 Russell Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/11/24",
+      "name": "Richard Evans",
+      "age": 41,
+      "address": "1300 North Calhoun Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/14/24",
+      "name": "Antonio Peoples",
+      "age": 36,
+      "address": "700 Aliceanna Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "09/14/24",
+      "name": "Reginald Bernard Harrod",
+      "age": 59,
+      "address": "1100 Springfield Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/16/24",
+      "name": "Melvin Rich III",
+      "age": 36,
+      "address": "1300 North Carey Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/17/24",
+      "name": "Michael Simms",
+      "age": 20,
+      "address": "400 Bloom Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/17/24",
+      "name": "Andre Dukes",
+      "age": 29,
+      "address": "7200 McClean Boulevard",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/18/24",
+      "name": "Darryl Mitchell",
+      "age": 30,
+      "address": "4100 St. Georges Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/19/24",
+      "name": "Errique Neal",
+      "age": 26,
+      "address": "1100 East 20th Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/20/24",
+      "name": "Malik Cottman",
+      "age": 46,
+      "address": "1200 East North Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/21/24",
+      "name": "George Massey",
+      "age": 37,
+      "address": "5100 Park Heights Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/21/24",
+      "name": "Christian Leight",
+      "age": 24,
+      "address": "1100 Marshall Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/21/24",
+      "name": "Ryan Cain",
+      "age": 24,
+      "address": "4600 York Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/22/24",
+      "name": "Jasmine Simuel",
+      "age": 33,
+      "address": "2700 Pennsylvania Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "09/25/24",
+      "name": "Kevin Mejia",
+      "age": 27,
+      "address": "6300 Eastern Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "09/29/24",
+      "name": "Melvin Rogers",
+      "age": 43,
+      "address": "Wilhelm Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/02/24",
+      "name": "Tavin Cooper",
+      "age": 20,
+      "address": "2500 McHenry Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "10/05/24",
+      "name": "Jamil Richardson",
+      "age": 25,
+      "address": "500 Sheridan Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/05/24",
+      "name": "Dion Huff",
+      "age": 29,
+      "address": "2500 Greenmount Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/07/24",
+      "name": "Damien Parker",
+      "age": 26,
+      "address": "2300 Harford Road",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "10/09/24",
+      "name": "Marques Reaves",
+      "age": 26,
+      "address": "1100 North Lakewood Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/10/24",
+      "name": "Davon Gray",
+      "age": 34,
+      "address": "800 Gilrubin Court",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/10/24",
+      "name": "Shyheim Hunt",
+      "age": 25,
+      "address": "800 Gilrubin Court",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/12/24",
+      "name": "Elias Palmer",
+      "age": 17,
+      "address": "1200 South Haven Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/23/24",
+      "name": "Jose Rodriguez-Bustos",
+      "age": 26,
+      "address": "2600 East Baltimore Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/24/24",
+      "name": "Artez Collins",
+      "age": 30,
+      "address": "Boone Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/25/24",
+      "name": "Abdullah Barber-El",
+      "age": 21,
+      "address": "1100 South Monroe Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/27/24",
+      "name": "Marvin Wooten",
+      "age": 46,
+      "address": "1900 West Fayette Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "10/28/24",
+      "name": "Amy Armstrong",
+      "age": 28,
+      "address": "3700 Toone Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/03/24",
+      "name": "Solomon Wise",
+      "age": 58,
+      "address": "4200 Sheldon Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/06/24",
+      "name": "Cameran Holt",
+      "age": 19,
+      "address": "1 West Hamburg Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/06/24",
+      "name": "Bianca Nelson",
+      "age": 30,
+      "address": "1800 North Montford Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/06/24",
+      "name": "Deandre Yelverton",
+      "age": 36,
+      "address": "2500 North Howard Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/07/24",
+      "name": "Roger Hawkins",
+      "age": 27,
+      "address": "3700 Gwynn Oak Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/09/24",
+      "name": "Ira Linton",
+      "age": 46,
+      "address": "4200 Powell Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/12/24",
+      "name": "Isaiah Shackleford",
+      "age": 22,
+      "address": "Annapolis Road Exit of I-295",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/13/24",
+      "name": "Paul Lee",
+      "age": 33,
+      "address": "500 East Preston Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/15/24",
+      "name": "Laquarie Harvey",
+      "age": 27,
+      "address": "3600 Hayward Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/15/24",
+      "name": "Joyce Gaskins",
+      "age": 64,
+      "address": "1600 Druid Hill Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/17/24",
+      "name": "Kierra Tripp",
+      "age": 28,
+      "address": "800 North Wolfe Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/18/24",
+      "name": "Marcus Holloway",
+      "age": 40,
+      "address": "1900 Edmondson Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/21/24",
+      "name": "Leonardo Espinoza-Salomon",
+      "age": 23,
+      "address": "2300 Aisquith Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/21/24",
+      "name": "Reginald Allen Jr.",
+      "age": 29,
+      "address": "3900 Dolfield Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/21/24",
+      "name": "Gary Lee Matthews Jr.",
+      "age": 34,
+      "address": "4900 Frankford Avenue",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "11/23/24",
+      "name": "Marquis Hill",
+      "age": 25,
+      "address": "5500 Hamlin Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "11/30/24",
+      "name": "William Womack IV",
+      "age": 30,
+      "address": "1 South Eutaw Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/01/24",
+      "name": "Montrell Smith",
+      "age": 31,
+      "address": "2200 North Monroe Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/02/24",
+      "name": "Terry Nesbitt Jr.",
+      "age": 38,
+      "address": "3500 Clifton Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/07/24",
+      "name": "Garrison Warren",
+      "age": 56,
+      "address": "1000 Wicklow Road",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/09/24",
+      "name": "K'von McDowell",
+      "age": 25,
+      "address": "4000 West Belvedere Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/10/24",
+      "name": "Bryan Stansbury",
+      "age": 18,
+      "address": "1100 Quantrill Way",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/14/24",
+      "name": "Travon Benson",
+      "age": 29,
+      "address": "200 North Payson Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "12/16/24",
+      "name": "Ibrahim Kamara",
+      "age": 25,
+      "address": "1200 West North Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/16/24",
+      "name": "Ricky Forehand",
+      "age": 44,
+      "address": "1200 West Baltimore Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "12/16/24",
+      "name": "Donte Bazemore",
+      "age": 31,
+      "address": "2600 East Chase Street",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/17/24",
+      "name": "Krystal Prahampap",
+      "age": 42,
+      "address": "1000 Quantril Way",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "12/24/24",
+      "name": "Kevin Morrison",
+      "age": 17,
+      "address": "1900 North Forest Park Avenue",
+      "year": 2024,
+      "caseClosed": false
+    },
+    {
+      "date": "12/26/24",
+      "name": "Deangelo West",
+      "age": 27,
+      "address": "4300 East Preston Street",
+      "year": 2024,
+      "caseClosed": true
+    },
+    {
+      "date": "12/27/24",
+      "name": "Tyree Countess",
+      "age": 21,
+      "address": "2100 Druid Hill Avenue",
+      "year": 2024,
+      "caseClosed": true
+    }
+  ]
+}
