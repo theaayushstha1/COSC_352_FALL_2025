@@ -119,8 +119,8 @@ func main() {
 		}
 		fmt.Println("----------------------------\n")
 		fmt.Println("===== Baltimore Homicide Analysis =====")
-		fmt.Println("Top street with highest number of homicide cases:", topStreet)
-		fmt.Println("Total number of closed homicide cases:", closedCases)
+		fmt.Println("Name one street with highest number of homicide cases:", topStreet)
+		fmt.Println("What is the total number of closed homicide cases:", closedCases)
 		fmt.Println("=======================================")
 
 	case "csv":
