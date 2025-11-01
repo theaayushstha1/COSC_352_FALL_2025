@@ -1,14 +1,19 @@
-FROM golang:1.22-alpine
+# Use Debian-based Go image
+FROM golang:1.21-bullseye
 
+# Set working directory
 WORKDIR /app
 
-RUN apk add --no-cache git
-
+# Copy Go module files and download dependencies
 COPY go.mod go.sum ./
-RUN go mod download
+RUN go mod tidy
 
+# Copy source code
 COPY . .
 
-RUN go build -o baltimore-homicides main.go
+# Build fully static binary
+RUN CGO_ENABLED=0 GOOS=linux go build -o /app/baltimore-homicides main.go
+RUN chmod +x /app/baltimore-homicides
 
+# ENTRYPOINT
 ENTRYPOINT ["/app/baltimore-homicides"]

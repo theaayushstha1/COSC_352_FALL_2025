@@ -1,26 +1,18 @@
 #!/bin/bash
+set -e
 
-OUTPUT_FORMAT=""
+# Capture optional --output flag
+OUTPUT_FLAG=""
+if [[ "$1" == --output=* ]]; then
+  OUTPUT_FLAG="$1"
+fi
 
-# Parse argument
-for arg in "$@"
-do
-  case $arg in
-    --output=*)
-      OUTPUT_FORMAT="${arg#*=}"
-      shift
-      ;;
-    *)
-      ;;
-  esac
-done
+# Build Docker image
+docker build -t baltimore-homicides-go .
 
-# Build the program
-go build -o baltimore-homicides main.go
-
-# Run program
-if [ -z "$OUTPUT_FORMAT" ]; then
-    ./baltimore-homicides
+# Run container
+if [[ -n "$OUTPUT_FLAG" ]]; then
+  docker run --rm -v "$(pwd):/app" baltimore-homicides-go $OUTPUT_FLAG
 else
-    ./baltimore-homicides --output=$OUTPUT_FORMAT
+  docker run --rm -v "$(pwd):/app" baltimore-homicides-go
 fi
