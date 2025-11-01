@@ -8,149 +8,150 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"regexp"
+	"sort"
+	"strconv"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
 )
 
-type Homicide struct {
+type HomicideCase struct {
 	Date       string `json:"date"`
-	Location   string `json:"location"`
-	Status     string `json:"status"`
-	VictimName string `json:"victim_name"`
-}
-
-type QA struct {
-	Question string `json:"question"`
-	Answer   string `json:"answer"`
+	Name       string `json:"name"`
+	Age        int    `json:"age"`
+	Address    string `json:"address"`
+	CaseClosed string `json:"caseClosed"`
 }
 
 func main() {
-	outputFlag := flag.String("output", "", "Output format: csv, json, or leave empty for stdout")
+	// Parse flags
+	outputFlag := flag.String("output", "stdout", "Output format: stdout, csv, json")
 	flag.Parse()
+	outputFormat := strings.ToLower(*outputFlag)
 
 	url := "https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html"
-	homicides, err := scrapeHomicides(url)
+
+	// Fetch HTML
+	resp, err := http.Get(url)
 	if err != nil {
-		log.Fatalf("Failed to scrape data: %v", err)
+		log.Fatalf("❌ Failed to fetch URL: %v", err)
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != 200 {
+		log.Fatalf("❌ Non-200 response: %d", resp.StatusCode)
 	}
 
-	streetCount := map[string]int{}
-	closedCount := 0
-
-	for _, h := range homicides {
-		street := strings.Split(h.Location, ",")[0] // crude street extraction
-		streetCount[street]++
-		if strings.ToLower(h.Status) == "closed" {
-			closedCount++
-		}
-	}
-
-	// Find street with highest homicides
-	var maxStreet string
-	maxCount := 0
-	for street, count := range streetCount {
-		if count > maxCount {
-			maxStreet = street
-			maxCount = count
-		}
-	}
-
-	qaList := []QA{
-		{"Question 1: Name one street with one of the highest number of homicide cases?", maxStreet},
-		{"Question 2: What is total number of homicide cases that have been closed?", fmt.Sprintf("%d", closedCount)},
-		{"Question 3: What is the total number of homicide cases?", fmt.Sprintf("%d", len(homicides))},
-	}
-
-	switch strings.ToLower(*outputFlag) {
-	case "csv":
-		writeCSV(qaList)
-	case "json":
-		writeJSON(qaList)
-	default:
-		for _, qa := range qaList {
-			fmt.Printf("%s %s\n", qa.Question, qa.Answer)
-		}
-	}
-}
-
-func scrapeHomicides(url string) ([]Homicide, error) {
-	res, err := http.Get(url)
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
-		return nil, err
-	}
-	defer res.Body.Close()
-
-	if res.StatusCode != 200 {
-		return nil, fmt.Errorf("HTTP error: %d %s", res.StatusCode, res.Status)
+		log.Fatalf("❌ Failed to parse HTML: %v", err)
 	}
 
-	doc, err := goquery.NewDocumentFromReader(res.Body)
-	if err != nil {
-		return nil, err
-	}
-
-	var homicides []Homicide
-	doc.Find("table tbody tr").Each(func(i int, s *goquery.Selection) {
-		var h Homicide
-		s.Find("td").Each(func(j int, td *goquery.Selection) {
-			text := strings.TrimSpace(td.Text())
-			switch j {
-			case 0:
-				h.Date = text
-			case 1:
-				h.VictimName = text
-			case 2:
-				h.Location = text
-			case 3:
-				h.Status = text
-			}
+	// Parse table rows
+	var homicideCases []HomicideCase
+	doc.Find("table tr").Each(func(i int, row *goquery.Selection) {
+		if i == 0 {
+			return // skip header
+		}
+		cells := row.Find("td").Map(func(_ int, s *goquery.Selection) string {
+			return strings.TrimSpace(s.Text())
 		})
-		if h.Date != "" {
-			homicides = append(homicides, h)
+		if len(cells) >= 5 {
+			age, _ := strconv.Atoi(cells[3])
+			homicideCases = append(homicideCases, HomicideCase{
+				Date:       cells[1],
+				Name:       cells[2],
+				Age:        age,
+				Address:    cells[4],
+				CaseClosed: cells[len(cells)-1],
+			})
 		}
 	})
 
-	return homicides, nil
-}
-
-func writeCSV(qaList []QA) {
-	file, err := os.Create("output.csv")
-	if err != nil {
-		log.Fatalf("Cannot create CSV file: %v", err)
-	}
-	defer file.Close()
-
-	writer := csv.NewWriter(file)
-	defer writer.Flush()
-
-	writer.Write([]string{"Question", "Answer"})
-	for _, qa := range qaList {
-		writer.Write([]string{qa.Question, qa.Answer})
+	// Analytics: top street
+	streetCount := map[string]int{}
+	re := regexp.MustCompile(`(?i)\b(block|blk|unit)\b|\d+`)
+	for _, h := range homicideCases {
+		street := strings.TrimSpace(re.ReplaceAllString(h.Address, ""))
+		street = regexp.MustCompile(`\s+`).ReplaceAllString(street, " ")
+		if street != "" {
+			streetCount[street]++
+		}
 	}
 
-	fmt.Println("CSV file written to output.csv")
-	for _, qa := range qaList {
-		fmt.Printf("%s %s\n", qa.Question, qa.Answer)
+	type kv struct {
+		Key   string
+		Value int
 	}
-}
-
-func writeJSON(qaList []QA) {
-	file, err := os.Create("output.json")
-	if err != nil {
-		log.Fatalf("Cannot create JSON file: %v", err)
+	var sortedStreets []kv
+	for k, v := range streetCount {
+		sortedStreets = append(sortedStreets, kv{k, v})
 	}
-	defer file.Close()
+	sort.Slice(sortedStreets, func(i, j int) bool {
+		return sortedStreets[i].Value > sortedStreets[j].Value
+	})
 
-	enc := json.NewEncoder(file)
-	enc.SetIndent("", "  ")
-	err = enc.Encode(qaList)
-	if err != nil {
-		log.Fatalf("Error encoding JSON: %v", err)
+	topStreet := "No street data found."
+	if len(sortedStreets) > 0 {
+		topStreet = fmt.Sprintf("%s : %d cases", sortedStreets[0].Key, sortedStreets[0].Value)
 	}
 
-	fmt.Println("JSON file written to output.json")
-	for _, qa := range qaList {
-		fmt.Printf("%s %s\n", qa.Question, qa.Answer)
+	// Count closed cases
+	closedCases := 0
+	for _, h := range homicideCases {
+		if strings.EqualFold(h.CaseClosed, "Closed") {
+			closedCases++
+		}
+	}
+
+	// Host path for output files
+	outputDir := "/app" // container path mapped to host
+	csvFile := fmt.Sprintf("%s/output.csv", outputDir)
+	jsonFile := fmt.Sprintf("%s/output.json", outputDir)
+
+	// Output
+	switch outputFormat {
+	case "stdout":
+		fmt.Println("Fetching Baltimore Homicide Statistics...\n")
+		fmt.Println("---- RAW HOMICIDE DATA ----")
+		for _, h := range homicideCases {
+			fmt.Printf("%s | %s | %d | %s | %s\n", h.Date, h.Name, h.Age, h.Address, h.CaseClosed)
+		}
+		fmt.Println("----------------------------\n")
+		fmt.Println("===== Baltimore Homicide Analysis =====")
+		fmt.Println("Top street with highest number of homicide cases:", topStreet)
+		fmt.Println("Total number of closed homicide cases:", closedCases)
+		fmt.Println("=======================================")
+
+	case "csv":
+		file, err := os.Create(csvFile)
+		if err != nil {
+			log.Fatalf("❌ Failed to create CSV: %v", err)
+		}
+		defer file.Close()
+		writer := csv.NewWriter(file)
+		defer writer.Flush()
+		writer.Write([]string{"Date", "Name", "Age", "Address", "CaseClosed"})
+		for _, h := range homicideCases {
+			writer.Write([]string{h.Date, h.Name, strconv.Itoa(h.Age), h.Address, h.CaseClosed})
+		}
+		fmt.Printf("✅ CSV data written to %s\n", csvFile)
+
+	case "json":
+		file, err := os.Create(jsonFile)
+		if err != nil {
+			log.Fatalf("❌ Failed to create JSON: %v", err)
+		}
+		defer file.Close()
+		enc := json.NewEncoder(file)
+		enc.SetIndent("", "  ")
+		err = enc.Encode(homicideCases)
+		if err != nil {
+			log.Fatalf("❌ Failed to write JSON: %v", err)
+		}
+		fmt.Printf("✅ JSON data written to %s\n", jsonFile)
+
+	default:
+		fmt.Printf("⚠️ Unknown output format '%s'. Defaulting to stdout.\n", outputFormat)
 	}
 }
