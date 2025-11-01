@@ -71,3 +71,20 @@ INFO: Unsupported notification method: $/setTrace
 2025.10.24 22:49:18 INFO  shutting down Metals
 2025.10.24 22:49:18 INFO  Shut down connection with build server.
 2025.10.24 22:49:18 INFO  Exiting server
+2025.10.31 22:46:10 INFO  Started: Metals version 1.6.3 in folders 'D:\COSC_352_FALL_2025\david_johnny' for client Visual Studio Code 1.105.1.
+2025.10.31 22:46:10 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.31 22:46:11 INFO  Attempting to connect to the build server...
+2025.10.31 22:46:11 INFO  Running BSP server List(C:\Users\minot\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-options-v2.json, --json-launcher-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-launcher-options.json, --envs-file, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-envs.json, D:\COSC_352_FALL_2025\david_johnny)
+2025.10.31 22:46:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\COSC_352_FALL_2025\david_johnny\.metals\bsp.trace.json or C:\Users\minot\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.31 22:46:12 INFO  time: Connected to build server in 1.18s
+2025.10.31 22:46:12 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.31 22:46:12 INFO  compiling david_johnny_470e0b1e0f (2 scala sources)
+2025.10.31 22:46:17 INFO  time: compiled david_johnny_470e0b1e0f in 4.47s
+2025.10.31 22:46:17 INFO  compiling david_johnny_470e0b1e0f (2 scala sources)
+2025.10.31 22:46:18 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.31 22:46:18 INFO  time: compiled david_johnny_470e0b1e0f in 1.02s
+2025.10.31 22:46:18 INFO  time: indexed workspace in 6.34s
+2025.10.31 22:50:16 INFO  Shutting down server
+2025.10.31 22:50:16 INFO  shutting down Metals
+2025.10.31 22:50:16 INFO  Shut down connection with build server.
+2025.10.31 22:50:16 INFO  Exiting server
