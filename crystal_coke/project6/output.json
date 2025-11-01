@@ -1,0 +1,983 @@
+[
+  {
+    "number": "001",
+    "dateDied": "01/09/25",
+    "name": "Richie Briggs",
+    "age": "36",
+    "address": "5900 Dawalt Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "002",
+    "dateDied": "01/12/25",
+    "name": "Jamal Davis",
+    "age": "37",
+    "address": "4400 Reisterstown Road",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "005",
+    "dateDied": "01/18/25",
+    "name": "Brian Reed",
+    "age": "59",
+    "address": "5600 Groveland Avenue",
+    "notes": "Victim shot during dispute. Update 01/21/25 Shannelle Reed (daughter of victim) charged",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "006",
+    "dateDied": "01/19/25",
+    "name": "Hassan Howard",
+    "age": "43",
+    "address": "400 Washburn Avenue",
+    "notes": "Double shooting. Victims found in vehicle. This event occurred inside a Safe Streets Catchment Area.. Update 03/20/25 Darren Tomlinso n charged",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "007",
+    "dateDied": "01/19/25",
+    "name": "Edward Johnson",
+    "age": "44",
+    "address": "3700 East Baltimore Street",
+    "notes": "Person who died at a hospital was found with trauma. Homicide is investigating.",
+    "caseClosed": ""
+  },
+  {
+    "number": "008",
+    "dateDied": "01/19/25",
+    "name": "Mordecai Wells",
+    "age": "24",
+    "address": "3400 Berwyn Avenue",
+    "notes": "Triple shooting",
+    "caseClosed": ""
+  },
+  {
+    "number": "009",
+    "dateDied": "01/22/25",
+    "name": "Anntoinette Jennings",
+    "age": "52",
+    "address": "5400 York Road",
+    "notes": "Triple shooting. Victims found in vehicle. One of the other victim is an 11 years old girl. All victims were related. This may have been a dispute over a children's basketball game. Police say there were two shooters. Blogger note: There are no CCTV cameras on this block but plenty of retail commercial businesses including a check cashing place and 2 liquor stores. Update: 03/18/25 Tavon Singleton and Cassandra McRae indicted.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "010",
+    "dateDied": "01/22/25",
+    "name": "Rodney Lewis",
+    "age": "37",
+    "address": "2700 Pelham Avaenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "011",
+    "dateDied": "01/24/25",
+    "name": "Anthony McMichael",
+    "age": "36",
+    "address": "3000 Oakley Avenue",
+    "notes": "Shooting victim. Update 02/24/25 Zion Clay charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "012",
+    "dateDied": "01/26/25",
+    "name": "Justin Davis",
+    "age": "35",
+    "address": "1500 Carswell Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "013",
+    "dateDied": "01/26/25",
+    "name": "Lamel Edwards",
+    "age": "19",
+    "address": "3700 Edmondson Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "014",
+    "dateDied": "02/02/25",
+    "name": "Troy Kavanaugh",
+    "age": "37",
+    "address": "2500 East Biddle Street",
+    "notes": "Shooting victim. Update 03/25/25 Sean Lloyd charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "015",
+    "dateDied": "02/15/25",
+    "name": "Francisco Cuffey",
+    "age": "33",
+    "address": "6100 Plantview Way",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "016",
+    "dateDied": "02/15/25",
+    "name": "Keenan Bunch",
+    "age": "41",
+    "address": "1800 North Montford Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "017",
+    "dateDied": "02/20/25",
+    "name": "Clyde Barnes",
+    "age": "79",
+    "address": "110 North Central Avenue",
+    "notes": "Double shooting a Pleasant View Gardens Senior Living facility. Norman Waker charged. Defendant lived in the building.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "018",
+    "dateDied": "02/23/25",
+    "name": "Eric Carter",
+    "age": "30",
+    "address": "600 Poplar Grove Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "019",
+    "dateDied": "02/23/25",
+    "name": "Sae'Quan Newton",
+    "age": "28",
+    "address": "3600 Potee Street",
+    "notes": "Double shooting double homicide.",
+    "caseClosed": ""
+  },
+  {
+    "number": "020",
+    "dateDied": "02/23/25",
+    "name": "Diontavis Whitfield",
+    "age": "23",
+    "address": "3600 Potee Street",
+    "notes": "Double shooting double homicide.",
+    "caseClosed": ""
+  },
+  {
+    "number": "021",
+    "dateDied": "02/23/25",
+    "name": "Celvin Olivares-Portillo",
+    "age": "20",
+    "address": "4400 Eastern Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "022",
+    "dateDied": "02/26/25",
+    "name": "Cameron Kelly",
+    "age": "16",
+    "address": "1 North Bruce Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "023",
+    "dateDied": "03/04/25",
+    "name": "Shakeira Cooper",
+    "age": "41",
+    "address": "1000 McAleer Court",
+    "notes": "Shooting victim found in dwelling. Suspect found deceased at scene with gunshot.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "024",
+    "dateDied": "03/06/25",
+    "name": "Taijah Addison",
+    "age": "27",
+    "address": "600 Yale Avenue",
+    "notes": "Shooting victim found in vehicle. Matthew Crawley charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "025",
+    "dateDied": "03/13/25",
+    "name": "Donny Robinson",
+    "age": "61",
+    "address": "1600 Balmor Court",
+    "notes": "Victim with trauma to the body found in dwelling.",
+    "caseClosed": ""
+  },
+  {
+    "number": "026",
+    "dateDied": "03/13/25",
+    "name": "Bridgette Smallwood",
+    "age": "54",
+    "address": "3700 Potee Street",
+    "notes": "Victim found with apparent trauma",
+    "caseClosed": ""
+  },
+  {
+    "number": "027",
+    "dateDied": "03/15/25",
+    "name": "Anthony Perry Mosley",
+    "age": "20",
+    "address": "1500 North Stricker Street",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+    "caseClosed": ""
+  },
+  {
+    "number": "028",
+    "dateDied": "03/15/25",
+    "name": "Christopher Banks",
+    "age": "30",
+    "address": "5400 Park Heights Avenue",
+    "notes": "Shooting victim. Update 06/26/25 Joseph Hubbard and Darius Bell charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "029",
+    "dateDied": "03/16/25",
+    "name": "Kendall Brown",
+    "age": "40",
+    "address": "4300 Shamrock Avenue. Update 10/14/25 Neri Mancito Hernandez charged .",
+    "notes": "Shooting victim",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "030",
+    "dateDied": "03/18/25",
+    "name": "Shy'Keema Turner",
+    "age": "31",
+    "address": "700 East Preston Street",
+    "notes": "Shooting victim. Update 04//4/25 Unique Thorn was arrested in Ohio.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "031",
+    "dateDied": "03/18/25",
+    "name": "Maurice Lonon Jr.",
+    "age": "19",
+    "address": "1200 North Ellwood Avenue",
+    "notes": "Victim shot 03/14/25 died 03/18/25",
+    "caseClosed": ""
+  },
+  {
+    "number": "032",
+    "dateDied": "03/19/25",
+    "name": "Derrick Lamb",
+    "age": "49",
+    "address": "5400 Park Heights Avenue",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "033",
+    "dateDied": "03/22/25",
+    "name": "Fredi Lua",
+    "age": "48",
+    "address": "3200 Pulaski Highway",
+    "notes": "Shooting victim. Update 10/14/25 A 16 year old defendan t was charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "034",
+    "dateDied": "03/22/25",
+    "name": "Tyshawn Simon",
+    "age": "25",
+    "address": "3200 Chelsea Terrace",
+    "notes": "Victim shot 03/09/25 died 03/22/25",
+    "caseClosed": ""
+  },
+  {
+    "number": "035",
+    "dateDied": "03/27/25",
+    "name": "Darrius Bunch",
+    "age": "32",
+    "address": "1800 Edmondson Avenue",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "036",
+    "dateDied": "04/03/25",
+    "name": "Keyon Bryant",
+    "age": "22",
+    "address": "4100 Patterson Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "037",
+    "dateDied": "04/06/25",
+    "name": "Hakeen English",
+    "age": "35",
+    "address": "1600 Cliftview Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "038",
+    "dateDied": "04/06/25",
+    "name": "Paris Savage",
+    "age": "30",
+    "address": "1500 North Payson Street",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "039",
+    "dateDied": "04/18/25",
+    "name": "Karmel McGill",
+    "age": "18",
+    "address": "600 Allendale Street",
+    "notes": "Shooting victim. Baltimore Police are looking to identify these people of interest.",
+    "caseClosed": ""
+  },
+  {
+    "number": "040",
+    "dateDied": "04/23/25",
+    "name": "Derrick Bright",
+    "age": "30",
+    "address": "3300 Paton Avenue",
+    "notes": "Double shooting. Victim worked for a refuse company.",
+    "caseClosed": ""
+  },
+  {
+    "number": "041",
+    "dateDied": "05/03/25",
+    "name": "Rashard Smith",
+    "age": "21",
+    "address": "1800 Lorman Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "043",
+    "dateDied": "05/07/25",
+    "name": "John Lewis",
+    "age": "15",
+    "address": "3500 Brehms Lane",
+    "notes": "Double shooting. This event occurred inside a Safe Street Catchment Area. Update 05/07/25 Rodsheead Alexander, Zion Wimbish, and Ra'Shawn Smith, all charged with 1st degree murder.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "044",
+    "dateDied": "05/10/25",
+    "name": "Albert Manning",
+    "age": "37",
+    "address": "3500 2nd Street",
+    "notes": "Shooting victim. Update 06/03/25 Ronald Hall Jr. charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "045",
+    "dateDied": "05/11/25",
+    "name": "Taniya Gray",
+    "age": "23",
+    "address": "4500 Mountwood Road",
+    "notes": "Shooting victim found in vehicle. Update 05/28/25 Tamal Johnson charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "046",
+    "dateDied": "05/14/25",
+    "name": "Julio Delgado",
+    "age": "36",
+    "address": "2300 Jefferson Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "047",
+    "dateDied": "05/18/25",
+    "name": "Joseph Robinson",
+    "age": "25",
+    "address": "3400 Wilkens Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "048",
+    "dateDied": "05/18/25",
+    "name": "Da'Quan Little",
+    "age": "26",
+    "address": "1200 East Madison Street",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "049",
+    "dateDied": "05/19/25",
+    "name": "Demetrius Phyall",
+    "age": "18",
+    "address": "2300 East Preston Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "050",
+    "dateDied": "05/23/25",
+    "name": "Brandon Naylor",
+    "age": "38",
+    "address": "1800 North Woodyear Street",
+    "notes": "Stabbing victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "051",
+    "dateDied": "05/24/25",
+    "name": "Thomas Barnes",
+    "age": "28",
+    "address": "400 Heaver Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "052",
+    "dateDied": "05/25/25",
+    "name": "Tobias Cunningham",
+    "age": "50",
+    "address": "400 North Paca Street",
+    "notes": "Shooting victim. Baltimore Police have located a vehicle that was involved in this homicide. Driver has invoked his right to council.",
+    "caseClosed": ""
+  },
+  {
+    "number": "053",
+    "dateDied": "05/26/25",
+    "name": "Devin Thompson",
+    "age": "27",
+    "address": "1700 Pennsylvania Avenue",
+    "notes": "Double shooting double homicide",
+    "caseClosed": ""
+  },
+  {
+    "number": "054",
+    "dateDied": "05/26/25",
+    "name": "Kirsten Washington",
+    "age": "31",
+    "address": "1700 Pennsylvania Avenue",
+    "notes": "Double shooting double homicide",
+    "caseClosed": ""
+  },
+  {
+    "number": "055",
+    "dateDied": "05/31/25",
+    "name": "Bryant Breland",
+    "age": "42",
+    "address": "600 Cherry Hill Road",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+    "caseClosed": ""
+  },
+  {
+    "number": "056",
+    "dateDied": "06/01/25",
+    "name": "Demetri Briscoe",
+    "age": "26",
+    "address": "3000 Westfield Avenue",
+    "notes": "Stabbing victim. Update 06/05/25 Karin Redfern charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "057",
+    "dateDied": "06/02/25",
+    "name": "Derek Parker",
+    "age": "34",
+    "address": "1800 Dover Street",
+    "notes": "Shooting victim who passed at local hospital. Update 06/13/25 Baltimore Police would like to identify the suspect in this video.",
+    "caseClosed": ""
+  },
+  {
+    "number": "058",
+    "dateDied": "06/07/25",
+    "name": "Darrell Conway",
+    "age": "33",
+    "address": "3000 Thorndale Avenue",
+    "notes": "Shooting victim. Police are looking to identify these people of interest in this video.",
+    "caseClosed": ""
+  },
+  {
+    "number": "059",
+    "dateDied": "06/08/25",
+    "name": "Adam Brown",
+    "age": "47",
+    "address": "3400 Round Road",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area. Update 06/10/25 Melvin Scott charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "060",
+    "dateDied": "06/13/25",
+    "name": "Lavar Steeles",
+    "age": "23",
+    "address": "1500 West Fayette Street",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "061",
+    "dateDied": "06/14/25",
+    "name": "Derone Jones",
+    "age": "32",
+    "address": "5300 Frankford Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "062",
+    "dateDied": "06/17/25",
+    "name": "Isaiah Spicer",
+    "age": "29",
+    "address": "1900 East Lafayette Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "063",
+    "dateDied": "06/19/25",
+    "name": "Jalen Johnson",
+    "age": "29",
+    "address": "500 North Port Street",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+    "caseClosed": ""
+  },
+  {
+    "number": "064",
+    "dateDied": "06/21/25",
+    "name": "Tyrell John Curtis",
+    "age": "39",
+    "address": "100 South Broadway",
+    "notes": "Victim stabbed during a dispute. Update 06/24/25 Idris Malik Ramos charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "065",
+    "dateDied": "06/22/25",
+    "name": "Javaun Simmons",
+    "age": "31",
+    "address": "2200 Christian Street",
+    "notes": "Double shooting double homicide in conjunction with the incident at 2100 Wilkens Avenue. (Air temp greater than 100)",
+    "caseClosed": ""
+  },
+  {
+    "number": "066",
+    "dateDied": "06/23/25",
+    "name": "Corey Washington",
+    "age": "41",
+    "address": "4100 Woodridge Road",
+    "notes": "Shooting victim found in vehicle that had crashed into a dwelling.(Air temp greater than 100 F)",
+    "caseClosed": ""
+  },
+  {
+    "number": "067",
+    "dateDied": "06/30/25",
+    "name": "Donte Chase",
+    "age": "46",
+    "address": "700 Kenwood Avenue",
+    "notes": "Stabbing victim. Update 07/07/25 Sherrice Parker turned herself in.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "068",
+    "dateDied": "07/02/25",
+    "name": "Ronald Glascoe",
+    "age": "25",
+    "address": "3600 Ravenwood Avenue",
+    "notes": "Double shooting. Victim found in dwelling.",
+    "caseClosed": ""
+  },
+  {
+    "number": "069",
+    "dateDied": "07/02/25",
+    "name": "Franklin Hughes",
+    "age": "32",
+    "address": "3000 Westfield Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "070",
+    "dateDied": "07/03/25",
+    "name": "Jabari Cannon",
+    "age": "21",
+    "address": "1500 Thames Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "071",
+    "dateDied": "07/03/25",
+    "name": "Porcha Newman",
+    "age": "",
+    "address": "2000 Boone Street",
+    "notes": "Shooting victim found inside a dwelling",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "072",
+    "dateDied": "07/03/25",
+    "name": "Juan Hall",
+    "age": "37",
+    "address": "2200 Ashton Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "073",
+    "dateDied": "07/04/25",
+    "name": "Aaron Hill",
+    "age": "38",
+    "address": "3500 Esther Place",
+    "notes": "Shooting victim. Update 07/14/25 Davon Kelly charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "074",
+    "dateDied": "07/07/25",
+    "name": "Jermaine McFadden",
+    "age": "37",
+    "address": "4900 Reisterstown Road",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+    "caseClosed": ""
+  },
+  {
+    "number": "075",
+    "dateDied": "07/08/25",
+    "name": "Jamard Thomas",
+    "age": "40",
+    "address": "2600 Greenmount Avenue",
+    "notes": "Victim shot 07/04/25 died 07/08/25",
+    "caseClosed": ""
+  },
+  {
+    "number": "076",
+    "dateDied": "07/13/25",
+    "name": "Randolph Smith",
+    "age": "56",
+    "address": "3900 Frederick Avenue",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "077",
+    "dateDied": "07/12/25",
+    "name": "Keith Garrett",
+    "age": "60",
+    "address": "2800 Chesterfield Avenue",
+    "notes": "Victim found in dwelling with trauma to the body. Medical Examiner determined homicide. This victim was found in a Safe Streets Catchment Area. Victim was a retired teacher .",
+    "caseClosed": ""
+  },
+  {
+    "number": "078",
+    "dateDied": "07/11/25",
+    "name": "Naneato Alusi",
+    "age": "27",
+    "address": "6200 Shipview Way",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "079",
+    "dateDied": "07/13/25",
+    "name": "Randolph Smith",
+    "age": "56",
+    "address": "3900 Frederick Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "080",
+    "dateDied": "07/19/25",
+    "name": "Dennis Dorsch",
+    "age": "64",
+    "address": "1500 Olmstead Street",
+    "notes": "Shooting victim found in dwelling",
+    "caseClosed": ""
+  },
+  {
+    "number": "081",
+    "dateDied": "07/19/25",
+    "name": "William Grant",
+    "age": "33",
+    "address": "2800 Kennedy Avenue",
+    "notes": "Shooting victim. Update 07/22/25 Jasmine White charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "082",
+    "dateDied": "06/28/25",
+    "name": "Gregory Johnson",
+    "age": "40",
+    "address": "1700 Pennsylvania Avenue",
+    "notes": "Victim shot 07/07/2017 died 06/28/25. Medical Examiner determined homicide.",
+    "caseClosed": ""
+  },
+  {
+    "number": "083",
+    "dateDied": "07/22/25",
+    "name": "Kayla Williams",
+    "age": "30",
+    "address": "1100 Mount Holly Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "084",
+    "dateDied": "07/23/25",
+    "name": "Donte Griffin",
+    "age": "31",
+    "address": "500 Edgewood Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "085",
+    "dateDied": "07/19/25",
+    "name": "Travon Booth",
+    "age": "43",
+    "address": "I-83 near Ruxton Road exit",
+    "notes": "Victim was involved in events leading up to an incident near 1100 West Northern Parkway. Victim was found deceased in a single vehicle crash on I-83 near Ruxton Road. The Medical Examiner's Office ruled his death homicide caused by multiple blunt force injuries. Update 07/25/25 Tyler Liggins charged. Update 10/14/25 Davon Whitfield was arrested in North Carolina in connection to this murder.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "086",
+    "dateDied": "07/26/25",
+    "name": "Sirbryant Alston",
+    "age": "33",
+    "address": "1100 East Preston Street",
+    "notes": "Victim shot 06/30/25 died 07/26/25",
+    "caseClosed": ""
+  },
+  {
+    "number": "087",
+    "dateDied": "08/09/25",
+    "name": "Birane Gaye",
+    "age": "38",
+    "address": "2500 West Franklin Street",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "088",
+    "dateDied": "08/09/25",
+    "name": "Jerome Michael Coateson",
+    "age": "38",
+    "address": "2900 Spaulding Avenue",
+    "notes": "Sextuple shooting at block party",
+    "caseClosed": ""
+  },
+  {
+    "number": "089",
+    "dateDied": "08/20/25",
+    "name": "Levontaye Mullen",
+    "age": "25",
+    "address": "2800 Woodbrook Avenue",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "090",
+    "dateDied": "08/20/25",
+    "name": "Montrel Brookes-Davis",
+    "age": "18",
+    "address": "5100 Park Heights Avenue",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+    "caseClosed": ""
+  },
+  {
+    "number": "091",
+    "dateDied": "08/22/25",
+    "name": "Davonne Hare",
+    "age": "26",
+    "address": "700 Druid Park Lake Drive",
+    "notes": "Shooting victim. Update 09/24/25 A 16 year old has been charged with first degree murder.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "092",
+    "dateDied": "06/24/25",
+    "name": "Dontae Melton",
+    "age": "31",
+    "address": "North Franklintown Road and West Franklin Street",
+    "notes": "This homicide was caused by the Baltimore City Police Department.",
+    "caseClosed": ""
+  },
+  {
+    "number": "093",
+    "dateDied": "08/31/25",
+    "name": "Major Kip Smith",
+    "age": "61",
+    "address": "3000 West Garrison Avenue",
+    "notes": "Shooting victim. Update 10/14/25 Dontaye Richardson charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "094",
+    "dateDied": "09/03/25",
+    "name": "Davion Hodges",
+    "age": "25",
+    "address": "900 Edmondson Avenue",
+    "notes": "Shooting victim found in dwelling. Update 10/14/25 Tyjai Archer charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "095",
+    "dateDied": "09/09/25",
+    "name": "Deonaye Johnson",
+    "age": "26",
+    "address": "1000 North Arlington Avenue",
+    "notes": "Shooting victim. There was a barricade situation with the Baltimore Police. Update 10/16/25 Timothy Shearn charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "096",
+    "dateDied": "09/10/25",
+    "name": "Zayone Burman",
+    "age": "24",
+    "address": "1100 Ashburton Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "097",
+    "dateDied": "09/10/25",
+    "name": "Charlton Morris",
+    "age": "31",
+    "address": "2300 Ashland Avenue",
+    "notes": "Shooting victim. Udpate 10/14/25 Jabril Turner charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "098",
+    "dateDied": "09/13/25",
+    "name": "Kenneth Spaulding",
+    "age": "34",
+    "address": "3300 Spaulding Avenue",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "099",
+    "dateDied": "09/19/25",
+    "name": "Taiquan Moss",
+    "age": "29",
+    "address": "1100 East 20th Street",
+    "notes": "Shooting victim. Update 10/14/25 Kashif Forman charged",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "100",
+    "dateDied": "09/20/25",
+    "name": "Quant'ae Brown",
+    "age": "25",
+    "address": "300 Presstman Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "101",
+    "dateDied": "06/08/25",
+    "name": "Tyrone Wright",
+    "age": "25",
+    "address": "600 Glenwood Avenue",
+    "notes": "Victim shot 02/11/2011 died 06/08/25. Medical Examiner determined homicide 09/23/25. Officers arrested the suspect, 24-year-old Brandon Coker, on the day of the shooting. Coker later died in prison on January 28, 2025, police said.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "102",
+    "dateDied": "09/25/25",
+    "name": "Michael Schuler",
+    "age": "34",
+    "address": "2200 Sidney Avenue",
+    "notes": "Stabbing victim. Blogger note: Sidney Avenue is in the Westport neighborhood where a Virginia property speculator named David Baird has purchased the majority of houses through an LLC called HC Baltimore. He has rendered the homes vacant. HC Baltimore LLC is waiting on a payday while Westport falls into disrepair and criminal activity on account of what is now a large number of vacant homes. HC Baltimore is listed as the owner of the bulk of the properties on the 2200 block of Sidney Avenue.If you would like a machine readable file of all the properties in Westport owned by HC Baltimore feel free to contact me and I will supply it for you for free. David Baird also owns Homestead Building Systems in Bristow, Virginia. Update 10/06/25 Donald Graham charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "103",
+    "dateDied": "09/25/25",
+    "name": "Mekonen Habteselassie",
+    "age": "71",
+    "address": "1200 North Patterson Park Avenue",
+    "notes": "Victim found deceased in dwelling after well-being check. Update 10/14/25 Ephrem Melekte and Fasika Tsadik were arrested in New York in connection to this murder.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "104",
+    "dateDied": "09/26/25",
+    "name": "Virgil Holland Jr.",
+    "age": "31",
+    "address": "1200 West North Avenue",
+    "notes": "",
+    "caseClosed": ""
+  },
+  {
+    "number": "105",
+    "dateDied": "09/30/25",
+    "name": "Marlon Pugh",
+    "age": "35",
+    "address": "3700 Fifth Street",
+    "notes": "Shooting victim. This event occurred in a Safe Streets Catchment Area. Update 10/11/25 Devin Ash charged.",
+    "caseClosed": "Closed"
+  },
+  {
+    "number": "106",
+    "dateDied": "10/01/25",
+    "name": "Oshay Smith",
+    "age": "31",
+    "address": "2500 Maisel Court",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "107",
+    "dateDied": "10/02/25",
+    "name": "Walter Aston",
+    "age": "47",
+    "address": "800 North Bond Street",
+    "notes": "Two men were in an altercation. Both received stab wounds.",
+    "caseClosed": ""
+  },
+  {
+    "number": "108",
+    "dateDied": "10/07/25",
+    "name": "Terry Copes",
+    "age": "63",
+    "address": "100 West Garrett Street",
+    "notes": "Stabbing victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "109",
+    "dateDied": "10/10/25",
+    "name": "Ahing Castro",
+    "age": "44",
+    "address": "6100 Fortview Way",
+    "notes": "Victim found deceased in dwelling. 10/12/25 Medical Examiner determined homicide due to trauma to the body.",
+    "caseClosed": ""
+  },
+  {
+    "number": "110",
+    "dateDied": "10/15/25",
+    "name": "Darrius Hines",
+    "age": "29",
+    "address": "500 Callender Street",
+    "notes": "Shooting victim",
+    "caseClosed": ""
+  },
+  {
+    "number": "111",
+    "dateDied": "10/20/25",
+    "name": "Steven Phillips",
+    "age": "35",
+    "address": "1000 Cameron Road",
+    "notes": "Double shooting. Victims found in vehicle. The two victims were brother and sister.",
+    "caseClosed": ""
+  },
+  {
+    "number": "112",
+    "dateDied": "10/23/25",
+    "name": "Unidentified Man",
+    "age": "42",
+    "address": "4100 Hyden Court",
+    "notes": "",
+    "caseClosed": ""
+  }
+]
