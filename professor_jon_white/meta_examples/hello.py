@@ -1,19 +1,20 @@
+#1) What is the following functools library and why is it significant?
 from functools import wraps
 
-def world_wrapper(func):
+#2) Explain what this saymore function does and why it's important?
+def saymore(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-        print("Are you there world?", 1)
-        print("Are you there world?", 2)
-        print("Are you there world?", 3.5)
+        print("Are you there world?")
         result = func(*args, **kwargs)
         print("Goodbye world")
         return result
     return wrapper
 
-
-#@world_wrapper
+#3) What is happening in the runtime in the function below
+@saymore
 def hello_world():
-    print("Hello world! I'm here")
+    print("Hello world!")
 
-hello_world()
+#4) What is the output of the following code going to be?
+print("Hello World")
