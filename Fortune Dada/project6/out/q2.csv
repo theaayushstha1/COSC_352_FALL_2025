@@ -1,0 +1,3 @@
+group,closed,open,total,closure_rate_pct
+with_cctv,32,43,75,42.7
+no_cctv,73,157,230,31.7
