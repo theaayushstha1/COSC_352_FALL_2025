@@ -1,0 +1,3885 @@
+Starting batch processing of project6 directories...
+=================================================
+
+========================================
+Processing: Fortune Dada
+Directory: Fortune Dada/project6/
+Time: Mon Nov 10 22:54:16 UTC 2025
+========================================
+Building Docker image: project6_fortune dada
+ERROR: failed to build: invalid tag "project6_fortune dada": invalid reference format
+✗ Build failed - see log for details
+
+========================================
+Processing: Great_Anthony
+Directory: Great_Anthony/project6/
+Time: Mon Nov 10 22:54:16 UTC 2025
+========================================
+Building Docker image: project6_great_anthony
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 932B done
+#1 DONE 0.0s
+
+#2 [auth] library/alpine:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [auth] library/golang:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#4 DONE 0.3s
+
+#5 [internal] load metadata for docker.io/library/alpine:latest
+#5 DONE 0.3s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 7.53kB done
+#7 DONE 0.0s
+
+#8 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#8 resolve docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 0.0s done
+#8 sha256:c2321c7cf7210be837249dba0f3699fad6ddbb5718e70344b28c0d58feff4c0b 2.10kB / 2.10kB done
+#8 sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86fea8cb9e5ba2e5e6673fde9f6 0B / 3.62MB 0.1s
+#8 sha256:41db7493d1c6f3f26428d119962e3862c14a9e20bb0b8fefc36e7282d015d099 0B / 290.89kB 0.1s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 0B / 67.01MB 0.1s
+#8 sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94 10.30kB / 10.30kB done
+#8 sha256:8ee9b9e11ef79e314a7584040451a6df8e72a66712e741bf75951e05e587404e 1.92kB / 1.92kB done
+#8 sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86fea8cb9e5ba2e5e6673fde9f6 3.62MB / 3.62MB 0.2s done
+#8 sha256:41db7493d1c6f3f26428d119962e3862c14a9e20bb0b8fefc36e7282d015d099 290.89kB / 290.89kB 0.1s done
+#8 extracting sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86fea8cb9e5ba2e5e6673fde9f6
+#8 sha256:4579008f8500d429ec007d092329191009711942d9380d060c8d9bd24c0c352c 126B / 126B 0.2s done
+#8 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0B / 32B 0.2s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 6.29MB / 67.01MB 0.3s
+#8 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.2s done
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 13.63MB / 67.01MB 0.4s
+#8 extracting sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86fea8cb9e5ba2e5e6673fde9f6 0.1s done
+#8 extracting sha256:41db7493d1c6f3f26428d119962e3862c14a9e20bb0b8fefc36e7282d015d099
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 17.83MB / 67.01MB 0.5s
+#8 extracting sha256:41db7493d1c6f3f26428d119962e3862c14a9e20bb0b8fefc36e7282d015d099 0.1s done
+#8 ...
+
+#9 [stage-1 1/7] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#9 resolve docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412 0.0s done
+#9 sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412 9.22kB / 9.22kB done
+#9 sha256:85f2b723e106c34644cd5851d7e81ee87da98ac54672b29947c052a45d31dc2f 1.02kB / 1.02kB done
+#9 sha256:706db57fb2063f39f69632c5b5c9c439633fda35110e65587c5d85553fd1cc38 581B / 581B done
+#9 sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 3.80MB / 3.80MB 0.3s done
+#9 extracting sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 0.2s done
+#9 DONE 0.6s
+
+#8 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 22.02MB / 67.01MB 0.7s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 29.36MB / 67.01MB 0.9s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 35.65MB / 67.01MB 1.1s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 39.85MB / 67.01MB 1.2s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 55.57MB / 67.01MB 1.5s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 67.01MB / 67.01MB 1.6s
+#8 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 67.01MB / 67.01MB 2.2s done
+#8 extracting sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0
+#8 ...
+
+#10 [stage-1 2/7] RUN apk --no-cache add ca-certificates wget
+#10 0.981 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+#10 1.143 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+#10 1.618 (1/5) Installing ca-certificates (20250911-r0)
+#10 1.664 (2/5) Installing libunistring (1.3-r0)
+#10 1.691 (3/5) Installing libidn2 (2.3.7-r0)
+#10 1.709 (4/5) Installing pcre2 (10.46-r0)
+#10 1.715 (5/5) Installing wget (1.25.0-r1)
+#10 1.759 Executing busybox-1.37.0-r19.trigger
+#10 1.771 Executing ca-certificates-20250911-r0.trigger
+#10 1.829 OK: 11 MiB in 21 packages
+#10 DONE 2.5s
+
+#8 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#8 ...
+
+#11 [stage-1 3/7] WORKDIR /app
+#11 DONE 0.7s
+
+#8 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#8 extracting sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 5.1s
+#8 extracting sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 5.4s done
+#8 extracting sha256:4579008f8500d429ec007d092329191009711942d9380d060c8d9bd24c0c352c
+#8 extracting sha256:4579008f8500d429ec007d092329191009711942d9380d060c8d9bd24c0c352c done
+#8 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#8 DONE 10.4s
+
+#12 [builder 2/5] WORKDIR /app
+#12 DONE 0.0s
+
+#13 [builder 3/5] COPY main.go .
+#13 DONE 0.0s
+
+#14 [builder 4/5] RUN go mod init homicide-analysis
+#14 0.187 go: creating new go.mod: module homicide-analysis
+#14 0.192 go: to add module requirements and sums:
+#14 0.192 	go mod tidy
+#14 DONE 0.2s
+
+#15 [builder 5/5] RUN go build -o homicide-analysis main.go
+#15 DONE 8.7s
+
+#16 [stage-1 4/7] COPY --from=builder /app/homicide-analysis .
+#16 DONE 0.1s
+
+#17 [stage-1 5/7] RUN mkdir -p data
+#17 DONE 0.2s
+
+#18 [stage-1 6/7] RUN wget -O data/homicide-data.csv https://raw.githubusercontent.com/washingtonpost/data-homicides/master/homicide-data.csv
+#18 0.186 --2025-11-10 22:54:36--  https://raw.githubusercontent.com/washingtonpost/data-homicides/master/homicide-data.csv
+#18 0.205 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
+#18 0.207 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+#18 0.216 HTTP request sent, awaiting response... 200 OK
+#18 0.298 Length: 5399944 (5.1M) [text/plain]
+#18 0.298 Saving to: 'data/homicide-data.csv'
+#18 0.298 
+#18 0.298      0K .......... .......... .......... .......... ..........  0% 29.1M 0s
+#18 0.299     50K .......... .......... .......... .......... ..........  1% 67.4M 0s
+#18 0.300    100K .......... .......... .......... .......... ..........  2% 42.3M 0s
+#18 0.301    150K .......... .......... .......... .......... ..........  3%  114M 0s
+#18 0.301    200K .......... .......... .......... .......... ..........  4% 40.7M 0s
+#18 0.303    250K .......... .......... .......... .......... ..........  5% 49.0M 0s
+#18 0.304    300K .......... .......... .......... .......... ..........  6%  109M 0s
+#18 0.304    350K .......... .......... .......... .......... ..........  7%  180M 0s
+#18 0.304    400K .......... .......... .......... .......... ..........  8%  222M 0s
+#18 0.304    450K .......... .......... .......... .......... ..........  9%  221M 0s
+#18 0.305    500K .......... .......... .......... .......... .......... 10%  268M 0s
+#18 0.305    550K .......... .......... .......... .......... .......... 11%  254M 0s
+#18 0.305    600K .......... .......... .......... .......... .......... 12%  177M 0s
+#18 0.305    650K .......... .......... .......... .......... .......... 13%  245M 0s
+#18 0.305    700K .......... .......... .......... .......... .......... 14% 46.3M 0s
+#18 0.307    750K .......... .......... .......... .......... .......... 15% 34.2M 0s
+#18 0.308    800K .......... .......... .......... .......... .......... 16%  114M 0s
+#18 0.309    850K .......... .......... .......... .......... .......... 17%  253M 0s
+#18 0.309    900K .......... .......... .......... .......... .......... 18%  228M 0s
+#18 0.309    950K .......... .......... .......... .......... .......... 18%  242M 0s
+#18 0.309   1000K .......... .......... .......... .......... .......... 19%  166M 0s
+#18 0.309   1050K .......... .......... .......... .......... .......... 20%  225M 0s
+#18 0.310   1100K .......... .......... .......... .......... .......... 21% 38.0M 0s
+#18 0.311   1150K .......... .......... .......... .......... .......... 22%  132M 0s
+#18 0.311   1200K .......... .......... .......... .......... .......... 23%  230M 0s
+#18 0.311   1250K .......... .......... .......... .......... .......... 24%  217M 0s
+#18 0.312   1300K .......... .......... .......... .......... .......... 25%  231M 0s
+#18 0.312   1350K .......... .......... .......... .......... .......... 26%  167M 0s
+#18 0.312   1400K .......... .......... .......... .......... .......... 27%  250M 0s
+#18 0.312   1450K .......... .......... .......... .......... .......... 28%  242M 0s
+#18 0.314   1500K .......... .......... .......... .......... .......... 29% 33.5M 0s
+#18 0.314   1550K .......... .......... .......... .......... .......... 30% 88.0M 0s
+#18 0.315   1600K .......... .......... .......... .......... .......... 31%  212M 0s
+#18 0.315   1650K .......... .......... .......... .......... .......... 32% 82.8M 0s
+#18 0.316   1700K .......... .......... .......... .......... .......... 33%  206M 0s
+#18 0.316   1750K .......... .......... .......... .......... .......... 34%  111M 0s
+#18 0.316   1800K .......... .......... .......... .......... .......... 35% 49.8M 0s
+#18 0.318   1850K .......... .......... .......... .......... .......... 36%  230M 0s
+#18 0.318   1900K .......... .......... .......... .......... .......... 36%  230M 0s
+#18 0.318   1950K .......... .......... .......... .......... .......... 37%  227M 0s
+#18 0.318   2000K .......... .......... .......... .......... .......... 38%  217M 0s
+#18 0.318   2050K .......... .......... .......... .......... .......... 39%  222M 0s
+#18 0.318   2100K .......... .......... .......... .......... .......... 40%  250M 0s
+#18 0.318   2150K .......... .......... .......... .......... .......... 41%  250M 0s
+#18 0.319   2200K .......... .......... .......... .......... .......... 42% 28.0M 0s
+#18 0.321   2250K .......... .......... .......... .......... .......... 43% 64.4M 0s
+#18 0.321   2300K .......... .......... .......... .......... .......... 44%  243M 0s
+#18 0.321   2350K .......... .......... .......... .......... .......... 45%  245M 0s
+#18 0.321   2400K .......... .......... .......... .......... .......... 46%  129M 0s
+#18 0.322   2450K .......... .......... .......... .......... .......... 47% 90.8M 0s
+#18 0.323   2500K .......... .......... .......... .......... .......... 48%  217M 0s
+#18 0.323   2550K .......... .......... .......... .......... .......... 49%  107M 0s
+#18 0.323   2600K .......... .......... .......... .......... .......... 50%  184M 0s
+#18 0.324   2650K .......... .......... .......... .......... .......... 51%  166M 0s
+#18 0.324   2700K .......... .......... .......... .......... .......... 52%  202M 0s
+#18 0.324   2750K .......... .......... .......... .......... .......... 53%  187M 0s
+#18 0.324   2800K .......... .......... .......... .......... .......... 54% 68.3M 0s
+#18 0.325   2850K .......... .......... .......... .......... .......... 54%  261M 0s
+#18 0.325   2900K .......... .......... .......... .......... .......... 55%  242M 0s
+#18 0.325   2950K .......... .......... .......... .......... .......... 56%  247M 0s
+#18 0.325   3000K .......... .......... .......... .......... .......... 57%  242M 0s
+#18 0.325   3050K .......... .......... .......... .......... .......... 58%  225M 0s
+#18 0.326   3100K .......... .......... .......... .......... .......... 59%  258M 0s
+#18 0.326   3150K .......... .......... .......... .......... .......... 60%  182M 0s
+#18 0.326   3200K .......... .......... .......... .......... .......... 61%  227M 0s
+#18 0.326   3250K .......... .......... .......... .......... .......... 62% 55.2M 0s
+#18 0.328   3300K .......... .......... .......... .......... .......... 63% 44.0M 0s
+#18 0.328   3350K .......... .......... .......... .......... .......... 64%  121M 0s
+#18 0.329   3400K .......... .......... .......... .......... .......... 65%  250M 0s
+#18 0.329   3450K .......... .......... .......... .......... .......... 66%  180M 0s
+#18 0.329   3500K .......... .......... .......... .......... .......... 67%  214M 0s
+#18 0.330   3550K .......... .......... .......... .......... .......... 68% 63.7M 0s
+#18 0.331   3600K .......... .......... .......... .......... .......... 69%  223M 0s
+#18 0.331   3650K .......... .......... .......... .......... .......... 70%  101M 0s
+#18 0.331   3700K .......... .......... .......... .......... .......... 71%  131M 0s
+#18 0.331   3750K .......... .......... .......... .......... .......... 72%  152M 0s
+#18 0.332   3800K .......... .......... .......... .......... .......... 73%  240M 0s
+#18 0.332   3850K .......... .......... .......... .......... .......... 73%  211M 0s
+#18 0.332   3900K .......... .......... .......... .......... .......... 74% 80.0M 0s
+#18 0.333   3950K .......... .......... .......... .......... .......... 75%  112M 0s
+#18 0.333   4000K .......... .......... .......... .......... .......... 76%  108M 0s
+#18 0.334   4050K .......... .......... .......... .......... .......... 77%  238M 0s
+#18 0.334   4100K .......... .......... .......... .......... .......... 78%  249M 0s
+#18 0.334   4150K .......... .......... .......... .......... .......... 79%  257M 0s
+#18 0.334   4200K .......... .......... .......... .......... .......... 80%  199M 0s
+#18 0.334   4250K .......... .......... .......... .......... .......... 81% 72.9M 0s
+#18 0.335   4300K .......... .......... .......... .......... .......... 82%  150M 0s
+#18 0.336   4350K .......... .......... .......... .......... .......... 83% 62.4M 0s
+#18 0.337   4400K .......... .......... .......... .......... .......... 84%  138M 0s
+#18 0.337   4450K .......... .......... .......... .......... .......... 85% 67.9M 0s
+#18 0.338   4500K .......... .......... .......... .......... .......... 86%  139M 0s
+#18 0.338   4550K .......... .......... .......... .......... .......... 87%  243M 0s
+#18 0.338   4600K .......... .......... .......... .......... .......... 88% 61.8M 0s
+#18 0.339   4650K .......... .......... .......... .......... .......... 89%  232M 0s
+#18 0.339   4700K .......... .......... .......... .......... .......... 90%  184M 0s
+#18 0.339   4750K .......... .......... .......... .......... .......... 91%  259M 0s
+#18 0.339   4800K .......... .......... .......... .......... .......... 91%  132M 0s
+#18 0.340   4850K .......... .......... .......... .......... .......... 92% 60.1M 0s
+#18 0.341   4900K .......... .......... .......... .......... .......... 93%  173M 0s
+#18 0.341   4950K .......... .......... .......... .......... .......... 94%  199M 0s
+#18 0.341   5000K .......... .......... .......... .......... .......... 95%  237M 0s
+#18 0.341   5050K .......... .......... .......... .......... .......... 96%  284M 0s
+#18 0.341   5100K .......... .......... .......... .......... .......... 97%  151M 0s
+#18 0.342   5150K .......... .......... .......... .......... .......... 98%  144M 0s
+#18 0.342   5200K .......... .......... .......... .......... .......... 99% 85.3M 0s
+#18 0.343   5250K .......... .......... ...                             100%  281M=0.05s
+#18 0.343 
+#18 0.343 2025-11-10 22:54:37 (113 MB/s) - 'data/homicide-data.csv' saved [5399944/5399944]
+#18 0.343 
+#18 DONE 0.4s
+
+#19 [stage-1 7/7] RUN chmod +x homicide-analysis
+#19 DONE 0.2s
+
+#20 exporting to image
+#20 exporting layers
+#20 exporting layers 0.7s done
+#20 writing image sha256:751cb148e010dfd701643e2efb2e39b3bcff97e969504afabd0cdb2f75793dab done
+#20 naming to docker.io/library/project6_great_anthony done
+#20 DONE 0.7s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Starting Baltimore Homicide Analysis with output format: stdout
+Successfully loaded 52179 records
+Found 2827 Baltimore records
+
+=== Baltimore Homicide Statistics ===
+Total Homicides: 2827
+Cases Closed: 1154
+Cases Open: 1673
+Average Age: 30.6
+
+=== Homicides by Year ===
+2007: 280
+2008: 234
+2009: 236
+2010: 220
+2011: 197
+2012: 216
+2013: 231
+2014: 211
+2015: 342
+2016: 320
+2017: 340
+
+=== Homicides by Month ===
+Month 1: 209
+Month 2: 163
+Month 3: 204
+Month 4: 225
+Month 5: 284
+Month 6: 254
+Month 7: 289
+Month 8: 250
+Month 9: 247
+Month 10: 243
+Month 11: 236
+Month 12: 223
+
+=== Top Dispositions ===
+Open/No arrest: 1673
+Closed by arrest: 1002
+Closed without arrest: 152
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_great_anthony:latest
+Deleted: sha256:751cb148e010dfd701643e2efb2e39b3bcff97e969504afabd0cdb2f75793dab
+✓ Image removed
+
+========================================
+Processing: Judah_Whiddon
+Directory: Judah_Whiddon/project6/
+Time: Mon Nov 10 22:54:39 UTC 2025
+========================================
+Building Docker image: project6_judah_whiddon
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 183B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.23-bookworm
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 7.67kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/golang:1.23-bookworm@sha256:167053a2bb901972bf2c1611f8f52c44d5fe7e762e5cab213708d82c421614db
+#5 resolve docker.io/library/golang:1.23-bookworm@sha256:167053a2bb901972bf2c1611f8f52c44d5fe7e762e5cab213708d82c421614db done
+#5 sha256:e87b2a5f6df2dff71ea330d55d54f4979eb380ae58a7e3aabc9d53121243e689 2.32kB / 2.32kB done
+#5 sha256:16c42bcc0084d3c7903067887c2674a5ee85b8b0d0278ca60c43d983154ed505 2.81kB / 2.81kB done
+#5 sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 5.24MB / 48.49MB 0.1s
+#5 sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 2.10MB / 64.40MB 0.1s
+#5 sha256:167053a2bb901972bf2c1611f8f52c44d5fe7e762e5cab213708d82c421614db 9.10kB / 9.10kB done
+#5 sha256:6d6401b7636bba3fe2d916b154ba44abe2081a737e117b2c736167ca6ea42334 6.29MB / 24.02MB 0.1s
+#5 sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 20.97MB / 48.49MB 0.3s
+#5 sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 20.86MB / 64.40MB 0.3s
+#5 sha256:6d6401b7636bba3fe2d916b154ba44abe2081a737e117b2c736167ca6ea42334 24.02MB / 24.02MB 0.3s
+#5 sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 27.26MB / 48.49MB 0.4s
+#5 sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 33.55MB / 64.40MB 0.4s
+#5 sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 44.04MB / 48.49MB 0.6s
+#5 sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 49.90MB / 64.40MB 0.6s
+#5 sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 48.49MB / 48.49MB 0.8s
+#5 sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 64.40MB / 64.40MB 0.8s
+#5 sha256:6d6401b7636bba3fe2d916b154ba44abe2081a737e117b2c736167ca6ea42334 24.02MB / 24.02MB 0.6s done
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 4.19MB / 92.38MB 0.7s
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 23.07MB / 92.38MB 1.0s
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 37.75MB / 92.38MB 1.3s
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 54.53MB / 92.38MB 1.6s
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 65.01MB / 92.38MB 1.8s
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 72.35MB / 92.38MB 2.0s
+#5 sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 48.49MB / 48.49MB 2.1s done
+#5 sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 64.40MB / 64.40MB 2.1s done
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 78.64MB / 92.38MB 2.2s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 0B / 74.07MB 2.2s
+#5 sha256:01b3c4a0d5c8f9abfa7395525fc8c3e2d9b8d3fec47edaf0d9c58f6253797d34 125B / 125B 2.2s done
+#5 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0B / 32B 2.2s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 9.44MB / 74.07MB 2.3s
+#5 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 2.2s done
+#5 extracting sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 92.38MB / 92.38MB 2.4s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 19.92MB / 74.07MB 2.6s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 26.21MB / 74.07MB 2.7s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 31.46MB / 74.07MB 2.8s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 35.65MB / 74.07MB 3.1s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 46.14MB / 74.07MB 3.2s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 58.72MB / 74.07MB 3.4s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 66.06MB / 74.07MB 3.5s
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 74.07MB / 74.07MB 3.7s
+#5 sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 92.38MB / 92.38MB 4.6s done
+#5 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 74.07MB / 74.07MB 4.6s done
+#5 extracting sha256:f014853ae2033c0e173500a9c5027c3ecffe2ffacbd09b789ac2f2dc63ddaa63 4.0s done
+#5 extracting sha256:6d6401b7636bba3fe2d916b154ba44abe2081a737e117b2c736167ca6ea42334
+#5 extracting sha256:6d6401b7636bba3fe2d916b154ba44abe2081a737e117b2c736167ca6ea42334 0.8s done
+#5 extracting sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05
+#5 extracting sha256:cffef7dc6f99e0837fd18f5ab2b363aff8d1c12ed377199f6d6478f80b458c05 2.8s done
+#5 extracting sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877
+#5 extracting sha256:d64c83132511ab5226f18a66abc03228a24fffcaf1ab1b4e9c9cdb64d16ad877 2.6s done
+#5 extracting sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3
+#5 extracting sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 4.6s done
+#5 extracting sha256:01b3c4a0d5c8f9abfa7395525fc8c3e2d9b8d3fec47edaf0d9c58f6253797d34
+#5 extracting sha256:01b3c4a0d5c8f9abfa7395525fc8c3e2d9b8d3fec47edaf0d9c58f6253797d34 done
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 DONE 29.8s
+
+#6 [2/4] WORKDIR /app
+#6 DONE 0.0s
+
+#7 [3/4] COPY main.go ./
+#7 DONE 0.1s
+
+#8 [4/4] RUN go mod init app && go build -o app .
+#8 0.246 go: creating new go.mod: module app
+#8 0.252 go: to add module requirements and sums:
+#8 0.252 	go mod tidy
+#8 DONE 25.1s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 3.6s done
+#9 writing image sha256:141c74c413125e0b0b27c51f509cd61c2cff5dfd078c8e106033863536195b40 done
+#9 naming to docker.io/library/project6_judah_whiddon done
+#9 DONE 3.6s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Question 1: Between 2024 and 2025, which months had the highest number of homicides?
+
+2024:
+Month        | Count
+----------------------
+July         |    25
+September    |    20
+November     |    19
+August       |    17
+January      |    17
+June         |    17
+December     |    16
+March        |    16
+February     |    14
+October      |    14
+May          |    13
+April        |    11
+Total homicides recorded: 199
+
+2025:
+Month        | Count
+----------------------
+July         |    18
+June         |    15
+May          |    15
+March        |    13
+January      |    11
+September    |    11
+February     |     9
+October      |     9
+August       |     6
+April        |     5
+November     |     4
+Total homicides recorded: 116
+
+Question 2: In 2024, how many homicide cases are marked 'Closed' vs 'Open'?
+Status | Count | Share
+----------------------
+Closed  |    68 | 34.2%
+Open    |   131 | 65.8%
+Total cases analyzed: 199
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_judah_whiddon:latest
+Deleted: sha256:141c74c413125e0b0b27c51f509cd61c2cff5dfd078c8e106033863536195b40
+✓ Image removed
+
+========================================
+Processing: Marquise_Pearson
+Directory: Marquise_Pearson/project6/
+Time: Mon Nov 10 22:55:39 UTC 2025
+========================================
+Building Docker image: project6_marquise_pearson
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 348B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.23-alpine
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [stage-1 1/3] WORKDIR /app
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 12.05kB done
+#5 DONE 0.0s
+
+#6 [build 1/6] FROM docker.io/library/golang:1.23-alpine@sha256:383395b794dffa5b53012a212365d40c8e37109a626ca30d6151c8348d380b5f
+#6 resolve docker.io/library/golang:1.23-alpine@sha256:383395b794dffa5b53012a212365d40c8e37109a626ca30d6151c8348d380b5f 0.0s done
+#6 sha256:383395b794dffa5b53012a212365d40c8e37109a626ca30d6151c8348d380b5f 10.30kB / 10.30kB done
+#6 sha256:a7ecaac5efda22510d8c903bdc6b19026543f1eac3317d47363680df22161bd8 1.92kB / 1.92kB done
+#6 sha256:72fd06a5dd05d7cb31d0fa2a125e89eecc16fbff26acf95bbd2762cdcfb5af38 2.08kB / 2.08kB done
+#6 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 3.15MB / 3.80MB 0.1s
+#6 sha256:8371a51cbc44c1323f96695eaeaeeb1c44b2d30d138a279b348af5c18b2c5e24 282.45kB / 282.45kB 0.1s
+#6 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 397.31kB / 74.07MB 0.1s
+#6 sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 3.80MB / 3.80MB 0.2s done
+#6 sha256:8371a51cbc44c1323f96695eaeaeeb1c44b2d30d138a279b348af5c18b2c5e24 282.45kB / 282.45kB 0.2s done
+#6 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 14.68MB / 74.07MB 0.2s
+#6 extracting sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0.1s
+#6 sha256:d3178a7b27090e22bc2464346d1cdc8f59d0fd7a241452e8148342edf3d0b1e9 0B / 126B 0.2s
+#6 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 44.04MB / 74.07MB 0.4s
+#6 extracting sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8 0.2s done
+#6 sha256:d3178a7b27090e22bc2464346d1cdc8f59d0fd7a241452e8148342edf3d0b1e9 126B / 126B 0.2s done
+#6 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.3s done
+#6 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 69.21MB / 74.07MB 0.5s
+#6 extracting sha256:8371a51cbc44c1323f96695eaeaeeb1c44b2d30d138a279b348af5c18b2c5e24 0.1s done
+#6 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 74.07MB / 74.07MB 0.7s
+#6 sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 74.07MB / 74.07MB 1.6s done
+#6 extracting sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 0.1s
+#6 extracting sha256:d5791340ef181f05ef1e99760e4be81cb2008d99b2bc1e56b2faa9b6295d0ac3 4.7s done
+#6 extracting sha256:d3178a7b27090e22bc2464346d1cdc8f59d0fd7a241452e8148342edf3d0b1e9
+#6 extracting sha256:d3178a7b27090e22bc2464346d1cdc8f59d0fd7a241452e8148342edf3d0b1e9 done
+#6 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#6 DONE 10.1s
+
+#7 [build 2/6] WORKDIR /app
+#7 DONE 0.0s
+
+#8 [build 3/6] COPY go.mod ./
+#8 DONE 0.0s
+
+#9 [build 4/6] RUN go mod download
+#9 0.212 go: no module dependencies to download
+#9 DONE 0.2s
+
+#10 [build 5/6] COPY . .
+#10 DONE 0.0s
+
+#11 [build 6/6] RUN CGO_ENABLED=0 go build -o /out/project6 ./cmd/project6
+#11 DONE 9.4s
+
+#12 [stage-1 2/3] COPY --from=build /out/project6 /usr/local/bin/project6
+#12 DONE 0.1s
+
+#13 [stage-1 3/3] COPY --from=build /app/data /app/data
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers 0.1s done
+#14 writing image sha256:aeddd7bd5c0f92b5c76f6f15bd7561964bdcb7a038265fd3beed23a397b466e4 done
+#14 naming to docker.io/library/project6_marquise_pearson done
+#14 DONE 0.1s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+2025/11/10 22:56:00 usage: /usr/local/bin/project6 --input PATH --year YYYY --question q1|q2|q3 --out text|json|csv
+--- OUTPUT END ---
+✗ Run failed - see log for details
+Cleaning up Docker image...
+Untagged: project6_marquise_pearson:latest
+Deleted: sha256:aeddd7bd5c0f92b5c76f6f15bd7561964bdcb7a038265fd3beed23a397b466e4
+✓ Image removed
+
+========================================
+Processing: Olivia_Gibson
+Directory: Olivia_Gibson/project6/
+Time: Mon Nov 10 22:56:00 UTC 2025
+========================================
+Building Docker image: project6_olivia_gibson
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 109B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:latest
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/golang:latest@sha256:6ca9eb0b32a4bd4e8c98a4a2edf2d7c96f3ea6db6eb4fc254eef6c067cf73bb4
+#4 resolve docker.io/library/golang:latest@sha256:6ca9eb0b32a4bd4e8c98a4a2edf2d7c96f3ea6db6eb4fc254eef6c067cf73bb4 0.0s done
+#4 sha256:93829d2530defccd1184b0bedb7f21fdda98a53d052835ad34667241ba5742d5 2.32kB / 2.32kB done
+#4 sha256:bc4d5657862713f14fceb288b425c209632d4d572ec14193c9feb260a6e5ebab 3.04kB / 3.04kB done
+#4 sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 4.19MB / 49.29MB 0.1s
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 0B / 67.78MB 0.1s
+#4 sha256:6ca9eb0b32a4bd4e8c98a4a2edf2d7c96f3ea6db6eb4fc254eef6c067cf73bb4 9.69kB / 9.69kB done
+#4 sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462 2.08MB / 25.62MB 0.1s
+#4 sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 18.87MB / 49.29MB 0.3s
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 15.73MB / 67.78MB 0.3s
+#4 sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462 25.62MB / 25.62MB 0.3s
+#4 sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 25.17MB / 49.29MB 0.4s
+#4 sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 36.70MB / 49.29MB 0.5s
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 24.40MB / 67.78MB 0.5s
+#4 sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 49.29MB / 49.29MB 0.7s
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 40.89MB / 67.78MB 0.7s
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 61.87MB / 67.78MB 0.9s
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 67.78MB / 67.78MB 1.1s
+#4 ...
+
+#5 [internal] load build context
+#5 transferring context: 12.04MB 0.3s done
+#5 DONE 2.0s
+
+#4 [1/3] FROM docker.io/library/golang:latest@sha256:6ca9eb0b32a4bd4e8c98a4a2edf2d7c96f3ea6db6eb4fc254eef6c067cf73bb4
+#4 sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 49.29MB / 49.29MB 1.9s done
+#4 sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 67.78MB / 67.78MB 1.9s done
+#4 sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462 25.62MB / 25.62MB 1.2s done
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 0B / 60.15MB 2.0s
+#4 sha256:1fcf5793032101bdf2c33d082ff752b5eb54273e9186d1bd58b9a1cf27eed27a 126B / 126B 2.0s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 0B / 102.09MB 2.0s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 10.49MB / 60.15MB 2.1s
+#4 sha256:1fcf5793032101bdf2c33d082ff752b5eb54273e9186d1bd58b9a1cf27eed27a 126B / 126B 2.0s done
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 7.34MB / 102.09MB 2.1s
+#4 extracting sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 0.1s
+#4 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 2.1s done
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 13.63MB / 60.15MB 2.2s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 16.78MB / 102.09MB 2.2s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 16.78MB / 60.15MB 2.3s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 31.46MB / 102.09MB 2.3s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 19.92MB / 60.15MB 2.4s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 38.80MB / 102.09MB 2.4s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 54.53MB / 102.09MB 2.5s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 30.41MB / 60.15MB 2.6s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 62.91MB / 102.09MB 2.6s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 36.70MB / 60.15MB 2.7s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 71.30MB / 102.09MB 2.7s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 51.38MB / 60.15MB 2.9s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 87.72MB / 102.09MB 2.9s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 54.53MB / 60.15MB 3.0s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 94.37MB / 102.09MB 3.0s
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 60.15MB / 60.15MB 3.1s
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 102.09MB / 102.09MB 3.1s
+#4 extracting sha256:13cc39f8244ac66bf1dd9149e1da421ab1bbc80d612dc14fe368753e7be17b33 2.9s done
+#4 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 60.15MB / 60.15MB 5.3s done
+#4 sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 102.09MB / 102.09MB 5.4s done
+#4 extracting sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462 0.1s
+#4 extracting sha256:e3143549f2b8b3ad8d79efdc47824641c6771796b3770f3c637a38aabd2b3462 0.9s done
+#4 extracting sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee
+#4 extracting sha256:72e8e93b0d018b135d833207c6feaba205653ac52e0a80d214477ec0de239dee 2.8s done
+#4 extracting sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577
+#4 extracting sha256:c64bdd8f08413e7a99d843e0aac4b8f8c9bee0337f253701a760d0eed37fb577 2.9s done
+#4 extracting sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d
+#4 extracting sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 4.6s done
+#4 extracting sha256:1fcf5793032101bdf2c33d082ff752b5eb54273e9186d1bd58b9a1cf27eed27a
+#4 extracting sha256:1fcf5793032101bdf2c33d082ff752b5eb54273e9186d1bd58b9a1cf27eed27a done
+#4 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#4 DONE 31.3s
+
+#6 [2/3] WORKDIR /app
+#6 DONE 0.0s
+
+#7 [3/3] COPY . .
+#7 DONE 0.3s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 2.2s done
+#8 writing image sha256:8d6309cca85ed8948c489c4af479ee2356aef3d2d0444da9fae57d072a5dde1f done
+#8 naming to docker.io/library/project6_olivia_gibson done
+#8 DONE 2.2s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Loaded 269 rows from homicides.csv
+Row 1: Year=2024, Age=16, CriminalHistory=None
+Row 2: Year=2024, Age=31, CriminalHistory=
+Row 3: Year=2024, Age=36, CriminalHistory=
+Row 4: Year=2024, Age=30, CriminalHistory=None
+Row 5: Year=2024, Age=39, CriminalHistory=None
+
+Homicides by Year:
+2024: 269
+
+Homicides by Age Group:
+Young Adult: 70
+Senior: 38
+Unknown: 19
+Teen: 26
+Adult: 116
+
+Homicides by Criminal History:
+None: 188
+Unknown: 81
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_olivia_gibson:latest
+Deleted: sha256:8d6309cca85ed8948c489c4af479ee2356aef3d2d0444da9fae57d072a5dde1f
+✓ Image removed
+
+========================================
+Processing: Sakina_Shrestha
+Directory: Sakina_Shrestha/project6/
+Time: Mon Nov 10 22:56:43 UTC 2025
+========================================
+Building Docker image: project6_sakina_shrestha
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 144B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.25-alpine
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 57.74kB 0.0s done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/golang:1.25-alpine@sha256:d3f0cf7723f3429e3f9ed846243970b20a2de7bae6a5b66fc5914e228d831bbb
+#5 resolve docker.io/library/golang:1.25-alpine@sha256:d3f0cf7723f3429e3f9ed846243970b20a2de7bae6a5b66fc5914e228d831bbb done
+#5 extracting sha256:8005175e490b0ff92097d506946bbecbb38ca5479503236dcb3350f2da29b1cb
+#5 extracting sha256:8005175e490b0ff92097d506946bbecbb38ca5479503236dcb3350f2da29b1cb 0.1s done
+#5 sha256:d3f0cf7723f3429e3f9ed846243970b20a2de7bae6a5b66fc5914e228d831bbb 10.29kB / 10.29kB done
+#5 sha256:96f36e77302b6982abdd9849dff329feef03b0f2520c24dc2352fc4b33ed776d 1.92kB / 1.92kB done
+#5 sha256:f86e735e7a39c546c1f105f637c63efcf44f4d6d285f9d8f524c1c62d9125377 2.17kB / 2.17kB done
+#5 sha256:8005175e490b0ff92097d506946bbecbb38ca5479503236dcb3350f2da29b1cb 291.16kB / 291.16kB 0.1s done
+#5 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 8.39MB / 60.15MB 0.2s
+#5 sha256:ae96bccb6682de86f077a4ef76a3024218e06114ae177db9ad565f2be5a0e423 126B / 126B 0.1s done
+#5 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.1s done
+#5 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 26.21MB / 60.15MB 0.4s
+#5 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 35.65MB / 60.15MB 0.5s
+#5 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 52.43MB / 60.15MB 0.7s
+#5 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 60.15MB / 60.15MB 0.9s
+#5 extracting sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d
+#5 sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 60.15MB / 60.15MB 1.4s done
+#5 extracting sha256:7c9d4a4eea0de466b378fec1876ea74acd9465fc6a1d15368a117eeacaa21b7d 4.8s done
+#5 extracting sha256:ae96bccb6682de86f077a4ef76a3024218e06114ae177db9ad565f2be5a0e423
+#5 extracting sha256:ae96bccb6682de86f077a4ef76a3024218e06114ae177db9ad565f2be5a0e423 done
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 DONE 10.2s
+
+#6 [2/4] WORKDIR /app
+#6 DONE 0.0s
+
+#7 [3/4] COPY . .
+#7 DONE 0.0s
+
+#8 [4/4] RUN go build -o baltimore main.go
+#8 DONE 22.2s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 2.0s done
+#9 writing image sha256:13e2170c5676214937ff4393cc2d813056af75d4406b2b011495a18d024f81c5 done
+#9 naming to docker.io/library/project6_sakina_shrestha done
+#9 DONE 2.0s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+================================================================================
+Question 1: How do case closure rates differ when a surveillance camera is present versus absent at the intersection? (and what are the average victim ages)
+- WITH camera: count=24 closed=10 rate=41.67% avgAge=35.08
+- WITHOUT camera: count=83 closed=27 rate=32.53% avgAge=35.32
+- Insight: Presence of cameras corresponds to a 9.14% absolute difference in closure rate.
+
+================================================================================
+Question 2: What are closure rates by likely cause inferred from Notes (Shooting vs Stabbing vs Other)?
+
+- Shooting: count=83 closed=27 rate=32.53% avgAge=32.99
+- Stabbing: count=9 closed=7 rate=77.78% avgAge=42.22
+- Other: count=14 closed=2 rate=14.29% avgAge=43.07
+- Blunt Force: count=1 closed=1 rate=100.00% avgAge=43.00
+
+- Insight: Highest closure rate category = Blunt Force at 100.00%; lowest = Other at 14.29%.
+
+================================================================================
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_sakina_shrestha:latest
+Deleted: sha256:13e2170c5676214937ff4393cc2d813056af75d4406b2b011495a18d024f81c5
+✓ Image removed
+
+========================================
+Processing: amit_bhattarai
+Directory: amit_bhattarai/project6/
+Time: Mon Nov 10 22:57:19 UTC 2025
+========================================
+Building Docker image: project6_amit_bhattarai
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 575B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.20
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/golang:1.22-alpine
+#3 DONE 0.2s
+
+#2 [internal] load metadata for docker.io/library/alpine:3.20
+#2 DONE 0.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 7.12kB done
+#5 DONE 0.0s
+
+#6 [build 1/7] FROM docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052
+#6 resolve docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052 0.0s done
+#6 sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052 10.30kB / 10.30kB done
+#6 sha256:6d405dfc5fdf3a45df1529cf060b920041f52ce523487e0f36f02765af294a51 1.92kB / 1.92kB done
+#6 sha256:4129f51f28c9ae5de799b958ba2aaa8f92f26cc7bf47c107891673fe4b516c03 2.08kB / 2.08kB done
+#6 sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0 1.05MB / 3.64MB 0.1s
+#6 sha256:4d75fd4b73869ed224045c010cdec78756eefb6752a5a8e4804294009eac11e9 0B / 294.90kB 0.1s
+#6 sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0 3.64MB / 3.64MB 0.2s
+#6 sha256:4d75fd4b73869ed224045c010cdec78756eefb6752a5a8e4804294009eac11e9 294.90kB / 294.90kB 0.1s done
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 0B / 69.36MB 0.2s
+#6 sha256:5f837c998576dcb54bc285997f33fcc2166dff6aa48fe3a374da92474efd5fe8 0B / 126B 0.2s
+#6 sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0 3.64MB / 3.64MB 0.2s done
+#6 sha256:5f837c998576dcb54bc285997f33fcc2166dff6aa48fe3a374da92474efd5fe8 126B / 126B 0.2s done
+#6 extracting sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0
+#6 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.3s done
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 6.29MB / 69.36MB 0.4s
+#6 ...
+
+#7 [stage-1 1/4] FROM docker.io/library/alpine:3.20@sha256:765942a4039992336de8dd5db680586e1a206607dd06170ff0a37267a9e01958
+#7 resolve docker.io/library/alpine:3.20@sha256:765942a4039992336de8dd5db680586e1a206607dd06170ff0a37267a9e01958 0.0s done
+#7 sha256:e89557652e7472b26d49f1d45638ac744a2928ddada818777a6ce4076f64f7e6 581B / 581B done
+#7 sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970 3.63MB / 3.63MB 0.1s done
+#7 sha256:765942a4039992336de8dd5db680586e1a206607dd06170ff0a37267a9e01958 9.22kB / 9.22kB done
+#7 sha256:008827ed2172a676b08121e21cf9db0ce08a90ee6c8a12fc374af8a56c0e496d 1.02kB / 1.02kB done
+#7 extracting sha256:5311e7f182d02360a7194aa2995849bcdf04795c39a0ffdcf413eae625865970 0.2s done
+#7 DONE 0.5s
+
+#6 [build 1/7] FROM docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 26.21MB / 69.36MB 0.6s
+#6 extracting sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0 0.2s done
+#6 extracting sha256:4d75fd4b73869ed224045c010cdec78756eefb6752a5a8e4804294009eac11e9
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 30.50MB / 69.36MB 0.7s
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 34.60MB / 69.36MB 0.8s
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 41.94MB / 69.36MB 1.0s
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 50.14MB / 69.36MB 1.1s
+#6 ...
+
+#8 [stage-1 2/4] WORKDIR /app
+#8 DONE 0.9s
+
+#6 [build 1/7] FROM docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 69.36MB / 69.36MB 1.4s
+#6 extracting sha256:4d75fd4b73869ed224045c010cdec78756eefb6752a5a8e4804294009eac11e9 0.9s done
+#6 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 69.36MB / 69.36MB 2.0s done
+#6 extracting sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac
+#6 extracting sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 4.8s done
+#6 extracting sha256:5f837c998576dcb54bc285997f33fcc2166dff6aa48fe3a374da92474efd5fe8
+#6 extracting sha256:5f837c998576dcb54bc285997f33fcc2166dff6aa48fe3a374da92474efd5fe8 done
+#6 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#6 DONE 10.6s
+
+#9 [build 2/7] WORKDIR /app
+#9 DONE 0.0s
+
+#10 [build 3/7] RUN apk update && apk add --no-cache ca-certificates && update-ca-certificates
+#10 0.176 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#10 0.262 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#10 0.611 v3.21.5-62-g3eefe013233 [https://dl-cdn.alpinelinux.org/alpine/v3.21/main]
+#10 0.611 v3.21.5-63-g6c55a2b6c24 [https://dl-cdn.alpinelinux.org/alpine/v3.21/community]
+#10 0.611 OK: 25408 distinct packages available
+#10 0.729 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#10 0.821 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#10 1.130 OK: 7 MiB in 16 packages
+#10 DONE 1.3s
+
+#11 [build 4/7] COPY go.mod ./
+#11 DONE 0.1s
+
+#12 [build 5/7] RUN go mod download
+#12 0.190 go: no module dependencies to download
+#12 DONE 0.2s
+
+#13 [build 6/7] COPY cmd ./cmd
+#13 DONE 0.1s
+
+#14 [build 7/7] RUN go build -o /app/app ./cmd/app
+#14 DONE 20.5s
+
+#15 [stage-1 3/4] COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+#15 DONE 0.0s
+
+#16 [stage-1 4/4] COPY --from=build /app/app /app/app
+#16 DONE 0.2s
+
+#17 exporting to image
+#17 exporting layers
+#17 exporting layers 0.5s done
+#17 writing image sha256:45df592778ca0f1606160a07f326a834ca55c0034a0382295f7e88da1006c86f done
+#17 naming to docker.io/library/project6_amit_bhattarai done
+#17 DONE 0.5s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+✅ fetched https://chamspage.blogspot.com/2020/01/2020-baltimore-city-homicides-list.html bytes: 358704
+---- HTML PREVIEW ----
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/4128112664-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compat
+---- END PREVIEW ----
+✅ fetched https://chamspage.blogspot.com/2021/01/2021-baltimore-city-homicides-list.html bytes: 401329
+---- HTML PREVIEW ----
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/4128112664-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compat
+---- END PREVIEW ----
+✅ fetched https://chamspage.blogspot.com/2022/01/2022-baltimore-city-homicides-list.html bytes: 573853
+---- HTML PREVIEW ----
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/4128112664-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compat
+---- END PREVIEW ----
+✅ fetched https://chamspage.blogspot.com/2023/01/2023-baltimore-city-homicides-list.html bytes: 459114
+---- HTML PREVIEW ----
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/4128112664-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compat
+---- END PREVIEW ----
+❌ 404 Not Found for https://chamspage.blogspot.com/2024/01/2024-baltimore-city-homicides-list.html
+✅ fetched https://chamspage.blogspot.com/2024/01/2024-baltimore-city-homicide-list.html bytes: 344507
+---- HTML PREVIEW ----
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/4128112664-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compat
+---- END PREVIEW ----
+❌ 404 Not Found for https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicides-list.html
+✅ fetched https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html bytes: 236136
+---- HTML PREVIEW ----
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/4128112664-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css">
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compat
+---- END PREVIEW ----
+Question 1: Victims age 18 or younger per year (2020–2025)
+
+Year | ≤18 Victims
+------------------
+2020 |   24
+2021 |   23
+2022 |   26
+2023 |   28
+2024 |   18
+2025 |    6
+
+--------------------------------------------------
+
+Question 2: Total homicide victims per year (2020–2025)
+
+Year | Total Victims
+--------------------
+2020 |  348
+2021 |  340
+2022 |  339
+2023 |  267
+2024 |  208
+2025 |  135
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_amit_bhattarai:latest
+Deleted: sha256:45df592778ca0f1606160a07f326a834ca55c0034a0382295f7e88da1006c86f
+✓ Image removed
+
+========================================
+Processing: amyra_harry
+Directory: amyra_harry/project6/
+Time: Mon Nov 10 22:58:08 UTC 2025
+========================================
+Building Docker image: project6_amyra_harry
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 731B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:latest
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 DONE 0.0s
+
+#6 [builder 2/5] WORKDIR /app
+#6 CACHED
+
+#7 [stage-1 1/4] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#7 CACHED
+
+#8 [internal] load build context
+#8 transferring context: 7.65kB done
+#8 DONE 0.0s
+
+#9 [builder 3/5] COPY BaltimoreHomicideAnalysis.go .
+#9 DONE 0.1s
+
+#10 [builder 4/5] RUN go mod init baltimore-homicide-analysis || true
+#10 0.334 go: creating new go.mod: module baltimore-homicide-analysis
+#10 0.340 go: to add module requirements and sums:
+#10 0.340 	go mod tidy
+#10 DONE 0.4s
+
+#11 [builder 5/5] RUN go build -o baltimore-analysis BaltimoreHomicideAnalysis.go
+#11 ...
+
+#12 [stage-1 2/4] RUN apk --no-cache add ca-certificates
+#12 0.562 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+#12 0.708 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+#12 1.206 (1/1) Installing ca-certificates (20250911-r0)
+#12 1.283 Executing busybox-1.37.0-r19.trigger
+#12 1.296 Executing ca-certificates-20250911-r0.trigger
+#12 1.381 OK: 8 MiB in 17 packages
+#12 DONE 1.6s
+
+#13 [stage-1 3/4] WORKDIR /app
+#13 DONE 0.1s
+
+#11 [builder 5/5] RUN go build -o baltimore-analysis BaltimoreHomicideAnalysis.go
+#11 DONE 19.1s
+
+#14 [stage-1 4/4] COPY --from=builder /app/baltimore-analysis .
+#14 DONE 0.1s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.7s done
+#15 writing image sha256:3cb2b03554d03c78f97a07df9496b8999a77b69447dfc3ea3d2afdd19159665d done
+#15 naming to docker.io/library/project6_amyra_harry done
+#15 DONE 0.8s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+[DEBUG] Output format received: stdout
+[DEBUG] Parsed homicides count: 298
+[DEBUG] Records to write - Stabbing: 9, East Baltimore: 29
+[INFO] No files written. Using stdout mode.
+
+=== Stabbing Victims 2025 (9 records) ===
+{No:XXX Date:05/05/25 Name:Troy Gaigler Age:34 Location:1800 Portal Street}
+{No:050 Date:05/23/25 Name:Brandon Naylor Age:38 Location:1800 North Woodyear Street}
+{No:056 Date:06/01/25 Name:Demetri Briscoe Age:26 Location:3000 Westfield Avenue}
+{No:064 Date:06/21/25 Name:Tyrell John Curtis Age:39 Location:100 South Broadway}
+{No:067 Date:06/30/25 Name:Donte Chase Age:46 Location:700 Kenwood Avenue}
+{No:102 Date:09/25/25 Name:Michael Schuler Age:34 Location:2200 Sidney Avenue}
+{No:107 Date:10/02/25 Name:Walter Aston Age:47 Location:800 North Bond Street}
+{No:108 Date:10/07/25 Name:Terry Copes Age:63 Location:100 West Garrett Street}
+{No:089 Date:06/25/24 Name:Carl Bodine Age:59 Location:1000 Brantley Avenue}
+
+=== East Baltimore Victims (29 records) ===
+{No:007 Date:01/19/25 Name:Edward Johnson Age:44 Location:3700 East Baltimore Street}
+{No:014 Date:02/02/25 Name:Troy Kavanaugh Age:37 Location:2500 East Biddle Street}
+{No:021 Date:02/23/25 Name:Celvin Olivares-Portillo Age:20 Location:4400 Eastern Avenue}
+{No:030 Date:03/18/25 Name:Shy'Keema Turner Age:31 Location:700 East Preston Street}
+{No:049 Date:05/19/25 Name:Demetrius Phyall Age:18 Location:2300 East Preston Street}
+{No:062 Date:06/17/25 Name:Isaiah Spicer Age:29 Location:1900 East Lafayette Street}
+{No:086 Date:07/26/25 Name:Sirbryant Alston Age:33 Location:1100 East Preston Street}
+{No:099 Date:09/19/25 Name:Taiquan Moss Age:29 Location:1100 East 20th Street}
+{No:115 Date:11/04/25 Name:Unidentified Man Age: Location:1500 East Lanvale Street}
+{No:014 Date:01/26/24 Name:Kareem Gee Age:20 Location:1200 East Preston Street}
+{No:019 Date:11/27/23 Name:Nigel Arrington Age:25 Location:5300 Eastbury Avenue}
+{No:034 Date:03/02/24 Name:Alvin Ray Henry Age:35 Location:1400 East Biddle Street}
+{No:044 Date:03/13/24 Name:Martinez Brown Age:26 Location:1500 East 28th Street}
+{No:051 Date:04/02/24 Name:Marvin Washington Age:22 Location:2300 East Lafayette Street}
+{No:053 Date:04/06/24 Name:Jose Castron-Merales Age:38 Location:3700 East Lombard Street}
+{No:??? Date:04/16/24 Name:Unidentified Person Age: Location:2200 East Fayette Street}
+{No:063 Date:05/06/24 Name:Garfield Redd Age:33 Location:1 East 21st Street}
+{No:064 Date:05/09/24 Name:Janelle Desormeaux Age:40 Location:2100 East Preston Street}
+{No:077 Date:06/05/24 Name:Travis Bell Age:31 Location:2000 East 31st Street}
+{No:117 Date:08/01/24 Name:Ondrell Mayo Jr. Age:36 Location:900 East Pataspco Avenue}
+{No:124 Date:08/17/24 Name:David Philpot Age:74 Location:1700 Eastern Avenue}
+{No:130 Date:08/22/24 Name:Ronald Carroll Age:46 Location:1900 East North Avenue}
+{No:144 Date:09/19/24 Name:Errique Neal Age:26 Location:1100 East 20th Street}
+{No:150 Date:09/25/24 Name:Kevin Mejia Age:27 Location:6300 Eastern Avenue}
+{No:160 Date:10/23/24 Name:Jose Rodriguez-Bustos Age:26 Location:2600 East Baltimore Street}
+{No:173 Date:11/13/24 Name:Paul Lee Age:33 Location:500 East Preston Street}
+{No:195 Date:12/26/24 Name:Deangelo West Age:27 Location:4300 East Preston Street}
+{No:196 Date:09/20/24 Name:Malik Cottman Age:46 Location:1200 East North Avenue}
+{No:198 Date:12/30/31 Name:Kyree Williams Age:26 Location:1200 East Coldspring Lane}
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_amyra_harry:latest
+Deleted: sha256:3cb2b03554d03c78f97a07df9496b8999a77b69447dfc3ea3d2afdd19159665d
+✓ Image removed
+
+========================================
+Processing: aubrenesia_tomlinson
+Directory: aubrenesia_tomlinson/project6/
+Time: Mon Nov 10 22:58:29 UTC 2025
+========================================
+Building Docker image: project6_aubrenesia_tomlinson
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 423B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.23-alpine
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/golang:1.23-alpine@sha256:383395b794dffa5b53012a212365d40c8e37109a626ca30d6151c8348d380b5f
+#5 DONE 0.0s
+
+#6 [stage-1 1/5] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#6 DONE 0.0s
+
+#7 [builder 2/4] WORKDIR /app
+#7 CACHED
+
+#8 [stage-1 2/5] RUN apk --no-cache add ca-certificates
+#8 CACHED
+
+#9 [stage-1 3/5] WORKDIR /app
+#9 CACHED
+
+#10 [internal] load build context
+#10 transferring context: 9.04MB 0.1s done
+#10 DONE 0.1s
+
+#11 [builder 3/4] COPY . .
+#11 DONE 0.2s
+
+#12 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux go build -o main .
+#12 0.237 go: go.mod requires go >= 1.24.5 (running go 1.23.12; GOTOOLCHAIN=local)
+#12 ERROR: process "/bin/sh -c CGO_ENABLED=0 GOOS=linux go build -o main ." did not complete successfully: exit code: 1
+------
+ > [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux go build -o main .:
+0.237 go: go.mod requires go >= 1.24.5 (running go 1.23.12; GOTOOLCHAIN=local)
+------
+Dockerfile:11
+--------------------
+   9 |     
+  10 |     # build static binary
+  11 | >>> RUN CGO_ENABLED=0 GOOS=linux go build -o main .
+  12 |     
+  13 |     # runtime stage
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c CGO_ENABLED=0 GOOS=linux go build -o main ." did not complete successfully: exit code: 1
+✗ Build failed - see log for details
+
+========================================
+Processing: chinonso_egeolu
+Directory: chinonso_egeolu/project6/
+Time: Mon Nov 10 22:58:30 UTC 2025
+========================================
+Building Docker image: project6_chinonso_egeolu
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 255B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 13.39kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY main.go .
+#7 DONE 0.0s
+
+#8 [4/4] RUN go build -o homicide-analyzer main.go
+#8 DONE 10.2s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 3.2s done
+#9 writing image sha256:e84641771de5d5f3ec1829a13a857362ce910ca63e54497ede8dcc0cf3098f6c
+#9 writing image sha256:e84641771de5d5f3ec1829a13a857362ce910ca63e54497ede8dcc0cf3098f6c done
+#9 naming to docker.io/library/project6_chinonso_egeolu done
+#9 DONE 3.2s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+================================================================================
+Baltimore City Homicide Data Analysis
+================================================================================
+
+Total records analyzed: 500
+
+QUESTION 1: What are the seasonal patterns of homicides in Baltimore,
+            and which months show the highest concentration?
+
+Strategic Value: Understanding seasonal trends enables the Baltimore Police
+Department to optimize resource allocation, increase patrols during high-risk
+periods, and implement targeted prevention programs.
+
+Monthly Distribution:
+--------------------------------------------------
+JAN  |  48 | █████████
+FEB  |  38 | ███████
+MAR  |  33 | ██████
+APR  |  39 | ███████
+MAY  |  40 | ████████
+JUN  |  44 | ████████
+JUL  |  43 | ████████
+AUG  |  43 | ████████
+SEP  |  43 | ████████
+OCT  |  44 | ████████
+NOV  |  49 | █████████
+DEC  |  36 | ███████
+
+Seasonal Totals:
+--------------------------------------------------
+Fall (Sep-Nov)       | 136 | █████████████
+Summer (Jun-Aug)     | 130 | █████████████
+Winter (Dec-Feb)     | 122 | ████████████
+Spring (Mar-May)     | 112 | ███████████
+
+Key Insights:
+  • Highest: NOVEMBER with 49 homicides
+  • Lowest: MARCH with 33 homicides
+  • Variation: 48% difference between peak and low months
+
+================================================================================
+
+QUESTION 2: What is the geographic distribution of homicides by district,
+            and which areas require the most urgent intervention?
+
+Strategic Value: Identifying high-crime districts allows for data-driven
+deployment of police resources, community programs, and violence prevention
+initiatives where they are needed most.
+
+District Rankings (by total homicides):
+--------------------------------------------------------------------------------
+District             | Total |  Open | Shooting | Avg Age | Chart
+--------------------------------------------------------------------------------
+Southwestern         |    78 |    24 |      23% |      47 | ███████████████
+Central              |    62 |    23 |      17% |      47 | ████████████
+Northwestern         |    62 |    23 |      19% |      51 | ████████████
+Eastern              |    54 |    20 |      22% |      45 | ██████████
+Northern             |    53 |    17 |      16% |      46 | ██████████
+Southern             |    52 |    12 |       5% |      48 | ██████████
+Southeastern         |    50 |    20 |      36% |      50 | ██████████
+Northeastern         |    45 |    16 |       6% |      53 | █████████
+Western              |    44 |    16 |      29% |      48 | ████████
+
+Critical Districts (Top 3):
+--------------------------------------------------------------------------------
+1. Southwestern
+   - Total Cases: 78
+   - Unsolved Cases: 24 (30%)
+   - Shooting Deaths: 18 (23%)
+   - Average Victim Age: 47
+
+2. Central
+   - Total Cases: 62
+   - Unsolved Cases: 23 (37%)
+   - Shooting Deaths: 11 (17%)
+   - Average Victim Age: 47
+
+3. Northwestern
+   - Total Cases: 62
+   - Unsolved Cases: 23 (37%)
+   - Shooting Deaths: 12 (19%)
+   - Average Victim Age: 51
+
+Overall Statistics:
+  • Total Open Cases: 171 of 500 (34%)
+  • Clearance Rate: 66%
+
+================================================================================
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_chinonso_egeolu:latest
+Deleted: sha256:e84641771de5d5f3ec1829a13a857362ce910ca63e54497ede8dcc0cf3098f6c
+✓ Image removed
+
+========================================
+Processing: chris_brown
+Directory: chris_brown/project6/
+Time: Mon Nov 10 22:58:44 UTC 2025
+========================================
+Building Docker image: project6_chris_brown
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 457B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 19.08kB done
+#7 DONE 0.0s
+
+#8 [builder 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [stage-1 2/3] WORKDIR /app
+#9 DONE 0.0s
+
+#10 [builder 3/4] COPY main.go .
+#10 DONE 0.0s
+
+#11 [builder 4/4] RUN go build -o bmore-analysis main.go
+#11 DONE 8.6s
+
+#12 [stage-1 3/3] COPY --from=builder /app/bmore-analysis .
+#12 DONE 0.1s
+
+#13 exporting to image
+#13 exporting layers
+#13 exporting layers 0.6s done
+#13 writing image sha256:dd9cab3bd140aef1110a45ed43259dd55def8fc1f95e6c8f7f7e6ad96efb9cc7
+#13 writing image sha256:dd9cab3bd140aef1110a45ed43259dd55def8fc1f95e6c8f7f7e6ad96efb9cc7 done
+#13 naming to docker.io/library/project6_chris_brown done
+#13 DONE 0.6s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+================================================================================
+BALTIMORE CITY HOMICIDE DATA ANALYSIS
+Data Source: Baltimore Police Department via chamspage.blogspot.com
+================================================================================
+
+Successfully loaded 550 homicide records
+
+================================================================================
+QUESTION 1: Weekend vs Weekday Homicide Patterns - Resource Allocation Analysis
+================================================================================
+
+Strategic Question: Should Baltimore PD reallocate patrol resources based on
+day-of-week patterns? This analysis examines when homicides occur to optimize
+officer deployment and potentially prevent violent crimes.
+
+Total Homicides Analyzed: 550
+Weekend Homicides (Sat-Sun): 156 (28.4%)
+Weekday Homicides (Mon-Fri): 394 (71.6%)
+
+Average Homicides per Weekend Day: 78.00
+Average Homicides per Weekday: 78.80
+Weekend Risk Multiplier: 0.99x higher than weekdays
+
+Time Slot Breakdown:
+--------------------------------------------------------------------------------
+Time Period               Weekend      Weekday   Difference
+--------------------------------------------------------------------------------
+Late Night (12AM-6AM)           42          100          -58
+Morning (6AM-12PM)             37          109          -72
+Afternoon (12PM-6PM)           47           74          -27
+Evening (6PM-12AM)             30          111          -81
+
+KEY INSIGHTS:
+• Weekend days see 0.99x more homicides per day than weekdays
+• Recommendation: Increase patrol presence on Friday/Saturday nights
+
+================================================================================
+QUESTION 2: District-Level Case Clearance Rates - Performance & Accountability
+================================================================================
+
+Strategic Question: Which police districts are most/least effective at solving
+homicides? This analysis identifies performance gaps and best practices to
+improve overall clearance rates across Baltimore.
+
+Analyzing Recent Cases (Last 3 Years): 350 homicides
+
+District Performance Rankings:
+--------------------------------------------------------------------------------
+District                Total   Closed     Open       Rate
+--------------------------------------------------------------------------------
+Eastern                    44       44        0     100.0%  
+Southeastern               42       42        0     100.0%  
+Southwestern               30       30        0     100.0%  
+Southern                   49       49        0     100.0%  
+Western                    37       37        0     100.0%  
+Northwestern               30       30        0     100.0%  
+Central                    37       37        0     100.0%  
+Northern                   32       32        0     100.0%  
+Northeastern               49       49        0     100.0%  
+--------------------------------------------------------------------------------
+City-Wide Average Clearance Rate: 100.0%
+
+KEY INSIGHTS:
+
+Top Performing Districts (★):
+  • Eastern: 100.0% clearance (44/44 cases)
+  • Southeastern: 100.0% clearance (42/42 cases)
+  • Southwestern: 100.0% clearance (30/30 cases)
+
+Districts Needing Support:
+  • Northeastern: 100.0% clearance (49/49 cases)
+  • Northern: 100.0% clearance (32/32 cases)
+  • Central: 100.0% clearance (37/37 cases)
+
+Performance Gap: 0.0 percentage points between best and worst
+
+RECOMMENDATIONS:
+• Share best practices from top-performing districts city-wide
+• Allocate additional detective resources to underperforming districts
+• Investigate systemic barriers in districts with <30% clearance rates
+• Implement regular performance reviews and targeted training programs
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_chris_brown:latest
+Deleted: sha256:dd9cab3bd140aef1110a45ed43259dd55def8fc1f95e6c8f7f7e6ad96efb9cc7
+✓ Image removed
+
+========================================
+Processing: clyde_baidoo
+Directory: clyde_baidoo/project6/
+Time: Mon Nov 10 22:58:54 UTC 2025
+========================================
+Building Docker image: project6_clyde_baidoo
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 176B done
+#1 DONE 0.0s
+
+#2 [auth] library/golang:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/golang:1.22-alpine
+#3 DONE 0.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052
+#5 DONE 0.0s
+
+#6 [2/3] WORKDIR /app
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 33.19kB done
+#7 DONE 0.0s
+
+#8 [3/3] COPY . /app
+#8 DONE 0.0s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 1.0s done
+#9 writing image sha256:24d158d11005bbb5270908ccc08dc22d720543870ef4d005aefd415ab5c1a1f9 done
+#9 naming to docker.io/library/project6_clyde_baidoo done
+#9 DONE 1.0s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+go: downloading github.com/PuerkitoBio/goquery v1.8.0
+go: downloading github.com/andybalholm/cascadia v1.3.1
+go: downloading golang.org/x/net v0.0.0-20210916014120-12bc252f5db8
+Fetching Baltimore Homicide Statistics...
+
+---- RAW HOMICIDE DATA ----
+01/09/25 | Richie Briggs | 36 | 5900 Dawalt Avenue | 
+01/12/25 | Jamal Davis | 37 | 4400 Reisterstown Road | Closed
+11/2014 | Terril Lehman | 41 | 1600 Ralworth Road | Closed
+11/2014 | Charles Webster | 46 | 1600 Ralworth Road | Closed
+01/18/25 | Brian Reed | 59 | 5600 Groveland Avenue | Closed
+01/19/25 | Hassan Howard | 43 | 400 Washburn Avenue | Closed
+01/19/25 | Edward Johnson | 44 | 3700 East Baltimore Street | 
+01/19/25 | Mordecai Wells | 24 | 3400 Berwyn Avenue | 
+01/22/25 | Anntoinette Jennings | 52 | 5400 York Road | Closed
+01/22/25 | Rodney Lewis | 37 | 2700 Pelham Avaenue | 
+01/24/25 | Anthony McMichael | 36 | 3000 Oakley Avenue | Closed
+01/26/25 | Justin Davis | 35 | 1500 Carswell Street | 
+01/26/25 | Lamel Edwards | 19 | 3700 Edmondson Avenue | 
+02/02/25 | Troy Kavanaugh | 37 | 2500 East Biddle Street | Closed
+02/15/25 | Francisco Cuffey | 33 | 6100 Plantview Way | 
+02/15/25 | Keenan Bunch | 41 | 1800 North Montford Avenue | 
+02/20/25 | Clyde Barnes | 79 | 110 North Central Avenue | Closed
+02/23/25 | Eric Carter | 30 | 600 Poplar Grove Street | 
+02/23/25 | Sae'Quan Newton | 28 | 3600 Potee Street | 
+02/23/25 | Diontavis Whitfield | 23 | 3600 Potee Street | 
+02/23/25 | Celvin Olivares-Portillo | 20 | 4400 Eastern Avenue | 
+02/26/25 | Cameron Kelly | 16 | 1 North Bruce Street | 
+03/04/25 | Shakeira Cooper | 41 | 1000 McAleer Court | Closed
+03/06/25 | Taijah Addison | 27 | 600 Yale Avenue | Closed
+03/13/25 | Donny Robinson | 61 | 1600 Balmor Court | 
+03/13/25 | Bridgette Smallwood | 54 | 3700 Potee Street | 
+03/15/25 | Anthony Perry Mosley | 20 | 1500 North Stricker Street | 
+03/15/25 | Christopher Banks | 30 | 5400 Park Heights Avenue | Closed
+03/16/25 | Kendall Brown | 40 | 4300 Shamrock Avenue. Update 10/14/25 Neri Mancito Hernandez charged . | Closed
+03/18/25 | Shy'Keema Turner | 31 | 700 East Preston Street | Closed
+03/18/25 | Maurice Lonon Jr. | 19 | 1200 North Ellwood Avenue | 
+03/19/25 | Derrick Lamb | 49 | 5400 Park Heights Avenue | 
+03/21/25 | Name withheld by Blogger | 17 | 2500 Perring Manor Road | 
+03/22/25 | Fredi Lua | 48 | 3200 Pulaski Highway | Closed
+03/22/25 | Tyshawn Simon | 25 | 3200 Chelsea Terrace | 
+03/27/25 | Darrius Bunch | 32 | 1800 Edmondson Avenue | Closed
+04/03/25 | Keyon Bryant | 22 | 4100 Patterson Avenue | 
+04/06/25 | Hakeen English | 35 | 1600 Cliftview Avenue | 
+04/06/25 | Paris Savage | 30 | 1500 North Payson Street | 
+04/18/25 | Karmel McGill | 18 | 600 Allendale Street | 
+04/23/25 | Derrick Bright | 30 | 3300 Paton Avenue | 
+05/03/25 | Rashard Smith | 21 | 1800 Lorman Street | 
+05/03/24 | Terrance Todd | 47 | 3400 Pulaski Highway | 
+05/05/25 | Troy Gaigler | 34 | 1800 Portal Street | 
+05/07/25 | John Lewis | 15 | 3500 Brehms Lane | Closed
+05/10/25 | Albert Manning | 37 | 3500 2nd Street | Closed
+05/11/25 | Taniya Gray | 23 | 4500 Mountwood Road | Closed
+04/19/25 | Dawn White | 53 | 3500 Benzinger Road | 
+05/14/25 | Julio Delgado | 36 | 2300 Jefferson Street | 
+05/18/25 | Joseph Robinson | 25 | 3400 Wilkens Avenue | 
+05/18/25 | Da'Quan Little | 26 | 1200 East Madison Street | 
+05/19/25 | Demetrius Phyall | 18 | 2300 East Preston Street | 
+05/23/25 | Brandon Naylor | 38 | 1800 North Woodyear Street | 
+05/24/25 | Thomas Barnes | 28 | 400 Heaver Street | 
+05/25/25 | Tobias Cunningham | 50 | 400 North Paca Street | 
+05/26/25 | Devin Thompson | 27 | 1700 Pennsylvania Avenue | 
+05/26/25 | Kirsten Washington | 31 | 1700 Pennsylvania Avenue | 
+05/31/25 | Bryant Breland | 42 | 600 Cherry Hill Road | 
+06/01/25 | Demetri Briscoe | 26 | 3000 Westfield Avenue | Closed
+06/02/25 | Derek Parker | 34 | 1800 Dover Street | 
+06/07/25 | Darrell Conway | 33 | 3000 Thorndale Avenue | 
+06/08/25 | Adam Brown | 47 | 3400 Round Road | Closed
+06/11/25 | Name witheld by blogger | 0 | 2100 Presbury Street | 
+06/13/25 | Lavar Steeles | 23 | 1500 West Fayette Street | 
+06/14/25 | Derone Jones | 32 | 5300 Frankford Avenue | 
+06/17/25 | Isaiah Spicer | 29 | 1900 East Lafayette Street | 
+06/19/25 | Jalen Johnson | 29 | 500 North Port Street | 
+06/21/25 | Tyrell John Curtis | 39 | 100 South Broadway | Closed
+06/22/25 | Javaun Simmons | 31 | 2200 Christian Street | 
+06/22/25 | Danilo Punnett | 24 | 2100 Wilkens Avenue | 
+06/23/25 | Corey Washington | 41 | 4100 Woodridge Road | 
+06/30/25 | Donte Chase | 46 | 700 Kenwood Avenue | Closed
+07/02/25 | Ronald Glascoe | 25 | 3600 Ravenwood Avenue | 
+07/02/25 | Franklin Hughes | 32 | 3000 Westfield Avenue | 
+07/03/25 | Jabari Cannon | 21 | 1500 Thames Street | 
+07/03/25 | Porcha Newman | 0 | 2000 Boone Street | Closed
+07/03/25 | Juan Hall | 37 | 2200 Ashton Street | 
+07/04/25 | Aaron Hill | 38 | 3500 Esther Place | Closed
+07/07/25 | Jermaine McFadden | 37 | 4900 Reisterstown Road | 
+07/08/25 | Jamard Thomas | 40 | 2600 Greenmount Avenue | 
+07/13/25 | Randolph Smith | 56 | 3900 Frederick Avenue | 
+07/12/25 | Keith Garrett | 60 | 2800 Chesterfield Avenue | 
+07/11/25 | Naneato Alusi | 27 | 6200 Shipview Way | 
+07/13/25 | Randolph Smith | 56 | 3900 Frederick Avenue | 
+07/19/25 | Dennis Dorsch | 64 | 1500 Olmstead Street | 
+07/19/25 | William Grant | 33 | 2800 Kennedy Avenue | Closed
+06/28/25 | Gregory Johnson | 40 | 1700 Pennsylvania Avenue | 
+07/22/25 | Kayla Williams | 30 | 1100 Mount Holly Street | 
+07/23/25 | Donte Griffin | 31 | 500 Edgewood Street | 
+07/19/25 | Travon Booth | 43 | I-83 near Ruxton Road exit | Closed
+07/26/25 | Sirbryant Alston | 33 | 1100 East Preston Street | 
+08/09/25 | Birane Gaye | 38 | 2500 West Franklin Street | Closed
+08/09/25 | Jerome Michael Coateson | 38 | 2900 Spaulding Avenue | 
+08/18/25 | Wilson E Marroquin Caceros | 28 | 2700 Manokin Street | 
+08/20/25 | Levontaye Mullen | 25 | 2800 Woodbrook Avenue | 
+08/20/25 | Montrel Brookes-Davis | 18 | 5100 Park Heights Avenue | 
+08/22/25 | Davonne Hare | 26 | 700 Druid Park Lake Drive | Closed
+06/24/25 | Dontae Melton | 31 | North Franklintown Road and West Franklin Street | 
+08/31/25 | Major Kip Smith | 61 | 3000 West Garrison Avenue | Closed
+09/03/25 | Davion Hodges | 25 | 900 Edmondson Avenue | Closed
+09/09/25 | Deonaye Johnson | 26 | 1000 North Arlington Avenue | Closed
+09/10/25 | Zayone Burman | 24 | 1100 Ashburton Street | 
+09/10/25 | Charlton Morris | 31 | 2300 Ashland Avenue | Closed
+09/13/25 | Kenneth Spaulding | 34 | 3300 Spaulding Avenue | 
+09/19/25 | Taiquan Moss | 29 | 1100 East 20th Street | Closed
+09/20/25 | Quant'ae Brown | 25 | 300 Presstman Street | 
+06/08/25 | Tyrone Wright | 25 | 600 Glenwood Avenue | Closed
+09/25/25 | Michael Schuler | 34 | 2200 Sidney Avenue | Closed
+09/25/25 | Mekonen Habteselassie | 71 | 1200 North Patterson Park Avenue | Closed
+09/26/25 | Virgil Holland Jr. | 31 | 1200 West North Avenue | 
+09/30/25 | Marlon Pugh | 35 | 3700 Fifth Street | Closed
+10/01/25 | Oshay Smith | 31 | 2500 Maisel Court | Closed
+10/02/25 | Walter Aston | 47 | 800 North Bond Street | 
+10/07/25 | Terry Copes | 63 | 100 West Garrett Street | Closed
+10/10/25 | Ahing Castro | 44 | 6100 Fortview Way | 
+10/15/25 | Darrius Hines | 29 | 500 Callender Street | 
+10/20/25 | Steven Phillips | 35 | 1000 Cameron Road | 
+10/23/25 | Eugene Henry | 42 | 4100 Hyden Court | Closed
+10/25/25 | Tyree Brooks | 22 | 3200 Reistertown Road | 
+10/28/25 | Unidentified Man | 0 | 300 North Conkling Street | 
+11/04/25 | Unidentified Man | 0 | 1500 East Lanvale Street | 
+11/05/25 | Unidentified Man | 36 | 200 North Mount Street | 
+11/05/25 | Unidentified Man | 0 | North Rogers Avenue | 
+11/08/25 | Unidentified Man | 33 | 3100 West North Avenue | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+ |  | 0 |  | 
+----------------------------
+
+===== Baltimore Homicide Analysis =====
+Question 1: Name one street with highest number of homicide cases: Edmondson Avenue : 3 cases
+Question 2: What is the total number of closed homicide cases: 41
+=======================================
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_clyde_baidoo:latest
+Deleted: sha256:24d158d11005bbb5270908ccc08dc22d720543870ef4d005aefd415ab5c1a1f9
+✓ Image removed
+
+========================================
+Processing: crystal_coke
+Directory: crystal_coke/project6/
+Time: Mon Nov 10 22:59:15 UTC 2025
+========================================
+Building Docker image: project6_crystal_coke
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 177B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.22
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 4.91kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/golang:1.22@sha256:1cf6c45ba39db9fd6db16922041d074a63c935556a05c5ccb62d181034df7f02
+#5 resolve docker.io/library/golang:1.22@sha256:1cf6c45ba39db9fd6db16922041d074a63c935556a05c5ccb62d181034df7f02 done
+#5 sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108 0B / 24.06MB 0.1s
+#5 sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108 15.73MB / 24.06MB 0.3s
+#5 sha256:1cf6c45ba39db9fd6db16922041d074a63c935556a05c5ccb62d181034df7f02 10.07kB / 10.07kB done
+#5 sha256:1f298b0c9fecdf504389a0329236f948cc04a566a2bb32337207cbaaa2f8177c 2.32kB / 2.32kB done
+#5 sha256:2fce09cfad57c6de112654eeb6f6da1851f3ced1cff7ac0002378642c2c7ca84 2.81kB / 2.81kB done
+#5 sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde 23.07MB / 48.48MB 0.3s
+#5 sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 29.36MB / 64.39MB 0.3s
+#5 sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108 22.02MB / 24.06MB 0.4s
+#5 sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde 33.55MB / 48.48MB 0.4s
+#5 sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 40.89MB / 64.39MB 0.4s
+#5 sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108 24.06MB / 24.06MB 0.5s
+#5 sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde 41.94MB / 48.48MB 0.5s
+#5 sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 52.43MB / 64.39MB 0.5s
+#5 sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde 48.48MB / 48.48MB 0.6s
+#5 sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 59.77MB / 64.39MB 0.6s
+#5 sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 64.39MB / 64.39MB 0.8s
+#5 extracting sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde
+#5 sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108 24.06MB / 24.06MB 2.0s done
+#5 sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde 48.48MB / 48.48MB 2.0s done
+#5 sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 64.39MB / 64.39MB 2.0s done
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 0B / 92.33MB 2.1s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 0B / 69.36MB 2.1s
+#5 sha256:1451027d3c0ee892b96310c034788bbe22b30b8ea2d075edbd09acfeaaaa439f 126B / 126B 2.1s done
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 8.39MB / 92.33MB 2.3s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 12.58MB / 69.36MB 2.3s
+#5 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 2.1s done
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 16.78MB / 92.33MB 2.4s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 22.02MB / 69.36MB 2.4s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 32.51MB / 69.36MB 2.5s
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 28.31MB / 92.33MB 2.6s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 40.89MB / 69.36MB 2.6s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 45.09MB / 69.36MB 2.7s
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 44.04MB / 92.33MB 2.9s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 57.67MB / 69.36MB 2.9s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 62.91MB / 69.36MB 3.0s
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 55.57MB / 92.33MB 3.1s
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 67.11MB / 69.36MB 3.1s
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 65.01MB / 92.33MB 3.2s
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 85.98MB / 92.33MB 3.4s
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 92.33MB / 92.33MB 3.6s
+#5 extracting sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde 3.0s done
+#5 sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 69.36MB / 69.36MB 5.6s done
+#5 extracting sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108
+#5 sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 92.33MB / 92.33MB 5.6s done
+#5 extracting sha256:32b550be6cb62359a0f3a96bc0dc289f8b45d097eaad275887f163c6780b4108 0.7s done
+#5 extracting sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772
+#5 extracting sha256:35af2a7690f2b43e7237d1fae8e3f2350dfb25f3249e9cf65121866f9c56c772 2.8s done
+#5 extracting sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5
+#5 extracting sha256:3b7f19923e1501f025b9459750b20f5df37af452482f75b91205f345d1c0e1b5 2.5s done
+#5 extracting sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac
+#5 extracting sha256:afa154b433c7f72db064d19e1bcfa84ee196ad29120328f6bdb2c5fbd7b8eeac 5.0s done
+#5 extracting sha256:1451027d3c0ee892b96310c034788bbe22b30b8ea2d075edbd09acfeaaaa439f
+#5 extracting sha256:1451027d3c0ee892b96310c034788bbe22b30b8ea2d075edbd09acfeaaaa439f done
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 DONE 28.9s
+
+#6 [2/4] WORKDIR /app
+#6 DONE 0.1s
+
+#7 [3/4] COPY cmd/analyzer/main.go .
+#7 DONE 0.0s
+
+#8 [4/4] RUN CGO_ENABLED=0 GOOS=linux go build -o /analyzer main.go
+#8 DONE 21.1s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 3.1s done
+#9 writing image sha256:93708e8a991ea96940d179dbf50acdf106bfd38fa9b750a8f45ceb58cea664cb done
+#9 naming to docker.io/library/project6_crystal_coke done
+#9 DONE 3.1s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+================================================================================
+Baltimore City Homicide Statistics Analysis - 2025 Data
+================================================================================
+
+Total records analyzed for 2025: 115
+Closed cases: 36
+Shooting victims: 83
+================================================================================
+Analysis complete.
+================================================================================
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_crystal_coke:latest
+Deleted: sha256:93708e8a991ea96940d179dbf50acdf106bfd38fa9b750a8f45ceb58cea664cb
+✓ Image removed
+
+========================================
+Processing: david_johnny
+Directory: david_johnny/project6/
+Time: Mon Nov 10 23:00:09 UTC 2025
+========================================
+Building Docker image: project6_david_johnny
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 409B done
+#1 DONE 0.0s
+
+#2 [auth] library/alpine:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#3 DONE 0.1s
+
+#4 [internal] load metadata for docker.io/library/alpine:latest
+#4 DONE 0.5s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [stage-1 1/3] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#6 DONE 0.0s
+
+#7 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#7 CACHED
+
+#8 [stage-1 2/3] WORKDIR /app
+#8 CACHED
+
+#9 [internal] load build context
+#9 transferring context: 10.78kB done
+#9 DONE 0.0s
+
+#10 [builder 2/4] WORKDIR /build
+#10 DONE 0.0s
+
+#11 [builder 3/4] COPY main.go .
+#11 DONE 0.0s
+
+#12 [builder 4/4] RUN go build -o homicide-parser main.go
+#12 DONE 18.4s
+
+#13 [stage-1 3/3] COPY --from=builder /build/homicide-parser .
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.5s done
+#14 writing image sha256:c5d7e99d48b0e0a8df781d38d308d1323e4345421ded1776a568b3bbdcf93665 done
+#14 naming to docker.io/library/project6_david_johnny done
+#14 DONE 0.5s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Fetching data from: https://chamspage.blogspot.com/
+
+Question 1: What is the ratio of stabbing victims and shooting victims compared to the total?
+
+Total victims: 49
+Stabbing victims: 1 (2.04%)
+Shooting victims: 44 (89.80%)
+Other/Unclassified: 4 (8.16%)
+
+Question 2: Of these victims (stabbing or shooting), what is the ratio of closed cases?
+
+Total stabbing/shooting victims: 45
+Closed cases total: 17 (37.78%)
+ - Closed stabbing: 1 of 1 (100.00%)
+ - Closed shooting: 16 of 44 (36.36%)
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_david_johnny:latest
+Deleted: sha256:c5d7e99d48b0e0a8df781d38d308d1323e4345421ded1776a568b3bbdcf93665
+✓ Image removed
+
+========================================
+Processing: isaac_rankin
+Directory: isaac_rankin/project6/
+Time: Mon Nov 10 23:00:29 UTC 2025
+========================================
+Building Docker image: project6_isaac_rankin
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 192B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:latest
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/7] FROM docker.io/library/golang:latest@sha256:6ca9eb0b32a4bd4e8c98a4a2edf2d7c96f3ea6db6eb4fc254eef6c067cf73bb4
+#4 DONE 0.0s
+
+#5 [2/7] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 174.20kB done
+#6 DONE 0.0s
+
+#7 [3/7] COPY go.* ./
+#7 DONE 0.0s
+
+#8 [4/7] RUN go mod download
+#8 DONE 3.2s
+
+#9 [5/7] COPY . /app
+#9 DONE 0.0s
+
+#10 [6/7] RUN go mod tidy
+#10 1.069 go: downloading github.com/stretchr/testify v1.3.0
+#10 1.335 go: downloading github.com/davecgh/go-spew v1.1.0
+#10 1.337 go: downloading github.com/pmezard/go-difflib v1.0.0
+#10 1.447 go: downloading github.com/google/go-cmp v0.6.0
+#10 DONE 1.7s
+
+#11 [7/7] RUN go build -o /main
+#11 DONE 43.9s
+
+#12 exporting to image
+#12 exporting layers
+#12 exporting layers 6.6s done
+#12 writing image sha256:dc44550554de3e5ad740c9da87de7d9856caa88d23b5f89036378ff9b42a1008 done
+#12 naming to docker.io/library/project6_isaac_rankin done
+#12 DONE 6.6s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Baltimore Homicide Data
+================================================================================
+Date         Victim                    Age   Gender   Race      
+--------------------------------------------------------------------------------
+001          01/09/25                  Richie Briggs 36       5900 Dawalt Avenue
+002          01/12/25                  Jamal Davis 37       4400 Reisterstown Road
+003          11/2014                   Terril Lehman 41       1600 Ralworth Road
+004          11/2014                   Charles Webster 46       1600 Ralworth Road
+005          01/18/25                  Brian Reed 59       5600 Groveland Avenue
+006          01/19/25                  Hassan Howard 43       400 Washburn Avenue
+007          01/19/25                  Edward Johnson 44       3700 East Baltimore Street
+008          01/19/25                  Mordecai Wells 24       3400 Berwyn Avenue
+009          01/22/25                  Anntoinette Jennings 52       5400 York Road
+010          01/22/25                  Rodney Lewis 37       2700 Pelham Avaenue
+011          01/24/25                  Anthony McMichael 36       3000 Oakley Avenue
+012          01/26/25                  Justin Davis 35       1500 Carswell Street
+013          01/26/25                  Lamel Edwards 19       3700 Edmondson Avenue
+014          02/02/25                  Troy Kavanaugh 37       2500 East Biddle Street
+015          02/15/25                  Francisco Cuffey 33       6100 Plantview Way
+016          02/15/25                  Keenan Bunch 41       1800 North Montford Avenue
+017          02/20/25                  Clyde Barnes 79       110 North Central Avenue
+018          02/23/25                  Eric Carter 30       600 Poplar Grove Street
+019          02/23/25                  Sae'Quan Newton 28       3600 Potee Street
+020          02/23/25                  Diontavis Whitfield 23       3600 Potee Street
+021          02/23/25                  Celvin Olivares-Portillo 20       4400 Eastern Avenue
+022          02/26/25                  Cameron Kelly 16       1 North Bruce Street
+023          03/04/25                  Shakeira Cooper 41       1000 McAleer Court
+024          03/06/25                  Taijah Addison 27       600 Yale Avenue
+025          03/13/25                  Donny Robinson 61       1600 Balmor Court
+026          03/13/25                  Bridgette Smallwood 54       3700 Potee Street
+027          03/15/25                  Anthony Perry Mosley 20       1500 North Stricker Street
+028          03/15/25                  Christopher Banks 30       5400 Park Heights Avenue
+029          03/16/25                  Kendall Brown 40       4300 Shamrock Avenue. Update 10/14/25 Neri Mancito Hernandez charged .
+030          03/18/25                  Shy'Keema Turner 31       700 East Preston Street
+031          03/18/25                  Maurice Lonon Jr. 19       1200 North Ellwood Avenue
+032          03/19/25                  Derrick Lamb 49       5400 Park Heights Avenue
+XXX          03/21/25                  Name withheld by Blogger 17       2500 Perring Manor Road
+033          03/22/25                  Fredi Lua 48       3200 Pulaski Highway
+034          03/22/25                  Tyshawn Simon 25       3200 Chelsea Terrace
+035          03/27/25                  Darrius Bunch 32       1800 Edmondson Avenue
+036          04/03/25                  Keyon Bryant 22       4100 Patterson Avenue
+037          04/06/25                  Hakeen English 35       1600 Cliftview Avenue
+038          04/06/25                  Paris Savage 30       1500 North Payson Street
+039          04/18/25                  Karmel McGill 18       600 Allendale Street
+040          04/23/25                  Derrick Bright 30       3300 Paton Avenue
+041          05/03/25                  Rashard Smith 21       1800 Lorman Street
+042          05/03/24                  Terrance Todd 47       3400 Pulaski Highway
+XXX          05/05/25                  Troy Gaigler 34       1800 Portal Street
+043          05/07/25                  John Lewis 15       3500 Brehms Lane
+044          05/10/25                  Albert Manning 37       3500 2nd Street
+045          05/11/25                  Taniya Gray 23       4500 Mountwood Road
+???          04/19/25                  Dawn White 53       3500 Benzinger Road
+046          05/14/25                  Julio Delgado 36       2300 Jefferson Street
+047          05/18/25                  Joseph Robinson 25       3400 Wilkens Avenue
+048          05/18/25                  Da'Quan Little 26       1200 East Madison Street
+049          05/19/25                  Demetrius Phyall 18       2300 East Preston Street
+050          05/23/25                  Brandon Naylor 38       1800 North Woodyear Street
+051          05/24/25                  Thomas Barnes 28       400 Heaver Street
+052          05/25/25                  Tobias Cunningham 50       400 North Paca Street
+053          05/26/25                  Devin Thompson 27       1700 Pennsylvania Avenue
+054          05/26/25                  Kirsten Washington 31       1700 Pennsylvania Avenue
+055          05/31/25                  Bryant Breland 42       600 Cherry Hill Road
+056          06/01/25                  Demetri Briscoe 26       3000 Westfield Avenue
+057          06/02/25                  Derek Parker 34       1800 Dover Street
+058          06/07/25                  Darrell Conway 33       3000 Thorndale Avenue
+059          06/08/25                  Adam Brown 47       3400 Round Road
+XXX          06/11/25                  Name witheld by blogger          2100 Presbury Street
+060          06/13/25                  Lavar Steeles 23       1500 West Fayette Street
+061          06/14/25                  Derone Jones 32       5300 Frankford Avenue
+062          06/17/25                  Isaiah Spicer 29       1900 East Lafayette Street
+063          06/19/25                  Jalen Johnson 29       500 North Port Street
+064          06/21/25                  Tyrell John Curtis 39       100 South Broadway
+065          06/22/25                  Javaun Simmons 31       2200 Christian Street
+XXX          06/22/25                  Danilo Punnett 24       2100 Wilkens Avenue
+066          06/23/25                  Corey Washington 41       4100 Woodridge Road
+067          06/30/25                  Donte Chase 46       700 Kenwood Avenue
+068          07/02/25                  Ronald Glascoe 25       3600 Ravenwood Avenue
+069          07/02/25                  Franklin Hughes 32       3000 Westfield Avenue
+070          07/03/25                  Jabari Cannon 21       1500 Thames Street
+071          07/03/25                  Porcha Newman          2000 Boone Street
+072          07/03/25                  Juan Hall 37       2200 Ashton Street
+073          07/04/25                  Aaron Hill 38       3500 Esther Place
+074          07/07/25                  Jermaine McFadden 37       4900 Reisterstown Road
+075          07/08/25                  Jamard Thomas 40       2600 Greenmount Avenue
+076          07/13/25                  Randolph Smith 56       3900 Frederick Avenue
+077          07/12/25                  Keith Garrett 60       2800 Chesterfield Avenue
+078          07/11/25                  Naneato Alusi 27       6200 Shipview Way
+079          07/13/25                  Randolph Smith 56       3900 Frederick Avenue
+080          07/19/25                  Dennis Dorsch 64       1500 Olmstead Street
+081          07/19/25                  William Grant 33       2800 Kennedy Avenue
+082          06/28/25                  Gregory Johnson 40       1700 Pennsylvania Avenue
+083          07/22/25                  Kayla Williams 30       1100 Mount Holly Street
+084          07/23/25                  Donte Griffin 31       500 Edgewood Street
+085          07/19/25                  Travon Booth 43       I-83 near Ruxton Road exit
+086          07/26/25                  Sirbryant Alston 33       1100 East Preston Street
+087          08/09/25                  Birane Gaye 38       2500 West Franklin Street
+088          08/09/25                  Jerome Michael Coateson 38       2900 Spaulding Avenue
+???          08/18/25                  Wilson E Marroquin Caceros 28       2700 Manokin Street
+089          08/20/25                  Levontaye Mullen 25       2800 Woodbrook Avenue
+090          08/20/25                  Montrel Brookes-Davis 18       5100 Park Heights Avenue
+091          08/22/25                  Davonne Hare 26       700 Druid Park Lake Drive
+092          06/24/25                  Dontae Melton 31       North Franklintown Road and West Franklin Street
+093          08/31/25                  Major Kip Smith 61       3000 West Garrison Avenue
+094          09/03/25                  Davion Hodges 25       900 Edmondson Avenue
+095          09/09/25                  Deonaye Johnson 26       1000 North Arlington Avenue
+096          09/10/25                  Zayone Burman 24       1100 Ashburton Street
+097          09/10/25                  Charlton Morris 31       2300 Ashland Avenue
+098          09/13/25                  Kenneth Spaulding 34       3300 Spaulding Avenue
+099          09/19/25                  Taiquan Moss 29       1100 East 20th Street
+100          09/20/25                  Quant'ae Brown 25       300 Presstman Street
+101          06/08/25                  Tyrone Wright 25       600 Glenwood Avenue
+102          09/25/25                  Michael Schuler 34       2200 Sidney Avenue
+103          09/25/25                  Mekonen Habteselassie 71       1200 North Patterson Park Avenue
+104          09/26/25                  Virgil Holland Jr. 31       1200 West North Avenue
+105          09/30/25                  Marlon Pugh 35       3700 Fifth Street
+106          10/01/25                  Oshay Smith 31       2500 Maisel Court
+107          10/02/25                  Walter Aston 47       800 North Bond Street
+108          10/07/25                  Terry Copes 63       100 West Garrett Street
+109          10/10/25                  Ahing Castro 44       6100 Fortview Way
+110          10/15/25                  Darrius Hines 29       500 Callender Street
+111          10/20/25                  Steven Phillips 35       1000 Cameron Road
+112          10/23/25                  Eugene Henry 42       4100 Hyden Court
+113          10/25/25                  Tyree Brooks 22       3200 Reistertown Road
+114          10/28/25                  Unidentified Man          300 North Conkling Street
+115          11/04/25                  Unidentified Man          1500 East Lanvale Street
+116          11/05/25                  Unidentified Man 36       200 North Mount Street
+117          11/05/25                  Unidentified Man          North Rogers Avenue
+118          11/08/25                  Unidentified Man 33       3100 West North Avenue
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+No.          Date Died                 Name  Age      Address Block Found
+001          01/02/24                  Noah Gibson 16       1 Gorman Avenue
+002          01/04/24                  Antoine Johnson 31       1 North Eutaw Street
+003          01/12/24                  Deon Beasley 36       800 Washington Boulevard
+004          01/14/24                  Jazmyn Reed 30       I-83 North Exit 3
+005          01/15/24                  Dominic Wynn 39       2800 Mayfield Avenue
+006          01/09/24                  Quantae Arthur 33       3600 Belair Road
+007          01/19/24                  Dequan Thomas 28       5200 Fairlawn Avenue
+008          01/19/24                  Charlie Cameron 30       5200 Fairlawn Avenue
+009          01/19/24                  Willie Cameron Jr. 32       5200 Fairlawn Avenue
+010          01/19/24                  Malachi Carter-Bey 39       4500 Pennington Avenue
+011          01/19/24                  Mary Lou Schuman 60       4500 Pennington Avenue
+012          01/23/24                  Seron O'Neal 06       2000 Deering Avenue
+013          01/24/23                  Delroy Plummer 68       5200 Fairlawn Avenue
+014          01/26/24                  Kareem Gee 20       1200 East Preston Street
+015          01/30/24                  Sean Hennessy 34       1100 West Baltimore Street
+016          01/30/24                  Davon Brown 36       4000 Wilsby Avenue
+017          02/01/24                  Charles Banks 46       5200 Saybrook Road
+018          02/02/24                  D'Shawn Johnson 25       900 Coppin Court
+019          11/27/23                  Nigel Arrington 25       5300 Eastbury Avenue
+020          02/03/24                  Melvin White 55       3000 Edmondson Avenue
+021          02/07/24                  Ricardo Brooks-Watters 32       4400 Belair Road
+022          02/07/24                  Odell Curtis 40       4400 Belair Road
+023          02/09/24                  Milo Turner 30       6500 Parnell Avenue
+024          02/16/24                  Dwayne Flintall 38       900 North Carrollton Avenue
+025          02/16/24                  Darrian Williams 45       4000 Kathland Avenue
+026          02/16/24                  Rickey Cole 69       4000 Kathland Avenue
+027          10/27/23                  Messiah Heggie 01       ?         
+028          02/17/24                  Amari Williams 20       200 Marion Street
+029          02/20/24                  Darcell Mitchell 19       800 West Lexington Street
+030          02/09/24                  James McDougald 34       2500 West Fairmont Avenue
+031          02/29/24                  Bryant Williams 38       100 South Stockton Street
+032          02/29/24                  Cormer Askins 16       800 Bethune Road
+033          03/01/24                  Johnny Small 55       5300 Frankford Avenue
+034          03/02/24                  Alvin Ray Henry 35       1400 East Biddle Street
+035          12/02/23                  Reginald Evans 62       1300 North Central Avenue
+036          03/05/24                  Isiah Taylor 21       200 South Monstary Avenue
+037          03/06/24                  Denzel Brown 29       4000 Loch Raven Boulevard
+038          03/07/24                  Wayne Sawyer 41       200 Furrow Street
+039          03/11/24                  Rasheed Lindsey 24       3000 Spaulding Avenue
+040          03/11/24                  Unidentified Man 42       3100 Pulaski Highway
+041          03/12/24                  Timothy Peaks 58       1000 Glover Street
+042          03/12/24                  Justice Smallwood 33       1 South Chester Street
+043          03/13/24                  Christine Liddic-Rozzell 49       4000 Alto Road
+044          03/13/24                  Martinez Brown 26       1500 East 28th Street
+045          03/15/24                  Lenora Alston 35       1000 Fulton Street
+046          03/15/24                  Lamont Renwick 34       2000 Robb Street
+047          03/15/24                  Michael Chacon-Nataren 18       200 South Linwood Street
+048          03/16/24                  Christopher Yancey 21       1200 North Potomac Street
+049          03/26/24                  Eugene Fitzgerald 28       1800 Pennsylvania Avenue
+050          04/01/24                  Devron Tyner 17       200 East Pratt Street
+051          04/02/24                  Marvin Washington 22       2300 East Lafayette Street
+052          04/06/24                  Uneek Hassan Foust 31       1600 Bloomingdale Road
+053          04/06/24                  Jose Castron-Merales 38       3700 East Lombard Street
+054          04/11/24                  Devon Thomas 27       3400 Spellman Road
+055          04/14/24                  Kennard Murray 23       4900 Palmer Avenue
+???          04/16/24                  Unidentified Person          2200 East Fayette Street
+056          04/15/24                  Robert Lee Johnson 37       400 North Bradford Street
+057          04/18/24                  Raymond McCoy 30       800 North Glover Street
+058          04/21/24                  Joseph Barranco 77       900 West University Parkway
+059          04/24/24                  Montez Barrett 23       1200 McCulloh Street
+060          04/29/24                  Anthony Pearson 43       4700 Garrison Boulevard
+061          05/05/24                  Sherman Anderson 25       3300 Reisterstown Road
+062          05/05/24                  Lavontay Bishop 33       1000 Leadenhall Street
+063          05/06/24                  Garfield Redd 33       1 East 21st Street
+064          05/09/24                  Janelle Desormeaux 40       2100 East Preston Street
+065          09/05/23                  Unidentified Person          800 North Fremont Avenue
+066          05/12/24                  Moses McKnight 42       3600 Leverton Avenue
+067          05/14/24                  Dondre Green 26       2700 Greenmount Avenue
+068          05/18/24                  Unidentified Man          2900 Auchentoroly Terrace
+069          05/19/24                  Shelton Price 33       3000 Mayfield Avenue
+070          05/20/24                  Phillip Smith 39       3900 Ridgewood Avenue
+071          05/25/24                  Denzel Johnson 17       900 North Dukeland
+072          05/27/24                  Corey Robinson 41       2700 West Fairmont Avenue
+073          05/29/24                  Jamal Burden 24       5600 Bland Avenue
+074          06/01/24                  Joe Lynch 55       5200 Reisterstown Road
+075          06/02/24                  Jarmal Harrid 34       500 West Mulberry Street
+076          06/02/24                  Terrell Johnson-Smith 32       900 Pennsylvania Avenue
+077          06/05/24                  Travis Bell 31       2000 East 31st Street
+078          06/09/24                  Said Raheem 31       2100 West Lexington Street
+079          05/29/24                  Marcus Brown 37       1500 Russell Street
+080          06/11/24                  Navaeh Ferguson 17       3100 Chelsea Terrace
+081          06/11/24                  Deontay Townes 19       2600 Aisquith Street
+082          06/12/24                  Jordan Taylor 24       1700 Ramsay Street
+083          06/14/24                  Dennis Edmonds 39       4300 Bay Avenue
+084          06/16/24                  April Patterson 46       1800 Spence Street
+085          06/16/24                  Brandon Faison 19       800 North Warwick Avenue
+086          06/18/24                  Marvin Moore 42       1000 Stoddard Court
+087          06/23/24                  Paul Foxx 35       400 North Montford Avenue
+088          06/24/24                  Isaiah Gaines 20       2000 McKean Avenue
+089          06/25/24                  Carl Bodine 59       1000 Brantley Avenue
+090          06/26/24                  Kendall Montgomery 24       3300 Dolfield Avenue
+091          06/29/24                  Antoine Grant 38       4000 Fairfax Road
+092          07/02/24                  Donovan Fletcher 28       5300 Cordelia Avenue
+093          07/03/24                  Andrew Harvey Jr. 30       1600 Argyle Avenue
+094          07/03/24                  Unidentified Male Person          5300 Goodnow Road
+095          07/04/24                  Kenshawn Goode 26       1700 West Baltimore Street
+096          07/05/24                  Corey Williams 31       2400 Woodbrook Avenue
+097          07/05/24                  Devin Lee Butler 33       2400 West Lafayette Avenue
+098          07/06/24                  Antoin Hines 47       1400 Traction Street
+099          07/09/24                  Pierre Grant 35       4600 Garrison Boulevard
+100          07/09/24                  Derrick Hawks 19       900 North Dukeland Street
+101          07/10/24                  Taron Whiting 21       2500 Lauretta Avenue
+102          07/10/24                  Unidentified Man 21       2500 Lauretta Avenue
+103          07/10/24                  Cortez Lemon 14       4200 Frankford Road
+104          07/14/24                  Sierra Johnson 38       800 Abbott Court
+105          07/15/24                  Ely Williams-Harr 27       1500 North Potomac Street
+106          07/16/24                  Theodore Burrell 20       2400 Frederick Avenue
+107          07/18/24                  John Parrish 18       3200 Lawnview Avenue
+108          07/18/24                  Brandon Tucker 43       1800 North Carey Street
+109          07/19/24                  Breaunna Cormley 12       500 North Kenwood Avenue
+110          07/20/24                  Alan Grant 30       2400 Loyola Northway
+111          07/21/24                  Jasper Davis 14       2300 Liberty Heights Avenue
+112          07/25/24                  Calvin Williams 36       3400 Garrison Boulevard
+113          07/28/24                  Reginald Coffey 32       600 North Potomac Street
+114          07/25/24                  Christopher Williams 42       1900 Greenmount Avenue
+115          07/26/24                  Sean Sanders 22       1000 North Eden Street
+116          07/29/24                  Carl Anthony 34       5200 St. Charles Avenue
+117          08/01/24                  Ondrell Mayo Jr. 36       900 East Pataspco Avenue
+118          08/04/24                  Tai'Vion Lathan 24       800 North Monroe Street
+119          08/06/24                  Brian Batty 31       1700 North Carey Street
+120          08/09/24                  Christian Donaldson 42       1100 West Lombard Street
+121          08/10/24                  Sean Henson Sr. 49       1100 Tiffany Court
+122          08/15/24                  Timothy Johnson 24       1 South Gilmor Street
+123          08/16/24                  Carroll Wonson 56       600 Springfield Avenue
+124          08/17/24                  David Philpot 74       1700 Eastern Avenue
+125          08/16/24                  Donnell Bristol 26       1400 North Decker Street
+126          08/18/24                  Anthony Martin 36       1300 Spring Street
+127          08/20/24                  Jermaine Parlow 32       300 South Franklintown Road
+128          08/20/24                  Rodney Lee 31       2700 Fisk Road
+129          08/21/24                  Brian Nesbitt 37       800 South Paca Street
+130          08/22/24                  Ronald Carroll 46       1900 East North Avenue
+131          08/21/24                  Brian Graham 06       6300 Greenspring Avenue
+132          01/27/24                  Jibreal Payne 16       400 North Clinton Street
+133          08/27/24                  Travis Cooper 42       2800 Mayfield Avenue
+134          09/01/24                  Darrell Burton 38       800 Bonaparte Avenue
+135          09/03/24                  Tyreke Brown 22       1300 Russell Street
+136          09/11/24                  Richard Evans 41       1300 North Calhoun Street
+137          09/14/24                  Reginald Bernard Harrod 59       1100 Springfield Avenue
+138          09/14/24                  Antonio Peoples 36       700 Aliceanna Street
+139          09/16/24                  Melvin Sheppard          2700 Spelman Road
+140          09/17/24                  Michael Simms 20       400 Bloom Street
+141          09/16/24                  Melvin Rich III 36       1300 North Carey Street
+142          09/17/24                  Andre Dukes 29       7200 McClean Boulevard
+143          09/18/24                  Darryl Mitchell 30       4100 St. Georges Avenue
+144          09/19/24                  Errique Neal 26       1100 East 20th Street
+145          09/21/24                  George Massey 37       5100 Park Heights Avenue
+146          09/21/24                  Unidentified Man          5100 Park Heights Avenue
+147          09/21/24                  Christian Leight 24       1100 Marshall Street
+148          09/21/24                  Ryan Cain 24       4600 York Road
+149          09/22/24                  Jasmine Simuel 33       2700 Pennsylvania Avenue
+150          09/25/24                  Kevin Mejia 27       6300 Eastern Avenue
+XXX          09/28/24                  Unidentified Man 32       300 South Augusta Avenue
+151          09/29/24                  Melvin Rogers 43       Wilhelm Street
+152          10/02/24                  Tavin Cooper 20       2500 McHenry Street
+153          10/05/24                  Jamil Richardson 25       500 Sheridan Avenue
+154          10/05/24                  Dion Huff 29       2500 Greenmount Avenue
+155          10/07/24                  Damien Parker 26       2300 Harford Road
+156          10/09/24                  Marques Reaves 26       1100 North Lakewood Avenue
+157          10/10/24                  Shyheim Hunt 25       800 Gilrubin Court
+158          10/10/24                  Davon Gray 34       800 Gilrubin Court
+159          10/12/24                  Elias Palmer 17       1200 South Haven Street
+???          10/14/24                  Zona Byrd 05       2200 Aiken Street
+160          10/23/24                  Jose Rodriguez-Bustos 26       2600 East Baltimore Street
+161          10/24/24                  Artez Collins 30       Boone Street
+162          10/25/24                  Abdullah Barber-El 21       1100 South Monroe Street
+163          10/27/24                  Marvin Wooten 46       1900 West Fayette Street
+164          10/28/24                  Amy Armstrong 28       3700 Toone Street
+165          11/03/24                  Solomon Wise 58       4200 Sheldon Avenue
+166          11/03/14                  Ceaira Jackson 39       1500 Pennsylvania Avenue
+167          11/06/24                  Deandre Yelverton 36       2500 North Howard Street
+168          11/07/24                  Roger Hawkins 27       3700 Gwynn Oak Avenue
+169          11/06/24                  Cameran Holt 19       1 West Hamburg Street
+170          11/06/24                  Bianca Nelson 30       1800 North Montford Avenue
+171          11/09/24                  Ira Linton 46       4200 Powell Avenue
+172          11/12/24                  Isaiah Shackleford 22       Annapolis Road Exit of I-295
+173          11/13/24                  Paul Lee 33       500 East Preston Street
+174          11/15/24                  Laquarie Harvey 27       3600 Hayward Avenue
+175          11/17/24                  Kierra Tripp 28       800 North Wolfe Street
+176          11/18/24                  Marcus Holloway 40       1900 Edmondson Avenue
+177          11/21/24                  Gary Lee Matthews Jr. 34       4900 Frankford Avenue
+178          11/21/24                  Leonardo Espinoza-Salomon 23       2300 Aisquith Street
+179          11/21/24                  Reginald Allen Jr. 29       3900 Dolfield Avenue
+180          11/23/24                  Marquis Hill 25       5500 Hamlin Avenue
+181          11/30/24                  William Womack IV 30       1 South Eutaw Street
+182          12/01/24                  Montrell Smith 31       2200 North Monroe Street
+183          12/02/24                  Terry Nesbitt Jr. 38       3500 Clifton Avenue
+184          12/07/24                  Garrison Warren 56       1000 Wicklow Road
+185          12/09/24                  Emoni Randall-Rodgers          3400 Crows Nest Road
+186          12/09/24                  K'von McDowell 25       4000 West Belvedere Avenue
+187          12/10/24                  Bryan Stansbury 18       1100 Quantrill Way
+187          11/15/24                  Joyce Gaskins 64       1600 Druid Hill Avenue
+188          12/14/24                  Travon Benson 29       200 North Payson Street
+189          12/16/24                  Ibrahim Kamara 25       1200 West North Avenue
+190          12/16/24                  Ricky Forehand 44       1200 West Baltimore Street
+191          12/17/24                  Krystal Prahampap 42       1000 Quantril Way
+192          12/16/24                  Donte Bazemore 31       2600 East Chase Street
+193          12/24/24                  Kevin Morrison 17       1900 North Forest Park Avenue
+194          12/27/24                  Tyree Countess 21       2100 Druid Hill Avenue
+195          12/26/24                  Deangelo West 27       4300 East Preston Street
+                                       Blogger Note: BPD End-of-year list packing. :(                    
+196          09/20/24                  Malik Cottman 46       1200 East North Avenue
+197          08/03/24                  Aaron Frantom 39       100 North Mount Street
+                                       Blogger Note: BPD list packing stops for now                    
+198          12/30/31                  Kyree Williams 26       1200 East Coldspring Lane
+                                                                
+                                                                
+                                                                
+                                                                
+--------------------------------------------------------------------------------
+Total records: 345
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_isaac_rankin:latest
+Deleted: sha256:dc44550554de3e5ad740c9da87de7d9856caa88d23b5f89036378ff9b42a1008
+✓ Image removed
+
+========================================
+Processing: jordan_winters
+Directory: jordan_winters/project6/
+Time: Mon Nov 10 23:01:25 UTC 2025
+========================================
+Building Docker image: project6_jordan_winters
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 785B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:latest
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 DONE 0.0s
+
+#6 [stage-1 1/4] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#6 DONE 0.0s
+
+#7 [builder 2/5] WORKDIR /app
+#7 CACHED
+
+#8 [stage-1 2/4] RUN apk --no-cache add ca-certificates
+#8 CACHED
+
+#9 [stage-1 3/4] WORKDIR /app
+#9 CACHED
+
+#10 [internal] load build context
+#10 transferring context: 6.46kB done
+#10 DONE 0.0s
+
+#11 [builder 3/5] COPY go.mod ./
+#11 ERROR: failed to calculate checksum of ref 017ed138-174c-4c8a-9d07-311aafd2e236::icxw8v71pnw9r7tmdwaw0ofht: "/go.mod": not found
+------
+ > [builder 3/5] COPY go.mod ./:
+------
+Dockerfile:7
+--------------------
+   5 |     
+   6 |     # Copy go module files
+   7 | >>> COPY go.mod ./
+   8 |     
+   9 |     # Copy source code
+--------------------
+ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref 017ed138-174c-4c8a-9d07-311aafd2e236::icxw8v71pnw9r7tmdwaw0ofht: "/go.mod": not found
+✗ Build failed - see log for details
+
+========================================
+Processing: justice_thomson
+Directory: justice_thomson/project6/
+Time: Mon Nov 10 23:01:26 UTC 2025
+========================================
+Building Docker image: project6_justice_thomson
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 311B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.23
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/golang:1.23@sha256:60deed95d3888cc5e4d9ff8a10c54e5edc008c6ae3fba6187be6fb592e19e8c0
+#4 resolve docker.io/library/golang:1.23@sha256:60deed95d3888cc5e4d9ff8a10c54e5edc008c6ae3fba6187be6fb592e19e8c0 done
+#4 DONE 0.0s
+
+#5 [2/4] WORKDIR /app
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 5.79kB done
+#6 DONE 0.0s
+
+#7 [3/4] COPY main.go /app/main.go
+#7 DONE 0.0s
+
+#8 [4/4] RUN go build -o project6 main.go
+#8 DONE 20.2s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 2.6s done
+#9 writing image sha256:ec1bcff5609b4e44b362fdf754c7c0ce8e835c9375c6a1e9fb7a79731f6d7408 done
+#9 naming to docker.io/library/project6_justice_thomson done
+#9 DONE 2.6s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Question 1: How many homicides occurred in each month of 2025?
+January: 11
+February: 9
+March: 14
+April: 6
+May: 15
+June: 17
+July: 18
+August: 7
+September: 11
+October: 9
+November: 4
+December: 0
+
+Question 2: What is the closure rate for incidents with and without surveillance cameras in 2025?
+Total parsed incidents: 121
+With cameras: 27, Closed with cameras: 11 (40.7%)
+Without cameras: 94, Closed without cameras: 28 (29.8%)
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_justice_thomson:latest
+Deleted: sha256:ec1bcff5609b4e44b362fdf754c7c0ce8e835c9375c6a1e9fb7a79731f6d7408
+✓ Image removed
+
+========================================
+Processing: kaleb_dunn
+Directory: kaleb_dunn/project6/
+Time: Mon Nov 10 23:01:49 UTC 2025
+========================================
+Building Docker image: project6_kaleb_dunn
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 322B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/alpine:latest
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 DONE 0.0s
+
+#6 [builder 2/5] WORKDIR /app
+#6 CACHED
+
+#7 [stage-1 1/4] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 19.18kB done
+#8 DONE 0.0s
+
+#9 [builder 3/5] COPY go.mod ./
+#9 DONE 0.0s
+
+#10 [builder 4/5] COPY main.go ./
+#10 DONE 0.0s
+
+#11 [builder 5/5] RUN go build -o baltimore-analysis main.go
+#11 DONE 19.2s
+
+#12 [stage-1 2/4] RUN apk --no-cache add ca-certificates
+#12 CACHED
+
+#13 [stage-1 3/4] WORKDIR /app
+#13 CACHED
+
+#14 [stage-1 4/4] COPY --from=builder /app/baltimore-analysis .
+#14 DONE 0.2s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 0.6s done
+#15 writing image sha256:104eae21a2b2b1135e61e63a7b0b8a12cf9024dfc01ddca01744808c5ac82f39 done
+#15 naming to docker.io/library/project6_kaleb_dunn done
+#15 DONE 0.6s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Fetching data for year 2023...
+  Found 0 records for 2023
+Fetching data for year 2024...
+  Found 13 records for 2024
+Fetching data for year 2025...
+  Found 1 records for 2025
+
+Total records analyzed: 14
+Baltimore Homicide Statistics Analysis
+======================================================================
+
+
+======================================================================
+
+QUESTION 1: District Clearance Rate Analysis (2023-2025)
+----------------------------------------------------------------------
+
+CONTEXT: This analysis helps the Mayor's office identify which
+police districts are most effective at solving homicides and where
+to allocate additional detective resources for maximum impact.
+
+District                Total   Closed       Rate
+----------------------------------------------------------------------
+✓ Western                   1       1     100.0%
+✓ western                   1       1     100.0%
+✗ Unknown                  11       2      18.2%
+✗ Southwest                 1       0       0.0%
+
+KEY FINDINGS:
+  • Best performing: Western with 100.0% clearance rate
+  • Needs attention: Southwest with 0.0% clearance rate
+  • City-wide average: 54.5% clearance rate
+  • 2 of 4 districts below average
+
+======================================================================
+
+QUESTION 2: Police Surveillance Camera ROI Analysis
+----------------------------------------------------------------------
+
+CONTEXT: Baltimore has invested millions in CCTV infrastructure.
+This analysis evaluates whether camera proximity improves case
+closure rates and informs future technology investment decisions.
+
+Location                          Total   Closed       Rate
+----------------------------------------------------------------------
+Within 1 block of camera             0       0       0.0%
+Not near camera                     14       4      28.6%
+
+KEY FINDINGS:
+  • 0.0% of all homicides occur within 1 block of cameras
+  • Clearance rate difference: -28.6% (cameras vs. no cameras)
+
+----------------------------------------------------------------------
+
+DATA NOTES:
+  • Analysis timestamp: 2025-11-10 23:02:11
+  • Total records analyzed: 14
+  • Data source: chamspage.blogspot.com
+
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_kaleb_dunn:latest
+Deleted: sha256:104eae21a2b2b1135e61e63a7b0b8a12cf9024dfc01ddca01744808c5ac82f39
+✓ Image removed
+
+========================================
+Processing: kyndal_maclin
+Directory: kyndal_maclin/project6/
+Time: Mon Nov 10 23:02:11 UTC 2025
+========================================
+Building Docker image: project6_kyndal_maclin
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 677B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.24.9-alpine
+#2 DONE 0.2s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 13.34kB done
+#4 DONE 0.0s
+
+#5 [1/9] FROM docker.io/library/golang:1.24.9-alpine@sha256:8f8959f38530d159bf71d0b3eb0c547dc61e7959d8225d1599cf762477384923
+#5 resolve docker.io/library/golang:1.24.9-alpine@sha256:8f8959f38530d159bf71d0b3eb0c547dc61e7959d8225d1599cf762477384923 0.0s done
+#5 extracting sha256:85e8836fcdb2966cd3e43a5440ccddffd1828d2d186a49fa7c17b605db8b3bb3
+#5 extracting sha256:85e8836fcdb2966cd3e43a5440ccddffd1828d2d186a49fa7c17b605db8b3bb3 0.1s done
+#5 sha256:c4fc6e8e494aa3da747df9260f10aaeef515f57cf86afa4ffe96d20cd0fc5780 2.08kB / 2.08kB done
+#5 sha256:85e8836fcdb2966cd3e43a5440ccddffd1828d2d186a49fa7c17b605db8b3bb3 291.15kB / 291.15kB 0.1s done
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 9.44MB / 79.12MB 0.2s
+#5 sha256:2044fc6f81531c0cb952284ecaa212d70842f6bdb3c48b4065ceb5540b5f6872 126B / 126B 0.1s done
+#5 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.1s done
+#5 sha256:8f8959f38530d159bf71d0b3eb0c547dc61e7959d8225d1599cf762477384923 10.29kB / 10.29kB done
+#5 sha256:54619f7dc324d135c07d55ae19f84801c45c05f86cd1b3eded177ea26d240dcf 1.92kB / 1.92kB done
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 20.97MB / 79.12MB 0.4s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 25.17MB / 79.12MB 0.5s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 40.89MB / 79.12MB 0.7s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 49.28MB / 79.12MB 0.9s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 55.57MB / 79.12MB 1.0s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 63.96MB / 79.12MB 1.1s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 71.30MB / 79.12MB 1.2s
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 79.12MB / 79.12MB 1.3s
+#5 extracting sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4
+#5 sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 79.12MB / 79.12MB 2.1s done
+#5 extracting sha256:72af6e2c290d28917d8b18ab0473ba8126db26099d8b3c143556ca65fedb73c4 4.9s done
+#5 extracting sha256:2044fc6f81531c0cb952284ecaa212d70842f6bdb3c48b4065ceb5540b5f6872
+#5 extracting sha256:2044fc6f81531c0cb952284ecaa212d70842f6bdb3c48b4065ceb5540b5f6872 done
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 DONE 11.1s
+
+#6 [2/9] RUN apk add --no-cache git
+#6 0.693 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+#6 0.757 fetch https://dl-cdn.alpinelinux.org/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+#6 1.077 (1/12) Installing brotli-libs (1.1.0-r2)
+#6 1.091 (2/12) Installing c-ares (1.34.5-r0)
+#6 1.097 (3/12) Installing libunistring (1.3-r0)
+#6 1.172 (4/12) Installing libidn2 (2.3.7-r0)
+#6 1.186 (5/12) Installing nghttp2-libs (1.65.0-r0)
+#6 1.192 (6/12) Installing libpsl (0.21.5-r3)
+#6 1.196 (7/12) Installing zstd-libs (1.5.7-r0)
+#6 1.215 (8/12) Installing libcurl (8.14.1-r2)
+#6 1.238 (9/12) Installing libexpat (2.7.3-r0)
+#6 1.242 (10/12) Installing pcre2 (10.46-r0)
+#6 1.280 (11/12) Installing git (2.49.1-r0)
+#6 1.351 (12/12) Installing git-init-template (2.49.1-r0)
+#6 1.357 Executing busybox-1.37.0-r19.trigger
+#6 1.369 OK: 20 MiB in 29 packages
+#6 DONE 1.7s
+
+#7 [3/9] WORKDIR /app
+#7 DONE 0.1s
+
+#8 [4/9] COPY go.mod go.sum ./
+#8 DONE 0.0s
+
+#9 [5/9] RUN go mod download && go mod verify
+#9 0.676 all modules verified
+#9 DONE 0.9s
+
+#10 [6/9] COPY main.go ./
+#10 DONE 0.0s
+
+#11 [7/9] RUN go build -o baltimore-analysis .
+#11 DONE 22.2s
+
+#12 [8/9] RUN mkdir -p /app/output
+#12 DONE 0.2s
+
+#13 [9/9] WORKDIR /app/output
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 5.2s done
+#14 writing image sha256:dd7bb158208a47db8555ba91cafb48634f4840db77a1299ecbbc6310d8d608f6 done
+#14 naming to docker.io/library/project6_kyndal_maclin done
+#14 DONE 5.2s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+🕵️ Baltimore Homicide Analysis Started (Go Version)
+===================================================
+🔎 Fetching: https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html
+✅ Fetched 136 incidents for 2025
+🔎 Fetching: https://chamspage.blogspot.com/2024/01/2024-baltimore-city-homicide-list.html
+✅ Fetched 208 incidents for 2024
+🔎 Fetching: https://chamspage.blogspot.com/2023/01/2023-baltimore-city-homicides-list.html
+✅ Fetched 266 incidents for 2023
+
+📈 Successfully collected 610 total incidents
+📊 Total incidents: 610
+
+By Gender:
+  Yousef Mohamed -> 1
+  Ivean Earle Williams Jr. -> 1
+  Antonio Lee -> 1
+  Dontae Melton -> 1
+  Davion Hodges -> 1
+  Quantae Arthur -> 1
+  Rodney Lee -> 1
+  Ronald Carroll -> 1
+  Krystal Prahampap -> 1
+  Joshua Tingler -> 1
+  Bridgette Smallwood -> 1
+  Charles Banks -> 1
+  Johnny Small -> 1
+  Corey Williams -> 1
+  Roger Hawkins -> 1
+  Maya Morton -> 1
+  Pedie Edwards -> 1
+  Michael Schuler -> 1
+  Sean Henson Sr. -> 1
+  K'von McDowell -> 1
+  Eric Jennings -> 1
+  Troy Kavanaugh -> 1
+  Michael Simms -> 1
+  Deontae Marcus Rogers -> 1
+  Breon Traquan Ennis -> 1
+  Alvaro Santana -> 1
+  Kylis Fagbemi -> 1
+  Jalen Wise -> 1
+  Anton Kancir -> 1
+  Lavar Steeles -> 1
+  James McDougald -> 1
+  Melvin Rogers -> 1
+  Lowell Freeman -> 1
+  Paris Savage -> 1
+  Jazmyn Reed -> 1
+  Timothy Peaks -> 1
+  Breaunna Cormley -> 1
+  Demarris Johnson -> 1
+  Deon Beasley -> 1
+  Antwan Horton -> 1
+  Jeffrey Brooks -> 1
+  Traquarn Lewis -> 1
+  Jason Franey -> 1
+  Darius Alante Hill -> 1
+  Corey Washington -> 1
+             -> 17
+  Reginald Evans -> 1
+  Taron Whiting -> 1
+  Eugene Fitzgerald -> 1
+  Travon Benson -> 1
+  Marquis Hill -> 1
+  Kevin Evans Jr. -> 1
+  Juan Hill  -> 1
+  Khalil McCray -> 1
+  Jimmy Bailey -> 1
+  Anthony Daunte Miles -> 1
+  Jerric Michie -> 1
+  Jawann Adams -> 1
+  Carla Jones -> 1
+  Deshawn Pinchback -> 1
+  Rodney Lewis -> 1
+  Donte Chase -> 1
+  Leonardo Espinoza-Salomon -> 1
+  Montrell Smith -> 1
+  Craig Hunter -> 1
+  Teon Wright -> 1
+  Sean Neal Malik Brown -> 1
+  Cynceray Washington-Greene -> 1
+  Hakeen English -> 1
+  Daniel Taylor -> 1
+  Anntoinette Jennings -> 1
+  Joseph Barranco -> 1
+  Cameran Holt -> 1
+  Dion Brandon -> 1
+  Ninmark Pearson -> 1
+  Toby Rogers -> 1
+  Shakeira Cooper -> 1
+  Keyon Bryant -> 1
+  Wayne Sawyer -> 1
+  Moses McKnight -> 1
+  Amy Armstrong -> 1
+  Anthony Perry Mosley -> 1
+  Dominic Wynn -> 1
+  Denzel Johnson -> 1
+  Jamil Richardson -> 1
+  Brian Reed -> 1
+  Davon Brown -> 1
+  Brandon Earl Pride -> 1
+  Malik Williams -> 1
+  Davonne Hare -> 1
+  Sean Hennessy -> 1
+  Gerald Fowlkes -> 1
+  Cordy Shaw -> 1
+  Christopher Miller -> 1
+  Milo Turner -> 1
+  Reginald Allen Jr. -> 1
+  William Womack IV -> 1
+  Terry Nesbitt Jr. -> 1
+  Jordan Isaiah Wise -> 1
+  Taijah Addison -> 1
+  Errique Neal -> 1
+  Tyree Bell -> 1
+  Lenora Alston -> 1
+  Tai'Vion Lathan -> 1
+  Marcus Alsup -> 1
+  John Murphy -> 1
+  Justin Davis -> 1
+  Cameron Kelly -> 1
+  Ahing Castro -> 1
+  Dion Blackwell -> 1
+  Jaylen Richards -> 1
+  K'mauri Ebanks -> 1
+  Todd Anthony Cornish -> 1
+  Carlos Carrazana-Ricardo -> 1
+  Derrick Bright -> 1
+  Desmond Gardner Jr. -> 1
+  Nathaniel Mack -> 1
+  Willie Cameron Jr. -> 1
+  Said Raheem -> 1
+  David Philpot -> 1
+  Marvin Wooten -> 1
+  William Spady -> 1
+  Daniel Schaefer -> 1
+  Clyde Barnes -> 1
+  Diontavis Whitfield -> 1
+  Edgar Ernesto Bonilla -> 1
+  Kamren Murphy -> 1
+  Lamel Edwards -> 1
+  Unidentified Man -> 17
+  Dwayne Flintall -> 1
+  Montez Barrett -> 1
+  Theodore Burrell -> 1
+  Jasmine Simuel -> 1
+  Marques Reaves -> 1
+  Dustin Davis -> 1
+  Sirbryant Alston -> 1
+  Alvin Ray Henry -> 1
+  Elias Palmer -> 1
+  Adam White -> 1
+  Dontre Mitchell -> 1
+  Anquan Jackson -> 1
+  Christopher Morton -> 1
+  Ricardo Burley -> 1
+  Deshaun Waters -> 1
+  Meron Benjamin -> 1
+  Aaron Dorsey -> 1
+  Benjamin Lemon -> 1
+  Talib Brandon -> 1
+  Paul White -> 1
+  Marvin Jackson -> 1
+  Jordan Taylor -> 1
+  Antoin Hines -> 1
+  Joseph Bright -> 1
+  Charlton Morris -> 1
+  Dennis Edmonds -> 1
+  Joyce Gaskins -> 1
+  Dashawn Anderson -> 1
+  Earl Watkins -> 1
+  Dionte Williams -> 1
+  Justice Smallwood -> 1
+  Terrell Johnson-Smith -> 1
+  Christopher Williams -> 1
+  Joseph Garrison -> 1
+  Michael 
+     Raub -> 1
+  Tyshawn Simon -> 1
+  Pierre Grant -> 1
+  Julius Tyrone Johnson -> 1
+  Kirsten Washington -> 1
+  Brian Batty -> 1
+  Vaughn Lee Jones -> 1
+  Unseld Knight -> 1
+  Darrius Bunch -> 1
+  Taniya Gray -> 1
+  Jabari Cannon -> 1
+  Navaeh Ferguson -> 1
+  Devin Lee Butler -> 1
+  Carlyle Saunders -> 1
+  Anthony Pearson -> 1
+  Blogger Note: BPD End-of-year list packing. :( -> 1
+  Khiree Austin -> 1
+  Samuel Green -> 1
+  Dabrae Edwards -> 1
+  Troy Gaigler -> 1
+  Terry Copes -> 1
+  Maurice Smith -> 1
+  Sae'Quan Newton -> 1
+  Deonaye Johnson -> 1
+  Jibreal Payne -> 1
+  Melvin Sheppard -> 1
+  Bryan Stansbury -> 1
+  Darrell Benner -> 1
+  David Hamilton -> 1
+  Birane Gaye -> 1
+  Phillip Smith -> 1
+  Reginald Coffey -> 1
+  Isaiah Shackleford -> 1
+  Harry Caesar -> 1
+  Raymond McCoy -> 1
+  Kendall Brown -> 1
+  Terrance Todd -> 1
+  Bryant Breland -> 1
+  Jasper Davis -> 1
+  Uneek Hassan Foust -> 1
+  Carl Bodine -> 1
+  Brian Graham -> 1
+  Paul Lee   -> 1
+  Danielle Parnell -> 1
+  Karmel McGill -> 1
+  Wilson E Marroquin Caceros -> 1
+  Kevin Mejia -> 1
+  Robert Weddington -> 1
+  Regina Claggett Brown -> 1
+  Jamal Davis -> 1
+  Hassan Howard -> 1
+  Derrick Lamb -> 1
+  Travon Booth -> 1
+  Francisco Cuffey -> 1
+  Isaiah Spicer -> 1
+  Calvin Williams -> 1
+  Dante Stansbury -> 1
+  Brandon Watts -> 1
+  Frissel Townes Jr. -> 1
+  Robert Wagner -> 1
+  George Dukes -> 1
+  Tyrone Wright -> 1
+  Mekonen Habteselassie -> 1
+  Bryant Williams -> 1
+  Jarmal Harrid -> 1
+  Andre Dukes -> 1
+  Deveraun Rawlings -> 1
+  Jonathan Williams -> 1
+  Reginald White -> 1
+  Bryson Hudson -> 1
+  Hy'main Amos -> 1
+  Brandon Naylor -> 1
+  Isiah Taylor -> 1
+  Brandon Tucker -> 1
+  Terrance English -> 1
+  Lamont Renwick -> 1
+  Devon Thomas -> 1
+  Marvin Moore -> 1
+  Derrick Hawks -> 1
+  Davon Gray -> 1
+  Artez Collins -> 1
+  Ronnie Gibson Jr. -> 1
+  Micah Strong -> 1
+  Ronald Glascoe -> 1
+  Jamard Thomas -> 1
+  Marlon Pugh -> 1
+  Damiane Edwards -> 1
+  Krista McGuire -> 1
+  Alamar Wilson -> 1
+  Davonte Rouse -> 1
+  Davon Jones -> 1
+  Charles Webster -> 1
+  Jermaine Parlow -> 1
+  Bianca Nelson -> 1
+  Kwantez Henson -> 1
+  Marquis Stuckey -> 1
+  James Venable -> 1
+  Ryan Cain  -> 1
+  Dion Huff  -> 1
+  Renyse Jones -> 1
+  Tavon Heights -> 1
+  Garfield Redd -> 1
+  De'Angelo Carter -> 1
+  Kenneth Lyde -> 1
+  Michael Saffold -> 1
+  Charlee Gamble -> 1
+  Albert Manning -> 1
+  Christopher Foster -> 1
+  Ceaira Jackson -> 1
+  Myron Anthony White -> 1
+  Thomas Barnes -> 1
+  Dequan Thomas -> 1
+  Travis Cooper -> 1
+  Ira Linton -> 1
+  Deanta Dorsey -> 1
+  Navontay Whitener -> 1
+  Shy'Keema Turner -> 1
+  Dawn White -> 1
+  Unidentified Person -> 5
+  John Parrish -> 1
+  Timothy Johnson -> 1
+  Kevin Morrison -> 1
+  Donetta Roberson -> 1
+  Bryant Giles -> 1
+  Marcus Brown -> 1
+  Cortez Lemon -> 1
+  Shakita Thomas -> 1
+  Fabian Alberto Sanchez Gonzalez -> 1
+  Charles Johnson -> 1
+  Howard Dorsey -> 1
+  Eric Carter -> 1
+  Maurice Lonon Jr. -> 1
+  John Lewis -> 1
+  Name witheld by blogger -> 1
+  Danilo Punnett -> 1
+  Ely Williams-Harr -> 1
+  Carroll Wonson -> 1
+  Corey Hopkins -> 1
+  Rashard Smith -> 1
+  Dennis Dorsch -> 1
+  Paul Foxx  -> 1
+  Kayla Andujar -> 1
+  Richie Briggs -> 1
+  Shyheim Hunt -> 1
+  Laquarie Harvey -> 1
+  Nathaniel Dubbs -> 1
+  Nathaniel Towler -> 1
+  Antione Bowman -> 1
+  Jeremy Maldonado -> 1
+  Travon Bradford -> 1
+  Donte Bazemore -> 1
+  Messiah Heggie -> 1
+  Garrison Warren -> 1
+  Otis Toney -> 1
+  Nina Dooley -> 1
+  David Boykin -> 1
+  Devin Thompson -> 1
+  Devron Tyner -> 1
+  Kendall Montgomery -> 1
+  Andrew Harvey Jr. -> 1
+  Brian Nesbitt -> 1
+  Da'wan Amin James -> 1
+  Tyon Purvey -> 1
+  Aayilah Gonzalez -> 1
+  Oshay Smith -> 1
+  Eugene Henry -> 1
+  Tyree Brooks -> 1
+  Winter Johnson -> 1
+  Devoon Johnson -> 1
+  Kenneth Banks -> 1
+  Carlos Oseguera-Funez -> 1
+  Porcha Newman -> 1
+  Cormer Askins -> 1
+  Marvin Washington -> 1
+  Anthony Martin -> 1
+  Kenneth Spaulding -> 1
+  Sean Sanders -> 1
+  Christian Donaldson -> 1
+  Christopher Brogdon -> 1
+  Name withheld by Blogger -> 1
+  Jalen Johnson -> 1
+  Ricky Forehand -> 1
+  Tommie Anderson -> 1
+  Eniyah Smith -> 1
+  Steven Phillips -> 1
+  Rasheed Lindsey -> 1
+  Christine Liddic-Rozzell -> 1
+  Kierra Tripp -> 1
+  Shammah Wake -> 1
+  Major Kip Smith -> 1
+  Shelton Price -> 1
+  Alan Grant -> 1
+  Jefferson Villanueva -> 1
+  Kayla Williams -> 1
+  Jose Castron-Merales -> 1
+  Jamal Burden -> 1
+  Abdullah Barber-El -> 1
+  Theodore Foreman -> 1
+  Donovan Flood-Mims -> 1
+  Kashay Davis -> 1
+  Demetrius Phyall -> 1
+  Adam Brown -> 1
+  Nigel Arrington -> 1
+  Jermaine McFadden -> 1
+  Darcell Mitchell -> 1
+  Damien Parker -> 1
+  Darryl Crowder -> 1
+  Derek Parker -> 1
+  Denzel Brown -> 1
+  Tyreke Brown -> 1
+  Jamal Barney -> 1
+  Randolph Smith -> 2
+  William Grant -> 1
+  Walter Aston -> 1
+  Darrius Hines -> 1
+  Shawnika Deniton -> 1
+  Prince Benson -> 1
+  Derone Jones -> 1
+  Taiquan Moss -> 1
+  Mary Lou Schuman -> 1
+  Isaiah Gaines -> 1
+  Donny Robinson -> 1
+  Ibrahim Kamara -> 1
+  Blogger Note: BPD list packing stops for now -> 1
+  Tyron Fields -> 1
+  Tobias Cunningham -> 1
+  Montrel Brookes-Davis -> 1
+  Martinez Brown -> 1
+  Terrell Taylor -> 1
+  Melvin White -> 1
+  Troy Shaw  -> 1
+  Biancha Johnson -> 1
+  Malachi Carter-Bey -> 1
+  Antonio Peoples -> 1
+  Zona Byrd  -> 1
+  Eric Gill  -> 1
+  Danshawn Stukes -> 1
+  Edward Johnson -> 1
+  Lavontay Bishop -> 1
+  George Massey -> 1
+  Darrell Oliver -> 1
+  Cameron Bullock -> 1
+  Wilfredo Hernandez-Reyes -> 1
+  Derrick Brock -> 1
+  Carl Anthony -> 1
+  Joseph Kawa -> 1
+  Mason Kelly -> 1
+  Journey Sharp -> 1
+  Allante Alexander -> 1
+  Thomas Bekele -> 1
+  Jerome Michael Coateson -> 1
+  Quant'ae Brown -> 1
+  Melvin Cummings -> 1
+  Juan Hall  -> 1
+  Carl Gilmore -> 1
+  Delvonta Grimes -> 1
+  Anthony Cox -> 1
+  William Reed -> 1
+  Ryan Demby -> 1
+  Levontaye Mullen -> 1
+  Kennard Murray -> 1
+  Antoine Grant -> 1
+  Demetrik Wallace -> 1
+  Tiwan Wilson -> 1
+  Anthony Williams -> 1
+  Christopher Yancey -> 1
+  Steven Butler -> 1
+  Deontaye Anderson -> 1
+  Demetri Briscoe -> 1
+  Donte Griffin -> 1
+  Andre Simms -> 1
+  Tavon Wilson Jr. -> 1
+  Dana Wilkes -> 1
+  Da'Quan Little -> 1
+  Amari Williams -> 1
+  Sierra Johnson -> 1
+  Aaron Frantom -> 1
+  Naa'tricia Imeen Green -> 1
+  Dewan Holmes -> 1
+  Franklin Hughes -> 1
+  Emoni Randall-Rodgers -> 1
+  Celvin Olivares-Portillo -> 1
+  Solomon Wise -> 1
+  Diamante Fox -> 1
+  Douglas Bates -> 1
+  Titus Williams -> 1
+  Devonte Pulley -> 1
+  Kenneth Wilson -> 1
+  Zayone Burman -> 1
+  Richard Evans -> 1
+  Delroy Plummer -> 1
+  Darrian Williams -> 1
+  Tavin Cooper -> 1
+  Gary Lee Matthews Jr. -> 1
+  Jamal Martin -> 1
+  William Arthur Stewart -> 1
+  Jriley Downs -> 1
+  Mordecai Wells -> 1
+  Joseph Robinson -> 1
+  Kareem Gee -> 1
+  Kyree Williams -> 1
+  Dion Williams -> 1
+  Joshua Mickey -> 1
+  Di'Shon Smith -> 1
+  Shurlon Cooper -> 1
+  Shakari Lea -> 1
+  Isiah Greenwood -> 1
+  Melvin Rich III -> 1
+  Deangelo West -> 1
+  Clifton Phair -> 1
+  Desmond Chandler -> 1
+  Kayshawn Roundheart -> 1
+  Corey Robinson -> 1
+  Joe Lynch  -> 1
+  Shaquana Edwards -> 1
+  Anthony El-Shabazz -> 1
+  Jeffry Castellanos Figueroa -> 1
+  Pava Marie LaPere -> 1
+  Rickey Cole -> 1
+  Travis Bell -> 1
+  Malik Cottman -> 1
+  Izaiah Carter -> 1
+  Girard Smith -> 1
+  Jeannette Thompson -> 1
+  Charlie Cameron -> 1
+  Marcus Holloway -> 1
+  Jerome Utley -> 1
+  Sarah Browne -> 1
+  Michael Chacon-Nataren -> 1
+  Brandon Faison -> 1
+  Albertini Elcock -> 1
+  Sherman Anderson -> 1
+  Terril Lehman -> 1
+  Aaron Hill -> 1
+  Antoine Johnson -> 1
+  Sophia Talley -> 1
+  Codell Brown -> 1
+  Keenan Bunch -> 1
+  Darrell Conway -> 1
+  Noah Gibson -> 1
+  D'Shawn Johnson -> 1
+  Janelle Desormeaux -> 1
+  Deandre Yelverton -> 1
+  D'Asia Garrison -> 1
+  Andres Moreno Jr. -> 1
+  Fredi Lua  -> 1
+  Naneato Alusi -> 1
+  Jose Rodriguez-Bustos -> 1
+  Steven Johnson -> 1
+  Kevin Miller -> 1
+  Gregory Johnson -> 1
+  Darrell Burton -> 1
+  Ellsworth Johnson-Bey -> 1
+  Tyler Marine -> 1
+  Brian Richardson -> 1
+  Phillip Brown -> 1
+  Anthony McMichael -> 1
+  Tyrell John Curtis -> 1
+  Nathan Smyth -> 1
+  Dondre Green -> 1
+  Kenshawn Goode -> 1
+  Brandon Berry -> 1
+  Jeremy Stewart -> 1
+  Roman Faison Jr. -> 1
+  Larry Kirkland -> 1
+  Jamaal Peacock -> 1
+  Christopher Banks -> 1
+  Charles Murray -> 1
+  Nykiah Imani Collins -> 1
+  Keith Garrett -> 1
+  Seron O'Neal -> 1
+  Odell Curtis -> 1
+  La'Ron Henderson -> 1
+  Darlene Briscoe -> 1
+  Norberto Rivera -> 1
+  Anthony Walther -> 1
+  Unidentified Male Person -> 1
+  Darryl Mitchell -> 1
+  Christian Leight -> 1
+  Timothy Walker Jr. -> 1
+  Darren Lamar Shipley -> 1
+  Virgil Holland Jr. -> 1
+  Versey Spell -> 1
+  Javaun Simmons -> 1
+  Ricardo Brooks-Watters -> 1
+  Isaiah Benjamin Jr. -> 1
+  Antwone Anthony -> 1
+  Lateisha Lauray -> 1
+  Kimberly Benjamin -> 1
+  Tyree Countess -> 1
+  Kelvin Siem -> 1
+  Rashid Maxwell -> 1
+  Khaleel Jones -> 1
+  April Patterson -> 1
+  Donovan Fletcher -> 1
+  Keith Nicholson -> 1
+  Robert Lee Johnson -> 1
+  Stephon Stinnett -> 1
+  Deontay Townes -> 1
+  Ondrell Mayo Jr. -> 1
+  Jammie Higgenbothom -> 1
+  Anton Gladden -> 1
+  Julio Delgado -> 1
+  Donnell Bristol -> 1
+  Delmyn Javier Lopez Ortiz -> 1
+  Terence Cheatham -> 1
+  Ernest Hall -> 1
+  Paul Bertonazzi -> 1
+  Wallace Reid-Allen -> 1
+  Reginald Bernard Harrod -> 1
+
+By Race:
+  01         -> 1
+  12         -> 2
+  34         -> 14
+  64         -> 2
+  03         -> 1
+  43         -> 10
+  17         -> 12
+  18         -> 16
+  29         -> 23
+  60         -> 4
+  02         -> 1
+  57         -> 1
+  24         -> 13
+  35         -> 12
+  42         -> 14
+  80         -> 1
+  19         -> 19
+  47         -> 5
+  58         -> 2
+  74         -> 1
+  65         -> 1
+  46         -> 14
+  06         -> 2
+  68         -> 1
+  14         -> 2
+  66         -> 2
+  2          -> 1
+  59         -> 4
+  30         -> 20
+  61         -> 3
+  33         -> 18
+  22         -> 10
+  53         -> 5
+  71         -> 1
+  62         -> 1
+  16         -> 10
+  27         -> 17
+  55         -> 3
+  69         -> 3
+  05         -> 1
+  70         -> 1
+  79         -> 1
+  52         -> 5
+  23         -> 15
+  21         -> 22
+  56         -> 4
+  75         -> 2
+  54         -> 3
+  38         -> 18
+  39         -> 13
+  41         -> 11
+  48         -> 3
+  40         -> 11
+  31         -> 27
+  49         -> 6
+  32         -> 20
+  26         -> 25
+             -> 40
+  63         -> 2
+  77         -> 1
+  36         -> 18
+  44         -> 7
+  20         -> 17
+  15         -> 3
+  37         -> 17
+  28         -> 20
+  25         -> 18
+  50         -> 2
+  45         -> 5
+
+By District:
+  Photo of suspects: -> 2
+  No cameras in 2006 -> 2
+  3 cmaeras  -> 1
+             -> 469
+  2 Cameras  -> 1
+  No cameras in 2005 -> 1
+  No cameras in 2000 -> 1
+  5 cameras on I-95 -> 1
+  No cameras in 1985 -> 1
+  1 camera   -> 77
+  2 cameras  -> 47
+  3 cameras  -> 5
+  1 cameras  -> 1
+  Shooting victim. Update 09/20/24 Baltimore Police is looking for this person of interest. -> 1
+
+✅ Analysis complete.
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_kyndal_maclin:latest
+Deleted: sha256:dd7bb158208a47db8555ba91cafb48634f4840db77a1299ecbbc6310d8d608f6
+✓ Image removed
+
+========================================
+Processing: raegan_green
+Directory: raegan_green/project6/
+Time: Mon Nov 10 23:02:54 UTC 2025
+========================================
+Building Docker image: project6_raegan_green
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 696B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/alpine:latest
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [builder 1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 DONE 0.0s
+
+#6 [stage-1 1/4] FROM docker.io/library/alpine:latest@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412
+#6 DONE 0.0s
+
+#7 [stage-1 2/4] WORKDIR /app
+#7 CACHED
+
+#8 [stage-1 3/4] RUN mkdir -p /app/output
+#8 ...
+
+#9 [internal] load build context
+#9 transferring context: 17.23kB done
+#9 DONE 0.0s
+
+#10 [builder 2/4] WORKDIR /build
+#10 CACHED
+
+#11 [builder 3/4] COPY main.go .
+#11 DONE 0.1s
+
+#12 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -o homicide-analysis main.go
+#12 ...
+
+#8 [stage-1 3/4] RUN mkdir -p /app/output
+#8 DONE 0.3s
+
+#12 [builder 4/4] RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -o homicide-analysis main.go
+#12 DONE 19.3s
+
+#13 [stage-1 4/4] COPY --from=builder /build/homicide-analysis /app/
+#13 DONE 0.1s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 0.7s done
+#14 writing image sha256:1e58f6f510365ba0cd659067e9d72ff1b14fc934ee88ac709fd5b7eddc9fb8f0 done
+#14 naming to docker.io/library/project6_raegan_green done
+#14 DONE 0.8s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Fetching data from Baltimore homicide database...
+Data fetched successfully. Parsing...
+Extracting data from 1888 table cells...
+
+================================================================================
+BALTIMORE HOMICIDE STATISTICS ANALYSIS
+================================================================================
+
+Successfully loaded 190 homicide records
+
+Question 1: What is the Case Closure Rate by Year, and is it Improving?
+Why This Matters: Police department performance and resource allocation efficiency
+--------------------------------------------------------------------------------
+
+Case Closure Rates by Year (2022-2024):
+--------------------------------------------------------------------------------
+Year  | Total Cases | Closed | Open  | Closure Rate
+--------------------------------------------------------------------------------
+2023 |           3 |      0 |     3 | 0%
+2024 |         187 |     57 |   130 | 30%
+
+--------------------------------------------------------------------------------
+Key Findings:
+• Year 2023 Closure Rate: 0%
+• Year 2024 Closure Rate: 30%
+• IMPROVEMENT: +30% closure rate increase
+
+--------------------------------------------------------------------------------
+
+Question 2: Which Age Groups Are Most at Risk, Particularly Children & Youth?
+Why This Matters: Identifying vulnerable populations enables targeted prevention programs
+--------------------------------------------------------------------------------
+
+Victim Distribution by Age Group:
+--------------------------------------------------------------------------------
+Adults (31-50)           :  84 victims ( 44%) ██████████████████████
+Young Adults (19-30)     :  74 victims ( 38%) ███████████████████
+Seniors (51+)            :  16 victims (  8%) ████
+Teens (13-18)            :  13 victims (  6%) ███
+Children (0-12)          :   3 victims (  1%) 
+
+--------------------------------------------------------------------------------
+Critical Vulnerability Analysis:
+• Children (0-12): 3 homicides
+• Teens (13-18): 13 homicides
+• Combined Youth Total: 16 homicides (8% of all homicides)
+• ALERT: 3 children under 13 killed - critical child welfare concern
+• URGENT: 13 teenagers killed - intervention programs needed
+
+• Top 5 Most Common Victim Ages:
+  Age 30: 10 victims
+  Age 31: 9 victims
+  Age 36: 8 victims
+  Age 25: 8 victims
+  Age 26: 8 victims
+
+================================================================================
+
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_raegan_green:latest
+Deleted: sha256:1e58f6f510365ba0cd659067e9d72ff1b14fc934ee88ac709fd5b7eddc9fb8f0
+✓ Image removed
+
+========================================
+Processing: randolph_scott
+Directory: randolph_scott/project6/
+Time: Mon Nov 10 23:03:15 UTC 2025
+========================================
+Building Docker image: project6_randolph_scott
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 422B done
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21
+#2 DONE 0.3s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 6.04kB done
+#4 DONE 0.0s
+
+#5 [builder 1/6] FROM docker.io/library/golang:1.21@sha256:4746d26432a9117a5f58e95cb9f954ddf0de128e9d5816886514199316e4a2fb
+#5 resolve docker.io/library/golang:1.21@sha256:4746d26432a9117a5f58e95cb9f954ddf0de128e9d5816886514199316e4a2fb done
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 0B / 64.14MB 0.1s
+#5 sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 0B / 24.05MB 0.1s
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 13.63MB / 64.14MB 0.3s
+#5 sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 7.34MB / 24.05MB 0.3s
+#5 sha256:e6ba96dde4af9f4e06caba475fa65e94e4c54fe4aa3e9f4f504c02178eb8934e 2.32kB / 2.32kB done
+#5 sha256:246ea1ed9cdb1164bb5cb7e1f45d7914b98c6d9418c8e1cc443105e820bbd9d1 2.82kB / 2.82kB done
+#5 sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636 13.63MB / 49.55MB 0.3s
+#5 sha256:4746d26432a9117a5f58e95cb9f954ddf0de128e9d5816886514199316e4a2fb 9.75kB / 9.75kB done
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 26.21MB / 64.14MB 0.4s
+#5 sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 11.53MB / 24.05MB 0.4s
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 46.14MB / 64.14MB 0.6s
+#5 sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 24.05MB / 24.05MB 0.6s
+#5 sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636 24.12MB / 49.55MB 0.6s
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 58.72MB / 64.14MB 0.8s
+#5 sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636 42.99MB / 49.55MB 0.8s
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 64.14MB / 64.14MB 0.9s
+#5 sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636 48.23MB / 49.55MB 0.9s
+#5 extracting sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636
+#5 sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 64.14MB / 64.14MB 2.2s done
+#5 sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 24.05MB / 24.05MB 2.2s done
+#5 sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636 49.55MB / 49.55MB 2.2s done
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 3.51MB / 92.23MB 2.3s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 2.10MB / 67.01MB 2.3s
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 12.58MB / 92.23MB 2.4s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 12.58MB / 67.01MB 2.4s
+#5 sha256:532d43a0bc41875119c835fd75616e87d5df2a3714ddea3a0b5a68c7c5982649 126B / 126B 2.3s done
+#5 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 2.4s done
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 39.30MB / 92.23MB 2.6s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 20.97MB / 67.01MB 2.6s
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 51.38MB / 92.23MB 2.7s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 26.21MB / 67.01MB 2.7s
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 67.11MB / 92.23MB 2.8s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 32.51MB / 67.01MB 2.9s
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 75.50MB / 92.23MB 3.0s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 38.80MB / 67.01MB 3.0s
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 89.13MB / 92.23MB 3.2s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 51.38MB / 67.01MB 3.2s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 56.62MB / 67.01MB 3.3s
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 67.01MB / 67.01MB 3.5s
+#5 extracting sha256:903681d87777d28dc56866a07a2774c3fd5bf65fd734b24c9d0ecd9a13c9f636 3.2s done
+#5 sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 92.23MB / 92.23MB 5.4s done
+#5 sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 67.01MB / 67.01MB 5.5s done
+#5 extracting sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 0.1s
+#5 extracting sha256:3cbbe86a28c2f6b3c3e0e8c6dcfba369e1ea656cf8daf69be789e0fe2105982b 0.9s done
+#5 extracting sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c
+#5 extracting sha256:6ed93aa58a52c9abc1ee472f1ac74b73d3adcccc2c30744498fd5f14f3f5d22c 2.8s done
+#5 extracting sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709
+#5 extracting sha256:1f46bd02dde39f0741d70614fc607bf03c1a0cd60d52e7dd06c44f8fb9358709 2.6s done
+#5 extracting sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0
+#5 extracting sha256:54bf7053e2d96c2c7f4637ad7580bd64345b3c9fabb163e1fdb8894aea8a9af0 4.3s done
+#5 extracting sha256:532d43a0bc41875119c835fd75616e87d5df2a3714ddea3a0b5a68c7c5982649
+#5 extracting sha256:532d43a0bc41875119c835fd75616e87d5df2a3714ddea3a0b5a68c7c5982649 done
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+#5 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+#5 DONE 29.1s
+
+#6 [builder 2/6] WORKDIR /app
+#6 DONE 0.1s
+
+#7 [builder 3/6] COPY go.mod ./
+#7 DONE 0.0s
+
+#8 [builder 4/6] RUN go mod download
+#8 0.183 go: no module dependencies to download
+#8 DONE 0.2s
+
+#9 [builder 5/6] COPY . .
+#9 DONE 0.0s
+
+#10 [builder 6/6] RUN go build -ldflags="-s -w" -o /project5-go ./main.go
+#10 DONE 8.5s
+
+#11 [stage-1 1/1] COPY --from=builder /project5-go /project5-go
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers 0.0s done
+#12 writing image sha256:5d49c7516e051cf3f0a842efdd774cee13f5a04f3d216c1e3525196c40f1ee25 done
+#12 naming to docker.io/library/project6_randolph_scott done
+#12 DONE 0.0s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+error decoding input JSON: EOF
+--- OUTPUT END ---
+✗ Run failed - see log for details
+Cleaning up Docker image...
+Untagged: project6_randolph_scott:latest
+Deleted: sha256:5d49c7516e051cf3f0a842efdd774cee13f5a04f3d216c1e3525196c40f1ee25
+✓ Image removed
+
+========================================
+Processing: rohan_sainju
+Directory: rohan_sainju/project6/
+Time: Mon Nov 10 23:03:55 UTC 2025
+========================================
+Building Docker image: project6_rohan_sainju
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 185B done
+#1 DONE 0.0s
+
+#2 [auth] library/golang:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#3 DONE 0.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 5.37kB done
+#7 DONE 0.0s
+
+#8 [3/5] COPY homicides.csv .
+#8 DONE 0.0s
+
+#9 [4/5] COPY main.go .
+#9 DONE 0.0s
+
+#10 [5/5] RUN go build -o homicide-analysis main.go
+#10 DONE 8.4s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 1.5s done
+#11 writing image sha256:c4fa66ecce81ee6cd53fd12ae5b84516cb5c59cc81918dc604ca5d508388e47a done
+#11 naming to docker.io/library/project6_rohan_sainju done
+#11 DONE 1.5s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Baltimore Homicide Analysis Results
+====================================
+Total cases analyzed: 16
+
+Victims under 18 years old: 0
+
+Closed cases: 8 (50.0%)
+Open cases: 0 (0.0%)
+Unknown cases: 8 (50.0%)
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_rohan_sainju:latest
+Deleted: sha256:c4fa66ecce81ee6cd53fd12ae5b84516cb5c59cc81918dc604ca5d508388e47a
+✓ Image removed
+
+========================================
+Processing: ryan_anyangwe
+Directory: ryan_anyangwe/project6/
+Time: Mon Nov 10 23:04:05 UTC 2025
+========================================
+Building Docker image: project6_ryan_anyangwe
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 359B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 16.06kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY BaltimoreHomicideAnalysis.go .
+#7 DONE 0.0s
+
+#8 [4/4] RUN go build -o baltimore-analysis BaltimoreHomicideAnalysis.go
+#8 DONE 12.3s
+
+#9 exporting to image
+#9 exporting layers
+#9 exporting layers 3.4s done
+#9 writing image sha256:444f3f3070aaa63b39989bccdabf66beaaddefa08223ac830bdcccd3450806b1
+#9 writing image sha256:444f3f3070aaa63b39989bccdabf66beaaddefa08223ac830bdcccd3450806b1 done
+#9 naming to docker.io/library/project6_ryan_anyangwe done
+#9 DONE 3.4s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Fetching data for year 2019...
+  ✓ Loaded 319 records for 2019
+Fetching data for year 2020...
+  ✓ Loaded 316 records for 2020
+Fetching data for year 2021...
+  ✓ Loaded 324 records for 2021
+Fetching data for year 2022...
+  ✓ Loaded 331 records for 2022
+Fetching data for year 2023...
+  ✓ Loaded 309 records for 2023
+================================================================================
+BALTIMORE CITY HOMICIDE ANALYSIS
+Data Analysis for Mayor's Office & Police Department
+================================================================================
+
+Total homicides analyzed: 1599
+
+QUESTION 1: Which police districts have the worst homicide closure rates
+            and highest concentration of unsolved cases, indicating where
+            investigative resources are most critically needed?
+
+FINDINGS:
+--------------------------------------------------------------------------------
+District                Total   Closed     Open    Closure Rate
+--------------------------------------------------------------------------------
+Southeastern              168       36      132           21.4% *** CRITICAL ***
+Western                   170       43      127           25.3% ** HIGH **
+Northeastern              202       55      147           27.2% ** HIGH **
+Southern                  186       56      130           30.1% ** HIGH **
+Eastern                   156       47      109           30.1% ** HIGH **
+Northwestern              192       58      134           30.2% ** HIGH **
+Central                   174       55      119           31.6% ** HIGH **
+Northern                  181       60      121           33.1% ** HIGH **
+Southwestern              170       57      113           33.5% ** HIGH **
+
+RECOMMENDATIONS:
+1. Districts with <25% closure rate require immediate investigative support
+2. Allocate additional detectives to districts with highest open case counts
+3. Implement specialized cold case units for districts with >100 open cases
+
+CRITICAL METRICS:
+  • 1 districts with closure rates below 25%
+  • 132 total unsolved homicides in critical districts
+  • Estimated 3 additional detectives needed
+
+================================================================================
+
+QUESTION 2: What are the seasonal and monthly patterns of homicides over
+            multiple years to optimize preventive patrol deployment?
+
+FINDINGS:
+--------------------------------------------------------------------------------
+Month             Avg Homicides     % of Annual     Deployment Level
+--------------------------------------------------------------------------------
+January                    27.0          101.3%             STANDARD 🟢
+February                   27.0          101.3%             STANDARD 🟢
+March                      28.2          105.8%             STANDARD 🟢
+April                      26.2           98.3%             STANDARD 🟢
+May                        26.0           97.6%             STANDARD 🟢
+June                       30.0          112.6%             ELEVATED 🟡
+July                       25.2           94.6%             STANDARD 🟢
+August                     23.6           88.6%             STANDARD 🟢
+September                  26.0           97.6%             STANDARD 🟢
+October                    26.8          100.6%             STANDARD 🟢
+November                   27.8          104.3%             STANDARD 🟢
+December                   26.0           97.6%             STANDARD 🟢
+
+SEASONAL PATTERNS IDENTIFIED:
+  • Summer months (Jun-Aug) see -1.5% more homicides than winter
+  • Peak violence months require 20-30% increase in patrol presence
+  • High-risk periods: Friday/Saturday nights, summer weekends
+
+RECOMMENDATIONS:
+1. Deploy additional patrol units May through September
+2. Increase weekend evening patrols by 25% during summer months
+3. Implement targeted violence interruption programs before peak months
+4. Schedule officer leave during low-activity months (Jan-Feb)
+5. Coordinate with community organizations for summer youth programs
+
+================================================================================
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_ryan_anyangwe:latest
+Deleted: sha256:444f3f3070aaa63b39989bccdabf66beaaddefa08223ac830bdcccd3450806b1
+✓ Image removed
+
+========================================
+Processing: schidny_balisage
+Directory: schidny_balisage/project6/
+Time: Mon Nov 10 23:04:22 UTC 2025
+========================================
+Building Docker image: project6_schidny_balisage
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 573B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.21-alpine
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/7] FROM docker.io/library/golang:1.21-alpine@sha256:2414035b086e3c42b99654c8b26e6f5b1b1598080d65fd03c7f499552ff4dc94
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 6.46kB done
+#5 DONE 0.0s
+
+#6 [2/7] RUN apk add --no-cache wget
+#6 0.290 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+#6 0.382 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+#6 0.621 (1/4) Installing libunistring (1.2-r0)
+#6 0.638 (2/4) Installing libidn2 (2.3.7-r0)
+#6 0.642 (3/4) Installing pcre2 (10.43-r0)
+#6 0.653 (4/4) Installing wget (1.24.5-r0)
+#6 0.664 Executing busybox-1.36.1-r29.trigger
+#6 0.674 OK: 11 MiB in 19 packages
+#6 DONE 0.8s
+
+#7 [3/7] WORKDIR /app
+#7 DONE 0.1s
+
+#8 [4/7] COPY go.mod ./
+#8 DONE 0.0s
+
+#9 [5/7] COPY main.go ./
+#9 DONE 0.0s
+
+#10 [6/7] RUN mkdir -p /data &&     cd /data &&     wget https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD -O BPD_Part_1_Victim_Based_Crime_Data.csv
+#10 0.163 --2025-11-10 23:04:23--  https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD
+#10 0.180 Resolving data.baltimorecity.gov (data.baltimorecity.gov)... 184.72.158.166, 3.215.20.206, 34.225.249.205
+#10 0.199 Connecting to data.baltimorecity.gov (data.baltimorecity.gov)|184.72.158.166|:443... connected.
+#10 0.209 HTTP request sent, awaiting response... 404 Not Found
+#10 0.227 2025-11-10 23:04:23 ERROR 404: Not Found.
+#10 0.227 
+#10 ERROR: process "/bin/sh -c mkdir -p /data &&     cd /data &&     wget https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD -O BPD_Part_1_Victim_Based_Crime_Data.csv" did not complete successfully: exit code: 8
+------
+ > [6/7] RUN mkdir -p /data &&     cd /data &&     wget https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD -O BPD_Part_1_Victim_Based_Crime_Data.csv:
+0.163 --2025-11-10 23:04:23--  https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD
+0.180 Resolving data.baltimorecity.gov (data.baltimorecity.gov)... 184.72.158.166, 3.215.20.206, 34.225.249.205
+0.199 Connecting to data.baltimorecity.gov (data.baltimorecity.gov)|184.72.158.166|:443... connected.
+0.209 HTTP request sent, awaiting response... 404 Not Found
+0.227 2025-11-10 23:04:23 ERROR 404: Not Found.
+0.227 
+------
+Dockerfile:16
+--------------------
+  15 |     # Download Baltimore crime data
+  16 | >>> RUN mkdir -p /data && \
+  17 | >>>     cd /data && \
+  18 | >>>     wget https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD -O BPD_Part_1_Victim_Based_Crime_Data.csv
+  19 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c mkdir -p /data &&     cd /data &&     wget https://data.baltimorecity.gov/api/views/wsfq-mvij/rows.csv?accessType=DOWNLOAD -O BPD_Part_1_Victim_Based_Crime_Data.csv" did not complete successfully: exit code: 8
+✗ Build failed - see log for details
+
+========================================
+Processing: terrence_gaskins
+Directory: terrence_gaskins/project6/
+Time: Mon Nov 10 23:04:23 UTC 2025
+========================================
+Building Docker image: project6_terrence_gaskins
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from dockerfile
+#1 transferring dockerfile: 118B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/golang:1.22-alpine
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/3] FROM docker.io/library/golang:1.22-alpine@sha256:1699c10032ca2582ec89a24a1312d986a3f094aed3d5c1147b19880afe40e052
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 4.14kB done
+#5 DONE 0.0s
+
+#6 [2/3] WORKDIR /app
+#6 CACHED
+
+#7 [3/3] COPY . /app
+#7 DONE 0.0s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 0.9s done
+#8 writing image sha256:88f5d4f21001808744363bb01294646fa67a8ad11ad587bf54b91871b8eba099 done
+#8 naming to docker.io/library/project6_terrence_gaskins done
+#8 DONE 0.9s
+✓ Build successful
+Running Docker container...
+--- OUTPUT START ---
+Total 2024 stabbing cases: 2
+Cases with 'Avenue' in street name:
+[2024 Stabbing Main Avenue]
+[2024 Stab wound Broadway Avenue]
+--- OUTPUT END ---
+✓ Run successful
+Cleaning up Docker image...
+Untagged: project6_terrence_gaskins:latest
+Deleted: sha256:88f5d4f21001808744363bb01294646fa67a8ad11ad587bf54b91871b8eba099
+✓ Image removed
+
+========================================
+Batch processing complete!
+Results saved to: output_runs.log
+========================================
