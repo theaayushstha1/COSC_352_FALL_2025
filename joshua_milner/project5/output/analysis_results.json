@@ -1,0 +1,121 @@
+{
+  "analysis_date": "2025-10-24",
+  "total_records": 20,
+  "questions": [
+    {
+      "question_number": 1,
+      "title": "What are the deadliest months for homicides in Baltimore?",
+      "purpose": "Optimize police patrol schedules and resource allocation",
+      "monthly_data": [
+        {
+          "month": "January",
+          "month_number": 1,
+          "homicides": 2,
+          "percentage": 10.0
+        },
+        {
+          "month": "February",
+          "month_number": 2,
+          "homicides": 2,
+          "percentage": 10.0
+        },
+        {
+          "month": "March",
+          "month_number": 3,
+          "homicides": 1,
+          "percentage": 5.0
+        },
+        {
+          "month": "April",
+          "month_number": 4,
+          "homicides": 1,
+          "percentage": 5.0
+        },
+        {
+          "month": "May",
+          "month_number": 5,
+          "homicides": 1,
+          "percentage": 5.0
+        },
+        {
+          "month": "June",
+          "month_number": 6,
+          "homicides": 1,
+          "percentage": 5.0
+        },
+        {
+          "month": "July",
+          "month_number": 7,
+          "homicides": 2,
+          "percentage": 10.0
+        },
+        {
+          "month": "August",
+          "month_number": 8,
+          "homicides": 2,
+          "percentage": 10.0
+        },
+        {
+          "month": "September",
+          "month_number": 9,
+          "homicides": 2,
+          "percentage": 10.0
+        },
+        {
+          "month": "October",
+          "month_number": 10,
+          "homicides": 1,
+          "percentage": 5.0
+        },
+        {
+          "month": "November",
+          "month_number": 11,
+          "homicides": 2,
+          "percentage": 10.0
+        },
+        {
+          "month": "December",
+          "month_number": 12,
+          "homicides": 3,
+          "percentage": 15.0
+        }
+      ],
+      "insights": {
+        "peak_month": "December",
+        "peak_count": 3,
+        "lowest_month": "March",
+        "lowest_count": 1
+      }
+    },
+    {
+      "question_number": 2,
+      "title": "Which types of homicide cases are hardest to solve?",
+      "purpose": "Identify investigation challenges for detective training",
+      "weapon_data": [
+        {
+          "weapon": "Firearm",
+          "total": 16,
+          "closed": 3,
+          "clearance_rate": 18.75
+        },
+        {
+          "weapon": "Knife",
+          "total": 3,
+          "closed": 3,
+          "clearance_rate": 100.0
+        },
+        {
+          "weapon": "Blunt Object",
+          "total": 1,
+          "closed": 0,
+          "clearance_rate": 0.0
+        }
+      ],
+      "insights": {
+        "lowest_clearance_weapon": "Blunt Object",
+        "lowest_clearance_rate": 0.0,
+        "average_clearance_rate": 39.583333333333336
+      }
+    }
+  ]
+}

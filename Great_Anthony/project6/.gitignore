@@ -1,0 +1,35 @@
+# Go binaries
+homicide-analysis
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test files
+*.test
+*.out
+
+# Go build cache
+go.sum
+
+# Data files (will be downloaded)
+data/
+
+# Output files
+output.csv
+output.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore

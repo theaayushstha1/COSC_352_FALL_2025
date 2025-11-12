@@ -1,0 +1,3329 @@
+{
+  "metadata": {
+    "source": "Baltimore Homicide Data",
+    "total_records": 332,
+    "generated_at": "2025-10-25T00:37:01.453129"
+  },
+  "homicides": [
+    {
+      "date": "001",
+      "victim": "01/09/25",
+      "age": "Richie Briggs",
+      "gender": "36",
+      "race": "5900 Dawalt Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "002",
+      "victim": "01/12/25",
+      "age": "Jamal Davis",
+      "gender": "37",
+      "race": "4400 Reisterstown Road",
+      "cause": "Victim was a security guard at a McDonald's Restaurant. Victim was shot during a dispute.Update 01/17/25 Baltimore Police would like to identify these people of interest in this video. Update 01/28/25 A 15 year old has been charged.",
+      "location": "Victim was a security guard at a McDonald's Restaurant. Victim was shot during a dispute.Update 01/17/25 Baltimore Police would like to identify these people of interest in this video. Update 01/28/25 A 15 year old has been charged.",
+      "disposition": ""
+    },
+    {
+      "date": "003",
+      "victim": "11/2014",
+      "age": "Terril Lehman",
+      "gender": "41",
+      "race": "1600 Ralworth Road",
+      "cause": "Scott Barnett informed the Baltimore Police Department of his involvement in the fatal stabbing death of 2 victims at a home.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "004",
+      "victim": "11/2014",
+      "age": "Charles Webster",
+      "gender": "46",
+      "race": "1600 Ralworth Road",
+      "cause": "Scott Barnett informed the Baltimore Police Department of his involvement in the fatal stabbing of 2 victims at a home.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "005",
+      "victim": "01/18/25",
+      "age": "Brian Reed",
+      "gender": "59",
+      "race": "5600 Groveland Avenue",
+      "cause": "Victim shot during dispute. Update 01/21/25 Shannelle Reed (daughter of victim) charged",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "006",
+      "victim": "01/19/25",
+      "age": "Hassan Howard",
+      "gender": "43",
+      "race": "400 Washburn Avenue",
+      "cause": "Double shooting. Victims found in vehicle. This event occurred inside a Safe Streets Catchment Area.. Update 03/20/25 Darren Tomlinson charged",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "007",
+      "victim": "01/19/25",
+      "age": "Edward Johnson",
+      "gender": "44",
+      "race": "3700 East Baltimore Street",
+      "cause": "Person who died at a hospital was found with trauma. Homicide is investigating.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "008",
+      "victim": "01/19/25",
+      "age": "Mordecai Wells",
+      "gender": "24",
+      "race": "3400 Berwyn Avenue",
+      "cause": "Triple shooting",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "009",
+      "victim": "01/22/25",
+      "age": "Anntoinette Jennings",
+      "gender": "52",
+      "race": "5400 York Road",
+      "cause": "Triple shooting. Victims found in vehicle. One of the other victim is an 11 years old girl. All victims were related. This may have been a dispute over a children's basketball game. Police say there were two shooters. Blogger note: There are no CCTV cameras on this block but plenty of retail commercial businesses including a check cashing place and 2 liquor stores. Update: 03/18/25 Tavon Singleton and Cassandra McRae indicted.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "010",
+      "victim": "01/22/25",
+      "age": "Rodney Lewis",
+      "gender": "37",
+      "race": "2700 Pelham Avaenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "011",
+      "victim": "01/24/25",
+      "age": "Anthony McMichael",
+      "gender": "36",
+      "race": "3000 Oakley Avenue",
+      "cause": "Shooting victim. Update 02/24/25 Zion Clay charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "012",
+      "victim": "01/26/25",
+      "age": "Justin Davis",
+      "gender": "35",
+      "race": "1500 Carswell Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "013",
+      "victim": "01/26/25",
+      "age": "Lamel Edwards",
+      "gender": "19",
+      "race": "3700 Edmondson Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "014",
+      "victim": "02/02/25",
+      "age": "Troy Kavanaugh",
+      "gender": "37",
+      "race": "2500 East Biddle Street",
+      "cause": "Shooting victim. Update 03/25/25 Sean Lloyd charged.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "015",
+      "victim": "02/15/25",
+      "age": "Francisco Cuffey",
+      "gender": "33",
+      "race": "6100 Plantview Way",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "016",
+      "victim": "02/15/25",
+      "age": "Keenan Bunch",
+      "gender": "41",
+      "race": "1800 North Montford Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "017",
+      "victim": "02/20/25",
+      "age": "Clyde Barnes",
+      "gender": "79",
+      "race": "110 North Central Avenue",
+      "cause": "Double shooting a Pleasant View Gardens Senior Living facility. Norman Waker charged. Defendant lived in the building.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "018",
+      "victim": "02/23/25",
+      "age": "Eric Carter",
+      "gender": "30",
+      "race": "600 Poplar Grove Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "019",
+      "victim": "02/23/25",
+      "age": "Sae'Quan Newton",
+      "gender": "28",
+      "race": "3600 Potee Street",
+      "cause": "Double shooting double homicide.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "020",
+      "victim": "02/23/25",
+      "age": "Diontavis Whitfield",
+      "gender": "23",
+      "race": "3600 Potee Street",
+      "cause": "Double shooting double homicide.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "021",
+      "victim": "02/23/25",
+      "age": "Celvin Olivares-Portillo",
+      "gender": "20",
+      "race": "4400 Eastern Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "022",
+      "victim": "02/26/25",
+      "age": "Cameron Kelly",
+      "gender": "16",
+      "race": "1 North Bruce Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "023",
+      "victim": "03/04/25",
+      "age": "Shakeira Cooper",
+      "gender": "41",
+      "race": "1000 McAleer Court",
+      "cause": "Shooting victim found in dwelling. Suspect found deceased at scene with gunshot.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "024",
+      "victim": "03/06/25",
+      "age": "Taijah Addison",
+      "gender": "27",
+      "race": "600 Yale Avenue",
+      "cause": "Shooting victim found in vehicle. Matthew Crawley charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "025",
+      "victim": "03/13/25",
+      "age": "Donny Robinson",
+      "gender": "61",
+      "race": "1600 Balmor Court",
+      "cause": "Victim with trauma to the body found in dwelling.",
+      "location": "None",
+      "disposition": "3 cameras"
+    },
+    {
+      "date": "026",
+      "victim": "03/13/25",
+      "age": "Bridgette Smallwood",
+      "gender": "54",
+      "race": "3700 Potee Street",
+      "cause": "Victim found with apparent trauma",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "027",
+      "victim": "03/15/25",
+      "age": "Anthony Perry Mosley",
+      "gender": "20",
+      "race": "1500 North Stricker Street",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "028",
+      "victim": "03/15/25",
+      "age": "Christopher Banks",
+      "gender": "30",
+      "race": "5400 Park Heights Avenue",
+      "cause": "Shooting victim. Update 06/26/25 Joseph Hubbard and Darius Bell charged.",
+      "location": "None",
+      "disposition": "1 cameras"
+    },
+    {
+      "date": "029",
+      "victim": "03/16/25",
+      "age": "Kendall Brown",
+      "gender": "40",
+      "race": "4300 Shamrock Avenue. Update 10/14/25 Neri Mancito Hernandez charged .",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "030",
+      "victim": "03/18/25",
+      "age": "Shy'Keema Turner",
+      "gender": "31",
+      "race": "700 East Preston Street",
+      "cause": "Shooting victim. Update 04//4/25 Unique Thorn was arrested in Ohio.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "031",
+      "victim": "03/18/25",
+      "age": "Maurice Lonon Jr.",
+      "gender": "19",
+      "race": "1200 North Ellwood Avenue",
+      "cause": "Victim shot 03/14/25 died 03/18/25",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "032",
+      "victim": "03/19/25",
+      "age": "Derrick Lamb",
+      "gender": "49",
+      "race": "5400 Park Heights Avenue",
+      "cause": "Double shooting. Update 03/28/25 Baltimore Police are looking to identify these people of interest.",
+      "location": "Double shooting. Update 03/28/25 Baltimore Police are looking to identify these people of interest.",
+      "disposition": ""
+    },
+    {
+      "date": "XXX",
+      "victim": "03/21/25",
+      "age": "Name withheld by Blogger",
+      "gender": "17",
+      "race": "2500 Perring Manor Road",
+      "cause": "Shooting victim found in dwelling. Update: 03/27/25 this may have been a self-inflicted gunshot wound",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "033",
+      "victim": "03/22/25",
+      "age": "Fredi Lua",
+      "gender": "48",
+      "race": "3200 Pulaski Highway",
+      "cause": "Shooting victim. Update 10/14/25 A 16 year old defendant was charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "034",
+      "victim": "03/22/25",
+      "age": "Tyshawn Simon",
+      "gender": "25",
+      "race": "3200 Chelsea Terrace",
+      "cause": "Victim shot 03/09/25 died 03/22/25",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "035",
+      "victim": "03/27/25",
+      "age": "Darrius Bunch",
+      "gender": "32",
+      "race": "1800 Edmondson Avenue",
+      "cause": "Victim of assault. The Baltimore Police are interested in talking to the people in these pictures. Update: 04/14/25 A 17 year old has been charged with involuntary manslaughter. Allegedly, the victim and defendant were involved in an altercation.",
+      "location": "Victim of assault. The Baltimore Police are interested in talking to the people in these pictures. Update: 04/14/25 A 17 year old has been charged with involuntary manslaughter. Allegedly, the victim and defendant were involved in an altercation.",
+      "disposition": ""
+    },
+    {
+      "date": "036",
+      "victim": "04/03/25",
+      "age": "Keyon Bryant",
+      "gender": "22",
+      "race": "4100 Patterson Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "037",
+      "victim": "04/06/25",
+      "age": "Hakeen English",
+      "gender": "35",
+      "race": "1600 Cliftview Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "038",
+      "victim": "04/06/25",
+      "age": "Paris Savage",
+      "gender": "30",
+      "race": "1500 North Payson Street",
+      "cause": "Victim found with trauma to the body. Baltimore Police wish to talk to these people of interest.",
+      "location": "Victim found with trauma to the body. Baltimore Police wish to talk to these people of interest.",
+      "disposition": ""
+    },
+    {
+      "date": "039",
+      "victim": "04/18/25",
+      "age": "Karmel McGill",
+      "gender": "18",
+      "race": "600 Allendale Street",
+      "cause": "Shooting victim. Baltimore Police are looking to identify these people of interest.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "040",
+      "victim": "04/23/25",
+      "age": "Derrick Bright",
+      "gender": "30",
+      "race": "3300 Paton Avenue",
+      "cause": "Double shooting. Victim worked for a refuse company.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "041",
+      "victim": "05/03/25",
+      "age": "Rashard Smith",
+      "gender": "21",
+      "race": "1800 Lorman Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "042",
+      "victim": "05/03/24",
+      "age": "Terrance Todd",
+      "gender": "47",
+      "race": "3400 Pulaski Highway",
+      "cause": "A physical altercation involving multiple people outside an establishment led to a shooting.Update 06/06/25 The Baltimore Police are looking to identify many people of interest in this video.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "XXX",
+      "victim": "05/05/25",
+      "age": "Troy Gaigler",
+      "gender": "34",
+      "race": "1800 Portal Street",
+      "cause": "Stabbing victim. Blogger note: Address is the entrance to the Holabird Industrial Park. Update 07/19/25 This homicide has been ruled justifed",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "043",
+      "victim": "05/07/25",
+      "age": "John Lewis",
+      "gender": "15",
+      "race": "3500 Brehms Lane",
+      "cause": "Double shooting. This event occurred inside a Safe Street Catchment Area. Update 05/07/25 Rodsheead Alexander, Zion Wimbish, and Ra'Shawn Smith, all charged with 1st degree murder.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "044",
+      "victim": "05/10/25",
+      "age": "Albert Manning",
+      "gender": "37",
+      "race": "3500 2nd Street",
+      "cause": "Shooting victim. Update 06/03/25 Ronald Hall Jr. charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "045",
+      "victim": "05/11/25",
+      "age": "Taniya Gray",
+      "gender": "23",
+      "race": "4500 Mountwood Road",
+      "cause": "Shooting victim found in vehicle. Update 05/28/25 Tamal Johnson charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "???",
+      "victim": "04/19/25",
+      "age": "Dawn White",
+      "gender": "53",
+      "race": "3500 Benzinger Road",
+      "cause": "Victim's body found in a safe in a home. Victim was planning to leave boyfriend. Cause of death is currently pending. Blogger Note: Although the police have not officially determined this a homicide I'm adding this to this list as a maybe.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "046",
+      "victim": "05/14/25",
+      "age": "Julio Delgado",
+      "gender": "36",
+      "race": "2300 Jefferson Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "047",
+      "victim": "05/18/25",
+      "age": "Joseph Robinson",
+      "gender": "25",
+      "race": "3400 Wilkens Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "048",
+      "victim": "05/18/25",
+      "age": "Da'Quan Little",
+      "gender": "26",
+      "race": "1200 East Madison Street",
+      "cause": "Shooting victim. Update 05/27/25 Police are looking to identify these people of interest.",
+      "location": "Shooting victim. Update 05/27/25 Police are looking to identify these people of interest.",
+      "disposition": ""
+    },
+    {
+      "date": "049",
+      "victim": "05/19/25",
+      "age": "Demetrius Phyall",
+      "gender": "18",
+      "race": "2300 East Preston Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "050",
+      "victim": "05/23/25",
+      "age": "Brandon Naylor",
+      "gender": "38",
+      "race": "1800 North Woodyear Street",
+      "cause": "Stabbing victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "051",
+      "victim": "05/24/25",
+      "age": "Thomas Barnes",
+      "gender": "28",
+      "race": "400 Heaver Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "052",
+      "victim": "05/25/25",
+      "age": "Tobias Cunningham",
+      "gender": "50",
+      "race": "400 North Paca Street",
+      "cause": "Shooting victim. Baltimore Police have located a vehicle that was involved in this homicide. Driver has invoked his right to council.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "053",
+      "victim": "05/26/25",
+      "age": "Devin Thompson",
+      "gender": "27",
+      "race": "1700 Pennsylvania Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "054",
+      "victim": "05/26/25",
+      "age": "Kirsten Washington",
+      "gender": "31",
+      "race": "1700 Pennsylvania Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "055",
+      "victim": "05/31/25",
+      "age": "Bryant Breland",
+      "gender": "42",
+      "race": "600 Cherry Hill Road",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "056",
+      "victim": "06/01/25",
+      "age": "Demetri Briscoe",
+      "gender": "26",
+      "race": "3000 Westfield Avenue",
+      "cause": "Stabbing victim. Update 06/05/25 Karin Redfern charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "057",
+      "victim": "06/02/25",
+      "age": "Derek Parker",
+      "gender": "34",
+      "race": "1800 Dover Street",
+      "cause": "Shooting victim who passed at local hospital. Update 06/13/25 Baltimore Police would like to identify the suspect in this video.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "058",
+      "victim": "06/07/25",
+      "age": "Darrell Conway",
+      "gender": "33",
+      "race": "3000 Thorndale Avenue",
+      "cause": "Shooting victim. Police are looking to identify these people of interest in this video.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "059",
+      "victim": "06/08/25",
+      "age": "Adam Brown",
+      "gender": "47",
+      "race": "3400 Round Road",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area. Update 06/10/25 Melvin Scott charged.",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "XXX",
+      "victim": "06/11/25",
+      "age": "Name witheld by blogger",
+      "gender": "",
+      "race": "2100 Presbury Street",
+      "cause": "Shooting victim found in dwelling. A person of Interest has been taken into custody. Police later determined this person was shot in self defense.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "060",
+      "victim": "06/13/25",
+      "age": "Lavar Steeles",
+      "gender": "23",
+      "race": "1500 West Fayette Street",
+      "cause": "Shooting victim. Baltimore police would like to identify these people of interest.",
+      "location": "Shooting victim. Baltimore police would like to identify these people of interest.",
+      "disposition": ""
+    },
+    {
+      "date": "061",
+      "victim": "06/14/25",
+      "age": "Derone Jones",
+      "gender": "32",
+      "race": "5300 Frankford Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "062",
+      "victim": "06/17/25",
+      "age": "Isaiah Spicer",
+      "gender": "29",
+      "race": "1900 East Lafayette Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "063",
+      "victim": "06/19/25",
+      "age": "Jalen Johnson",
+      "gender": "29",
+      "race": "500 North Port Street",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "064",
+      "victim": "06/21/25",
+      "age": "Tyrell John Curtis",
+      "gender": "39",
+      "race": "100 South Broadway",
+      "cause": "Victim stabbed during a dispute. Update 06/24/25 Idris Malik Ramos charged.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "065",
+      "victim": "06/22/25",
+      "age": "Javaun Simmons",
+      "gender": "31",
+      "race": "2200 Christian Street",
+      "cause": "Double shooting double homicide in conjunction with the incident at 2100 Wilkens Avenue. (Air temp greater than 100)",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "XXX",
+      "victim": "06/22/25",
+      "age": "Danilo Punnett",
+      "gender": "24",
+      "race": "2100 Wilkens Avenue",
+      "cause": "Double shooting double homicide in conjunction with the incident at 2200 Christian Street. (Air temp greater than 100 F). Update 07/17/25 The death of the 24 year old victim has been ruled justified.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "066",
+      "victim": "06/23/25",
+      "age": "Corey Washington",
+      "gender": "41",
+      "race": "4100 Woodridge Road",
+      "cause": "Shooting victim found in vehicle that had crashed into a dwelling.(Air temp greater than 100 F)",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "067",
+      "victim": "06/30/25",
+      "age": "Donte Chase",
+      "gender": "46",
+      "race": "700 Kenwood Avenue",
+      "cause": "Stabbing victim. Update 07/07/25 Sherrice Parker turned herself in.",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "068",
+      "victim": "07/02/25",
+      "age": "Ronald Glascoe",
+      "gender": "25",
+      "race": "3600 Ravenwood Avenue",
+      "cause": "Double shooting. Victim found in dwelling.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "069",
+      "victim": "07/02/25",
+      "age": "Franklin Hughes",
+      "gender": "32",
+      "race": "3000 Westfield Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "070",
+      "victim": "07/03/25",
+      "age": "Jabari Cannon",
+      "gender": "21",
+      "race": "1500 Thames Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "071",
+      "victim": "07/03/25",
+      "age": "Porcha Newman",
+      "gender": "",
+      "race": "2000 Boone Street",
+      "cause": "Shooting victim found inside a dwelling",
+      "location": "None. Update 10/14/25 Commie Williams charged.",
+      "disposition": ""
+    },
+    {
+      "date": "072",
+      "victim": "07/03/25",
+      "age": "Juan Hall",
+      "gender": "37",
+      "race": "2200 Ashton Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "073",
+      "victim": "07/04/25",
+      "age": "Aaron Hill",
+      "gender": "38",
+      "race": "3500 Esther Place",
+      "cause": "Shooting victim. Update 07/14/25 Davon Kelly charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "074",
+      "victim": "07/07/25",
+      "age": "Jermaine McFadden",
+      "gender": "37",
+      "race": "4900 Reisterstown Road",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "075",
+      "victim": "07/08/25",
+      "age": "Jamard Thomas",
+      "gender": "40",
+      "race": "2600 Greenmount Avenue",
+      "cause": "Victim shot 07/04/25 died 07/08/25",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "076",
+      "victim": "07/13/25",
+      "age": "Randolph Smith",
+      "gender": "56",
+      "race": "3900 Frederick Avenue",
+      "cause": "Shooting victim. Update 10/09/25 Baltimore Police would like to locate Charles Anthony Boatwright who is a suspect. Picture of suspect on the right",
+      "location": "Shooting victim. Update 10/09/25 Baltimore Police would like to locate Charles Anthony Boatwright who is a suspect. Picture of suspect on the right",
+      "disposition": ""
+    },
+    {
+      "date": "077",
+      "victim": "07/12/25",
+      "age": "Keith Garrett",
+      "gender": "60",
+      "race": "2800 Chesterfield Avenue",
+      "cause": "Victim found in dwelling with trauma to the body. Medical Examiner determined homicide. This victim was found in a Safe Streets Catchment Area. Victim was a retired teacher.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "078",
+      "victim": "07/11/25",
+      "age": "Naneato Alusi",
+      "gender": "27",
+      "race": "6200 Shipview Way",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "079",
+      "victim": "07/13/25",
+      "age": "Randolph Smith",
+      "gender": "56",
+      "race": "3900 Frederick Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "080",
+      "victim": "07/19/25",
+      "age": "Dennis Dorsch",
+      "gender": "64",
+      "race": "1500 Olmstead Street",
+      "cause": "Shooting victim found in dwelling",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "081",
+      "victim": "07/19/25",
+      "age": "William Grant",
+      "gender": "33",
+      "race": "2800 Kennedy Avenue",
+      "cause": "Shooting victim. Update 07/22/25 Jasmine White charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "082",
+      "victim": "06/28/25",
+      "age": "Gregory Johnson",
+      "gender": "40",
+      "race": "1700 Pennsylvania Avenue",
+      "cause": "Victim shot 07/07/2017 died 06/28/25. Medical Examiner determined homicide.",
+      "location": "Not checked yet",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "083",
+      "victim": "07/22/25",
+      "age": "Kayla Williams",
+      "gender": "30",
+      "race": "1100 Mount Holly Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "084",
+      "victim": "07/23/25",
+      "age": "Donte Griffin",
+      "gender": "31",
+      "race": "500 Edgewood Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "085",
+      "victim": "07/19/25",
+      "age": "Travon Booth",
+      "gender": "43",
+      "race": "I-83 near Ruxton Road exit",
+      "cause": "Victim was involved in events leading up to an incident near 1100 West Northern Parkway. Victim was found deceased in a single vehicle crash on I-83 near Ruxton Road. The Medical Examiner's Office ruled his death homicide caused by multiple blunt force injuries. Update 07/25/25 Tyler Liggins charged. Update 10/14/25 Davon Whitfield was arrested in North Carolina in connection to this murder.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "086",
+      "victim": "07/26/25",
+      "age": "Sirbryant Alston",
+      "gender": "33",
+      "race": "1100 East Preston Street",
+      "cause": "Victim shot 06/30/25 died 07/26/25",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "087",
+      "victim": "08/09/25",
+      "age": "Birane Gaye",
+      "gender": "38",
+      "race": "2500 West Franklin Street",
+      "cause": "Shooting victim. Update 08/19/25 Baltimore Police wish to speak to this person of interest. Update 10/14/25 Dajuan Heath charged.",
+      "location": "Shooting victim. Update 08/19/25 Baltimore Police wish to speak to this person of interest. Update 10/14/25 Dajuan Heath charged.",
+      "disposition": ""
+    },
+    {
+      "date": "088",
+      "victim": "08/09/25",
+      "age": "Jerome Michael Coateson",
+      "gender": "38",
+      "race": "2900 Spaulding Avenue",
+      "cause": "Sextuple shooting at block party",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "???",
+      "victim": "08/18/25",
+      "age": "Wilson E Marroquin Caceros",
+      "gender": "28",
+      "race": "2700 Manokin Street",
+      "cause": "Shooting victim. Update 08/22/25: From WBFF \"According to police dispatch, the body may have been hidden in the woods for some time.\" Blogger note: Victim lived in Riverdale Maryland and the body was found on a ramp to Baltimore Washington Parkway. An additional blogger note 08/27/25: I will be temporarily removing this event from my list as I am having some serious doubts this victim was shot/killed in Baltimore City. I will put this victim back on the list if it is found that he was. Update: 09/05/25 Baltimore Police are looking to talk to Javon Minott.",
+      "location": "Shooting victim. Update 08/22/25: From WBFF \"According to police dispatch, the body may have been hidden in the woods for some time.\" Blogger note: Victim lived in Riverdale Maryland and the body was found on a ramp to Baltimore Washington Parkway. An additional blogger note 08/27/25: I will be temporarily removing this event from my list as I am having some serious doubts this victim was shot/killed in Baltimore City. I will put this victim back on the list if it is found that he was. Update: 09/05/25 Baltimore Police are looking to talk to Javon Minott.",
+      "disposition": ""
+    },
+    {
+      "date": "089",
+      "victim": "08/20/25",
+      "age": "Levontaye Mullen",
+      "gender": "25",
+      "race": "2800 Woodbrook Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "090",
+      "victim": "08/20/25",
+      "age": "Montrel Brookes-Davis",
+      "gender": "18",
+      "race": "5100 Park Heights Avenue",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "091",
+      "victim": "08/22/25",
+      "age": "Davonne Hare",
+      "gender": "26",
+      "race": "700 Druid Park Lake Drive",
+      "cause": "Shooting victim. Update 09/24/25 A 16 year old has been charged with first degree murder.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "092",
+      "victim": "06/24/25",
+      "age": "Dontae Melton",
+      "gender": "31",
+      "race": "North Franklintown Road and West Franklin Street",
+      "cause": "This homicide was caused by the Baltimore City Police Department.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "093",
+      "victim": "08/31/25",
+      "age": "Major Kip Smith",
+      "gender": "61",
+      "race": "3000 West Garrison Avenue",
+      "cause": "Shooting victim. Update 10/14/25 Dontaye Richardson charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "094",
+      "victim": "09/03/25",
+      "age": "Davion Hodges",
+      "gender": "25",
+      "race": "900 Edmondson Avenue",
+      "cause": "Shooting victim found in dwelling. Update 10/14/25 Tyjai Archer charged.",
+      "location": "",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "095",
+      "victim": "09/09/25",
+      "age": "Deonaye Johnson",
+      "gender": "26",
+      "race": "1000 North Arlington Avenue",
+      "cause": "Shooting victim. There was a barricade situation with the Baltimore Police. Update 10/16/25 Timothy Shearn charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "096",
+      "victim": "09/10/25",
+      "age": "Zayone Burman",
+      "gender": "24",
+      "race": "1100 Ashburton Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "097",
+      "victim": "09/10/25",
+      "age": "Charlton Morris",
+      "gender": "31",
+      "race": "2300 Ashland Avenue",
+      "cause": "Shooting victim. Udpate 10/14/25 Jabril Turner charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "098",
+      "victim": "09/13/25",
+      "age": "Kenneth Spaulding",
+      "gender": "34",
+      "race": "3300 Spaulding Avenue",
+      "cause": "Shooting victim found in building. This event occurred in a Safe Streets Catchment Area. Update 10/17/25 The police would like to identify the person in this video.",
+      "location": "Shooting victim found in building. This event occurred in a Safe Streets Catchment Area. Update 10/17/25 The police would like to identify the person in this video.",
+      "disposition": ""
+    },
+    {
+      "date": "099",
+      "victim": "09/19/25",
+      "age": "Taiquan Moss",
+      "gender": "29",
+      "race": "1100 East 20th Street",
+      "cause": "Shooting victim. Update 10/14/25 Kashif Forman charged",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "100",
+      "victim": "09/20/25",
+      "age": "Quant'ae Brown",
+      "gender": "25",
+      "race": "300 Presstman Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "101",
+      "victim": "06/08/25",
+      "age": "Tyrone Wright",
+      "gender": "25",
+      "race": "600 Glenwood Avenue",
+      "cause": "Victim shot 02/11/2011 died 06/08/25. Medical Examiner determined homicide 09/23/25. Officers arrested the suspect, 24-year-old Brandon Coker, on the day of the shooting. Coker later died in prison on January 28, 2025, police said.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "102",
+      "victim": "09/25/25",
+      "age": "Michael Schuler",
+      "gender": "34",
+      "race": "2200 Sidney Avenue",
+      "cause": "Stabbing victim. Blogger note: Sidney Avenue is in the Westport neighborhood where a Virginia property speculator named David Baird has purchased the majority of houses through an LLC called HC Baltimore. He has rendered the homes vacant. HC Baltimore LLC is waiting on a payday while Westport falls into disrepair and criminal activity on account of what is now a large number of vacant homes. HC Baltimore is listed as the owner of the bulk of the properties on the 2200 block of Sidney Avenue.If you would like a machine readable file of all the properties in Westport owned by HC Baltimore feel free to contact me and I will supply it for you for free. David Baird also owns Homestead Building Systems in Bristow, Virginia. Update 10/06/25 Donald Graham charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "103",
+      "victim": "09/25/25",
+      "age": "Mekonen Habteselassie",
+      "gender": "71",
+      "race": "1200 North Patterson Park Avenue",
+      "cause": "Victim found deceased in dwelling after well-being check. Update 10/14/25 Ephrem Melekte and Fasika Tsadik were arrested in New York in connection to this murder.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "104",
+      "victim": "09/26/25",
+      "age": "Virgil Holland Jr.",
+      "gender": "31",
+      "race": "1200 West North Avenue",
+      "cause": "Shooting victim. Baltimore Police would like to talk to the suspects on this video. Here is a still from the video.",
+      "location": "Shooting victim. Baltimore Police would like to talk to the suspects on this video. Here is a still from the video.",
+      "disposition": ""
+    },
+    {
+      "date": "105",
+      "victim": "09/30/25",
+      "age": "Marlon Pugh",
+      "gender": "35",
+      "race": "3700 Fifth Street",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area. Update 10/11/25 Devin Ash charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "106",
+      "victim": "10/01/25",
+      "age": "Oshay Smith",
+      "gender": "31",
+      "race": "2500 Maisel Court",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "107",
+      "victim": "10/02/25",
+      "age": "Walter Aston",
+      "gender": "47",
+      "race": "800 North Bond Street",
+      "cause": "Two men were in an altercation. Both received stab wounds.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "108",
+      "victim": "10/07/25",
+      "age": "Terry Copes",
+      "gender": "63",
+      "race": "100 West Garrett Street",
+      "cause": "Stabbing victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "109",
+      "victim": "10/10/25",
+      "age": "Ahing Castro",
+      "gender": "44",
+      "race": "6100 Fortview Way",
+      "cause": "Victim found deceased in dwelling. 10/12/25 Medical Examiner determined homicide due to trauma to the body.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "110",
+      "victim": "10/15/25",
+      "age": "Darrius Hines",
+      "gender": "29",
+      "race": "500 Callender Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "111",
+      "victim": "10/20/25",
+      "age": "Steven Phillips",
+      "gender": "35",
+      "race": "1000 Cameron Road",
+      "cause": "Double shooting. Victims found in vehicle. The two victims were brother and sister.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "No.",
+      "victim": "Date Died",
+      "age": "Name",
+      "gender": "Age",
+      "race": "Address Block Found",
+      "cause": "Notes",
+      "location": "Victim Has No Violent Criminal History*",
+      "disposition": "Surveillance Camera At Intersection?**"
+    },
+    {
+      "date": "001",
+      "victim": "01/02/24",
+      "age": "Noah Gibson",
+      "gender": "16",
+      "race": "1 Gorman Avenue",
+      "cause": "Shooting victim. This victim was found in a Group Violence Reduction Strategy Zone.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "002",
+      "victim": "01/04/24",
+      "age": "Antoine Johnson",
+      "gender": "31",
+      "race": "1 North Eutaw Street",
+      "cause": "Shooting victim. Tanare Williams charged 01/25/24",
+      "location": "",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "003",
+      "victim": "01/12/24",
+      "age": "Deon Beasley",
+      "gender": "36",
+      "race": "800 Washington Boulevard",
+      "cause": "Shooting victim. Following the shooting incident officers and foxtrot pursued a vehicle fleeing from the scene. As a result of the pursuit, the vehicle struck a police vehicle and hit a guardrail. Victim was well liked in Pigtown. Suspect(s) apprehended. Victim had been targeted while working at a barbershop and had been chased.",
+      "location": "",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "004",
+      "victim": "01/14/24",
+      "age": "Jazmyn Reed",
+      "gender": "30",
+      "race": "I-83 North Exit 3",
+      "cause": "Shooting victim found in vehicle. Victim shot during a dispute. Christopher Lee(a passenger in the vehicle) charged 01/14/24",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "005",
+      "victim": "01/15/24",
+      "age": "Dominic Wynn",
+      "gender": "39",
+      "race": "2800 Mayfield Avenue",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "006",
+      "victim": "01/09/24",
+      "age": "Quantae Arthur",
+      "gender": "33",
+      "race": "3600 Belair Road",
+      "cause": "Victim had multiple injuries to his body resulting in his death. Victim found in a vacant dwelling. This event occurred in a Safe Streets Catchment Area",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "007",
+      "victim": "01/19/24",
+      "age": "Dequan Thomas",
+      "gender": "28",
+      "race": "5200 Fairlawn Avenue",
+      "cause": "Quadruple shooting triple homicide. A dispute started inside an autoshop and spilled into the street. Update: 11/12/24 A Jury acquitted the defendant, Darius Daye, of all charges.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "008",
+      "victim": "01/19/24",
+      "age": "Charlie Cameron",
+      "gender": "30",
+      "race": "5200 Fairlawn Avenue",
+      "cause": "Quadruple shooting triple homicide. A dispute started inside an autoshop and spilled into the street. Update: 11/12/24 A Jury acquitted the defendant, Darius Daye, of all charges.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "009",
+      "victim": "01/19/24",
+      "age": "Willie Cameron Jr.",
+      "gender": "32",
+      "race": "5200 Fairlawn Avenue",
+      "cause": "Quadruple shooting triple homicide. A dispute started inside an autoshop and spilled into the street.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "010",
+      "victim": "01/19/24",
+      "age": "Malachi Carter-Bey",
+      "gender": "39",
+      "race": "4500 Pennington Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "011",
+      "victim": "01/19/24",
+      "age": "Mary Lou Schuman",
+      "gender": "60",
+      "race": "4500 Pennington Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "012",
+      "victim": "01/23/24",
+      "age": "Seron O'Neal",
+      "gender": "06",
+      "race": "2000 Deering Avenue",
+      "cause": "Victim allegedly stabbed by mother's boyfriend. Alan Geslicki charged. Update 06/27/25 Alan Geslicki pled guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "013",
+      "victim": "01/24/23",
+      "age": "Delroy Plummer",
+      "gender": "68",
+      "race": "5200 Fairlawn Avenue",
+      "cause": "Shooting victim found in mechanic's office. Person of Interest in custody",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "014",
+      "victim": "01/26/24",
+      "age": "Kareem Gee",
+      "gender": "20",
+      "race": "1200 East Preston Street",
+      "cause": "Shooting victim. Update 02/22/24 Isaiah Eaddy charged.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "015",
+      "victim": "01/30/24",
+      "age": "Sean Hennessy",
+      "gender": "34",
+      "race": "1100 West Baltimore Street",
+      "cause": "Victim found with trauma to the body. This victim was found in a Group Violence Reduction Strategy Zone",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "016",
+      "victim": "01/30/24",
+      "age": "Davon Brown",
+      "gender": "36",
+      "race": "4000 Wilsby Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "017",
+      "victim": "02/01/24",
+      "age": "Charles Banks",
+      "gender": "46",
+      "race": "5200 Saybrook Road",
+      "cause": "Shooting victim. Blogger Note: Hey Howard County get those Marijuana Possession charges OFF THE CASE SEARCH.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "018",
+      "victim": "02/02/24",
+      "age": "D'Shawn Johnson",
+      "gender": "25",
+      "race": "900 Coppin Court",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "019",
+      "victim": "11/27/23",
+      "age": "Nigel Arrington",
+      "gender": "25",
+      "race": "5300 Eastbury Avenue",
+      "cause": "Victim shot 08/22/22 died 11/27/23. Medical Examiner determined homicide 02/02/24",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "020",
+      "victim": "02/03/24",
+      "age": "Melvin White",
+      "gender": "55",
+      "race": "3000 Edmondson Avenue",
+      "cause": "Shooting victim. This event occurred in a Group Violence Reduction Strategy Area.Update 04/10/25 Noah Diggs and an unidentified 17 year old both charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "021",
+      "victim": "02/07/24",
+      "age": "Ricardo Brooks-Watters",
+      "gender": "32",
+      "race": "4400 Belair Road",
+      "cause": "Double shooting Double homicide in 7-11 Convenience Store parking lot. This event occurred in a Safe Streets Catchment Area.: Daquan Woodard charged. Update 02/26/25 Daquan Woodard convicted.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "022",
+      "victim": "02/07/24",
+      "age": "Odell Curtis",
+      "gender": "40",
+      "race": "4400 Belair Road",
+      "cause": "Double shooting Double homicide in 7-11 Convenience Store parking lot. This event occurred in a Safe Streets Catchment Area.Update 05/03/24: Daquan Woodard charged. Update 02/26/25 Daquan Woodard convicted.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "023",
+      "victim": "02/09/24",
+      "age": "Milo Turner",
+      "gender": "30",
+      "race": "6500 Parnell Avenue",
+      "cause": "Deceased victim showed signs of trauma",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "024",
+      "victim": "02/16/24",
+      "age": "Dwayne Flintall",
+      "gender": "38",
+      "race": "900 North Carrollton Avenue",
+      "cause": "Shooting victim. This event occurred inside a Group Violence Reduction Strategy Zone",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "025",
+      "victim": "02/16/24",
+      "age": "Darrian Williams",
+      "gender": "45",
+      "race": "4000 Kathland Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "026",
+      "victim": "02/16/24",
+      "age": "Rickey Cole",
+      "gender": "69",
+      "race": "4000 Kathland Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "027",
+      "victim": "10/27/23",
+      "age": "Messiah Heggie",
+      "gender": "01",
+      "race": "?",
+      "cause": "Victim died of a drug poisoning on 10/27/23. Medical Examiner determined homicide 02/19/24",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "028",
+      "victim": "02/17/24",
+      "age": "Amari Williams",
+      "gender": "20",
+      "race": "200 Marion Street",
+      "cause": "Shooting victim. Image of 2 suspects.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "029",
+      "victim": "02/20/24",
+      "age": "Darcell Mitchell",
+      "gender": "19",
+      "race": "800 West Lexington Street",
+      "cause": "Shooting victim found in dwelling. This event occurred inside a Group Violence Reduction Strategy Zone. Update 03/04/24 Davon Butler, Charles Bowen and a 17 year old male teen charged.",
+      "location": "None",
+      "disposition": "3 cameras"
+    },
+    {
+      "date": "030",
+      "victim": "02/09/24",
+      "age": "James McDougald",
+      "gender": "34",
+      "race": "2500 West Fairmont Avenue",
+      "cause": "Double shooting on 07/09/22. Victim died 02/09/24. Medical Examiner determined homicide 02/29/24. This is the Southwest and this area was not a Group Violence Reduction Strategy Zone at the time of the shooting.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "031",
+      "victim": "02/29/24",
+      "age": "Bryant Williams",
+      "gender": "38",
+      "race": "100 South Stockton Street",
+      "cause": "Shooting victim. This event occurred in a Group Violence Reductions Strategy Zone",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "032",
+      "victim": "02/29/24",
+      "age": "Cormer Askins",
+      "gender": "16",
+      "race": "800 Bethune Road",
+      "cause": "Shooting victim. This event happened in a Safe Streets Catchment Area",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "033",
+      "victim": "03/01/24",
+      "age": "Johnny Small",
+      "gender": "55",
+      "race": "5300 Frankford Avenue",
+      "cause": "Shooting victim. Update 03/13/24 Derek Steele charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "034",
+      "victim": "03/02/24",
+      "age": "Alvin Ray Henry",
+      "gender": "35",
+      "race": "1400 East Biddle Street",
+      "cause": "Shooting victim. Update 01/03/24 Derrell Goines charged",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "035",
+      "victim": "12/02/23",
+      "age": "Reginald Evans",
+      "gender": "62",
+      "race": "1300 North Central Avenue",
+      "cause": "Victim shot 09/24/21 died 12/02/23. Medical Examiner determined homicide 03/01/24. This area was not included in the Group Violence Reduction Strategy Zone in 2021.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "036",
+      "victim": "03/05/24",
+      "age": "Isiah Taylor",
+      "gender": "21",
+      "race": "200 South Monstary Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "037",
+      "victim": "03/06/24",
+      "age": "Denzel Brown",
+      "gender": "29",
+      "race": "4000 Loch Raven Boulevard",
+      "cause": "Shooting victim found in dwelling. Update 03/27/24 Niyiraha Berry charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "038",
+      "victim": "03/07/24",
+      "age": "Wayne Sawyer",
+      "gender": "41",
+      "race": "200 Furrow Street",
+      "cause": "Shooting victim. The event occurred in a Group Violence Reduction Strategy Zone",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "039",
+      "victim": "03/11/24",
+      "age": "Rasheed Lindsey",
+      "gender": "24",
+      "race": "3000 Spaulding Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "040",
+      "victim": "03/11/24",
+      "age": "Unidentified Man",
+      "gender": "42",
+      "race": "3100 Pulaski Highway",
+      "cause": "Shooting victim. Tyquann Flythe charged 03/14/24",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "041",
+      "victim": "03/12/24",
+      "age": "Timothy Peaks",
+      "gender": "58",
+      "race": "1000 Glover Street",
+      "cause": "Shooting victim. Blogger Note: There is no such block as the 1000 block of Glover Street",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "042",
+      "victim": "03/12/24",
+      "age": "Justice Smallwood",
+      "gender": "33",
+      "race": "1 South Chester Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "043",
+      "victim": "03/13/24",
+      "age": "Christine Liddic-Rozzell",
+      "gender": "49",
+      "race": "4000 Alto Road",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "044",
+      "victim": "03/13/24",
+      "age": "Martinez Brown",
+      "gender": "26",
+      "race": "1500 East 28th Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "045",
+      "victim": "03/15/24",
+      "age": "Lenora Alston",
+      "gender": "35",
+      "race": "1000 Fulton Street",
+      "cause": "Shooting victim. The event occurred in a Group Violence Reduction Strategy Zone. Update 03/25/24 Reginald Peay charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "046",
+      "victim": "03/15/24",
+      "age": "Lamont Renwick",
+      "gender": "34",
+      "race": "2000 Robb Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "047",
+      "victim": "03/15/24",
+      "age": "Michael Chacon-Nataren",
+      "gender": "18",
+      "race": "200 South Linwood Street",
+      "cause": "Shooting victim. This homicide may have been originally reported on the 3000 block of East Pratt Street",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "048",
+      "victim": "03/16/24",
+      "age": "Christopher Yancey",
+      "gender": "21",
+      "race": "1200 North Potomac Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "049",
+      "victim": "03/26/24",
+      "age": "Eugene Fitzgerald",
+      "gender": "28",
+      "race": "1800 Pennsylvania Avenue",
+      "cause": "Shooting victim. This event occurred inside a Group Violence Reduction Strategy Zone. Police looking for two persons of interest. Update 04/16/24 Tony Dukes charged. Update 07/24/25 Tony Dukes sentenced to life plus 35 years for first degree murder.",
+      "location": "Shooting victim. This event occurred inside a Group Violence Reduction Strategy Zone. Police looking for two persons of interest. Update 04/16/24 Tony Dukes charged. Update 07/24/25 Tony Dukes sentenced to life plus 35 years for first degree murder.",
+      "disposition": ""
+    },
+    {
+      "date": "050",
+      "victim": "04/01/24",
+      "age": "Devron Tyner",
+      "gender": "17",
+      "race": "200 East Pratt Street",
+      "cause": "Shooting victim. Four to five suspects fled the area. This event occurred inside a Group Violence Reduction Strategy Zone. Police looking for a person for interest. Update: 04/09/24 Dejuan Cole charged.",
+      "location": "Shooting victim. Four to five suspects fled the area. This event occurred inside a Group Violence Reduction Strategy Zone. Police looking for a person for interest. Update: 04/09/24 Dejuan Cole charged.",
+      "disposition": ""
+    },
+    {
+      "date": "051",
+      "victim": "04/02/24",
+      "age": "Marvin Washington",
+      "gender": "22",
+      "race": "2300 East Lafayette Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "052",
+      "victim": "04/06/24",
+      "age": "Uneek Hassan Foust",
+      "gender": "31",
+      "race": "1600 Bloomingdale Road",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "053",
+      "victim": "04/06/24",
+      "age": "Jose Castron-Merales",
+      "gender": "38",
+      "race": "3700 East Lombard Street",
+      "cause": "Double shooting",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "054",
+      "victim": "04/11/24",
+      "age": "Devon Thomas",
+      "gender": "27",
+      "race": "3400 Spellman Road",
+      "cause": "Shooting victim. This event occurred inside a Safe Streets Catchment Area. Update 06/10/24? Michael Conley (victim's brother) charged.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "055",
+      "victim": "04/14/24",
+      "age": "Kennard Murray",
+      "gender": "23",
+      "race": "4900 Palmer Avenue",
+      "cause": "Shooting victim found in vehicle",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "???",
+      "victim": "04/16/24",
+      "age": "Unidentified Person",
+      "gender": "",
+      "race": "2200 East Fayette Street",
+      "cause": "Skeletal remains found in vacant dwelling. Police are categorizing this as a potential homicide.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "056",
+      "victim": "04/15/24",
+      "age": "Robert Lee Johnson",
+      "gender": "37",
+      "race": "400 North Bradford Street",
+      "cause": "Shooting victim. This even occurred in a Safe Streets Catchment Area",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "057",
+      "victim": "04/18/24",
+      "age": "Raymond McCoy",
+      "gender": "30",
+      "race": "800 North Glover Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "058",
+      "victim": "04/21/24",
+      "age": "Joseph Barranco",
+      "gender": "77",
+      "race": "900 West University Parkway",
+      "cause": "Cutting victim. Suspect turned himself in. Patrick Cromwell(roommate) charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "059",
+      "victim": "04/24/24",
+      "age": "Montez Barrett",
+      "gender": "23",
+      "race": "1200 McCulloh Street",
+      "cause": "Victim found with life-threatening injuries. Update 07/07/25 Maurice Jones has pled not guilty. Update 07/11/25 Maurice Jones was found not guilty by a jury.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "060",
+      "victim": "04/29/24",
+      "age": "Anthony Pearson",
+      "gender": "43",
+      "race": "4700 Garrison Boulevard",
+      "cause": "Double shooting",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "061",
+      "victim": "05/05/24",
+      "age": "Sherman Anderson",
+      "gender": "25",
+      "race": "3300 Reisterstown Road",
+      "cause": "Double shooting. Update 08/08/24 Davonte Hamlett charged. Update 07/18/25 Davonte Hamlett found guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "062",
+      "victim": "05/05/24",
+      "age": "Lavontay Bishop",
+      "gender": "33",
+      "race": "1000 Leadenhall Street",
+      "cause": "Shooting victim. Police would like to identify person of interest",
+      "location": "Shooting victim. Police would like to identify person of interest",
+      "disposition": ""
+    },
+    {
+      "date": "063",
+      "victim": "05/06/24",
+      "age": "Garfield Redd",
+      "gender": "33",
+      "race": "1 East 21st Street",
+      "cause": "Shooting victim found in vehicle. Update 05/15/24: Montay Brown charged. Update 08/04/25 A mistrial was declared when a jury failed to reach a verdict for Montay Brown.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "064",
+      "victim": "05/09/24",
+      "age": "Janelle Desormeaux",
+      "gender": "40",
+      "race": "2100 East Preston Street",
+      "cause": "Victim found in home with trauma to the body.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "065",
+      "victim": "09/05/23",
+      "age": "Unidentified Person",
+      "gender": "",
+      "race": "800 North Fremont Avenue",
+      "cause": "Victim found in yard 09/05/2023. Medical Examiner determined homicide 05/06/24. Update 11/05/24 Police need help with ID.",
+      "location": "Victim found in yard 09/05/2023. Medical Examiner determined homicide 05/06/24. Update 11/05/24 Police need help with ID.",
+      "disposition": ""
+    },
+    {
+      "date": "066",
+      "victim": "05/12/24",
+      "age": "Moses McKnight",
+      "gender": "42",
+      "race": "3600 Leverton Avenue",
+      "cause": "Shooting victim. Update 07/07/25 Trial for Melvin Garcersis Tucker resulted in a hung jury.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "067",
+      "victim": "05/14/24",
+      "age": "Dondre Green",
+      "gender": "26",
+      "race": "2700 Greenmount Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "068",
+      "victim": "05/18/24",
+      "age": "Unidentified Man",
+      "gender": "",
+      "race": "2900 Auchentoroly Terrace",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "069",
+      "victim": "05/19/24",
+      "age": "Shelton Price",
+      "gender": "33",
+      "race": "3000 Mayfield Avenue",
+      "cause": "Shooting victim. This event occurred inside a Safe Streets Catchment Area",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "070",
+      "victim": "05/20/24",
+      "age": "Phillip Smith",
+      "gender": "39",
+      "race": "3900 Ridgewood Avenue",
+      "cause": "Stabbing victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "071",
+      "victim": "05/25/24",
+      "age": "Denzel Johnson",
+      "gender": "17",
+      "race": "900 North Dukeland",
+      "cause": "Double shooting. The other victim is 15 years old. Korey Hopson and Charles Robinson charged. Suspects left an electron breadcrumb trail via a rental car.Update 09/05/25 Korey Hopson and Charles Robinson found guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "072",
+      "victim": "05/27/24",
+      "age": "Corey Robinson",
+      "gender": "41",
+      "race": "2700 West Fairmont Avenue",
+      "cause": "Shooting victim. Update 08/20/24 Jajuan Smith turned himself in.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "073",
+      "victim": "05/29/24",
+      "age": "Jamal Burden",
+      "gender": "24",
+      "race": "5600 Bland Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "074",
+      "victim": "06/01/24",
+      "age": "Joe Lynch",
+      "gender": "55",
+      "race": "5200 Reisterstown Road",
+      "cause": "Double shooting. Victims found in dwelling. Second victim in critical condition.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "075",
+      "victim": "06/02/24",
+      "age": "Jarmal Harrid",
+      "gender": "34",
+      "race": "500 West Mulberry Street",
+      "cause": "Shooting victim found inside a business. Witnesses spotted an unidentified suspect fleeing the location in a red Lexus after the shooting.Suspect is the same for the homicide on the same day on 900 Pennyslvania Avenue. Police looking for suspect.Update 06/12/24 Munir Dawan Matin charged as well as Aqil Tamar King.",
+      "location": "Shooting victim found inside a business. Witnesses spotted an unidentified suspect fleeing the location in a red Lexus after the shooting.Suspect is the same for the homicide on the same day on 900 Pennyslvania Avenue. Police looking for suspect.Update 06/12/24 Munir Dawan Matin charged as well as Aqil Tamar King.",
+      "disposition": ""
+    },
+    {
+      "date": "076",
+      "victim": "06/02/24",
+      "age": "Terrell Johnson-Smith",
+      "gender": "32",
+      "race": "900 Pennsylvania Avenue",
+      "cause": "Shooting victim. Suspect is the same for the homicide on the same day on 500 West Mulberry Street. Police looking for suspect. Update 06/12/24 Munir Dawan Matin charged.",
+      "location": "Shooting victim. Suspect is the same for the homicide on the same day on 500 West Mulberry Street. Police looking for suspect. Update 06/12/24 Munir Dawan Matin charged.",
+      "disposition": ""
+    },
+    {
+      "date": "077",
+      "victim": "06/05/24",
+      "age": "Travis Bell",
+      "gender": "31",
+      "race": "2000 East 31st Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "078",
+      "victim": "06/09/24",
+      "age": "Said Raheem",
+      "gender": "31",
+      "race": "2100 West Lexington Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "079",
+      "victim": "05/29/24",
+      "age": "Marcus Brown",
+      "gender": "37",
+      "race": "1500 Russell Street",
+      "cause": "Victim assaulted at a gas station by a group of people on 05/26/24. Died 05/29/24. This was determined to be a homicide on 06/10/24.",
+      "location": "Not checked yet",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "080",
+      "victim": "06/11/24",
+      "age": "Navaeh Ferguson",
+      "gender": "17",
+      "race": "3100 Chelsea Terrace",
+      "cause": "Victim shot 06/06/24 died 06/11/24. Medical Examiner determined homicide",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "081",
+      "victim": "06/11/24",
+      "age": "Deontay Townes",
+      "gender": "19",
+      "race": "2600 Aisquith Street",
+      "cause": "Double Shooting. Update 06/25/24 Jamal Smothers charged. Update 06/18/25 Jamal Smothers pled guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "082",
+      "victim": "06/12/24",
+      "age": "Jordan Taylor",
+      "gender": "24",
+      "race": "1700 Ramsay Street",
+      "cause": "Shooting victim. Update 06/24/24 Tyree Wells charged.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "083",
+      "victim": "06/14/24",
+      "age": "Dennis Edmonds",
+      "gender": "39",
+      "race": "4300 Bay Avenue",
+      "cause": "Victim found 06/14/24. Medical Examiner determined homicide 06/25/24. Shooting victim. Update: Victim was shot in the Western Police District then relocatied to Bay Avenue. Gregory Barnes charged 08/22/24.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "084",
+      "victim": "06/16/24",
+      "age": "April Patterson",
+      "gender": "46",
+      "race": "1800 Spence Street",
+      "cause": "Victim found with trauma. A person of interest was taken into custody. Update 06/20/24 Tony Sewart charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "085",
+      "victim": "06/16/24",
+      "age": "Brandon Faison",
+      "gender": "19",
+      "race": "800 North Warwick Avenue",
+      "cause": "Shooting victim. Update 09/20/24 Baltimore Police is looking for this person of interest.",
+      "location": "",
+      "disposition": "Shooting victim. Update 09/20/24 Baltimore Police is looking for this person of interest."
+    },
+    {
+      "date": "086",
+      "victim": "06/18/24",
+      "age": "Marvin Moore",
+      "gender": "42",
+      "race": "1000 Stoddard Court",
+      "cause": "Shooting victim. Update 07/04/24 Fred Woods charged.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "087",
+      "victim": "06/23/24",
+      "age": "Paul Foxx",
+      "gender": "35",
+      "race": "400 North Montford Avenue",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "088",
+      "victim": "06/24/24",
+      "age": "Isaiah Gaines",
+      "gender": "20",
+      "race": "2000 McKean Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "089",
+      "victim": "06/25/24",
+      "age": "Carl Bodine",
+      "gender": "59",
+      "race": "1000 Brantley Avenue",
+      "cause": "Stabbing victim. Update 06/26/24 Harley Frost charged. Recovery house tenant allegedly killed the recovery house manager.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "090",
+      "victim": "06/26/24",
+      "age": "Kendall Montgomery",
+      "gender": "24",
+      "race": "3300 Dolfield Avenue",
+      "cause": "Shooting victim found in vehicle",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "091",
+      "victim": "06/29/24",
+      "age": "Antoine Grant",
+      "gender": "38",
+      "race": "4000 Fairfax Road",
+      "cause": "Stabbing victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "092",
+      "victim": "07/02/24",
+      "age": "Donovan Fletcher",
+      "gender": "28",
+      "race": "5300 Cordelia Avenue",
+      "cause": "Triple shooting. Victims shot 05/31/24. Victim died 07/02/24",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "093",
+      "victim": "07/03/24",
+      "age": "Andrew Harvey Jr.",
+      "gender": "30",
+      "race": "1600 Argyle Avenue",
+      "cause": "Victim found deceased in alley behind business",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "094",
+      "victim": "07/03/24",
+      "age": "Unidentified Male Person",
+      "gender": "",
+      "race": "5300 Goodnow Road",
+      "cause": "Shooting victim found in various stages of decomposition.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "095",
+      "victim": "07/04/24",
+      "age": "Kenshawn Goode",
+      "gender": "26",
+      "race": "1700 West Baltimore Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "096",
+      "victim": "07/05/24",
+      "age": "Corey Williams",
+      "gender": "31",
+      "race": "2400 Woodbrook Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "097",
+      "victim": "07/05/24",
+      "age": "Devin Lee Butler",
+      "gender": "33",
+      "race": "2400 West Lafayette Avenue",
+      "cause": "Stabbing victim. Victim was contract worker who worked for the Medical Examiner's office. Victim was off-duty at the time. Baltimore Police are looking for this Person of Interest. Update: 07/22/24 Tyrone Butler charged.",
+      "location": "Stabbing victim. Victim was contract worker who worked for the Medical Examiner's office. Victim was off-duty at the time. Baltimore Police are looking for this Person of Interest. Update: 07/22/24 Tyrone Butler charged.",
+      "disposition": ""
+    },
+    {
+      "date": "098",
+      "victim": "07/06/24",
+      "age": "Antoin Hines",
+      "gender": "47",
+      "race": "1400 Traction Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "099",
+      "victim": "07/09/24",
+      "age": "Pierre Grant",
+      "gender": "35",
+      "race": "4600 Garrison Boulevard",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "100",
+      "victim": "07/09/24",
+      "age": "Derrick Hawks",
+      "gender": "19",
+      "race": "900 North Dukeland Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "101",
+      "victim": "07/10/24",
+      "age": "Taron Whiting",
+      "gender": "21",
+      "race": "2500 Lauretta Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "102",
+      "victim": "07/10/24",
+      "age": "Unidentified Man",
+      "gender": "21",
+      "race": "2500 Lauretta Avenue",
+      "cause": "Double shooting double homicide",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "103",
+      "victim": "07/10/24",
+      "age": "Cortez Lemon",
+      "gender": "14",
+      "race": "4200 Frankford Road",
+      "cause": "Victim stabbed on MTA bus.. Brandon Lee Adams Jr. charged. Blogger note: All MTA buses have cameras.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "104",
+      "victim": "07/14/24",
+      "age": "Sierra Johnson",
+      "gender": "38",
+      "race": "800 Abbott Court",
+      "cause": "Victim found with trauma. Bryan Cherry who is also charged with killing Autumn Harvey and Iona Sellers in Baltimore County on 07/07/24 charged for all the murders.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "105",
+      "victim": "07/15/24",
+      "age": "Ely Williams-Harr",
+      "gender": "27",
+      "race": "1500 North Potomac Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "106",
+      "victim": "07/16/24",
+      "age": "Theodore Burrell",
+      "gender": "20",
+      "race": "2400 Frederick Avenue",
+      "cause": "Triple shooting at Westside Shopping Center.Blogger Note: Air temperature was 100 degrees F at the time of this shooting.",
+      "location": "",
+      "disposition": "2 Cameras"
+    },
+    {
+      "date": "107",
+      "victim": "07/18/24",
+      "age": "John Parrish",
+      "gender": "18",
+      "race": "3200 Lawnview Avenue",
+      "cause": "Victim shot during a dispute. Victim shot 07/16/24 died 07/18/24. Update 07/23/24 Leon Spencer charged. This event occurred in a Safe Street Catchment Area. Update 06/27/25 Leon Spencer pled guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "108",
+      "victim": "07/18/24",
+      "age": "Brandon Tucker",
+      "gender": "43",
+      "race": "1800 North Carey Street",
+      "cause": "Shooting victim. Victim shot 07/14/24 died 07/18/24",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "109",
+      "victim": "07/19/24",
+      "age": "Breaunna Cormley",
+      "gender": "12",
+      "race": "500 North Kenwood Avenue",
+      "cause": "Shooting victim found in dwelling. The event occurred in a Safe Streets Catchment Area. Police are looking for suspect: Omar Passmore. Update 07/21/24 Omar Passmore who confessed to the murder charged.Update 06/24/25 Omar Passmore pled guilty to murder.",
+      "location": "Shooting victim found in dwelling. The event occurred in a Safe Streets Catchment Area. Police are looking for suspect: Omar Passmore. Update 07/21/24 Omar Passmore who confessed to the murder charged.Update 06/24/25 Omar Passmore pled guilty to murder.",
+      "disposition": ""
+    },
+    {
+      "date": "110",
+      "victim": "07/20/24",
+      "age": "Alan Grant",
+      "gender": "30",
+      "race": "2400 Loyola Northway",
+      "cause": "Triple shooting. Police are searching for suspect Dominic Pressley. Update 7/25/24 Dominic Pressley charged.",
+      "location": "Triple shooting. Police are searching for suspect Dominic Pressley. Update 7/25/24 Dominic Pressley charged.",
+      "disposition": ""
+    },
+    {
+      "date": "111",
+      "victim": "07/21/24",
+      "age": "Jasper Davis",
+      "gender": "14",
+      "race": "2300 Liberty Heights Avenue",
+      "cause": "Double shooting at Mondawmin Metro Center. Blogger Note: Most transit stations have cameras. Police are looking for this person of interest and that person of interest. Victim was a student at Beats Not Bullets summer program.Update 07/30/24 a 15 year old male teen turned himself in.",
+      "location": "Double shooting at Mondawmin Metro Center. Blogger Note: Most transit stations have cameras. Police are looking for this person of interest and that person of interest. Victim was a student at Beats Not Bullets summer program.Update 07/30/24 a 15 year old male teen turned himself in.",
+      "disposition": ""
+    },
+    {
+      "date": "112",
+      "victim": "07/25/24",
+      "age": "Calvin Williams",
+      "gender": "36",
+      "race": "3400 Garrison Boulevard",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "113",
+      "victim": "07/28/24",
+      "age": "Reginald Coffey",
+      "gender": "32",
+      "race": "600 North Potomac Street",
+      "cause": "Victim shot 07/23/24 died 07/28/24",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "114",
+      "victim": "07/25/24",
+      "age": "Christopher Williams",
+      "gender": "42",
+      "race": "1900 Greenmount Avenue",
+      "cause": "Shooting victim",
+      "location": "Not checked yet",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "115",
+      "victim": "07/26/24",
+      "age": "Sean Sanders",
+      "gender": "22",
+      "race": "1000 North Eden Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "116",
+      "victim": "07/29/24",
+      "age": "Carl Anthony",
+      "gender": "34",
+      "race": "5200 St. Charles Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "117",
+      "victim": "08/01/24",
+      "age": "Ondrell Mayo Jr.",
+      "gender": "36",
+      "race": "900 East Pataspco Avenue",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area. Update 08/15/24 Paul Artis charged. Update 07/18/25 Paul Artis pled guilty.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "118",
+      "victim": "08/04/24",
+      "age": "Tai'Vion Lathan",
+      "gender": "24",
+      "race": "800 North Monroe Street",
+      "cause": "Shooting victim found in alley. Victim was transgendered.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "119",
+      "victim": "08/06/24",
+      "age": "Brian Batty",
+      "gender": "31",
+      "race": "1700 North Carey Street",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "120",
+      "victim": "08/09/24",
+      "age": "Christian Donaldson",
+      "gender": "42",
+      "race": "1100 West Lombard Street",
+      "cause": "Shooting victim found in vehicle",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "121",
+      "victim": "08/10/24",
+      "age": "Sean Henson Sr.",
+      "gender": "49",
+      "race": "1100 Tiffany Court",
+      "cause": "Shooting victim. Update 08/16/24 Mandarin Jessup turned himself in. Victim had pulled gun on defendant as a prank.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "122",
+      "victim": "08/15/24",
+      "age": "Timothy Johnson",
+      "gender": "24",
+      "race": "1 South Gilmor Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "123",
+      "victim": "08/16/24",
+      "age": "Carroll Wonson",
+      "gender": "56",
+      "race": "600 Springfield Avenue",
+      "cause": "Shooting victim. Update 03/18/24 Bryant Peyton indicted",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "124",
+      "victim": "08/17/24",
+      "age": "David Philpot",
+      "gender": "74",
+      "race": "1700 Eastern Avenue",
+      "cause": "Victim assaulted after being asked for money while walking his dog. Update 08/19/24 Timothy Clinedinst charged. Update 03/14/25 Timothy Clinedinst pled guilty.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "125",
+      "victim": "08/16/24",
+      "age": "Donnell Bristol",
+      "gender": "26",
+      "race": "1400 North Decker Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "126",
+      "victim": "08/18/24",
+      "age": "Anthony Martin",
+      "gender": "36",
+      "race": "1300 Spring Street",
+      "cause": "Octuple shooting. Witnesses claim shots were fired during a dispute about a parking space at a balloon launch for a deceased member of a motorcycle club. Update 10/09/24 Eric Kibler of Hagerstown MD charged. Update 11/15/24 The Baltimore Police would like to speak to the people in this picture.",
+      "location": "Octuple shooting. Witnesses claim shots were fired during a dispute about a parking space at a balloon launch for a deceased member of a motorcycle club. Update 10/09/24 Eric Kibler of Hagerstown MD charged. Update 11/15/24 The Baltimore Police would like to speak to the people in this picture.",
+      "disposition": ""
+    },
+    {
+      "date": "127",
+      "victim": "08/20/24",
+      "age": "Jermaine Parlow",
+      "gender": "32",
+      "race": "300 South Franklintown Road",
+      "cause": "Double shooting",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "128",
+      "victim": "08/20/24",
+      "age": "Rodney Lee",
+      "gender": "31",
+      "race": "2700 Fisk Road",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "129",
+      "victim": "08/21/24",
+      "age": "Brian Nesbitt",
+      "gender": "37",
+      "race": "800 South Paca Street",
+      "cause": "Shooting victim. Update 11/06/24 Damion Thomas charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "130",
+      "victim": "08/22/24",
+      "age": "Ronald Carroll",
+      "gender": "46",
+      "race": "1900 East North Avenue",
+      "cause": "Shooting victim. Update 11/19/24 A 16 year old has been charged.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "131",
+      "victim": "08/21/24",
+      "age": "Brian Graham",
+      "gender": "06",
+      "race": "6300 Greenspring Avenue",
+      "cause": "Victim found with blunt force trauma. Jalesia Offer(victim's mother) and Brandon Wheatly(mother's romantic partner) charged with first degree child abuse resulting in death. Update 04/02/25: Brandon Wheatley pled guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "132",
+      "victim": "01/27/24",
+      "age": "Jibreal Payne",
+      "gender": "16",
+      "race": "400 North Clinton Street",
+      "cause": "Victim found with burn marks on his body. Medical Examiner rule homicide 08/23/24. Update: Johnnie Teague, gaurdian of child victim, charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "133",
+      "victim": "08/27/24",
+      "age": "Travis Cooper",
+      "gender": "42",
+      "race": "2800 Mayfield Avenue",
+      "cause": "Victim sho 05/26/05. Medical Examiner determined victim died 08/27/24 due to complications from shooting",
+      "location": "None",
+      "disposition": "No cameras in 2005"
+    },
+    {
+      "date": "134",
+      "victim": "09/01/24",
+      "age": "Darrell Burton",
+      "gender": "38",
+      "race": "800 Bonaparte Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "135",
+      "victim": "09/03/24",
+      "age": "Tyreke Brown",
+      "gender": "22",
+      "race": "1300 Russell Street",
+      "cause": "Shooting victim. Fox News is reporting this event occurred at Hammerjacks which is an outdoor music venue. Victim resided in Kingston Jamaica.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "136",
+      "victim": "09/11/24",
+      "age": "Richard Evans",
+      "gender": "41",
+      "race": "1300 North Calhoun Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "137",
+      "victim": "09/14/24",
+      "age": "Reginald Bernard Harrod",
+      "gender": "59",
+      "race": "1100 Springfield Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "138",
+      "victim": "09/14/24",
+      "age": "Antonio Peoples",
+      "gender": "36",
+      "race": "700 Aliceanna Street",
+      "cause": "Shooting victim. Update 11/06/24 Quontay Spinks of Washington DC charged",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "139",
+      "victim": "09/16/24",
+      "age": "Melvin Sheppard",
+      "gender": "",
+      "race": "2700 Spelman Road",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "140",
+      "victim": "09/17/24",
+      "age": "Michael Simms",
+      "gender": "20",
+      "race": "400 Bloom Street",
+      "cause": "Shooting victim. Victim had been charged with attempted murder for an event that occurred on 04/23/2022 and was found not guilty on 06/14/23",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "141",
+      "victim": "09/16/24",
+      "age": "Melvin Rich III",
+      "gender": "36",
+      "race": "1300 North Carey Street",
+      "cause": "Victim shot 08/10/24. WBFF is reporting the victim died and also reported the victim was an off-duty Safe Streets worker. This death occurred within the boundaries of the Sandtown-Winchester Safe Streets Catchment Area.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "142",
+      "victim": "09/17/24",
+      "age": "Andre Dukes",
+      "gender": "29",
+      "race": "7200 McClean Boulevard",
+      "cause": "Double Shooting",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "143",
+      "victim": "09/18/24",
+      "age": "Darryl Mitchell",
+      "gender": "30",
+      "race": "4100 St. Georges Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "144",
+      "victim": "09/19/24",
+      "age": "Errique Neal",
+      "gender": "26",
+      "race": "1100 East 20th Street",
+      "cause": "Double shooting",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "145",
+      "victim": "09/21/24",
+      "age": "George Massey",
+      "gender": "37",
+      "race": "5100 Park Heights Avenue",
+      "cause": "Triple shooting double homicide",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "146",
+      "victim": "09/21/24",
+      "age": "Unidentified Man",
+      "gender": "",
+      "race": "5100 Park Heights Avenue",
+      "cause": "Triple shooting double homicide",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "147",
+      "victim": "09/21/24",
+      "age": "Christian Leight",
+      "gender": "24",
+      "race": "1100 Marshall Street",
+      "cause": "Shooting victim. Police are looking for two people of interest.",
+      "location": "Shooting victim. Police are looking for two people of interest.",
+      "disposition": ""
+    },
+    {
+      "date": "148",
+      "victim": "09/21/24",
+      "age": "Ryan Cain",
+      "gender": "24",
+      "race": "4600 York Road",
+      "cause": "Double shooting. This event occurred in a Safe Streets Catchment area.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "149",
+      "victim": "09/22/24",
+      "age": "Jasmine Simuel",
+      "gender": "33",
+      "race": "2700 Pennsylvania Avenue",
+      "cause": "Shooting victim. Update 09/30/24 Teresa Collins charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "150",
+      "victim": "09/25/24",
+      "age": "Kevin Mejia",
+      "gender": "27",
+      "race": "6300 Eastern Avenue",
+      "cause": "Victim assaulted 09/21/24 died 09/25/24. Suspect im custody",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "XXX",
+      "victim": "09/28/24",
+      "age": "Unidentified Man",
+      "gender": "32",
+      "race": "300 South Augusta Avenue",
+      "cause": "Shooting victim. WBFF is reporting a vehicle owner shot at an alleged carjacker.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "151",
+      "victim": "09/29/24",
+      "age": "Melvin Rogers",
+      "gender": "43",
+      "race": "Wilhelm Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "152",
+      "victim": "10/02/24",
+      "age": "Tavin Cooper",
+      "gender": "20",
+      "race": "2500 McHenry Street",
+      "cause": "Shooting victim. Update 10/28/24 Dominic Felder charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "153",
+      "victim": "10/05/24",
+      "age": "Jamil Richardson",
+      "gender": "25",
+      "race": "500 Sheridan Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "154",
+      "victim": "10/05/24",
+      "age": "Dion Huff",
+      "gender": "29",
+      "race": "2500 Greenmount Avenue",
+      "cause": "Victim shot 09/27/24 died 10/05/24",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "155",
+      "victim": "10/07/24",
+      "age": "Damien Parker",
+      "gender": "26",
+      "race": "2300 Harford Road",
+      "cause": "Shooting victim. Update 10/14/25 Matthew Kintay Harper Jr. charged.",
+      "location": "",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "156",
+      "victim": "10/09/24",
+      "age": "Marques Reaves",
+      "gender": "26",
+      "race": "1100 North Lakewood Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "157",
+      "victim": "10/10/24",
+      "age": "Shyheim Hunt",
+      "gender": "25",
+      "race": "800 Gilrubin Court",
+      "cause": "Double shooting Double homicide",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "158",
+      "victim": "10/10/24",
+      "age": "Davon Gray",
+      "gender": "34",
+      "race": "800 Gilrubin Court",
+      "cause": "Double shooting Double homicide",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "159",
+      "victim": "10/12/24",
+      "age": "Elias Palmer",
+      "gender": "17",
+      "race": "1200 South Haven Street",
+      "cause": "Double shooting. Victim shot 10/08/24 died 10/12/24",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "???",
+      "victim": "10/14/24",
+      "age": "Zona Byrd",
+      "gender": "05",
+      "race": "2200 Aiken Street",
+      "cause": "Baltimore officers say victim was found with trauma. Bernice and Gerald Byrd(parents) have been charged with child abuse and child neglect. Victim was found emaciated.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "160",
+      "victim": "10/23/24",
+      "age": "Jose Rodriguez-Bustos",
+      "gender": "26",
+      "race": "2600 East Baltimore Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "161",
+      "victim": "10/24/24",
+      "age": "Artez Collins",
+      "gender": "30",
+      "race": "Boone Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "162",
+      "victim": "10/25/24",
+      "age": "Abdullah Barber-El",
+      "gender": "21",
+      "race": "1100 South Monroe Street",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "163",
+      "victim": "10/27/24",
+      "age": "Marvin Wooten",
+      "gender": "46",
+      "race": "1900 West Fayette Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "164",
+      "victim": "10/28/24",
+      "age": "Amy Armstrong",
+      "gender": "28",
+      "race": "3700 Toone Street",
+      "cause": "Shooting victim. Gabriel Gomez-Fiorenza(roommate) charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "165",
+      "victim": "11/03/24",
+      "age": "Solomon Wise",
+      "gender": "58",
+      "race": "4200 Sheldon Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "166",
+      "victim": "11/03/14",
+      "age": "Ceaira Jackson",
+      "gender": "39",
+      "race": "1500 Pennsylvania Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "167",
+      "victim": "11/06/24",
+      "age": "Deandre Yelverton",
+      "gender": "36",
+      "race": "2500 North Howard Street",
+      "cause": "Stabbing victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "168",
+      "victim": "11/07/24",
+      "age": "Roger Hawkins",
+      "gender": "27",
+      "race": "3700 Gwynn Oak Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "169",
+      "victim": "11/06/24",
+      "age": "Cameran Holt",
+      "gender": "19",
+      "race": "1 West Hamburg Street",
+      "cause": "Double shooting occurred on 10/27/24. Victim was socializing in Federal Hill and struck by gunfire. Update 11/26/24 Daeshaun Clark, Devontaye Richardson and Alexis Cancel-Soto all charged.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "170",
+      "victim": "11/06/24",
+      "age": "Bianca Nelson",
+      "gender": "30",
+      "race": "1800 North Montford Avenue",
+      "cause": "Double Shooting. Update 11/29/24 Dakwane Cole charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "171",
+      "victim": "11/09/24",
+      "age": "Ira Linton",
+      "gender": "46",
+      "race": "4200 Powell Avenue",
+      "cause": "Shooting victim. Update 11/21/24 Jermal Lundy charged.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "172",
+      "victim": "11/12/24",
+      "age": "Isaiah Shackleford",
+      "gender": "22",
+      "race": "Annapolis Road Exit of I-295",
+      "cause": "Victim shot 11/07/24 on Monroe Street entrance to 295 due to alleged road rage incident.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "173",
+      "victim": "11/13/24",
+      "age": "Paul Lee",
+      "gender": "33",
+      "race": "500 East Preston Street",
+      "cause": "Victim shot in apartment lobby. Tyrone Epps charged. Suspect had an previous unserved warrant and lived in the apartment building",
+      "location": "",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "174",
+      "victim": "11/15/24",
+      "age": "Laquarie Harvey",
+      "gender": "27",
+      "race": "3600 Hayward Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "175",
+      "victim": "11/17/24",
+      "age": "Kierra Tripp",
+      "gender": "28",
+      "race": "800 North Wolfe Street",
+      "cause": "Shooting victim found in hotel room at the Marriott Residence Inn. Blogger Note: BPD originally reported the victim was male. The victim was female. Update 11/26/24 Police would like to identify these people of interest in this video. Update: 01/13/24 Davion Foreman charged. Victim killed during a dispute at a birthday party",
+      "location": "Shooting victim found in hotel room at the Marriott Residence Inn. Blogger Note: BPD originally reported the victim was male. The victim was female. Update 11/26/24 Police would like to identify these people of interest in this video. Update: 01/13/24 Davion Foreman charged. Victim killed during a dispute at a birthday party",
+      "disposition": ""
+    },
+    {
+      "date": "176",
+      "victim": "11/18/24",
+      "age": "Marcus Holloway",
+      "gender": "40",
+      "race": "1900 Edmondson Avenue",
+      "cause": "Double shooting. Update 11/27/24 Antonio King charged. Update 07/25/25 Antonio King found guilty.",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "177",
+      "victim": "11/21/24",
+      "age": "Gary Lee Matthews Jr.",
+      "gender": "34",
+      "race": "4900 Frankford Avenue",
+      "cause": "Shooting victim. Update 12/12/24 Amir Barnes-Henderson charged. Update 08/04/25 Amir Barnes Henderson found guilty",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "178",
+      "victim": "11/21/24",
+      "age": "Leonardo Espinoza-Salomon",
+      "gender": "23",
+      "race": "2300 Aisquith Street",
+      "cause": "Victim found in a state of decompposition. Cause of death was determined to be shooting.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "179",
+      "victim": "11/21/24",
+      "age": "Reginald Allen Jr.",
+      "gender": "29",
+      "race": "3900 Dolfield Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "180",
+      "victim": "11/23/24",
+      "age": "Marquis Hill",
+      "gender": "25",
+      "race": "5500 Hamlin Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "181",
+      "victim": "11/30/24",
+      "age": "William Womack IV",
+      "gender": "30",
+      "race": "1 South Eutaw Street",
+      "cause": "Victim shot while on an MTA bus. The Baltimore Police report the victim and suspect had a \"slight bump\" on the bus. Baltimore Police would like to identify this person of interest. Update 12/11/24 James Richburg charged. Update: 08/08/25 James Richburg found guilty.",
+      "location": "Victim shot while on an MTA bus. The Baltimore Police report the victim and suspect had a \"slight bump\" on the bus. Baltimore Police would like to identify this person of interest. Update 12/11/24 James Richburg charged. Update: 08/08/25 James Richburg found guilty.",
+      "disposition": ""
+    },
+    {
+      "date": "182",
+      "victim": "12/01/24",
+      "age": "Montrell Smith",
+      "gender": "31",
+      "race": "2200 North Monroe Street",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "183",
+      "victim": "12/02/24",
+      "age": "Terry Nesbitt Jr.",
+      "gender": "38",
+      "race": "3500 Clifton Avenue",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "184",
+      "victim": "12/07/24",
+      "age": "Garrison Warren",
+      "gender": "56",
+      "race": "1000 Wicklow Road",
+      "cause": "Shooting victim",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "185",
+      "victim": "12/09/24",
+      "age": "Emoni Randall-Rodgers",
+      "gender": "",
+      "race": "3400 Crows Nest Road",
+      "cause": "Shooting victim found in Druid Hill Park.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "186",
+      "victim": "12/09/24",
+      "age": "K'von McDowell",
+      "gender": "25",
+      "race": "4000 West Belvedere Avenue",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "187",
+      "victim": "12/10/24",
+      "age": "Bryan Stansbury",
+      "gender": "18",
+      "race": "1100 Quantrill Way",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "187",
+      "victim": "11/15/24",
+      "age": "Joyce Gaskins",
+      "gender": "64",
+      "race": "1600 Druid Hill Avenue",
+      "cause": "Victim found deceased in hom 11/15/24. Medical Examiner determined homicide via asphyxiation on 12/05/24. A 25 year old family member was taken to a hospital for a psychological evaluation. Update 12/17/24 Ajay Wiggins(son) charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "188",
+      "victim": "12/14/24",
+      "age": "Travon Benson",
+      "gender": "29",
+      "race": "200 North Payson Street",
+      "cause": "Shooting victim. This event occurred in a Safe Streets Catchment Area. The Baltimore Banner says a person of interest has been taken into custody. Update 12/30/24: Tracy Jeter charged Update 08/01/25 Tracy Jeter found guilty. .",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "189",
+      "victim": "12/16/24",
+      "age": "Ibrahim Kamara",
+      "gender": "25",
+      "race": "1200 West North Avenue",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "190",
+      "victim": "12/16/24",
+      "age": "Ricky Forehand",
+      "gender": "44",
+      "race": "1200 West Baltimore Street",
+      "cause": "Double shooting. Victims shot during a dispute. Update: 01/10/25 Gregory Granger charged. Update 07/09/25 Now the BPD wants to ID the person in this video for the same homicide. Blogger Note: Charges still exist for Gregory Granger Jr as of 07/09/25.",
+      "location": "None",
+      "disposition": "2 cameras"
+    },
+    {
+      "date": "191",
+      "victim": "12/17/24",
+      "age": "Krystal Prahampap",
+      "gender": "42",
+      "race": "1000 Quantril Way",
+      "cause": "Victim found with trauma. Charles Meyers(romantic partner) charged. Update 07/22/25 Charles Meyers pled guilty.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "192",
+      "victim": "12/16/24",
+      "age": "Donte Bazemore",
+      "gender": "31",
+      "race": "2600 East Chase Street",
+      "cause": "Shooting victim. Baltimore Police are looking for this person of interest on video.",
+      "location": "Shooting victim. Baltimore Police are looking for this person of interest on video.",
+      "disposition": ""
+    },
+    {
+      "date": "193",
+      "victim": "12/24/24",
+      "age": "Kevin Morrison",
+      "gender": "17",
+      "race": "1900 North Forest Park Avenue",
+      "cause": "Double shooting",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "194",
+      "victim": "12/27/24",
+      "age": "Tyree Countess",
+      "gender": "21",
+      "race": "2100 Druid Hill Avenue",
+      "cause": "Shooting victim. Update: 01/20/25 Joshua Austin charged.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "195",
+      "victim": "12/26/24",
+      "age": "Deangelo West",
+      "gender": "27",
+      "race": "4300 East Preston Street",
+      "cause": "Shooting victim. Update 01/07/25 Maurice Prioleau charged.",
+      "location": "None",
+      "disposition": "1 camera"
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "Blogger Note: BPD End-of-year list packing. :(",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "196",
+      "victim": "09/20/24",
+      "age": "Malik Cottman",
+      "gender": "46",
+      "race": "1200 East North Avenue",
+      "cause": "Victim shot 02/09/2000. Victim died 09/20/24. Medical Examiner determined homicide 12/24/24",
+      "location": "",
+      "disposition": "No cameras in 2000"
+    },
+    {
+      "date": "197",
+      "victim": "08/03/24",
+      "age": "Aaron Frantom",
+      "gender": "39",
+      "race": "100 North Mount Street",
+      "cause": "Victim shot 06/16/23. Victim died 08/03/24. Medical Examiner determined homicide 12/27/24. Update 09/26/25 Kimani Johnson acquitted by a jury of all charges in this case.",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "Blogger Note: BPD list packing stops for now",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "198",
+      "victim": "12/30/31",
+      "age": "Kyree Williams",
+      "gender": "26",
+      "race": "1200 East Coldspring Lane",
+      "cause": "Shooting victim",
+      "location": "None",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    },
+    {
+      "date": "",
+      "victim": "",
+      "age": "",
+      "gender": "",
+      "race": "",
+      "cause": "",
+      "location": "",
+      "disposition": ""
+    }
+  ]
+}
