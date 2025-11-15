@@ -1,0 +1,4 @@
+You will be using R and RShiny in this project to process 
+and visualize Baltimore City Homicide Lists back to 2021.  
+The goal of this project is to read in all the data and make 
+an interesting dashboard with it.  
