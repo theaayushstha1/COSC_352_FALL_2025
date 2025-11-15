@@ -5,6 +5,7 @@
 - view dashboard on https://localhost:3838 
 
 **option 2 (without docker)**
+- activate R terminal by typing ---> R
 - install.packages(c('shiny','rvest','lubridate','DT','leaflet','plotly','tidygeocoder','sf','stringr','ggplot2'))
 - verify package installation by ---> library(shiny, rvest, lubridate, DT, leaflet, plotly, tidygeocoder, sf, stringr, ggplot2)
 - running dashboard ---> shiny::runApp("app.R")
@@ -13,4 +14,5 @@
 - geocoding caching is recommended to avoid repeated API calls.
 - The app automatically caches HTML pages in data/raw to avoid re-downloading every time.
 - navigate to table to view all scraped data from 2021.
+
 
