@@ -1,0 +1,9 @@
+.Rhistory
+.RData
+.Rproj.user
+.Rproj
+.Renviron
+.Rprofile
+data/*.rds
+data/*.RData
+data/*.Rda

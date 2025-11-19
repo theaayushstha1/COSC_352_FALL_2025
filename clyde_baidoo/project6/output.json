@@ -1,7 +1,7 @@
 {
   "totalCases": 123,
-  "closedCases": 40,
-  "topStreet": "East Preston Street",
+  "closedCases": 41,
+  "topStreet": "Park Heights Avenue",
   "topStreetCount": 3,
   "homicideCases": [
     {
@@ -786,7 +786,7 @@
       "name": "Oshay Smith",
       "age": 31,
       "address": "2500 Maisel Court",
-      "caseClosed": ""
+      "caseClosed": "Closed"
     },
     {
       "date": "10/02/25",

@@ -110,7 +110,7 @@ Date,Name,Age,Address,CaseClosed
 09/25/25,Mekonen Habteselassie,71,1200 North Patterson Park Avenue,Closed
 09/26/25,Virgil Holland Jr.,31,1200 West North Avenue,
 09/30/25,Marlon Pugh,35,3700 Fifth Street,Closed
-10/01/25,Oshay Smith,31,2500 Maisel Court,
+10/01/25,Oshay Smith,31,2500 Maisel Court,Closed
 10/02/25,Walter Aston,47,800 North Bond Street,
 10/07/25,Terry Copes,63,100 West Garrett Street,Closed
 10/10/25,Ahing Castro,44,6100 Fortview Way,
@@ -125,6 +125,6 @@ Date,Name,Age,Address,CaseClosed
 
 SUMMARY
 Total Cases,123
-Closed Cases,40
-Top Street,East Preston Street
+Closed Cases,41
+Top Street,Pennsylvania Avenue
 Top Street Count,3
