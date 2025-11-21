@@ -1,0 +1,35 @@
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Log Files
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# R History and Environment
+.Rhistory
+.RData
+.Rproj.user
+
+# RStudio Project Files
+*.Rproj
