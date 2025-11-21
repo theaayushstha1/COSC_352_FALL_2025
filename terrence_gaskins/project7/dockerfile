@@ -1,0 +1,18 @@
+FROM rocker/shiny:latest
+
+# Install system dependencies for XML and HTML parsing
+RUN apt-get update && apt-get install -y \
+    libxml2-dev \
+    libssl-dev \
+    libcurl4-openssl-dev \
+    curl
+
+# Copy project files into container
+COPY . /srv/shiny-server/
+WORKDIR /srv/shiny-server
+
+# Install required R packages
+RUN R -e "install.packages(c('rvest','dplyr','stringr','leaflet','DT'))"
+
+# Run the app using the shell script
+CMD ["bash", "run.sh"]
