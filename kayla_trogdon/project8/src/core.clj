@@ -110,63 +110,6 @@
   [neighborhood-freq n]
   (take n neighborhood-freq))
 
-(defn neighborhood-closure-rate
-  "Calculate case closure rate by neighborhood"
-  [homicides]
-  (->> homicides
-       (group-by :address-block)
-       (map (fn [[address cases]]
-              (let [total (count cases)
-                    closed (count (filter #(= "Closed" (:case-closed %)) cases))
-                    rate (if (pos? total) (* 100.0 (/ closed total)) 0.0)]
-                {:address address
-                 :total total
-                 :closed closed
-                 :closure-rate rate})))
-       (filter #(>= (:total %) 3))  ; Only neighborhoods with 3+ homicides
-       (sort-by :closure-rate >)
-       vec))
-
-(defn compare-neighborhoods
-  "Compare two specific neighborhoods"
-  [homicides addr1 addr2]
-  (let [cases1 (filter #(= addr1 (:address-block %)) homicides)
-        cases2 (filter #(= addr2 (:address-block %)) homicides)
-        
-        count1 (count cases1)
-        count2 (count cases2)
-        
-        closed1 (count (filter #(= "Closed" (:case-closed %)) cases1))
-        closed2 (count (filter #(= "Closed" (:case-closed %)) cases2))
-        
-        rate1 (if (pos? count1) (* 100.0 (/ closed1 count1)) 0.0)
-        rate2 (if (pos? count2) (* 100.0 (/ closed2 count2)) 0.0)]
-    
-    {:neighborhood-1 {:address addr1 :total count1 :closed closed1 :closure-rate rate1}
-     :neighborhood-2 {:address addr2 :total count2 :closed closed2 :closure-rate rate2}}))
-
-;; ============================================================================
-;; YEAR-BASED ANALYSIS
-;; ============================================================================
-
-(defn homicides-by-year
-  "Pure function to group homicides by year"
-  [homicides]
-  (->> homicides
-       (group-by :year)
-       (map (fn [[year cases]] [year (count cases)]))
-       (sort-by first)
-       vec))
-
-(defn weapon-types-by-year
-  "Analyze weapon types broken down by year"
-  [homicides]
-  (->> homicides
-       (group-by :year)
-       (map (fn [[year cases]]
-              [year (analyze-weapon-types cases)]))
-       (into (sorted-map))))
-
 ;; ============================================================================
 ;; OUTPUT FORMATTING
 ;; ============================================================================
@@ -198,35 +141,7 @@
     (println (format "%-3d %-45s %10d" 
                      (inc idx) 
                      (subs (str address) 0 (min 45 (count (str address)))) 
-                     num))) 
-  (println))
-
-(defn format-closure-rates
-  "Format closure rate analysis"
-  [closure-data n]
-  (println "\n" (str/join "=" (repeat 70 "=")))
-  (println (format "NEIGHBORHOOD COMPARISON: CASE CLOSURE RATES (Top %d)" n))
-  (println (str/join "=" (repeat 70 "=")))
-  (println)
-  (println (format "%-40s %8s %8s %12s" "Address/Location" "Total" "Closed" "Rate"))
-  (println (str/join "-" (repeat 72 "-")))
-  (doseq [{:keys [address total closed closure-rate]} (take n closure-data)]
-    (println (format "%-40s %8d %8d %11.2f%%" 
-                     (subs (str address) 0 (min 40 (count (str address)))) 
-                     total closed closure-rate)))
-  (println))
-
-(defn format-yearly-trends
-  "Format yearly trends"
-  [yearly-data]
-  (println "\n" (str/join "=" (repeat 70 "=")))
-  (println "SUPPLEMENTARY: HOMICIDES BY YEAR")
-  (println (str/join "=" (repeat 70 "=")))
-  (println)
-  (println (format "%-8s %12s" "Year" "Homicides"))
-  (println (str/join "-" (repeat 25 "-")))
-  (doseq [[year count] yearly-data]
-    (println (format "%-8s %12d" year count)))
+                     num)))
   (println))
 
 ;; ============================================================================
@@ -257,22 +172,12 @@
         (let [neighborhood-freq (analyze-neighborhoods homicides)]
           (format-neighborhood-analysis neighborhood-freq 20))
         
-        ;; Additional: Closure Rates by Neighborhood
-        (let [closure-data (neighborhood-closure-rate homicides)]
-          (format-closure-rates closure-data 15))
-        
-        ;; Additional: Yearly Trends
-        (let [yearly-data (homicides-by-year homicides)]
-          (format-yearly-trends yearly-data))
-        
         (println "\n" (str/join "=" (repeat 70 "=")))
         (println "Analysis Complete!")
         (println (str/join "=" (repeat 70 "=")))
         (println "\nKey Findings:")
         (println "  • Weapon type distribution shows primary causes of homicides")
         (println "  • Neighborhood analysis identifies high-risk areas")
-        (println "  • Closure rates vary significantly by location")
-        (println "  • Temporal trends show patterns over 2021-2025")
         (println))
       
       (catch Exception e
