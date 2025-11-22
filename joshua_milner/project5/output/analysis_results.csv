@@ -1,0 +1,34 @@
+Baltimore City Homeicide Analysis
+Analysis Date,2025-10-24
+Total Records,20
+
+QUESTION 1,What are the deadliest months for homicides in Baltimore?
+
+Month,Month Number,Homicides,Percentage
+January,1,2,10.0
+February,2,2,10.0
+March,3,1,5.0
+April,4,1,5.0
+May,5,1,5.0
+June,6,1,5.0
+July,7,2,10.0
+August,8,2,10.0
+September,9,2,10.0
+October,10,1,5.0
+November,11,2,10.0
+December,12,3,15.0
+
+KEY INSIGHTS
+Peak Month,December,3
+Lowest Month,March,1
+
+QUESTION 2,Which types of homicide cases are hardest to solve?
+
+Weapon Type,Total Cases,Closed Cases,Clearance Rate (%)
+Firearm,16,3,18.75
+Knife,3,3,100.0
+Blunt Object,1,0,0.0
+
+KEY INSIGHTS
+Lowest Clearance Weapon,Blunt Object,0.0
+Average Clearance Rate,39.583333333333336

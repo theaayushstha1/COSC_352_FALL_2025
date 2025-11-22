@@ -1,0 +1,9 @@
+# Project 5 – Baltimore Crime Data Analysis
+
+This project extends Project 4 by adding CSV and JSON output options.
+Use `./run.sh` to build and run the Docker container.
+
+Example:
+./run.sh --output=csv
+./run.sh --output=json
+

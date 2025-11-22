@@ -1,0 +1,99 @@
+{
+  "analysis_date": "2025-10-25",
+  "total_records": 500,
+  "data_source": "https://chamspage.blogspot.com/",
+
+  "monthly_patterns": [
+    {"month": "JANUARY", "count": 43},
+    {"month": "FEBRUARY", "count": 31},
+    {"month": "MARCH", "count": 47},
+    {"month": "APRIL", "count": 50},
+    {"month": "MAY", "count": 49},
+    {"month": "JUNE", "count": 37},
+    {"month": "JULY", "count": 44},
+    {"month": "AUGUST", "count": 43},
+    {"month": "SEPTEMBER", "count": 40},
+    {"month": "OCTOBER", "count": 31},
+    {"month": "NOVEMBER", "count": 42},
+    {"month": "DECEMBER", "count": 43}
+  ],
+
+  "seasonal_patterns": [
+    {"season": "Spring (Mar-May)", "count": 146},
+    {"season": "Summer (Jun-Aug)", "count": 124},
+    {"season": "Winter (Dec-Feb)", "count": 117},
+    {"season": "Fall (Sep-Nov)", "count": 113}
+  ],
+
+  "district_analysis": [
+    {
+      "district": "Southern",
+      "total_cases": 67,
+      "open_cases": 26,
+      "shootings": 11,
+      "avg_victim_age": 45
+    },
+    {
+      "district": "Eastern",
+      "total_cases": 62,
+      "open_cases": 23,
+      "shootings": 11,
+      "avg_victim_age": 49
+    },
+    {
+      "district": "Southeastern",
+      "total_cases": 60,
+      "open_cases": 21,
+      "shootings": 15,
+      "avg_victim_age": 46
+    },
+    {
+      "district": "Southwestern",
+      "total_cases": 59,
+      "open_cases": 23,
+      "shootings": 9,
+      "avg_victim_age": 48
+    },
+    {
+      "district": "Northwestern",
+      "total_cases": 58,
+      "open_cases": 16,
+      "shootings": 9,
+      "avg_victim_age": 51
+    },
+    {
+      "district": "Western",
+      "total_cases": 56,
+      "open_cases": 18,
+      "shootings": 13,
+      "avg_victim_age": 46
+    },
+    {
+      "district": "Northern",
+      "total_cases": 50,
+      "open_cases": 16,
+      "shootings": 13,
+      "avg_victim_age": 44
+    },
+    {
+      "district": "Central",
+      "total_cases": 48,
+      "open_cases": 21,
+      "shootings": 10,
+      "avg_victim_age": 45
+    },
+    {
+      "district": "Northeastern",
+      "total_cases": 40,
+      "open_cases": 12,
+      "shootings": 16,
+      "avg_victim_age": 48
+    }
+  ],
+
+  "summary": {
+    "total_open_cases": 176,
+    "total_cases": 500,
+    "clearance_rate_pct": 65
+  }
+}

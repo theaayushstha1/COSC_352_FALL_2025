@@ -1,0 +1,413 @@
+{
+  "analysis_metadata": {
+    "total_homicides": 25,
+    "overall_closure_rate": 56.00000000000001,
+    "critical_zones_count": 1
+  },
+  "location_hotspots": [
+    {
+      "location": "1200 block n broadway",
+      "total_cases": 3,
+      "open_cases": 2,
+      "closed_cases": 1,
+      "closure_rate": 33.33333333333333,
+      "cameras_present": 2,
+      "avg_victim_age": 26
+    },
+    {
+      "location": "1700 block e north ave",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 29.5
+    },
+    {
+      "location": "2100 block w pratt st",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 31.5
+    },
+    {
+      "location": "1500 block w north ave",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 43.5
+    },
+    {
+      "location": "3300 block greenmount ave",
+      "total_cases": 2,
+      "open_cases": 0,
+      "closed_cases": 2,
+      "closure_rate": 100,
+      "cameras_present": 2,
+      "avg_victim_age": 33.5
+    },
+    {
+      "location": "800 block w baltimore st",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 23.5
+    },
+    {
+      "location": "2500 block e monument st",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 33.5
+    },
+    {
+      "location": "900 block n carey st",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 46
+    },
+    {
+      "location": "4200 block park heights ave",
+      "total_cases": 2,
+      "open_cases": 1,
+      "closed_cases": 1,
+      "closure_rate": 50,
+      "cameras_present": 1,
+      "avg_victim_age": 39
+    },
+    {
+      "location": "2200 block druid hill ave",
+      "total_cases": 1,
+      "open_cases": 0,
+      "closed_cases": 1,
+      "closure_rate": 100,
+      "cameras_present": 1,
+      "avg_victim_age": 24
+    },
+    {
+      "location": "1100 block e monument st",
+      "total_cases": 1,
+      "open_cases": 0,
+      "closed_cases": 1,
+      "closure_rate": 100,
+      "cameras_present": 0,
+      "avg_victim_age": 39
+    },
+    {
+      "location": "800 block n gay st",
+      "total_cases": 1,
+      "open_cases": 0,
+      "closed_cases": 1,
+      "closure_rate": 100,
+      "cameras_present": 1,
+      "avg_victim_age": 33
+    },
+    {
+      "location": "1400 block w fayette st",
+      "total_cases": 1,
+      "open_cases": 1,
+      "closed_cases": 0,
+      "closure_rate": 0,
+      "cameras_present": 0,
+      "avg_victim_age": 71
+    },
+    {
+      "location": "3400 block w baltimore st",
+      "total_cases": 1,
+      "open_cases": 1,
+      "closed_cases": 0,
+      "closure_rate": 0,
+      "cameras_present": 1,
+      "avg_victim_age": 15
+    },
+    {
+      "location": "1800 block n charles st",
+      "total_cases": 1,
+      "open_cases": 0,
+      "closed_cases": 1,
+      "closure_rate": 100,
+      "cameras_present": 0,
+      "avg_victim_age": 58
+    }
+  ],
+  "age_group_analysis": [
+    {
+      "age_group": "Adults (26-40)",
+      "total_cases": 9,
+      "closed_cases": 6,
+      "open_cases": 3,
+      "closure_rate": 66.66666666666666,
+      "cameras_present": 5
+    },
+    {
+      "age_group": "Middle Age (41-60)",
+      "total_cases": 6,
+      "closed_cases": 5,
+      "open_cases": 1,
+      "closure_rate": 83.33333333333334,
+      "cameras_present": 4
+    },
+    {
+      "age_group": "Young Adults (18-25)",
+      "total_cases": 5,
+      "closed_cases": 3,
+      "open_cases": 2,
+      "closure_rate": 60,
+      "cameras_present": 3
+    },
+    {
+      "age_group": "Minors (Under 18)",
+      "total_cases": 3,
+      "closed_cases": 0,
+      "open_cases": 3,
+      "closure_rate": 0,
+      "cameras_present": 2
+    },
+    {
+      "age_group": "Seniors (61+)",
+      "total_cases": 2,
+      "closed_cases": 0,
+      "open_cases": 2,
+      "closure_rate": 0,
+      "cameras_present": 0
+    }
+  ],
+  "raw_homicide_data": [
+    {
+      "number": "1",
+      "date_died": "01/05/25",
+      "name": "John Smith",
+      "age": "17",
+      "address": "1200 block N Broadway",
+      "camera_present": "camera at intersection",
+      "case_status": "Open"
+    },
+    {
+      "number": "2",
+      "date_died": "01/12/25",
+      "name": "Maria Garcia",
+      "age": "34",
+      "address": "1200 block N Broadway",
+      "camera_present": "None",
+      "case_status": "Closed"
+    },
+    {
+      "number": "3",
+      "date_died": "01/18/25",
+      "name": "James Johnson",
+      "age": "22",
+      "address": "2500 block E Monument St",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "4",
+      "date_died": "02/03/25",
+      "name": "Robert Williams",
+      "age": "45",
+      "address": "2500 block E Monument St",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "5",
+      "date_died": "02/14/25",
+      "name": "Michael Brown",
+      "age": "28",
+      "address": "800 block W Baltimore St",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "6",
+      "date_died": "03/07/25",
+      "name": "David Jones",
+      "age": "19",
+      "address": "800 block W Baltimore St",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "7",
+      "date_died": "03/22/25",
+      "name": "Christopher Davis",
+      "age": "56",
+      "address": "1500 block W North Ave",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "8",
+      "date_died": "04/10/25",
+      "name": "Daniel Miller",
+      "age": "31",
+      "address": "1500 block W North Ave",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "9",
+      "date_died": "05/15/25",
+      "name": "Matthew Wilson",
+      "age": "42",
+      "address": "3300 block Greenmount Ave",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "10",
+      "date_died": "06/20/25",
+      "name": "Anthony Moore",
+      "age": "25",
+      "address": "3300 block Greenmount Ave",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "11",
+      "date_died": "07/04/25",
+      "name": "Donald Taylor",
+      "age": "63",
+      "address": "900 block N Carey St",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "12",
+      "date_died": "07/18/25",
+      "name": "Mark Anderson",
+      "age": "29",
+      "address": "900 block N Carey St",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "13",
+      "date_died": "08/09/25",
+      "name": "Steven Thomas",
+      "age": "38",
+      "address": "1700 block E North Ave",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "14",
+      "date_died": "08/22/25",
+      "name": "Paul Jackson",
+      "age": "21",
+      "address": "1700 block E North Ave",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "15",
+      "date_died": "09/12/25",
+      "name": "Andrew White",
+      "age": "47",
+      "address": "2100 block W Pratt St",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "16",
+      "date_died": "09/25/25",
+      "name": "Joshua Harris",
+      "age": "16",
+      "address": "2100 block W Pratt St",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "17",
+      "date_died": "10/08/25",
+      "name": "Kenneth Martin",
+      "age": "52",
+      "address": "4200 block Park Heights Ave",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "18",
+      "date_died": "10/15/25",
+      "name": "Kevin Thompson",
+      "age": "26",
+      "address": "4200 block Park Heights Ave",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "19",
+      "date_died": "11/03/25",
+      "name": "Brian Garcia",
+      "age": "33",
+      "address": "800 block N Gay St",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "20",
+      "date_died": "11/20/25",
+      "name": "George Martinez",
+      "age": "71",
+      "address": "1400 block W Fayette St",
+      "camera_present": "None",
+      "case_status": "Open"
+    },
+    {
+      "number": "21",
+      "date_died": "12/05/25",
+      "name": "Edward Robinson",
+      "age": "24",
+      "address": "2200 block Druid Hill Ave",
+      "camera_present": "camera at intersection",
+      "case_status": "Closed"
+    },
+    {
+      "number": "22",
+      "date_died": "12/18/25",
+      "name": "Ronald Clark",
+      "age": "39",
+      "address": "1100 block E Monument St",
+      "camera_present": "None",
+      "case_status": "Closed"
+    },
+    {
+      "number": "23",
+      "date_died": "01/10/25",
+      "name": "Timothy Rodriguez",
+      "age": "15",
+      "address": "3400 block W Baltimore St",
+      "camera_present": "camera at intersection",
+      "case_status": "Open"
+    },
+    {
+      "number": "24",
+      "date_died": "02/20/25",
+      "name": "Jason Lewis",
+      "age": "58",
+      "address": "1800 block N Charles St",
+      "camera_present": "None",
+      "case_status": "Closed"
+    },
+    {
+      "number": "25",
+      "date_died": "03/15/25",
+      "name": "Jeffrey Lee",
+      "age": "27",
+      "address": "1200 block N Broadway",
+      "camera_present": "camera at intersection",
+      "case_status": "Open"
+    }
+  ]
+}

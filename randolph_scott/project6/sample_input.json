@@ -1,0 +1,5 @@
+[
+  {"id": 1, "payload": "this is the first sample"},
+  {"id": 2, "payload": "another input to process"},
+  {"id": 3, "payload": ""}
+]

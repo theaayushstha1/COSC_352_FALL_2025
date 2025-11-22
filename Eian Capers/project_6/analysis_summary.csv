@@ -1,0 +1,33 @@
+Baltimore Homicide Analysis Report
+Total Records,49
+
+QUESTION 1: What percentage of homicide cases with surveillance cameras get closed compared to cases without cameras?
+
+Camera Analysis
+Category,Total Cases,Cases Closed,Closure Rate (%)
+WITH cameras,8,4,50.00
+WITHOUT cameras,41,11,26.83
+Difference (percentage points),,,23.17
+
+QUESTION 2: What are the most dangerous months in Baltimore and what is the average victim age by month?
+
+Monthly Analysis
+Month,Homicides,Average Victim Age
+January,17,33.8
+March,15,34.7
+February,14,36.2
+October,1,1.0
+November,1,25.0
+December,1,62.0
+April,0,N/A
+May,0,N/A
+June,0,N/A
+July,0,N/A
+August,0,N/A
+September,0,N/A
+
+Top Dangerous Months
+Rank,Month,Homicides
+1,January,17
+2,March,15
+3,February,14

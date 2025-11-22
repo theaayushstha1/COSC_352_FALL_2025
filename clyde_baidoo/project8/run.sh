@@ -1,0 +1,116 @@
+#!/bin/bash
+set -e
+
+echo "╔════════════════════════════════════════╗"
+echo "║  Baltimore Homicides Analysis         ║"
+echo "╚════════════════════════════════════════╝"
+echo ""
+
+if ! command -v docker &> /dev/null; then
+    echo "Error: Docker not installed"
+    exit 1
+fi
+
+if [ ! -f "baltimore_homicides_combined.csv" ]; then
+    echo "Creating sample data..."
+    cat > baltimore_homicides_combined.csv << 'EOF'
+Date,VictimName,VictimAge,VictimRace,VictimGender,Weapon,Neighborhood,District,Disposition
+2007-01-15,John Smith,25,Black,Male,Handgun,Downtown,Central,Closed
+2007-02-20,Michael Brown,32,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2007-03-10,Robert Johnson,28,Black,Male,Knife,Sandtown-Winchester,Western,Open
+2007-04-08,Lisa Jones,29,Black,Female,Handgun,Downtown,Central,Closed
+2008-01-05,William Davis,45,White,Male,Rifle,Canton,Eastern,Closed
+2008-04-12,James Wilson,19,Black,Male,Handgun,Westport,Southern,Closed
+2008-06-22,David Martinez,22,Hispanic,Male,Handgun,Highlandtown,Eastern,Closed
+2008-07-19,Mary Williams,35,Black,Female,Knife,Cherry Hill,Southern,Open
+2009-02-14,Richard Anderson,31,Black,Male,Blunt Object,Penn North,Western,Open
+2009-05-08,Joseph Taylor,27,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2009-08-19,Thomas Thomas,38,Black,Male,Handgun,Brooklyn,Southern,Closed
+2009-10-25,Jennifer Garcia,27,White,Female,Blunt Object,Hampden,Northern,Closed
+2010-01-30,Charles Jackson,24,Black,Male,Handgun,Downtown,Central,Closed
+2010-03-15,Christopher White,29,Black,Male,Knife,Sandtown-Winchester,Western,Closed
+2010-05-12,Linda Martinez,31,Hispanic,Female,Handgun,Highlandtown,Eastern,Closed
+2010-07-04,Daniel Harris,35,Black,Male,Handgun,Edmondson Village,Southwestern,Open
+2011-02-11,Matthew Martin,26,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2011-05-20,Anthony Thompson,41,White,Male,Rifle,Hampden,Northern,Closed
+2011-08-17,Barbara Rodriguez,24,Black,Female,Handgun,Penn North,Western,Closed
+2011-09-08,Mark Garcia,23,Hispanic,Male,Handgun,Greenmount East,Eastern,Closed
+2012-01-17,Donald Martinez,33,Black,Male,Handgun,Belair-Edison,Northeastern,Closed
+2012-04-25,Steven Rodriguez,28,Black,Male,Handgun,Downtown,Central,Closed
+2012-08-14,Paul Wilson,30,Black,Male,Knife,Cherry Hill,Southern,Open
+2012-11-23,Susan Wilson,33,Black,Female,Knife,Downtown,Central,Open
+2013-03-22,Andrew Lee,27,Black,Male,Handgun,Penn North,Western,Closed
+2013-06-30,Joshua Walker,34,Black,Male,Handgun,Clifton-Berea,Eastern,Closed
+2013-10-05,Kenneth Hall,25,Black,Male,Handgun,Sandtown-Winchester,Western,Closed
+2013-12-30,Jessica Anderson,26,Black,Female,Handgun,Cherry Hill,Southern,Closed
+2014-01-12,Kevin Allen,29,Black,Male,Handgun,Downtown,Central,Closed
+2014-04-18,Brian Young,31,Black,Male,Blunt Object,Cherry Hill,Southern,Closed
+2014-07-26,George Hernandez,26,Black,Male,Handgun,Westport,Southern,Open
+2014-09-05,Sarah Thomas,28,Black,Female,Handgun,Sandtown-Winchester,Western,Closed
+2015-02-08,Edward King,24,Black,Male,Handgun,Belair-Edison,Northeastern,Closed
+2015-05-15,Ronald Wright,37,Black,Male,Handgun,Highlandtown,Eastern,Closed
+2015-09-21,Timothy Lopez,28,Hispanic,Male,Knife,Greenmount East,Eastern,Closed
+2015-11-11,Karen Taylor,32,Black,Female,Blunt Object,Westport,Southern,Closed
+2016-01-03,Jason Hill,32,Black,Male,Handgun,Downtown,Central,Closed
+2016-03-19,Jeffrey Scott,25,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2016-06-27,Ryan Green,29,Black,Male,Handgun,Penn North,Western,Closed
+2016-12-18,Nancy Moore,29,White,Female,Rifle,Canton,Eastern,Open
+2017-02-14,Gary Adams,34,Black,Male,Handgun,Sandtown-Winchester,Western,Open
+2017-05-22,Nicholas Baker,27,Black,Male,Rifle,Canton,Eastern,Closed
+2017-08-30,Eric Gonzalez,30,Hispanic,Male,Handgun,Highlandtown,Eastern,Closed
+2017-10-24,Betty Jackson,27,Black,Female,Handgun,Belair-Edison,Northeastern,Closed
+2018-01-10,Stephen Nelson,26,Black,Male,Handgun,Downtown,Central,Closed
+2018-04-17,Jacob Carter,31,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2018-07-25,Larry Mitchell,28,Black,Male,Knife,Westport,Southern,Closed
+2018-09-30,Helen White,34,Black,Female,Handgun,Downtown,Central,Closed
+2019-02-05,Frank Perez,35,Black,Male,Handgun,Belair-Edison,Northeastern,Open
+2019-05-13,Scott Roberts,24,Black,Male,Handgun,Penn North,Western,Closed
+2019-08-20,Raymond Turner,29,Black,Male,Handgun,Sandtown-Winchester,Western,Closed
+2019-11-06,Dorothy Harris,25,Black,Female,Knife,Cherry Hill,Southern,Closed
+2020-01-28,Gregory Phillips,33,Black,Male,Handgun,Downtown,Central,Closed
+2020-04-06,Jerry Campbell,27,White,Male,Rifle,Hampden,Northern,Closed
+2020-07-14,Dennis Parker,30,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2020-12-13,Margaret Martin,30,Black,Female,Handgun,Penn North,Western,Open
+2021-02-19,Walter Evans,26,Black,Male,Handgun,Clifton-Berea,Eastern,Closed
+2021-05-27,Patrick Edwards,32,Black,Male,Blunt Object,Westport,Southern,Open
+2021-09-03,Peter Collins,28,Black,Male,Handgun,Downtown,Central,Closed
+2021-10-19,Ruth Thompson,28,Hispanic,Female,Handgun,Highlandtown,Eastern,Closed
+2022-01-15,Harold Stewart,25,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2022-04-23,Douglas Sanchez,34,Hispanic,Male,Handgun,Highlandtown,Eastern,Closed
+2022-08-01,Henry Morris,29,Black,Male,Knife,Penn North,Western,Closed
+2022-11-25,Sharon Garcia,31,Black,Female,Handgun,Sandtown-Winchester,Western,Closed
+2023-02-10,Carl Rogers,31,Black,Male,Handgun,Sandtown-Winchester,Western,Open
+2023-05-18,Arthur Reed,27,Black,Male,Handgun,Belair-Edison,Northeastern,Closed
+2023-08-26,Roger Cook,33,Black,Male,Handgun,Downtown,Central,Closed
+2023-12-02,Michelle Rodriguez,26,Black,Female,Blunt Object,Downtown,Central,Closed
+2024-01-07,Joe Morgan,26,Black,Male,Handgun,Cherry Hill,Southern,Closed
+2024-04-14,Albert Bell,30,Black,Male,Rifle,Canton,Eastern,Closed
+2024-07-22,Jonathan Murphy,28,Black,Male,Handgun,Westport,Southern,Closed
+2024-10-08,Laura Lee,33,Black,Female,Handgun,Cherry Hill,Southern,Open
+EOF
+    echo "✓ Sample CSV created (72 records)"
+    echo ""
+fi
+
+echo "Building Docker image..."
+docker build -t baltimore-homicides .
+
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "✓ Build successful!"
+    echo ""
+    echo "Running analysis..."
+    echo "========================================"
+    echo ""
+   
+    docker run --rm -v "$(pwd):/data" baltimore-homicides /data/baltimore_homicides_combined.csv
+    
+    echo ""
+    echo "========================================"
+    echo "To analyze another file:"
+    echo "  docker run --rm -v \$(pwd):/data baltimore-homicides /data/yourfile.csv"
+    echo ""
+else
+    echo "Build failed!"
+    exit 1
+fi

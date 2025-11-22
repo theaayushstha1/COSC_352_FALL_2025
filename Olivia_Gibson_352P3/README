@@ -1,0 +1,92 @@
+# Project 2 – HTML Table Extractor
+
+This project automates the extraction of HTML tables from web pages using Docker and a Python script. It downloads HTML content from a list of URLs, parses the first table found on each page, and saves the result as a CSV file. The entire workflow is containerized for consistency and reproducibility across systems.
+
+## 📁 Folder Structure
+
+```
+352P3/
+├── Dockerfile                      # Builds the Docker image
+├── extract_tables.py              # Python script to extract HTML tables
+├── extract_tables.sh              # Bash script to automate the workflow
+├── sample.html                    # Sample HTML file for local testing
+├── csv_output/                    # Output folder for extracted CSVs
+├── *.html                         # Downloaded HTML files
+```
+
+## 🛠 Requirements
+
+- Docker installed and running
+- Git Bash (Windows) or any Bash-compatible shell
+- Internet connection (for downloading live HTML pages)
+
+## 🚀 How to Run
+
+Open Git Bash in the project folder and run:
+
+```bash
+bash extract_tables.sh "https://www.worldometers.info/world-population/population-by-country/,https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/,https://www.basketball-reference.com/leagues/NBA_2023_standings.html,https://en.wikipedia.org/wiki/Comparison_of_programming_languages"
+```
+
+This will:
+1. Download each HTML page
+2. Save it locally with a sanitized filename
+3. Run the Docker container to extract the first table
+4. Save the table as a CSV in `csv_output/`
+
+## 🧪 Sample Test
+
+To test the pipeline locally without downloading from the web:
+
+```bash
+bash extract_tables.sh "file://$(pwd)/sample.html"
+```
+
+This will extract a table from `sample.html` and save it to `csv_output/sample_table1.csv`.
+
+## 🧹 File Naming Convention
+
+Each URL is converted into a safe filename using underscores. For example:
+
+```
+URL:
+https://www.worldometers.info/world-population/population-by-country/
+
+→ HTML:
+worldometers_info_world_population_population_by_country__.html
+
+→ CSV:
+worldometers_info_world_population_population_by_country__table1.csv
+```
+
+## ⚙️ How It Works
+
+- `extract_tables.sh` takes a comma-separated list of URLs
+- Each URL is downloaded using `curl`
+- Filenames are sanitized using `sed`
+- Docker runs the Python script inside a container
+- The first `<table>` from each HTML file is extracted
+- Output is saved to `csv_output/` with `_table1.csv` suffix
+
+## 🧑‍🏫 For Grading
+
+All required files are included:
+- `extract_tables.sh` – main automation script
+- `extract_tables.py` – table extraction logic
+- `Dockerfile` – builds the container
+- `sample.html` – test input
+- `csv_output/` – output folder (can be emptied before grading)
+
+To test:
+1. Open Git Bash in the folder
+2. Run the script with sample or live URLs
+3. Check `csv_output/` for results
+
+No additional setup is required. The script will create `csv_output/` automatically and handle all downloads and processing.
+
+## ✅ Notes
+
+- Only the **first table** on each page is extracted
+- The script is designed to be portable and reproducible
+- Works on Windows (via Git Bash), macOS, and Linux
+- Docker ensures consistent behavior across environments
