@@ -1,0 +1,52 @@
+#!/bin/bash
+
+OUTPUT_FILE="baltimore_homicides_combined.csv"
+
+echo "Generating sample data..."
+
+cat > $OUTPUT_FILE << 'EOF'
+Date,District,Neighborhood,Age,Gender,Race,Cause,Disposition
+2021-01-05,Eastern,Canton,32,Male,Black,Shooting,Open/No arrest
+2021-02-14,Western,Downtown,28,Male,Black,Shooting,Closed by arrest
+2021-03-22,Central,Mount Vernon,45,Male,Black,Stabbing,Open/No arrest
+2021-04-18,Northwestern,Hampden,24,Male,Black,Shooting,Open/No arrest
+2021-05-25,Southern,Federal Hill,35,Male,White,Shooting,Closed by arrest
+2021-06-30,Eastern,Fells Point,29,Male,Black,Shooting,Open/No arrest
+2021-07-15,Western,Downtown,22,Male,Black,Shooting,Closed by arrest
+2021-08-20,Northern,Roland Park,41,Male,White,Blunt Force,Closed/No prosecution
+2021-09-10,Southeastern,Cherry Hill,26,Male,Black,Shooting,Open/No arrest
+2021-10-05,Central,Downtown,31,Male,Black,Shooting,Open/No arrest
+2021-11-12,Eastern,Canton,27,Male,Black,Shooting,Closed by arrest
+2021-12-24,Western,Downtown,33,Male,Black,Shooting,Open/No arrest
+2022-01-08,Northwestern,Hampden,29,Male,Hispanic,Shooting,Open/No arrest
+2022-02-16,Southern,Brooklyn,24,Male,Black,Shooting,Closed by arrest
+2022-03-22,Eastern,Highlandtown,36,Male,Black,Shooting,Open/No arrest
+2022-04-30,Central,Mount Vernon,42,Female,Black,Stabbing,Closed by arrest
+2022-05-18,Western,Downtown,25,Male,Black,Shooting,Open/No arrest
+2022-06-25,Northern,Roland Park,28,Male,Black,Shooting,Open/No arrest
+2022-07-14,Southeastern,Cherry Hill,31,Male,Black,Shooting,Closed by arrest
+2022-08-22,Eastern,Canton,23,Male,Black,Shooting,Open/No arrest
+2022-09-30,Western,Downtown,37,Male,Black,Shooting,Open/No arrest
+2022-10-18,Central,Downtown,29,Male,Black,Shooting,Closed by arrest
+2022-11-25,Northwestern,Cedonia,34,Male,Black,Shooting,Open/No arrest
+2022-12-31,Southern,Federal Hill,26,Male,White,Shooting,Closed by arrest
+2023-01-15,Eastern,Fells Point,32,Male,Black,Shooting,Open/No arrest
+2023-02-20,Western,Downtown,21,Male,Black,Shooting,Open/No arrest
+2023-03-28,Central,Mount Vernon,38,Male,Black,Stabbing,Closed by arrest
+2023-04-10,Northern,Roland Park,44,Male,Asian,Blunt Force,Closed/No prosecution
+2023-05-18,Southeastern,Cherry Hill,27,Male,Black,Shooting,Open/No arrest
+2023-06-22,Eastern,Canton,30,Male,Black,Shooting,Closed by arrest
+2023-07-30,Western,Downtown,25,Male,Black,Shooting,Open/No arrest
+2023-08-15,Northwestern,Hampden,33,Male,Hispanic,Shooting,Open/No arrest
+2023-09-20,Southern,Brooklyn,22,Male,Black,Shooting,Closed by arrest
+2023-10-28,Central,Downtown,29,Male,Black,Shooting,Open/No arrest
+2023-11-10,Eastern,Highlandtown,36,Male,Black,Shooting,Open/No arrest
+2023-12-25,Western,Downtown,31,Male,Black,Shooting,Closed by arrest
+2024-01-12,Central,Mount Vernon,27,Male,Black,Shooting,Open/No arrest
+2024-02-18,Northwestern,Hampden,24,Male,Black,Shooting,Open/No arrest
+2024-03-25,Eastern,Canton,35,Male,Black,Shooting,Closed by arrest
+2024-04-30,Southern,Federal Hill,28,Male,White,Stabbing,Closed by arrest
+EOF
+
+echo "Created: $OUTPUT_FILE"
+echo "Records: $(wc -l < $OUTPUT_FILE)"
