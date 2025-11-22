@@ -9,9 +9,9 @@ This project is a small analytical tool written in **Haskell** (pure functional 
 ##  How to Run
 1. Ensure `Main.hs`, `Dockerfile`, and `baltimore_homicides_combined.csv` are in the same directory.  
 2. Build the Docker image:  
-   docker build -t baltimore-analysis .  
+   "docker build -t baltimore-analysis ."  
 3. Run the container:  
-   docker run baltimore-analysis
+   "docker run baltimore-analysis"
 
 ## 🔍 Interesting Findings
 Running the tool on the dataset reveals:  
