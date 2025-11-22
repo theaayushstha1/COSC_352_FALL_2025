@@ -1,18 +1,22 @@
-Baltimore Homicides Analysis Tool
-This is a small analytical tool written in Haskell (pure functional style) to analyze the Baltimore homicides dataset from the provided CSV.
-Chosen Analyses
+# Baltimore Homicides Analysis Tool
 
-Homicides per year: Counts the number of homicides grouped by year.
-Distribution of homicide types: Classifies homicides into "Shooting", "Stabbing", or "Other" based on keywords in the notes field and counts the distribution.
+This project is a small analytical tool written in **Haskell** (pure functional style) to analyze the Baltimore homicides dataset from the provided CSV file.
 
-How to Run
+## 📊 Chosen Analyses
+**Homicides per Year:** Counts the total number of homicides grouped by year.  
+**Distribution of Homicide Types:** Classifies each homicide as Shooting, Stabbing, or Other based on keywords in the notes field and counts the distribution.
 
-Place Main.hs, Dockerfile, and baltimore_homicides_combined.csv in the same directory.
-Build the Docker image:textdocker build -t baltimore-analysis .
-Run the container:textdocker run baltimore-analysis
+## 🚀 How to Run
+1. Ensure `Main.hs`, `Dockerfile`, and `baltimore_homicides_combined.csv` are in the same directory.  
+2. Build the Docker image:  
+   docker build -t baltimore-analysis .  
+3. Run the container:  
+   docker run baltimore-analysis
 
-Interesting Findings
-Based on running the program with the dataset:
+## 🔍 Interesting Findings
+Running the tool on the dataset reveals:  
+- Homicide totals vary significantly by year, with some years showing notable peaks (2020 exceeds 300 cases; run the tool for exact CSV-based totals).  
+- **Shootings are the most common homicide type**, by a large margin.  
+- **Stabbings are far less frequent**, and **Other** includes blunt-force trauma, arson, and additional non-categorized causes.
 
-The number of homicides varies by year, with peaks in certain years (e.g., 2020 had over 300 based on partial data, but run the program for exact counts from the full CSV).
-Shootings dominate the types, comprising the majority of cases, while stabbings are less common, and "Other" includes blunt force, arson, etc.
+Feel free to extend or customize the analysis as needed.
