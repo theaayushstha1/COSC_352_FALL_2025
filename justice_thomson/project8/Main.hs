@@ -5,6 +5,7 @@ import Data.Function (on)
 import Data.Char (toLower)
 import System.IO (readFile)
 import Data.Maybe (catMaybes)
+import Data.Ord (comparing)
 
 data Homicide = Homicide {
   no :: String,
