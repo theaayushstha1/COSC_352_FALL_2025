@@ -18,5 +18,3 @@ The output files will be created in the output/ directory:
 Differences between Scala and Go:
 Scala is a functional and object-oriented language that runs on the JVM. It uses advanced features like pattern matching, immutability, and monads for error handling. Go is a procedural language with built-in concurrency, simple syntax, and fast native compilation. Go handles errors explicitly and is easier to containerize due to its lightweight runtime.
 
-
-
