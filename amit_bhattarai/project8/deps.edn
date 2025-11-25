@@ -1,0 +1,7 @@
+{
+ :paths ["src"]
+ :deps  {org.clojure/clojure {:mvn/version "1.11.1"}
+         org.clojure/data.csv {:mvn/version "1.0.1"}}
+ :aliases
+ {:run {:main-opts ["-m" "project8.core"]}}
+}

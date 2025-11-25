@@ -1,0 +1,20 @@
+FROM clojure:temurin-21-lein-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Copy project files
+COPY project.clj /app/
+COPY src /app/src/
+
+# Download dependencies
+RUN lein deps
+
+# Copy the CSV file (will be provided at runtime)
+COPY baltimore_homicides_combined.csv /app/
+
+# Compile the application
+RUN lein uberjar
+
+# Run the analyzer
+CMD ["java", "-jar", "target/uberjar/baltimore-homicides-0.1.0-standalone.jar"]

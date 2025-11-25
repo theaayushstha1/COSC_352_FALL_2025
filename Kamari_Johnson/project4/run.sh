@@ -14,5 +14,3 @@ fi
 echo "Running Docker container..."
 docker run --rm $IMAGE_NAME
 echo "Done."
-
-

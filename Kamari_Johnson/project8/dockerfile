@@ -1,0 +1,6 @@
+FROM clojure:latest
+
+WORKDIR /app
+COPY . .
+
+CMD ["clojure", "-M", "-m", "homicide-tool.core", "-cp", "src"]
