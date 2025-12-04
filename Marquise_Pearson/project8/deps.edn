@@ -1,0 +1,9 @@
+{
+  :paths ["src" "resources"]
+
+  :deps  {org.clojure/clojure {:mvn/version "1.11.3"}
+          org.clojure/data.csv {:mvn/version "1.1.0"}}
+
+  :aliases
+  {:run {:main-opts ["-m" "bmore-homicides.core"]}}
+}
