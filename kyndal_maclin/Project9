@@ -1,0 +1,100 @@
+Project 9 - Mojo Based Search Engine
+Dependencies
+•	Mojo 0.25.7 (or compatible version)
+•	Python with PyPDF2 library
+Installation
+bash
+pip install PyPDF2
+Usage
+bash
+mojo pdfsearch.mojo <pdf_file> <query> <top_n>
+Example Command
+bash
+mojo pdfsearch.mojo morgan_2030.pdf "research innovation" 3
+Implementation Details
+Algorithm Overview
+The search engine implements TF-IDF (Term Frequency-Inverse Document Frequency) ranking with the following components:
+1. Text Extraction
+•	It extracts text from PDF files using PyPDF2
+•	Splits text into passages (paragraphs separated by double newlines)
+•	Filters passages to minimum 50 characters
+•	Tracks page numbers for each passage
+2. Tokenization
+•	Converts text to lowercase
+•	Extracts words with 3+ characters using regex pattern \b\w{3,}\b
+•	Removes punctuation and special characters
+3. TF (Term Frequency) Calculation
+TF = 1 + log(term_count)  if term appears in passage
+TF = 0                     otherwise
+•	Uses logarithmic scaling to diminish returns for very frequent terms
+•	Prevents longer documents from dominating just by word count
+4. IDF (Inverse Document Frequency) Calculation
+IDF = log(total_passages / passages_containing_term)
+•	Gives higher weight to rare terms
+•	Common words (appearing in many passages) get lower scores
+•	Ensures term rarity contributes to relevance
+5. Length Normalization
+Final Score = (TF * IDF) / sqrt(passage_length)
+•	Divides by square root of passage length (in tokens)
+•	Prevents longer passages from having unfair advantage
+•	Ensures relevance per unit of text
+6. Ranking
+•	Passages sorted by score in descending order
+•	Top N results returned
+•	Results with score ≤ 0.0 are filtered out
+Key Features
+TF-IDF Scoring - Sophisticated relevance ranking
+Term Frequency - Logarithmically scaled term counts
+Term Rarity - Inverse document frequency weighting
+Length Normalization - Fair comparison across passage sizes
+Multi-word Queries - Handles queries with multiple keywords
+Page Tracking - Shows which page each result is from
+Text Snippets - Displays first 250 characters of each result
+Sample Output
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    MOJO PDF SEARCH ENGINE                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+================================================================================
+Extracting text from PDF: morgan_2030.pdf
+================================================================================
+Total pages: 40
+Extracted 39 passages
+
+================================================================================
+Results for: "research innovation"
+================================================================================
+Query terms: ['research', 'innovation']
+
+[1] Score: 0.1735 (page 26)
+Human resource planning is essential to the implementation of this strategic plan and will profoundly influence the achievement of its stated objectives. At Morgan State University, our faculty remain at the center of our academic enterprise. The ...
+
+[2] Score: 0.1723 (page 6)
+Statement VISION Morgan State University is the premier public urban research university in Maryland, known for excellence in teaching, intensive research, effective public service and community engagement. Morgan prepares diverse and competit...
+
+[3] Score: 0.1472 (page 5)
+A SEARCH FOR SOLUTIONS TO SOCIETY'S MOST PRESSING CHALLENGES Today, our sprawling campus provides indisputable evidence of a thriving living-learning environment populated by students, faculty and staff collectively committed to intellectual di...
+
+================================================================================
+Search completed successfully!
+================================================================================
+Testing
+Test Case 1: "research innovation"
+•	Query: Multi-word query about research and innovation
+•	Expected: Passages mentioning research activities
+•	Result:  Returns 3 relevant passages from pages 26, 6, and 5
+Test Case 2: "gradient descent optimization"
+•	Query: Technical terms from ML/optimization
+•	Expected: Returns passages about optimization techniques
+•	Result: Returns relevant technical passages
+Design Decisions
+Why Python Integration?
+•	Mojo 0.25.7 has compatibility issues with complex struct types
+•	Python provides robust PDF processing (PyPDF2)
+•	Python's regex and math libraries are well-tested
+•	Allows focus on algorithm implementation rather than type system issues
+Why This TF-IDF Formula?
+•	Logarithmic TF: Prevents term frequency from dominating scores
+•	IDF weighting: Ensures rare, specific terms matter more
+•	Length normalization: √length provides balanced normalization (not too aggressive)
+
