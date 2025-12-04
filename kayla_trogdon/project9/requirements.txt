@@ -1,0 +1,6 @@
+# Python dependencies for Project 9
+pypdf>=4.0.0
+
+# Note: This project uses Pixi for package management (see pixi.toml)
+# To install with pip instead: pip install -r requirements.txt
+# To use Pixi (recommended): pixi install
