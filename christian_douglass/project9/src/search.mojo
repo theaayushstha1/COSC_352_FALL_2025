@@ -5,6 +5,19 @@
 
 from sys import argv
 
+# NOTE ON PERFORMANCE / SIMD PLAN
+# -------------------------------
+# The current implementation uses a straightforward scalar tokenizer
+# implemented in `tokenize`. On a full Mojo toolchain, this function is
+# the primary hotspot we would target for SIMD acceleration:
+#   - Load slices of the input string into SIMD vectors (e.g. u8 lanes).
+#   - Convert ASCII A–Z to lowercase in parallel.
+#   - Classify characters (alphanumeric vs separator) in parallel.
+# A SIMD-accelerated `tokenize_simd` would produce the same tokens but
+# process many characters per instruction. We could then benchmark
+# `tokenize` (scalar) vs `tokenize_simd` (SIMD) over all pages in
+# `pages.txt` and report the speedup factor in the README.
+
 fn to_lower(s: String) -> String:
     var out = String()
     for c in s:
@@ -12,7 +25,10 @@ fn to_lower(s: String) -> String:
     return out
 
 fn tokenize(text: String) -> List[String]:
-    # Very simple whitespace tokenizer
+    # Scalar baseline tokenizer.
+    # On a SIMD-enabled Mojo toolchain, this would be the reference
+    # implementation we compare against a SIMD-accelerated version
+    # that lowercases and classifies characters in vectorized chunks.
     var tokens = List[String]()
     var current = String()
     for c in text:

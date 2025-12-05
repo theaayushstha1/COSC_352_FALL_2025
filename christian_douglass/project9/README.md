@@ -44,6 +44,24 @@ mojo run search.mojo ../pages.txt "climate change goals" 5
 
 This will output the top 5 most relevant pages, including their page numbers, scores, and short surrounding snippets.
 
+## Performance and SIMD Plan
+
+The current implementation uses a clear **scalar baseline** for text processing, which is sufficient for correctness and ranking quality. On a full Mojo installation, the main performance hotspot is the `tokenize` function in `src/search.mojo`, which walks each page's text character by character.
+
+To satisfy the SIMD performance requirement, the next step would be to introduce a `tokenize_simd` variant that:
+
+- Loads the input string in fixed-size chunks into SIMD vector types.
+- Converts ASCII `A–Z` to lowercase in parallel within each vector.
+- Classifies characters as alphanumeric vs separators in parallel, to decide where tokens begin and end.
+
+Both `tokenize` (scalar) and `tokenize_simd` would produce identical token lists for each page. We can then benchmark them on the actual `pages.txt` file by timing a full pass over all pages:
+
+1. Time the scalar baseline by running `tokenize` over every page and recording the total elapsed time.
+2. Time the SIMD version by running `tokenize_simd` over every page with the same input.
+3. Compute and report the speedup factor, e.g. `scalar_time / simd_time`, in this README.
+
+This design keeps the Mojo standard-library based search logic unchanged while providing a clear and measurable path to SIMD acceleration for text processing.
+
 ## Files
 
 - `src/pdf_extract.py` – Python helper that reads a PDF and writes a `pages.txt` file with one cleaned page of text per line.
