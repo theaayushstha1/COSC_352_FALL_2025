@@ -24,14 +24,14 @@ chmod +x pdfsearch.py
 **Option 1** (running with python script which implements core search algorithms) (pdfsearch.py)
 ```bash
 # In the terminal, run the code by:
-python pdfsearch.py <pdf_filename.pdf> <query> <number_of_results>
+python pdfsearch.py <pdf_filename> <query> <number_of_results>
 ```
 
 ### Arguments
 
-- `<pdf_file>` - Path to the PDF file to search
+- `<pdf_filename>` - Path to the PDF file to search
 - `<query>` - Search string (use quotes for multi-word queries)
-- `<num_results>` - Number of top results to return
+- `<number_of_results>` - Number of top results to return
 
 ### Examples
 
@@ -66,7 +66,7 @@ Each result shows:
 - **Page**: Page number where passage appears
 - **Snippet**: Preview of the relevant text (up to 200 characters)
 
-## How It Works
+## Mode of Operation
 
 ### TF-IDF Ranking Algorithm
 
