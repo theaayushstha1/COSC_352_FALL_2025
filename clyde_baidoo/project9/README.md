@@ -1,6 +1,8 @@
 # PDF Search Tool
 **Option 1** (running with python script which implements core search algorithms) (pdfsearch.py)
 
+**PLEASE VISIT READme.md for Option 2 which runs with mojo programming language**
+
 CLI search engine for PDF documents using;
 - word/passage querying 
 - ranks query results by relevance using the TF-IDF algorithm.
