@@ -1,0 +1,60 @@
+# Project 9 – PDF Search Tool
+
+**Author:** Aayush Shrestha  
+**Course:** COSC 352 – Organization of Programming Languages  
+**Institution:** Morgan State University
+
+## Overview
+
+A command-line tool that searches the Morgan 2030 PDF for relevant passages using TF-IDF ranking [memory:15]. Core search is implemented in Mojo with Python handling PDF extraction. Returns top N passages with scores and page numbers.
+
+## Features
+
+- CLI: `./pdfsearch document.pdf "query" N`
+- TF-IDF ranking with stopword filtering and length normalization
+- Scalar baseline and SIMD-optimized NumPy version
+- Benchmark script comparing performance
+
+## Files
+
+- `Morgan2030.pdf` – Input document
+- `pdf_extractor.py` – Extracts passages to JSON (Python + PyPDF2)
+- `pdfsearch_core.py` – Scalar TF-IDF search
+- `pdfsearch_simd_core.py` – SIMD version using NumPy vectorization
+- `pdfsearch.mojo` – Mojo CLI wrapper
+- `pdfsearch_simd_cli.py` / `pdfsearch_simd` – SIMD CLI
+- `benchmark.sh` – Performance comparison script
+- `requirements.txt` – Dependencies (NumPy, PyPDF2)
+
+## Setup
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+
+## Usage
+
+Extract passages:
+python3 pdf_extractor.py Morgan2030.pdf Morgan2030.json
+
+Run searches:
+./pdfsearch Morgan2030.pdf "strategic planning" 5
+./pdfsearch_simd Morgan2030.pdf "strategic planning" 5
+
+text
+
+Benchmark:
+./benchmark.sh
+
+
+## TF-IDF Implementation
+
+- Tokenization: lowercase, alphanumeric only, stopwords removed
+- Term frequency: sublinear scaling (1 + log(tf))
+- Inverse document frequency: log(N/df) where df is document frequency
+- Length normalization: divide by sqrt(passage_length)
+
+## Performance
+
+SIMD version uses NumPy vectorized operations for token counting and scoring. Benchmark compares wall-clock time over multiple runs. On small documents, NumPy overhead may offset SIMD gains; speedup is measurable on larger corpora [web:79][web:81].
