@@ -1,4 +1,4 @@
-cat > README.md << 'EOF'
+
 # Project 9 – Mojo PDF Search Tool  
 **Student:** Amit Bhattarai**  
 **Course:** COSC 352 – Fall 2025**
@@ -48,4 +48,4 @@ Morgan2030.pdf available
 📌 Note 
 Mojo could not be installed on my local machine, so the Mojo code is written according to the official documentation.
 The project meets all rubric requirements including TF–IDF scoring, passage normalization, SIMD acceleration, and clean Mojo struct/function organization.
-EOF
+
