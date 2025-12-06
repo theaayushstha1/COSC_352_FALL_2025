@@ -1,0 +1,10 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/data.csv {:mvn/version "1.0.1"}}
+ :aliases
+ {:run {:main-opts ["-m" "core"]}
+  :uberjar {:replace-deps {com.github.seancorfield/depstar {:mvn/version "2.1.303"}}
+            :exec-fn hf.depstar/uberjar
+            :exec-args {:aot true
+                        :jar "target/baltimore-homicides.jar"
+                        :main-class core}}}}

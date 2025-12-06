@@ -1,0 +1,181 @@
+cat > pdfsearch.mojo << 'EOF'
+# pdfsearch.mojo
+from sys import argv
+from python import Python
+from math import sqrt, log
+from time import now
+
+# Simple structures
+struct Passage:
+    var text: String
+    var page: Int
+    
+    fn __init__(inout self, text: String, page: Int):
+        self.text = text
+        self.page = page
+
+struct SearchResult:
+    var passage: Passage
+    var score: Float64
+    
+    fn __init__(inout self, passage: Passage, score: Float64):
+        self.passage = passage
+        self.score = score
+
+# Extract text from PDF
+fn extract_text_from_pdf(pdf_path: String) raises -> List[String]:
+    let py = Python.import_module("builtins")
+    let pypdf = Python.import_module("PyPDF2")
+    
+    let pdf_file = py.open(pdf_path, "rb")
+    let pdf_reader = pypdf.PdfReader(pdf_file)
+    
+    var pages = List[String]()
+    let num_pages = py.len(pdf_reader.pages)
+    
+    for i in range(num_pages):
+        let page = pdf_reader.pages[i]
+        let text = String(page.extract_text())
+        pages.append(text)
+    
+    pdf_file.close()
+    return pages
+
+# Tokenize text
+fn tokenize(text: String) -> List[String]:
+    var tokens = List[String]()
+    var current_token = String("")
+    
+    for i in range(len(text)):
+        let c = text[i]
+        if c.isalnum():
+            current_token += c.lower()
+        elif len(current_token) > 0:
+            tokens.append(current_token)
+            current_token = String("")
+    
+    if len(current_token) > 0:
+        tokens.append(current_token)
+    
+    return tokens
+
+# Create passages
+fn create_passages(pages: List[String]) -> List[Passage]:
+    var passages = List[Passage]()
+    
+    for page_num in range(len(pages)):
+        let page_text = pages[page_num]
+        let page_len = len(page_text)
+        
+        var start = 0
+        while start < page_len:
+            let end = min(start + 300, page_len)
+            let passage_text = page_text[start:end]
+            
+            if len(passage_text.strip()) > 20:
+                passages.append(Passage(passage_text, page_num + 1))
+            
+            start += 250
+            if end >= page_len:
+                break
+    
+    return passages
+
+# Simple scoring
+fn score_passage(passage: Passage, query_terms: List[String]) -> Float64:
+    let passage_lower = passage.text.lower()
+    var score: Float64 = 0.0
+    
+    for i in range(len(query_terms)):
+        let term = query_terms[i]
+        var count = 0
+        var pos = 0
+        
+        while True:
+            let idx = passage_lower.find(term, pos)
+            if idx == -1:
+                break
+            count += 1
+            pos = idx + 1
+        
+        if count > 0:
+            score += log(Float64(count) + 1.0)
+    
+    return score
+
+# Search
+fn search(passages: List[Passage], query: String, top_n: Int) -> List[SearchResult]:
+    let query_terms = tokenize(query)
+    var results = List[SearchResult]()
+    
+    for i in range(len(passages)):
+        let score = score_passage(passages[i], query_terms)
+        if score > 0:
+            results.append(SearchResult(passages[i], score))
+    
+    # Simple bubble sort
+    for i in range(len(results)):
+        for j in range(len(results) - i - 1):
+            if results[j].score < results[j + 1].score:
+                let temp = results[j]
+                results[j] = results[j + 1]
+                results[j + 1] = temp
+    
+    var top_results = List[SearchResult]()
+    let n = min(top_n, len(results))
+    for i in range(n):
+        top_results.append(results[i])
+    
+    return top_results
+
+# Format passage
+fn format_passage(text: String, max_len: Int = 200) -> String:
+    var clean = text.strip()
+    var result = String("")
+    var prev_space = False
+    
+    for i in range(len(clean)):
+        let c = clean[i]
+        if c.isspace():
+            if not prev_space:
+                result += " "
+                prev_space = True
+        else:
+            result += c
+            prev_space = False
+    
+    if len(result) > max_len:
+        return result[:max_len] + "..."
+    return result
+
+# Main
+fn main() raises:
+    let args = argv()
+    
+    if len(args) < 4:
+        print("Usage: mojo pdfsearch.mojo <pdf_file> <query> <top_n>")
+        return
+    
+    let pdf_path = args[1]
+    let query = args[2]
+    let top_n = int(args[3])
+    
+    print("Loading PDF:", pdf_path)
+    let pages = extract_text_from_pdf(pdf_path)
+    print("Extracted", len(pages), "pages")
+    
+    print("Creating passages...")
+    let passages = create_passages(pages)
+    print("Created", len(passages), "passages")
+    
+    print("Searching...")
+    let results = search(passages, query, top_n)
+    
+    print("\nResults for:", query, "\n")
+    
+    for i in range(len(results)):
+        let result = results[i]
+        print("[" + String(i+1) + "] Score:", result.score, "(page", String(result.passage.page) + ")")
+        print("   ", format_passage(result.passage.text))
+        print()
+EOF

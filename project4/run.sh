@@ -1,17 +1,18 @@
 #!/bin/bash
-set -e
 
-IMAGE_NAME="homicide-scala:latest"
+IMAGE_NAME="baltimore-homicide-scala"
 
-if ! docker image inspect $IMAGE_NAME > /dev/null 2>&1; then
-  echo "[INFO] Docker image not found. Building..."
+echo "Checking for Docker image..."
+
+if [[ "$(docker images -q $IMAGE_NAME 2> /dev/null)" == "" ]]; then
+  echo "Image not found. Building Docker image..."
   docker build -t $IMAGE_NAME .
 else
-  echo "[INFO] Using existing image $IMAGE_NAME"
+  echo "Docker image already exists."
 fi
 
-echo "============================================================"
-echo "Baltimore City Homicide Analysis: Insights for the Mayor's Office"
-echo "============================================================"
-
+echo "Running Docker container..."
 docker run --rm $IMAGE_NAME
+echo "Done."
+
+

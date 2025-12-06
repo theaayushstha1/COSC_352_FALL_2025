@@ -1,9 +1,22 @@
+# Project 6 – Golang Port of Project 5
+
+Creator: Kamari Johnson
+
+This project is a Golang version of Project 5. It reads structured data and outputs both CSV and JSON files. The program is written using Go’s standard libraries and is containerized using Docker. It demonstrates how the same functionality from Scala can be implemented in Go with a simpler syntax and faster compilation.
+
+To run the program locally, use:
+go run main.go
+
+To run the program in Docker:
+docker build -t project6 .
+docker run --rm project6
+
+The output files will be created in the output/ directory:
+- results.csv
+- results.json
+
+Differences between Scala and Go:
+Scala is a functional and object-oriented language that runs on the JVM. It uses advanced features like pattern matching, immutability, and monads for error handling. Go is a procedural language with built-in concurrency, simple syntax, and fast native compilation. Go handles errors explicitly and is easier to containerize due to its lightweight runtime.
 
 
-This is a Go (Golang) port of my Project 5. It does the same thing as project difference being it flags using only Go’s standard library.
-## Run with Docker
-```bash
-chmod +x run.sh
-./run.sh                 # stdout
-./run.sh --output=csv    # writes out/q1.csv and out/q2.csv
-./run.sh --output=json   # writes out/q1.json and out/q2.json
+
