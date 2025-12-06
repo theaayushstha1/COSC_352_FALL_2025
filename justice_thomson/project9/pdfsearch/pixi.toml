@@ -9,3 +9,4 @@ version = "0.1.0"
 
 [dependencies]
 mojo = ">=0.26.1.0.dev2025120505,<0.27"
+pypdf2 = ">=3.0.1,<4"

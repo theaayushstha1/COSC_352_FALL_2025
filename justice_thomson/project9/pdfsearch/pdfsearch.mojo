@@ -1,210 +1,170 @@
 from python import Python
 from sys import argv
+from math import log, sqrt
 
-# ------------------------------------------------------------
-# Helper: lowercase text (ASCII only)
-# ------------------------------------------------------------
-fn lower_ascii(text: String) -> String:
+# ------------------------------------------------------
+# Normalize text: lowercase + keep letters/spaces only
+# ------------------------------------------------------
+fn normalize(text: String) -> String:
     var out = String("")
     var n = len(text)
     var i = 0
     while i < n:
         var ch = text[i]
         var code = ord(ch)
-        if code >= 65 and code <= 90:
+        if code >= 65 and code <= 90:  # A–Z
             out += chr(code + 32)
-        else:
+        elif (ch >= "a" and ch <= "z") or ch == " ":
             out += ch
+        else:
+            out += " "
         i += 1
     return out
 
-
-# ------------------------------------------------------------
-# Tokenizer: keep only letters + spaces, split on spaces
-# ------------------------------------------------------------
+# ------------------------------------------------------
+# Tokenizer: returns List[String]
+# ------------------------------------------------------
 fn tokenize(text: String) -> List[String]:
-    var cleaned = String("")
-    var t = lower_ascii(text)
-    var n = len(t)
-    var i = 0
+    var clean = normalize(text)
+    var slices = clean.split()  # List[StringSlice]
+    var result = List[String]()
+    for s in slices:
+        result.append(String(s))  # Direct conversion from StringSlice
+    return result^
 
-    while i < n:
-        var ch = t[i]
-        if (ch >= "a" and ch <= "z") or ch == " ":
-            cleaned += ch
-        else:
-            cleaned += " "
-        i += 1
-
-    return cleaned.split()
-
-
-# ------------------------------------------------------------
-# Short snippet for display
-# ------------------------------------------------------------
-fn snippet(text: String) -> String:
-    var t = text.replace("\n", " ")
-    var n = len(t)
-    var max_len = 250
-    if n <= max_len:
-        return t
-    return t[0:max_len] + "..."
-
-
-# ------------------------------------------------------------
-# Main Program: TF-IDF PDF search
-# ------------------------------------------------------------
+# ------------------------------------------------------
+# Main TF–IDF PDF search engine
+# ------------------------------------------------------
 fn main() raises:
     var args = argv()
-
     if len(args) < 4:
-        print("Usage: mojo pdfsearch.mojo <pdf_file> <query> <top_n>")
-        print("Example:")
-        print("  mojo pdfsearch.mojo morgan2030.pdf \"R1 university\" 3")
+        print("Usage: mojo pdfsearch.mojo <pdf> <query> <N>")
         return
 
     var pdf_path = args[1]
     var query = args[2]
-    var top_n = Int(args[3])
+    var top_n = atol(args[3])
 
-    var py = Python()
-    var pypdf2 = py.import_module("PyPDF2")
-    var builtins = py.import_module("builtins")
-    var math = py.import_module("math")
-    var re = py.import_module("re")
+    # Python imports
+    var pypdf2 = Python.import_module("PyPDF2")
+    var builtins = Python.import_module("builtins")
 
-    print("")
-    print("============== MOJO PDF SEARCH ENGINE ==============")
-    print("PDF:", pdf_path)
-    print("Query:", query)
-    print("Top N:", top_n)
-    print("====================================================")
-    print("Extracting text from PDF...\n")
+    print("\nExtracting PDF:", pdf_path)
 
-    # ----------------------------------------
-    # 1. Extract passages from PDF
-    # ----------------------------------------
+    # Open PDF
     var f = builtins.open(pdf_path, "rb")
     var reader = pypdf2.PdfReader(f)
-    var num_pages = builtins.len(reader.pages)
+    var num_pages: Int = Int(builtins.len(reader.pages).__int__())
 
+    print("Total pages:", num_pages)
+
+    # Store passages
     var passages = Python.evaluate("[]")
 
+    # Extract passages page by page
     var page_index = 0
     while page_index < num_pages:
         var page = reader.pages[page_index]
-        var text = page.extract_text()
-        if text is None:
+        var text_obj = page.extract_text()
+
+        # Check if text extraction returned None or empty string
+        if text_obj.__bool__() == False or builtins.len(text_obj) == 0:
             page_index += 1
             continue
+
+        var text: String = String(text_obj)
 
         var chunks = text.split("\n\n")
         for chunk in chunks:
             var para = chunk.strip()
-            if builtins.len(para) > 50:
-                var entry = Python.evaluate("{'text': '', 'page': 0, 'score': 0.0}")
-                entry["text"] = para
-                entry["page"] = page_index + 1
-                passages.append(entry)
+            if len(para) > 50:
+                var obj = Python.evaluate("{'text': '', 'page': 0, 'score': 0.0}")
+                obj["text"] = para
+                obj["page"] = page_index + 1
+                passages.append(obj)
 
         page_index += 1
 
     f.close()
+    var total_passages: Int = Int(builtins.len(passages).__int__())
+    print("Extracted", total_passages, "passages\n")
 
-    var total_passages = builtins.len(passages)
-    if total_passages == 0:
-        print("No passages extracted from PDF.")
+    # Query processing
+    var query_norm = normalize(query)
+    var query_tokens = tokenize(query_norm)
+
+    if len(query_tokens) == 0:
+        print("No valid query terms found.")
         return
 
-    print("Extracted", total_passages, "passages.\n")
+    print("Query terms:", query_tokens, "\n")
 
-    # ----------------------------------------
-    # 2. Process query into terms
-    # ----------------------------------------
-    var q_lower = query.lower()
-    var query_terms = re.findall(r"\b[a-zA-Z]{3,}\b", q_lower)
-
-    if builtins.len(query_terms) == 0:
-        print("No valid query terms after preprocessing.")
-        return
-
-    print("Query terms:", query_terms, "\n")
-
-    # ----------------------------------------
-    # 3. Compute document frequency (DF)
-    # ----------------------------------------
-    var term_df = Python.evaluate("{}")
-
-    for term in query_terms:
+    # Document Frequency
+    var df = Python.evaluate("{}")
+    for term_obj in query_tokens:
+        var term = term_obj
         var count = 0
         for p in passages:
-            var t_low = p["text"].lower()
-            if term in t_low:
+            var txt = String(p["text"]).lower()
+            if term in txt:
                 count += 1
-        term_df[term] = count
+        df[term] = count
 
-    # ----------------------------------------
-    # 4. Compute TF-IDF for each passage
-    # ----------------------------------------
+    # TF-IDF Scoring
     for p in passages:
-        var text_lower = lower_ascii(p["text"])
-        var tokens = tokenize(text_lower)
-        var length_f = builtins.float(builtins.len(tokens))
+        var txt = String(p["text"]).lower()
+        var tokens = tokenize(txt)
+        var L = len(tokens)
+        var score: Float64 = 0.0
 
-        var score = builtins.float(0.0)
+        for term_obj in query_tokens:
+            var term = term_obj
+            var tf_count = 0
+            for t in tokens:
+                if t == term:
+                    tf_count += 1
 
-        for term in query_terms:
-            var term_count = tokens.count(term)
+            var tf: Float64 = 1.0 + log(Float64(tf_count)) if tf_count > 0 else 0.0
+            var df_val: Int = Int(df[term].__int__()) if term in df else 0
+            var idf: Float64 = log(Float64(total_passages) / Float64(df_val)) if df_val > 0 else 0.0
+            score += tf * idf
 
-            var tf = builtins.float(0.0)
-            if term_count > 0:
-                tf = 1.0 + math.log(builtins.float(term_count))
-
-            var df_val = term_df[term]
-            var idf = builtins.float(0.0)
-
-            if df_val > 0:
-                idf = math.log(
-                    builtins.float(total_passages) /
-                    builtins.float(df_val)
-                )
-
-            score = score + (tf * idf)
-
-        if length_f > 0.0:
-            score = score / math.sqrt(length_f)
+        if L > 0:
+            score = score / sqrt(Float64(L))
 
         p["score"] = score
 
-    # ----------------------------------------
-    # 5. Sort by score descending
-    # ----------------------------------------
-    passages.sort(
-        key=Python.evaluate("lambda x: x['score']"),
-        reverse=True
+    # Sort results
+    var sorted_passages = builtins.sorted(
+        passages,
+        key=Python.evaluate("lambda x: -x['score']")
     )
 
-    print("============== RESULTS for \"" + query + "\" ==============\n")
-
-    var limit = top_n
-    if limit > total_passages:
-        limit = total_passages
-
+    # Display top N
+    var N = min(top_n, total_passages)
+    print("\nTop results:\n")
     var i = 0
-    while i < limit:
-        var p = passages[i]
-        var sc = p["score"]
-        if sc <= 0.0:
+    while i < N:
+        var p = sorted_passages[i]
+        # Work with Python object directly for display
+        var py_score = p["score"]
+        var score_str = String(py_score.__str__())
+        
+        # Check if score is effectively zero
+        var score_val = Float64(score_str)
+        if score_val <= 0.0:
             break
 
-        var score_str = String(sc)
+        # Truncate score string for display
         if len(score_str) > 6:
-            score_str = score_str[0:6]
+            score_str = String(score_str[:6])
 
-        print("[" + String(i + 1) + "] Score:", score_str,
-              "(page", String(p["page"]), ")")
-        print("    \"" + snippet(String(p["text"])) + "\"\n")
+        print("[", i+1, "] Score:", score_str, "(page", Int(p["page"].__int__()), ")")
+        var snippet = String(p["text"]).replace("\n", " ")
+        if len(snippet) > 250:
+            snippet = String(snippet[:250]) + "..."
 
+        print(snippet, "\n")
         i += 1
 
-    print("===================== SEARCH COMPLETE =====================")
+    print("Search complete!\n")
