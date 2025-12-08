@@ -1,14 +1,13 @@
-# Use official Golang image
-FROM golang:latest
+FROM rocker/shiny:latest
 
-# Set working directory
-WORKDIR /app
+RUN apt-get update && apt-get install -y \
+    libcurl4-openssl-dev libssl-dev libxml2-dev \
+ && rm -rf /var/lib/apt/lists/*
 
-# Copy everything into the container
-COPY . .
+COPY . /srv/shiny-server/
 
-# Build the Go binary
-RUN go build -o project6
+RUN R -e "install.packages(c('shiny','dplyr','rvest','lubridate','stringr','leaflet','DT','ggplot2','readr','purrr'), repos='https://cloud.r-project.org')"
 
-# Run the binary
-CMD ["./project6"]
+EXPOSE 3838
+
+CMD ["/usr/bin/shiny-server.sh"]
