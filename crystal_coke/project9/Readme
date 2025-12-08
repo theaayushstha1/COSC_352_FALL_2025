@@ -1,0 +1,15 @@
+# PDF Search Tool - SIMD Mojo Version (Submission Only)
+
+## Overview
+
+This project implements a **high-performance SIMD-based search** for PDF documents using Mojo.  
+Due to GitHub Codespaces restrictions, **Mojo cannot be installed here**, so the actual execution is a placeholder.  
+
+- Python extracts PDF text into JSONL.
+- SIMD Mojo code (`pdfsearch_simd.mojo`) implements a tokenizer and relevance ranking.
+- Shell script `run_pdfsearch_simd.sh` demonstrates intended usage.
+
+---
+
+## Folder Structure
+
