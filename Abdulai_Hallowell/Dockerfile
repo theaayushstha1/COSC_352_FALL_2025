@@ -1,14 +1,14 @@
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    ca-certificates \
- && rm -rf /var/lib/apt/lists/*
+# Copy project files
+COPY . /app
 
-COPY read_html_table.py /app/read_html_table.py
+RUN pip install --no-cache-dir -r requirements.txt || true
 
-RUN mkdir -p /app/output
+# Make main.py executable
+RUN chmod +x /app/main.py
 
-ENTRYPOINT ["python", "/app/read_html_table.py"]
-
+ENTRYPOINT ["python", "main.py"]
+CMD []
