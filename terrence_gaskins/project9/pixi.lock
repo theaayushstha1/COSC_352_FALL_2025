@@ -1,0 +1,22 @@
+version: 6
+environments:
+  default:
+    channels:
+      - url: https://conda.modular.com/max-nightly/
+      - url: https://conda.anaconda.org/conda-forge/
+    options:
+      pypi-prerelease-mode: if-necessary-or-explicit
+    packages:
+      linux-64:
+        - conda: https://conda.modular.com/max-nightly/linux-64/mojo-0.26.1.0.dev2025120505-h1234567_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.11.7-h1234567_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/noarch/pypdf-3.17.0-pyhd8ed1ab_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-13.2.0-h1234567_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-13.2.0-h1234567_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/linux-64/openmp-14.0.6-h1234567_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/linux-64/bzip2-1.0.8-h1234567_4.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.11.15-h1234567_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/noarch/click-8.1.7-pyhd8ed1ab_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/noarch/importlib-metadata-8.5.0-pyhd8ed1ab_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_client-8.6.0-pyhd8ed1ab_0.tar.bz2
+        - conda: https://conda.anaconda.org/conda-forge/noarch/jupyter_core-5.7.0-pyhd8ed1ab_0.tar.bz2

@@ -1,0 +1,6 @@
+# #!/bin/bash
+
+pip install -qq PyPDF2 numpy scipy
+
+python pdfsearch.py $1 "$2" $3
+# pdfsearch.py document.pdf "athletics" 3

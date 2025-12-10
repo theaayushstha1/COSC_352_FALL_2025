@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Pixi
+.pixi/
+pixi.lock
+
+# Generated data files
+data/passages.json
+data/passages.txt
+
+# Mojo build artifacts
+*.o
+*.obj
+*.exe
+life
+search
+tfidf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test outputs
+tests/output/
