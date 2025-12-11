@@ -1,0 +1,17 @@
+# Turing Machine Simulator - Dockerfile
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy the simulator
+COPY turing_machine.py .
+
+# Make it executable
+RUN chmod +x turing_machine.py
+
+# Set entry point
+ENTRYPOINT ["python3", "turing_machine.py"]
+
+# Default: show usage
+CMD []
