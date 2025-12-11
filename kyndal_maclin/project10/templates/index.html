@@ -1,1 +1,440 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Machine Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        
+        .input-section {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        select, input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        select:focus, input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result-section {
+            display: none;
+        }
+        
+        .result-header {
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .result-header.accepted {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            color: #155724;
+        }
+        
+        .result-header.rejected {
+            background: #f8d7da;
+            border: 2px solid #dc3545;
+            color: #721c24;
+        }
+        
+        .result-header h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-box .label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .stat-box .value {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .trace-section {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .trace-step {
+            background: white;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        
+        .trace-step:last-child {
+            border-left-color: #28a745;
+        }
+        
+        .trace-step.reject {
+            border-left-color: #dc3545;
+        }
+        
+        .tape-visual {
+            font-family: 'Courier New', monospace;
+            background: #2d3748;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        
+        .tape-visual .tape {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        
+        .tape-visual .pointer {
+            color: #ff0000;
+            font-size: 18px;
+        }
+        
+        .examples {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .examples h4 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .example-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .example-tag {
+            background: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            cursor: pointer;
+            border: 2px solid #667eea;
+            color: #667eea;
+            transition: all 0.3s;
+        }
+        
+        .example-tag:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Turing Machine Simulator</h1>
+            <p>Simulate and verify inputs with configurable Turing Machines</p>
+        </header>
+        
+        <div class="card">
+            <div class="input-section">
+                <h2>Configure and Run</h2>
+                
+                <div class="form-group">
+                    <label for="complexity">Complexity Level:</label>
+                    <select id="complexity" onchange="updateDescription()">
+                        <option value="easy">Easy - Equal 0s and 1s</option>
+                        <option value="medium" selected>Medium - Binary Palindrome</option>
+                        <option value="hard">Hard - Balanced Parentheses</option>
+                    </select>
+                </div>
+                
+                <div id="description" class="examples"></div>
+                
+                <div class="form-group">
+                    <label for="input">Input String:</label>
+                    <input type="text" id="input" placeholder="Enter your input string">
+                </div>
+                
+                <button onclick="runSimulation()">Run Simulation</button>
+            </div>
+            
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Running simulation...</p>
+            </div>
+            
+            <div id="results" class="result-section">
+                <div id="resultHeader" class="result-header">
+                    <h2 id="resultTitle"></h2>
+                    <p id="resultReason"></p>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="label">Input</div>
+                        <div class="value" id="statInput">-</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="label">Total Steps</div>
+                        <div class="value" id="statSteps">-</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="label">Final State</div>
+                        <div class="value" id="statState">-</div>
+                    </div>
+                </div>
+                
+                <h3>State Trace</h3>
+                <div id="trace" class="trace-section"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const examples = {
+            easy: {
+                name: 'Equal 0s and 1s',
+                description: 'Accepts strings with equal number of 0s and 1s',
+                valid: ['01', '0011', '1100', '0101', '10'],
+                invalid: ['0', '1', '001', '111', '000111']
+            },
+            medium: {
+                name: 'Binary Palindrome',
+                description: 'Accepts binary strings that read the same forwards and backwards',
+                valid: ['0', '1', '11', '101', '1001', '10101'],
+                invalid: ['10', '110', '1000', '10110']
+            },
+            hard: {
+                name: 'Balanced Parentheses',
+                description: 'Accepts strings with properly balanced parentheses',
+                valid: ['()', '(())', '()()', '((()))'],
+                invalid: ['(', ')', ')(', '(()']
+            }
+        };
+        
+        function updateDescription() {
+            const complexity = document.getElementById('complexity').value;
+            const ex = examples[complexity];
+            
+            document.getElementById('description').innerHTML = `
+                <h4>${ex.name}</h4>
+                <p>${ex.description}</p>
+                <p style="margin-top: 10px;"><strong>Valid Examples (click to use):</strong></p>
+                <div class="example-list">
+                    ${ex.valid.map(e => `<span class="example-tag" onclick="useExample('${e}')">${e}</span>`).join('')}
+                </div>
+                <p style="margin-top: 10px;"><strong>Invalid Examples (click to use):</strong></p>
+                <div class="example-list">
+                    ${ex.invalid.map(e => `<span class="example-tag" onclick="useExample('${e}')">${e}</span>`).join('')}
+                </div>
+            `;
+        }
+        
+        function useExample(example) {
+            document.getElementById('input').value = example;
+        }
+        
+        async function runSimulation() {
+            const complexity = document.getElementById('complexity').value;
+            const input = document.getElementById('input').value;
+            
+            if (!input) {
+                alert('Please enter an input string');
+                return;
+            }
+            
+            // Show loading
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/simulate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ complexity, input })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    displayResults(data);
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            } catch (error) {
+                alert('Error running simulation: ' + error.message);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        function displayResults(data) {
+            // Show results section
+            document.getElementById('results').style.display = 'block';
+            
+            // Update header
+            const header = document.getElementById('resultHeader');
+            header.className = 'result-header ' + (data.accepted ? 'accepted' : 'rejected');
+            document.getElementById('resultTitle').textContent = data.accepted ? '✓ ACCEPTED' : '✗ REJECTED';
+            document.getElementById('resultReason').textContent = data.reason;
+            
+            // Update stats
+            document.getElementById('statInput').textContent = `"${data.input}"`;
+            document.getElementById('statSteps').textContent = data.steps;
+            document.getElementById('statState').textContent = data.trace[data.trace.length - 1].state;
+            
+            // Display trace
+            const traceDiv = document.getElementById('trace');
+            traceDiv.innerHTML = '';
+            
+            data.trace.forEach((step, index) => {
+                const stepDiv = document.createElement('div');
+                stepDiv.className = 'trace-step';
+                if (index === data.trace.length - 1 && !data.accepted) {
+                    stepDiv.classList.add('reject');
+                }
+                
+                const pointer = ' '.repeat(step.head_position) + '^';
+                
+                stepDiv.innerHTML = `
+                    <strong>Step ${step.step}: State ${step.state}</strong>
+                    <div class="tape-visual">
+                        <div class="tape">${step.tape}</div>
+                        <div class="pointer">${pointer}</div>
+                    </div>
+                    <p><strong>Symbol Read:</strong> ${step.symbol_read}</p>
+                `;
+                
+                traceDiv.appendChild(stepDiv);
+            });
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Initialize
+        updateDescription();
+    </script>
+</body>
+</html>
