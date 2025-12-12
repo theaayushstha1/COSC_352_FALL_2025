@@ -1,0 +1,137 @@
+================================================================================
+                    TURING MACHINE SIMULATOR
+               Command-Line Interface v1.0
+================================================================================
+
+Machine: Binary Palindrome Recognizer
+Description: Recognizes binary strings that read the same forwards and backwards
+Alphabet: {0, 1}
+
+Valid Examples:
+  ✓ '0'
+  ✓ '1'
+  ✓ '101'
+  ✓ '1001'
+  ✓ '11011'
+  ✓ '10101'
+
+Invalid Examples:
+  ✗ '10'
+  ✗ '110'
+  ✗ '1000'
+  ✗ '10110'
+
+================================================================================
+TURING MACHINE EXECUTION TRACE
+================================================================================
+
+Step 0: INIT
+  State: q0
+  Tape:  101
+  Head:  ^
+
+Step 1: STEP
+  State: q2
+  Tape:  X01
+  Head:   ^
+  Trans: δ(q0, 1) → (q2, X, →)
+
+Step 2: STEP
+  State: q2
+  Tape:  X01
+  Head:    ^
+  Trans: δ(q2, 0) → (q2, 0, →)
+
+Step 3: STEP
+  State: q2
+  Tape:  X01
+  Head:     ^
+  Trans: δ(q2, 1) → (q2, 1, →)
+
+Step 4: STEP
+  State: q4
+  Tape:  X01
+  Head:    ^
+  Trans: δ(q2, _) → (q4, _, ←)
+
+Step 5: STEP
+  State: q5
+  Tape:  X0X
+  Head:   ^
+  Trans: δ(q4, 1) → (q5, X, ←)
+
+Step 6: STEP
+  State: q5
+  Tape:  X0X
+  Head:  ^
+  Trans: δ(q5, 0) → (q5, 0, ←)
+
+Step 7: STEP
+  State: q5
+  Tape:  _X0X
+  Head:  ^
+  Trans: δ(q5, X) → (q5, X, ←)
+
+Step 8: STEP
+  State: q6
+  Tape:  _X0X
+  Head:   ^
+  Trans: δ(q5, _) → (q6, _, →)
+
+Step 9: STEP
+  State: q6
+  Tape:  _X0X
+  Head:    ^
+  Trans: δ(q6, X) → (q6, X, →)
+
+Step 10: STEP
+  State: q1
+  Tape:  _XXX
+  Head:     ^
+  Trans: δ(q6, 0) → (q1, X, →)
+
+Step 11: STEP
+  State: q1
+  Tape:  _XXX
+  Head:      ^
+  Trans: δ(q1, X) → (q1, X, →)
+
+Step 12: STEP
+  State: q3
+  Tape:  _XXX
+  Head:     ^
+  Trans: δ(q1, _) → (q3, _, ←)
+
+Step 13: STEP
+  State: q3
+  Tape:  _XXX
+  Head:    ^
+  Trans: δ(q3, X) → (q3, X, ←)
+
+Step 14: STEP
+  State: q3
+  Tape:  _XXX
+  Head:   ^
+  Trans: δ(q3, X) → (q3, X, ←)
+
+Step 15: STEP
+  State: q3
+  Tape:  _XXX
+  Head:  ^
+  Trans: δ(q3, X) → (q3, X, ←)
+
+Step 16: STEP
+  State: qaccept
+  Tape:  _XXX
+  Head:  ^
+  Trans: δ(q3, _) → (qaccept, _, ·)
+
+Step 16: ACCEPT
+  State: qaccept
+  Tape:  _XXX
+  Head:  ^
+
+================================================================================
+RESULT: ACCEPTED ✓
+Total Steps: 16
+================================================================================
