@@ -1,24 +1,14 @@
-# Use Python 3.11 slim image
-FROM python:3.11-slim
+FROM python:3.12-slim
 
-# Set working directory
 WORKDIR /app
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    && rm -rf /var/lib/apt/lists/*
+# Copy project files
+COPY . /app
 
-# Copy requirements file
-COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt || true
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Make main.py executable
+RUN chmod +x /app/main.py
 
-# Copy the script
-COPY scraper.py .
-
-# Create output directory
-RUN mkdir -p /app/output
-
-# Set the entrypoint
-ENTRYPOINT ["python", "scraper.py"]
+ENTRYPOINT ["python", "main.py"]
+CMD []

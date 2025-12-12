@@ -1,0 +1,90 @@
+2025.10.17 22:51:50 WARN  No build server connected
+2025.10.17 22:51:50 INFO  compiling david_johnny_d5c0a6989e (2 scala sources)
+2025.10.17 22:51:50 INFO  time: compiled david_johnny_d5c0a6989e in 0.2s
+2025.10.17 22:51:50 INFO  compiling david_johnny_d5c0a6989e (2 scala sources)
+2025.10.17 22:51:50 INFO  time: compiled david_johnny_d5c0a6989e in 0.2s
+Oct 17, 2025 10:55:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 17, 2025 10:55:17 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 17, 2025 10:59:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 137
+2025.10.17 22:59:40 WARN  No build server connected
+2025.10.17 22:59:40 INFO  Cancelling compilation on scala-cli server
+2025.10.17 22:59:40 INFO  compiling david_johnny_d5c0a6989e (1 scala source)
+2025.10.17 22:59:43 WARN  Invalid text document uri received from build server: file:///D:/COSC_352_FALL_2025/david_johnny/project4/project4/Main.scala
+2025.10.17 22:59:44 INFO  time: compiled david_johnny_d5c0a6989e in 4.04s
+2025.10.17 23:31:32 INFO  Started: Metals version 1.6.3 in folders 'D:\COSC_352_FALL_2025\david_johnny' for client Visual Studio Code 1.105.0.
+2025.10.17 23:31:36 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.17 23:31:36 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project4\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.17 23:31:40 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project4\Main.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2025.10.17 23:31:42 INFO  Running List(C:\Users\minot\AppData\Local\Coursier\data\bin\scala-cli.BAT, setup-ide, D:\COSC_352_FALL_2025\david_johnny)
+2025.10.17 23:31:42 INFO  Attempting to connect to the build server...
+2025.10.17 23:31:42 INFO  Running BSP server List(C:\Users\minot\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-options-v2.json, --json-launcher-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-launcher-options.json, --envs-file, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-envs.json, D:\COSC_352_FALL_2025\david_johnny)
+2025.10.17 23:31:42 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\COSC_352_FALL_2025\david_johnny\.metals\bsp.trace.json or C:\Users\minot\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.17 23:31:44 INFO  BSP server: Starting compilation server
+2025.10.17 23:31:46 INFO  time: Connected to build server in 3.6s
+2025.10.17 23:31:46 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.17 23:31:46 INFO  time: Imported build in 0.38s
+2025.10.17 23:31:47 INFO  compiling david_johnny_470e0b1e0f (1 scala source)
+2025.10.17 23:31:55 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.17 23:31:58 INFO  time: compiled david_johnny_470e0b1e0f in 10s
+2025.10.17 23:32:13 INFO  time: indexed workspace in 26s
+2025.10.17 23:42:26 INFO  Shutting down server
+2025.10.17 23:42:26 INFO  shutting down Metals
+2025.10.17 23:42:26 INFO  Shut down connection with build server.
+2025.10.17 23:42:26 INFO  Exiting server
+2025.10.17 23:43:17 INFO  Started: Metals version 1.6.3 in folders 'D:\COSC_352_FALL_2025\david_johnny' for client Visual Studio Code 1.105.1.
+2025.10.17 23:43:17 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.17 23:43:18 INFO  Attempting to connect to the build server...
+2025.10.17 23:43:18 INFO  Running BSP server List(C:\Users\minot\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-options-v2.json, --json-launcher-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-launcher-options.json, --envs-file, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-envs.json, D:\COSC_352_FALL_2025\david_johnny)
+2025.10.17 23:43:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\COSC_352_FALL_2025\david_johnny\.metals\bsp.trace.json or C:\Users\minot\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.17 23:43:18 INFO  time: Connected to build server in 1.08s
+2025.10.17 23:43:19 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.17 23:43:26 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.17 23:43:26 INFO  time: indexed workspace in 7.6s
+Oct 17, 2025 11:44:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Oct 17, 2025 11:44:34 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.10.24 22:47:34 INFO  Started: Metals version 1.6.3 in folders 'D:\COSC_352_FALL_2025\david_johnny' for client Visual Studio Code 1.105.1.
+2025.10.24 22:47:38 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.24 22:47:38 INFO  Attempting to connect to the build server...
+2025.10.24 22:47:38 INFO  Running BSP server List(C:\Users\minot\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-options-v2.json, --json-launcher-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-launcher-options.json, --envs-file, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-envs.json, D:\COSC_352_FALL_2025\david_johnny)
+2025.10.24 22:47:38 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\COSC_352_FALL_2025\david_johnny\.metals\bsp.trace.json or C:\Users\minot\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.24 22:47:39 INFO  time: Connected to build server in 1.08s
+2025.10.24 22:47:39 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.24 22:47:39 INFO  compiling david_johnny_470e0b1e0f (1 scala source)
+2025.10.24 22:47:39 INFO  time: compiled david_johnny_470e0b1e0f in 0.94s
+2025.10.24 22:47:42 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.24 22:47:42 INFO  time: indexed workspace in 3.03s
+2025.10.24 22:48:40 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project5\Main.scala. Using presentation compiler with project's scala-library version: 3.7.3
+2025.10.24 22:48:40 WARN  no build target for: D:\COSC_352_FALL_2025\david_johnny\project5\Main.scala
+2025.10.24 22:48:40 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project5\Main.scala. Using presentation compiler with project's scala-library version: 3.7.3
+2025.10.24 22:48:40 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project5\Main.scala. Using presentation compiler with project's scala-library version: 3.7.3
+2025.10.24 22:48:40 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project5\Main.scala. Using presentation compiler with project's scala-library version: 3.7.3
+2025.10.24 22:48:40 INFO  compiling david_johnny_470e0b1e0f (1 scala source)
+2025.10.24 22:48:41 INFO  no build target found for D:\COSC_352_FALL_2025\david_johnny\project5\Main.scala. Using presentation compiler with project's scala-library version: 3.7.3
+2025.10.24 22:48:42 INFO  time: code lens generation in 1.18s
+2025.10.24 22:48:43 INFO  time: indexed workspace in 2.19s
+2025.10.24 22:49:18 INFO  Shutting down server
+2025.10.24 22:49:18 INFO  shutting down Metals
+2025.10.24 22:49:18 INFO  Shut down connection with build server.
+2025.10.24 22:49:18 INFO  Exiting server
+2025.10.31 22:46:10 INFO  Started: Metals version 1.6.3 in folders 'D:\COSC_352_FALL_2025\david_johnny' for client Visual Studio Code 1.105.1.
+2025.10.31 22:46:10 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.31 22:46:11 INFO  Attempting to connect to the build server...
+2025.10.31 22:46:11 INFO  Running BSP server List(C:\Users\minot\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-options-v2.json, --json-launcher-options, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-launcher-options.json, --envs-file, D:\COSC_352_FALL_2025\david_johnny\.scala-build\ide-envs.json, D:\COSC_352_FALL_2025\david_johnny)
+2025.10.31 22:46:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at D:\COSC_352_FALL_2025\david_johnny\.metals\bsp.trace.json or C:\Users\minot\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.10.31 22:46:12 INFO  time: Connected to build server in 1.18s
+2025.10.31 22:46:12 INFO  Connected to Build server: scala-cli v1.9.1
+2025.10.31 22:46:12 INFO  compiling david_johnny_470e0b1e0f (2 scala sources)
+2025.10.31 22:46:17 INFO  time: compiled david_johnny_470e0b1e0f in 4.47s
+2025.10.31 22:46:17 INFO  compiling david_johnny_470e0b1e0f (2 scala sources)
+2025.10.31 22:46:18 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2025.10.31 22:46:18 INFO  time: compiled david_johnny_470e0b1e0f in 1.02s
+2025.10.31 22:46:18 INFO  time: indexed workspace in 6.34s
+2025.10.31 22:50:16 INFO  Shutting down server
+2025.10.31 22:50:16 INFO  shutting down Metals
+2025.10.31 22:50:16 INFO  Shut down connection with build server.
+2025.10.31 22:50:16 INFO  Exiting server

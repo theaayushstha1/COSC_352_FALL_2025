@@ -1,0 +1,12 @@
+[workspace]
+authors = ["kaytrxg <katro3@morgan.edu>"]
+channels = ["https://conda.modular.com/max-nightly", "conda-forge"]
+name = "project9"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+pypdf = ">=6.4.0,<7"
+max = "==24.5.0"

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Machine Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 0;
+            min-height: 600px;
+        }
+        
+        .sidebar {
+            background: #f8f9fa;
+            padding: 30px;
+            border-right: 1px solid #dee2e6;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .machine-selector {
+            margin-bottom: 30px;
+        }
+        
+        .machine-selector h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .machine-option {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .machine-option:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+        
+        .machine-option.active {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+        }
+        
+        .machine-option h4 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .machine-option p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .machine-details {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .machine-details h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .machine-details .detail-item {
+            margin-bottom: 15px;
+        }
+        
+        .machine-details .detail-label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .machine-details .detail-value {
+            color: #666;
+            font-family: 'Courier New', monospace;
+            background: white;
+            padding: 8px;
+            border-radius: 5px;
+            display: block;
+        }
+        
+        .examples {
+            margin-top: 15px;
+        }
+        
+        .example-tag {
+            display: inline-block;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .example-tag:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .example-tag.valid {
+            color: #28a745;
+        }
+        
+        .example-tag.invalid {
+            color: #dc3545;
+        }
+        
+        .input-section {
+            margin-bottom: 30px;
+        }
+        
+        .input-section h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+            align-items: stretch;
+        }
+        
+        #inputString {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-family: 'Courier New', monospace;
+            transition: border-color 0.3s;
+        }
+        
+        #inputString:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        #runButton {
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        #runButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        #runButton:active {
+            transform: translateY(0);
+        }
+        
+        #runButton:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result-section {
+            margin-top: 30px;
+            display: none;
+        }
+        
+        .result-section.show {
+            display: block;
+        }
+        
+        .result-header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .result-header.rejected {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        }
+        
+        .result-header h3 {
+            font-size: 1.5em;
+        }
+        
+        .result-header .stats {
+            text-align: right;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .trace-container {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .trace-container h4 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .trace-step {
+            background: white;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+            transition: all 0.2s;
+        }
+        
+        .trace-step:hover {
+            transform: translateX(5px);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .trace-step.init {
+            border-left-color: #17a2b8;
+        }
+        
+        .trace-step.accept {
+            border-left-color: #28a745;
+        }
+        
+        .trace-step.reject {
+            border-left-color: #dc3545;
+        }
+        
+        .trace-step-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .trace-step-content {
+            font-size: 0.9em;
+            line-height: 1.8;
+        }
+        
+        .trace-step-content div {
+            margin: 5px 0;
+        }
+        
+        .state-badge {
+            background: #667eea;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+        }
+        
+        .tape-display {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box strong {
+            color: #2196F3;
+        }
+        
+        @media (max-width: 1024px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #dee2e6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎰 Turing Machine Simulator</h1>
+            <p>Explore the foundations of computation through interactive Turing Machines</p>
+        </header>
+        
+        <div class="content">
+            <div class="sidebar">
+                <div class="machine-selector">
+                    <h3>Select Machine</h3>
+                    {% for key, machine in machines.items() %}
+                    <div class="machine-option {% if loop.first %}active{% endif %}" 
+                         data-machine="{{ key }}"
+                         onclick="selectMachine('{{ key }}')">
+                        <h4>{{ machine.name }}</h4>
+                        <p>{{ machine.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div class="machine-details" id="machineDetails">
+                    <!-- Details will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="info-box">
+                    <strong>ℹ️ How to use:</strong> Select a Turing Machine, enter an input string, and click "Run" to see the step-by-step execution trace.
+                </div>
+                
+                <div class="input-section">
+                    <h3>Input String</h3>
+                    <div class="input-group">
+                        <input type="text" 
+                               id="inputString" 
+                               placeholder="Enter your input string..."
+                               autocomplete="off">
+                        <button id="runButton" onclick="runMachine()">
+                            Run Machine
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="result-section" id="resultSection">
+                    <div class="result-header" id="resultHeader">
+                        <div>
+                            <h3 id="resultText">RESULT</h3>
+                        </div>
+                        <div class="stats">
+                            <div id="resultStats"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="trace-container">
+                        <h4>Execution Trace</h4>
+                        <div id="traceSteps"></div>
+                    </div>
+                </div>
+                
+                <div class="loading" id="loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Running Turing Machine...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentMachine = 'binary_palindrome';
+        let machinesData = {};
+        
+        // Fetch machine data on load
+        fetch('/api/machines')
+            .then(response => response.json())
+            .then(data => {
+                machinesData = data;
+                selectMachine('binary_palindrome');
+            });
+        
+        function selectMachine(machineKey) {
+            currentMachine = machineKey;
+            
+            // Update active state
+            document.querySelectorAll('.machine-option').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelector(`[data-machine="${machineKey}"]`).classList.add('active');
+            
+            // Update details
+            const machine = machinesData[machineKey];
+            const detailsHtml = `
+                <h4>Machine Details</h4>
+                <div class="detail-item">
+                    <span class="detail-label">Alphabet:</span>
+                    <span class="detail-value">${machine.alphabet}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Complexity:</span>
+                    <span class="detail-value">${machine.complexity}</span>
+                </div>
+                <div class="examples">
+                    <span class="detail-label">Valid Examples:</span>
+                    <div>
+                        ${machine.examples.valid.map(ex => 
+                            `<span class="example-tag valid" onclick="setInput('${ex}')">${ex}</span>`
+                        ).join('')}
+                    </div>
+                    <span class="detail-label" style="margin-top: 10px; display: block;">Invalid Examples:</span>
+                    <div>
+                        ${machine.examples.invalid.map(ex => 
+                            `<span class="example-tag invalid" onclick="setInput('${ex}')">${ex}</span>`
+                        ).join('')}
+                    </div>
+                </div>
+            `;
+            document.getElementById('machineDetails').innerHTML = detailsHtml;
+        }
+        
+        function setInput(value) {
+            document.getElementById('inputString').value = value;
+        }
+        
+        function runMachine() {
+            const input = document.getElementById('inputString').value;
+            const runButton = document.getElementById('runButton');
+            const resultSection = document.getElementById('resultSection');
+            const loading = document.getElementById('loading');
+            
+            // Show loading
+            runButton.disabled = true;
+            resultSection.classList.remove('show');
+            loading.style.display = 'block';
+            
+            // Make API call
+            fetch('/api/run', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    machine: currentMachine,
+                    input: input
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayResult(data);
+                runButton.disabled = false;
+                loading.style.display = 'none';
+                resultSection.classList.add('show');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                runButton.disabled = false;
+                loading.style.display = 'none';
+                alert('An error occurred while running the machine.');
+            });
+        }
+        
+        function displayResult(data) {
+            const resultHeader = document.getElementById('resultHeader');
+            const resultText = document.getElementById('resultText');
+            const resultStats = document.getElementById('resultStats');
+            const traceSteps = document.getElementById('traceSteps');
+            
+            // Update header
+            if (data.accepted) {
+                resultHeader.classList.remove('rejected');
+                resultText.textContent = 'ACCEPTED ✓';
+            } else {
+                resultHeader.classList.add('rejected');
+                resultText.textContent = 'REJECTED ✗';
+            }
+            
+            resultStats.innerHTML = `
+                Total Steps: ${data.steps}<br>
+                Final State: ${data.trace[data.trace.length - 1].state}
+            `;
+            
+            // Build trace
+            let traceHtml = '';
+            data.trace.forEach((step, index) => {
+                let stepClass = 'trace-step';
+                if (step.action === 'INIT') stepClass += ' init';
+                if (step.action === 'ACCEPT') stepClass += ' accept';
+                if (step.action.includes('REJECT')) stepClass += ' reject';
+                
+                traceHtml += `
+                    <div class="${stepClass}">
+                        <div class="trace-step-header">
+                            <span>Step ${step.step}: ${step.action}</span>
+                            <span class="state-badge">${step.state}</span>
+                        </div>
+                        <div class="trace-step-content">
+                            <div class="tape-display">Tape: ${step.tape}
+Head:  ${' '.repeat(step.head_pos)}^</div>
+                            ${step.transition !== 'N/A' ? 
+                                `<div>Transition: ${step.transition}</div>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            traceSteps.innerHTML = traceHtml;
+        }
+        
+        // Allow Enter key to run
+        document.getElementById('inputString').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                runMachine();
+            }
+        });
+    </script>
+</body>
+</html>

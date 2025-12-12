@@ -1,0 +1,39 @@
+# Go compiled binaries
+baltimore-analysis
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go test files
+*.test
+*.out
+
+# Go build cache
+go.sum
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+
+# Generated output files (can be regenerated)
+district_analysis.csv
+temporal_analysis.csv
+analysis_results.json
+*.csv
+*.json

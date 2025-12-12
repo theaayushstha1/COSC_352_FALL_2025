@@ -1,0 +1,24 @@
+Question 1: How many homicides occurred in each month of 2025?
+month,count
+"January",11
+"February",9
+"March",14
+"April",6
+"May",15
+"June",17
+"July",18
+"August",7
+"September",11
+"October",6
+"November",0
+"December",0
+
+Question 2: What is the closure rate for incidents with and without surveillance cameras in 2025?
+metric,value
+"closed_with_cameras","10"
+"total_incidents","114"
+"closed_without_cameras","26"
+"with_cameras","26"
+"closed_with_cameras_pct","38.5%"
+"closed_without_cameras_pct","29.5%"
+"without_cameras","88"

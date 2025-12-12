@@ -1,0 +1,475 @@
+
+==========================================
+STUDENT: FortunateDada
+PATH: FortunateDada/project4
+==========================================
+
+Exception in thread "main" org.jsoup.HttpStatusException: HTTP error fetching URL. Status=404, URL=[https://chamspage.blogspot.com/2024/03/2024-baltimore-city-homicide-list.html]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:912)
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:851)
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:345)
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:330)
+	at Main$.fetchYear(Main.scala:70)
+	at Main$.$anonfun$1(Main.scala:26)
+	at Main$.$anonfun$adapted$1(Main.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at Main$.main(Main.scala:26)
+	at Main.main(Main.scala)
+(RUN FAILED)
+
+
+==========================================
+STUDENT: amit_bhattarai
+PATH: amit_bhattarai/project4
+==========================================
+
+ERROR: No Dockerfile found
+
+==========================================
+STUDENT: amyra_harry
+PATH: amyra_harry/project4
+==========================================
+
+Fetching Baltimore Homicide Data...
+
+Total homicides found: 282
+
+Question 1: How many people were stabbing victims in 2025?
+==========================================================================================
+No.   Date         Name                           Age   Location                      
+------------------------------------------------------------------------------------------
+XXX   05/05/25     Troy Gaigler                   34    1800 Portal Street            
+050   05/23/25     Brandon Naylor                 38    1800 North Woodyear Street    
+056   06/01/25     Demetri Briscoe                26    3000 Westfield Avenue         
+064   06/21/25     Tyrell John Curtis             39    100 South Broadway            
+067   06/30/25     Donte Chase                    46    700 Kenwood Avenue            
+102   09/25/25     Michael Schuler                34    2200 Sidney Avenue            
+107   10/02/25     Walter Aston                   47    800 North Bond Street         
+108   10/07/25     Terry Copes                    63    100 West Garrett Street       
+089   06/25/24     Carl Bodine                    59    1000 Brantley Avenue          
+
+Total stabbing victims in 2025: 9
+
+Question 2: How many people were killed in the East Baltimore region?
+==========================================================================================
+No.   Date         Name                           Age   Location                      
+------------------------------------------------------------------------------------------
+007   01/19/25     Edward Johnson                 44    3700 East Baltimore Street    
+014   02/02/25     Troy Kavanaugh                 37    2500 East Biddle Street       
+021   02/23/25     Celvin Olivares-Portillo       20    4400 Eastern Avenue           
+030   03/18/25     Shy'Keema Turner               31    700 East Preston Street       
+049   05/19/25     Demetrius Phyall               18    2300 East Preston Street      
+062   06/17/25     Isaiah Spicer                  29    1900 East Lafayette Street    
+086   07/26/25     Sirbryant Alston               33    1100 East Preston Street      
+099   09/19/25     Taiquan Moss                   29    1100 East 20th Street         
+014   01/26/24     Kareem Gee                     20    1200 East Preston Street      
+019   11/27/23     Nigel Arrington                25    5300 Eastbury Avenue          
+034   03/02/24     Alvin Ray Henry                35    1400 East Biddle Street       
+044   03/13/24     Martinez Brown                 26    1500 East 28th Street         
+051   04/02/24     Marvin Washington              22    2300 East Lafayette Street    
+053   04/06/24     Jose Castron-Merales           38    3700 East Lombard Street      
+063   05/06/24     Garfield Redd                  33    1 East 21st Street            
+064   05/09/24     Janelle Desormeaux             40    2100 East Preston Street      
+077   06/05/24     Travis Bell                    31    2000 East 31st Street         
+117   08/01/24     Ondrell Mayo Jr.               36    900 East Pataspco Avenue      
+124   08/17/24     David Philpot                  74    1700 Eastern Avenue           
+130   08/22/24     Ronald Carroll                 46    1900 East North Avenue        
+144   09/19/24     Errique Neal                   26    1100 East 20th Street         
+150   09/25/24     Kevin Mejia                    27    6300 Eastern Avenue           
+160   10/23/24     Jose Rodriguez-Bustos          26    2600 East Baltimore Street    
+173   11/13/24     Paul Lee                       33    500 East Preston Street       
+195   12/26/24     Deangelo West                  27    4300 East Preston Street      
+196   09/20/24     Malik Cottman                  46    1200 East North Avenue        
+198   12/30/31     Kyree Williams                 26    1200 East Coldspring Lane     
+
+Total victims in East Baltimore region: 27
+
+
+==========================================
+STUDENT: chris_brown
+PATH: chris_brown/project4
+==========================================
+
+================================================================================
+BALTIMORE CITY HOMICIDE DATA ANALYSIS
+Data Source: Baltimore Police Department via chamspage.blogspot.com
+================================================================================
+
+Successfully loaded 550 homicide records
+
+================================================================================
+QUESTION 1: Weekend vs Weekday Homicide Patterns - Resource Allocation Analysis
+================================================================================
+
+Strategic Question: Should Baltimore PD reallocate patrol resources based on
+day-of-week patterns? This analysis examines when homicides occur to optimize
+officer deployment and potentially prevent violent crimes.
+
+Total Homicides Analyzed: 550
+Weekend Homicides (Sat-Sun): 156 (28.4%)
+Weekday Homicides (Mon-Fri): 394 (71.6%)
+
+Average Homicides per Weekend Day: 78.00
+Average Homicides per Weekday: 78.80
+Weekend Risk Multiplier: 0.9898477157360407x higher than weekdays
+
+Time Slot Breakdown:
+--------------------------------------------------------------------------------
+Time Period               Weekend      Weekday   Difference
+--------------------------------------------------------------------------------
+Late Night (12AM-6AM)           36          106          -70
+Morning (6AM-12PM)             41          100          -59
+Afternoon (12PM-6PM)           35           81          -46
+Evening (6PM-12AM)             44          107          -63
+
+KEY INSIGHTS:
+• Weekend days see 0.9898477157360407x more homicides per day than weekdays
+• Evening hours show highest weekend activity
+• Recommendation: Increase patrol presence on Friday/Saturday nights
+
+================================================================================
+QUESTION 2: District-Level Case Clearance Rates - Performance & Accountability
+================================================================================
+
+Strategic Question: Which police districts are most/least effective at solving
+homicides? This analysis identifies performance gaps and best practices to
+improve overall clearance rates across Baltimore.
+
+Analyzing Recent Cases (Last 3 Years): 317 homicides
+
+District Performance Rankings:
+--------------------------------------------------------------------------------
+District                Total   Closed     Open       Rate
+--------------------------------------------------------------------------------
+Southeastern               37       37       20     100.0%  
+Northern                   33       33       13     100.0%  
+Western                    26       26       15     100.0%  
+Southwestern               38       38       21     100.0%  
+Eastern                    36       36       14     100.0%  
+Central                    31       31       18     100.0%  
+Southern                   33       33       18     100.0%  
+Northeastern               33       33       17     100.0%  
+Northwestern               50       50       25     100.0%  
+--------------------------------------------------------------------------------
+City-Wide Average Clearance Rate: 100.0%
+
+KEY INSIGHTS:
+
+Top Performing Districts (★):
+  • Southeastern: 100.0% clearance (37/37 cases)
+  • Northern: 100.0% clearance (33/33 cases)
+  • Western: 100.0% clearance (26/26 cases)
+
+Districts Needing Support:
+  • Northwestern: 100.0% clearance (50/50 cases)
+  • Northeastern: 100.0% clearance (33/33 cases)
+  • Southern: 100.0% clearance (33/33 cases)
+
+Performance Gap: 0.0 percentage points between best and worst
+
+RECOMMENDATIONS:
+• Share best practices from top-performing districts city-wide
+• Allocate additional detective resources to underperforming districts
+• Investigate systemic barriers in districts with <30% clearance rates
+• Implement regular performance reviews and targeted training programs
+
+
+==========================================
+STUDENT: christian_douglass
+PATH: christian_douglass/project4
+==========================================
+
+ERROR: Build failed
+
+==========================================
+STUDENT: jordan_winters
+PATH: jordan_winters/project4
+==========================================
+
+======================================================================
+BALTIMORE CITY HOMICIDE ANALYSIS REPORT
+======================================================================
+
+Question 1: Which neighborhoods show evidence of serial or clustered homicides
+             (3+ victims with similar characteristics in <6 months), and what
+             weapon types are most prevalent in these high-risk zones?
+
+Answer:
+HIGH-PRIORITY CLUSTERS IDENTIFIED:
+
+  • Eastern District: 5 incidents from 2023-1-15 to 2024-3-15
+    Primary weapons: Gun (3 incidents), Firearm (2 incidents)
+    Recommendation: Increase foot patrols and community policing in this district
+  • Northeast District: 3 incidents from 2023-5-14 to 2023-5-25
+    Primary weapons: Gun (2 incidents), Firearm (1 incidents)
+    Recommendation: Increase foot patrols and community policing in this district
+
+======================================================================
+
+Question 2: In which month and day-of-week combinations do preventable homicides
+             (those with 'gun' or 'firearm' weapons) cluster most, and how much
+             enforcement resource reallocation could theoretically prevent?
+
+Answer:
+TEMPORAL PATTERN ANALYSIS (Gun/Firearm Homicides):
+
+Peak Violence Month: May (3 incidents)
+Peak Day of Week: Monday (3 incidents)
+
+Total Gun/Firearm Homicides: 13
+Open Cases (unsolved): 11 (84%)
+
+STRATEGIC RECOMMENDATIONS:
+  1. Deploy additional resources in May (seasonal surge planning)
+  2. Increase patrols on Mondays during peak hours
+  3. Focus community intervention programs during these high-risk windows
+  4. Approximately 84% of cases remain open - invest in 
+     witness protection and community tip-line programs
+  5. Estimated prevention potential: With proper enforcement resource
+     reallocation during peak periods, could reduce May gun 
+     violence by 15-25% based on patrol deterrence data
+
+
+======================================================================
+
+
+==========================================
+STUDENT: professor_jon_white
+PATH: professor_jon_white/project4
+==========================================
+
+[info] welcome to sbt 1.9.7 (Eclipse Adoptium Java 17.0.9)
+[info] loading project definition from /app/project
+[info] loading settings for project app from build.sbt ...
+[info] set current project to HelloWorld (in build file:/app/)
+[info] running HelloWorld 
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+Hello, World!
+[success] Total time: 1 s, completed Oct 21, 2025, 12:45:55 PM
+
+
+==========================================
+STUDENT: root_level
+PATH: project4
+==========================================
+
+============================================================
+Baltimore City Homicide Analysis: Insights for the Mayor's Office
+============================================================
+
+Fetching data for 2025 from: https://chamspage.blogspot.com/2025/01/2025-baltimore-city-homicide-list.html
+
+  → Found 11 homicide entries for 2025
+
+Fetching data for 2024 from: https://chamspage.blogspot.com/2024/01/2024-baltimore-city-homicide-list.html
+
+  → Found 16 homicide entries for 2024
+
+Total records parsed across 2 years: 27
+
+------------------------------------------------------------
+Question 1: Which Baltimore district had the largest spike or drop in homicides between 2024 and 2025?
+------------------------------------------------------------
+
+
+District             Δ(25-24) 2024     2025    
+Unknown              2        8        10      
+Victim was a security guard at a McDonald's Restaurant. Victim was shot during a dispute.Update 01/17/25 Baltimore Police would like to identify these people of interest in <a href="https://www.facebook.com/BaltimoreCityPolice/videos/1912720525919342" target="_blank">this video.</a> Update 01/28/25 A<a href="https://www.baltimorepolice.org/news/northern-district-homicide-arrest-3" target="_blank"> 15 year old</a> has been charged. 1        0        1       
+Shooting victim found in hotel room at the Marriott Residence Inn.  Blogger Note: BPD originally reported the victim was male. The victim was female. Update 11/26/24 Police would like to identify these people of interest in <a href="https://www.facebook.com/BaltimoreCityPolice/videos/2551702265018931" target="_blank">this video.</a> Update: 01/13/24 Davion<a href="https://www.baltimorepolice.org/news/southeast-district-homicide-arrest-6" target="_blank"> Foreman </a>charged. Victim killed during a dispute at a birthday party -1       1        0       
+Stabbing victim. Victim was <a href="https://foxbaltimore.com/news/local/recent-stabbing-in-west-baltimore-reignites-mothers-grief-over-sons-unsolved-murder#">contract worker</a> who worked for the Medical Examiner's office. Victim was off-duty at the time. Baltimore Police are looking for <a href="https://www.facebook.com/BaltimoreCityPolice/posts/pfbid0zPwtj1uPcR6VAhKbJxznFEffSKhCN9pV8Ren1Hx32j6p5gntY5yexHYzUCBNkikl" target="_blank">this Person of Interest</a>. Update: 07/22/24 <a href="https://www.baltimorepolice.org/news/western-district-homicide-arrest-7" target="_blank">Tyrone Butler</a> charged. -1       1        0       
+Octuple shooting. Witnesses claim shots were fired during a dispute about a parking space at a balloon launch for a deceased member of a motorcycle club. Update 10/09/24<a href="https://www.baltimorepolice.org/news/eastern-district-homicide-arrest-7" target="_blank"> Eric Kibler</a> of Hagerstown MD charged. Update 11/15/24 The Baltimore Police would like to speak to <a href="https://www.facebook.com/BaltimoreCityPolice/posts/pfbid0AxkC7JY1ER41WGGPXmUBtpfSvjc9spHbbwUrm4hDdu377A36rbNdZHeL4K5UEWUPl" target="_blank">the people</a> in this picture. -1       1        0       
+Shooting victim found <a href="https://foxbaltimore.com/newsletter-daily/man-shot-and-killed-downtown-early-sunday-morning#" target="_blank">inside a business</a>. Witnesses spotted an unidentified suspect fleeing the location in a red Lexus after the shooting.Suspect is the same for the homicide on the same day on 900 Pennyslvania Avenue. <a href="https://www.facebook.com/share/p/NW9eqW4UNFwaZvaY/" target="_blank">Police looking for suspect</a>.Update 06/12/24 <a href="https://www.baltimorepolice.org/news/western-and-central-districts-murder-arrest">Munir Dawan Matin</a> charged as well as <a href="https://www.baltimorepolice.org/news/central-district-murder-arrest-1" target="_blank">Aqil Tamar King</a>. -1       1        0       
+Shooting victim. Suspect is the same for the homicide on the same day on 500 West Mulberry Street. <a href="https://www.facebook.com/share/p/NW9eqW4UNFwaZvaY/" target="_blank">Police looking for suspect</a>. Update 06/12/24 <a href="https://www.baltimorepolice.org/news/western-and-central-districts-murder-arrest">Munir Dawan Matin</a> charged. -1       1        0       
+Shooting victim found in dwelling. The event occurred in a Safe Streets Catchment Area. Police are <a href="https://www.facebook.com/BaltimoreCityPolice/posts/pfbid02VfraLEuwtQrFCRXkT3ToTq8ZnuDPEpTiBJYQ8jfrkKcoxBckrrC8VnBd2WuJRjFl" target="_blank">looking for suspect: Omar Passmore</a>. Update 07/21/24 <a href="https://www.baltimorepolice.org/news/southeast-district-homicide-arrest-5" target="_blank">Omar Passmore who confessed to the murder</a> charged.Update 06/24/25 Omar Passmore <a href="https://foxbaltimore.com/news/local/man-sentenced-to-life-in-prison-after-murder-12-year-old-girl-baltimore#" target="_blank">pled guilty</a> to murder. -1       1        0       
+Victim shot while on an MTA bus. The Baltimore Police report the victim and suspect <a href="https://www.wbaltv.com/article/what-led-to-mta-bus-shooting-south-eutaw-street-baltimore/63071443" target="_blank">had a "slight bump"</a> on the bus. Baltimore Police would <a href="https://www.facebook.com/BaltimoreCityPolice/posts/pfbid02zQrAtV2fBZVyVXsBe5wxmyazCCTJCZWnE4ydqYCeQJ3BVJoyXVabbaTzckToHuqdl" target="_blank">like to identify this person</a> of interest. Update 12/11/24 <a href="https://www.baltimorepolice.org/news/central-district-homicide-arrest-5" target="_blank">James Richburg </a>charged. Update: 08/08/25 <a href="https://baltimorewitness.org/jury-finds-defendant-guilty-in-gatorade-bottle-shooting/" target="_blank">James Richburg</a> found guilty. -1       1        0       
+Shooting victim. <a href="https://www.wbaltv.com/article/fatal-shooting-downtown-baltimore-city-south-street/60362784" target="_blank">Four to five suspects fled the area</a>. This event occurred inside a Group Violence Reduction Strategy Zone. Police looking for a <a href="facebook.com/BaltimoreCityPolice/posts/pfbid02WyxeLFr4j3BrXkLEKcu82upkPWBbTtGJauDz9o7mhNmVKvqdzsAsdysMD6cYLLgQl" target="_blank">person for interest.</a> Update: 04/09/24 Dejuan Cole <a href="https://www.baltimorepolice.org/news/central-district-homicide-arrest-2">charged.</a> -1       1        0       
+
+------------------------------------------------------------
+Question 2: Which age group (0–17, 18–30, 31–50, 50+) had the most victims across 2024–2025?
+------------------------------------------------------------
+
+Age Group            Victims   
+Young Adult (18–30)  1         
+Senior (50+)         1         
+
+The most affected group is: Young Adult (18–30) with 1 victims.
+
+============================================================
+Analysis complete — data prepared for Mayor’s Office briefing.
+============================================================
+
+
+==========================================
+STUDENT: raegan_green
+PATH: raegan_green/project4
+==========================================
+
+[info] welcome to sbt 1.5.5 (Oracle Corporation Java 11.0.12)
+[info] loading project definition from /app/project
+[info] loading settings for project app from build.sbt ...
+[info] set current project to HomicideAnalysis (in build file:/app/)
+[info] running HomicideAnalysis 
+
+================================================================================
+BALTIMORE HOMICIDE STATISTICS ANALYSIS
+================================================================================
+
+Fetching data from Baltimore homicide database...
+Data fetched successfully. Parsing...
+Extracting data from 1888 table cells...
+Successfully loaded 190 homicide records
+
+Question 1: What is the Case Closure Rate by Year, and is it Improving?
+Why This Matters: Police department performance and resource allocation efficiency
+--------------------------------------------------------------------------------
+
+Case Closure Rates by Year (2022-2024):
+--------------------------------------------------------------------------------
+Year  | Total Cases | Closed | Open  | Closure Rate
+--------------------------------------------------------------------------------
+2023 |           3 |      0 |     3 | 0%
+2024 |         187 |     57 |   130 | 30%
+
+--------------------------------------------------------------------------------
+Key Findings:
+• Year 2023 Closure Rate: 0%
+• Year 2024 Closure Rate: 30%
+• IMPROVEMENT: +30% closure rate increase
+
+--------------------------------------------------------------------------------
+
+Question 2: Which Age Groups Are Most at Risk, Particularly Children & Youth?
+Why This Matters: Identifying vulnerable populations enables targeted prevention programs
+--------------------------------------------------------------------------------
+
+Victim Distribution by Age Group:
+--------------------------------------------------------------------------------
+Adults (31-50)           :  84 victims ( 44%) ██████████████████████
+Young Adults (19-30)     :  74 victims ( 38%) ███████████████████
+Seniors (51+)            :  16 victims (  8%) ████
+Teens (13-18)            :  13 victims (  6%) ███
+Children (0-12)          :   3 victims (  1%) 
+
+--------------------------------------------------------------------------------
+Critical Vulnerability Analysis:
+• Children (0-12): 3 homicides
+• Teens (13-18): 13 homicides
+• Combined Youth Total: 16 homicides (8% of all homicides)
+• ALERT: 3 children under 13 killed - critical child welfare concern
+• URGENT: 13 teenagers killed - intervention programs needed
+
+• Top 5 Most Common Victim Ages:
+  Age 30: 10 victims
+  Age 31: 9 victims
+  Age 24: 8 victims
+  Age 25: 8 victims
+  Age 33: 8 victims
+
+================================================================================
+
+[success] Total time: 2 s, completed Oct 21, 2025, 12:46:17 PM
+
+
+==========================================
+STUDENT: randolph_scott
+PATH: randolph_scott/project4
+==========================================
+
+Question 1: Which address blocks / street names have the most homicides? (Top 5)
+
+Rank  Street (normalized)            Count
+---------------------------------------------------------
+   1  Unidentified Man               5
+   2  Unidentified Person            2
+   3  Randolph Smith                 2
+   4  Joseph Robinson                1
+   5  Travon Booth                   1
+
+Raw rows that contributed to those top streets:
+---------------------------------------------------------
+047 | date=05/18/25 | age= | addrBlock=Joseph Robinson
+076 | date=07/13/25 | age= | addrBlock=Randolph Smith
+079 | date=07/13/25 | age= | addrBlock=Randolph Smith
+085 | date=07/19/25 | age= | addrBlock=Travon Booth
+040 | date=03/11/24 | age= | addrBlock=Unidentified Man
+??? | date=04/16/24 | age= | addrBlock=Unidentified Person
+065 | date=09/05/23 | age= | addrBlock=Unidentified Person
+068 | date=05/18/24 | age= | addrBlock=Unidentified Man
+102 | date=07/10/24 | age= | addrBlock=Unidentified Man
+146 | date=09/21/24 | age= | addrBlock=Unidentified Man
+XXX | date=09/28/24 | age= | addrBlock=Unidentified Man
+
+
+
+Question 2: Monthly homicide counts for 2025 (year-month : count)
+---------------------------------------------------------
+2025-01 : 11
+2025-02 : 9
+2025-03 : 14
+2025-04 : 6
+2025-05 : 15
+2025-06 : 17
+2025-07 : 18
+2025-08 : 7
+2025-09 : 11
+2025-10 : 5
+
+
+==========================================
+STUDENT: rohan_sainju
+PATH: rohan_sainju/project4
+==========================================
+
+============================================================
+Baltimore City Homicide Data Analysis
+============================================================
+
+Question 1: How many victims were under 18 years old in 2025?
+Answer: 0 victim(s) under 18 years old
+
+Question 2: How many homicide cases are open vs closed?
+Answer:
+  - Closed cases: 8 (50%)
+  - Open cases: 8 (50%)
+  - Total cases: 16
+
+============================================================
+Analysis Complete
+============================================================
+
+
+==========================================
+STUDENT: schidny_balisage
+PATH: schidny_balisage/project4
+==========================================
+
+/bin/sh: 1: [scala,: not found
+(RUN FAILED)
+
+
+==========================================
+STUDENT: Abdulai_Hallowell
+PATH: Abdulai_Hallowell/Project4
+==========================================
+
+Question 1: How many homicide victims in 2025 were killed at or near their home?
+Answer: 4 cases
+
+Question 2: What percentage of 2025 homicide victims were under 25 years old?
+Answer: 18.97%
+
+
+==========================================
+SUMMARY
+==========================================
+Total projects processed: 13
+Completion time: Tue Oct 21 12:46:26 UTC 2025
+

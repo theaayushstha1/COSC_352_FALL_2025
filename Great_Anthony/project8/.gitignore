@@ -1,0 +1,21 @@
+# Leiningen / Clojure
+target/
+.lein-*
+.nrepl-port
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log

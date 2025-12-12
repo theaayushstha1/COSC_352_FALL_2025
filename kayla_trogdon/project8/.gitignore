@@ -1,0 +1,31 @@
+# Clojure
+.cpcache/
+.nrepl-port
+.nrepl-history
+.rebel_readline_history
+target/
+classes/
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Keep the CSV data file
+!baltimore_homicides_2021_2025.csv

@@ -1,0 +1,31 @@
+# Data files - too large for git
+data/*.csv
+data/*.txt
+data/*.json
+
+# Output files - generated files
+output/
+*.csv
+*.json
+
+# Compiled files
+target/
+*.class
+*.jar
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.bsp/
+
+# Mac files
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~

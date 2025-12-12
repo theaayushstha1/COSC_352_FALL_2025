@@ -1,0 +1,112 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 702B done
+#1 DONE 0.0s
+
+#2 [auth] library/openjdk:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/openjdk:11-jdk-slim
+#3 DONE 0.1s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [1/6] FROM docker.io/library/openjdk:11-jdk-slim@sha256:868a4f2151d38ba6a09870cec584346a5edc8e9b71fde275eb2e0625273e2fd8
+#5 CACHED
+
+#6 [internal] load build context
+#6 transferring context: 17.41kB done
+#6 DONE 0.0s
+
+#7 [2/6] RUN apt-get update &&     apt-get install -y wget &&     wget -q https://downloads.lightbend.com/scala/2.13.12/scala-2.13.12.tgz &&     tar -xzf scala-2.13.12.tgz &&     mv scala-2.13.12 /usr/share/scala &&     ln -s /usr/share/scala/bin/* /usr/bin/ &&     rm scala-2.13.12.tgz &&     apt-get clean
+#7 0.240 Get:1 http://deb.debian.org/debian bullseye InRelease [75.1 kB]
+#7 0.253 Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [27.2 kB]
+#7 0.254 Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.0 kB]
+#7 0.362 Get:4 http://deb.debian.org/debian bullseye/main amd64 Packages [8066 kB]
+#7 0.511 Get:5 http://deb.debian.org/debian-security bullseye-security/main amd64 Packages [419 kB]
+#7 0.673 Get:6 http://deb.debian.org/debian bullseye-updates/main amd64 Packages [18.8 kB]
+#7 1.573 Fetched 8650 kB in 1s (6465 kB/s)
+#7 1.573 Reading package lists...
+#7 2.054 Reading package lists...
+#7 2.487 Building dependency tree...
+#7 2.593 Reading state information...
+#7 2.711 The following additional packages will be installed:
+#7 2.712   libpsl5 publicsuffix
+#7 2.752 The following NEW packages will be installed:
+#7 2.753   libpsl5 publicsuffix wget
+#7 2.769 0 upgraded, 3 newly installed, 0 to remove and 46 not upgraded.
+#7 2.769 Need to get 1149 kB of archives.
+#7 2.769 After this operation, 4001 kB of additional disk space will be used.
+#7 2.769 Get:1 http://deb.debian.org/debian bullseye/main amd64 libpsl5 amd64 0.21.0-1.2 [57.3 kB]
+#7 2.772 Get:2 http://deb.debian.org/debian-security bullseye-security/main amd64 wget amd64 1.21-1+deb11u2 [964 kB]
+#7 2.780 Get:3 http://deb.debian.org/debian bullseye/main amd64 publicsuffix all 20220811.1734-0+deb11u1 [127 kB]
+#7 2.903 debconf: delaying package configuration, since apt-utils is not installed
+#7 2.930 Fetched 1149 kB in 0s (48.0 MB/s)
+#7 2.953 Selecting previously unselected package libpsl5:amd64.
+#7 2.953 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7071 files and directories currently installed.)
+#7 2.966 Preparing to unpack .../libpsl5_0.21.0-1.2_amd64.deb ...
+#7 2.971 Unpacking libpsl5:amd64 (0.21.0-1.2) ...
+#7 3.001 Selecting previously unselected package wget.
+#7 3.002 Preparing to unpack .../wget_1.21-1+deb11u2_amd64.deb ...
+#7 3.004 Unpacking wget (1.21-1+deb11u2) ...
+#7 3.093 Selecting previously unselected package publicsuffix.
+#7 3.094 Preparing to unpack .../publicsuffix_20220811.1734-0+deb11u1_all.deb ...
+#7 3.097 Unpacking publicsuffix (20220811.1734-0+deb11u1) ...
+#7 3.130 Setting up libpsl5:amd64 (0.21.0-1.2) ...
+#7 3.137 Setting up wget (1.21-1+deb11u2) ...
+#7 3.146 Setting up publicsuffix (20220811.1734-0+deb11u1) ...
+#7 3.155 Processing triggers for libc-bin (2.31-13+deb11u3) ...
+#7 DONE 4.2s
+
+#8 [3/6] WORKDIR /app
+#8 DONE 0.0s
+
+#9 [4/6] COPY src/main/scala/BaltimoreHomicideAnalysis.scala /app/
+#9 DONE 0.0s
+
+#10 [5/6] RUN scalac BaltimoreHomicideAnalysis.scala
+#10 2.060 BaltimoreHomicideAnalysis.scala:205: error: Missing closing brace `}` assumed here
+#10 2.060   val totalRecords = homicides.size
+#10 2.060   ^
+#10 2.085 BaltimoreHomicideAnalysis.scala:286: error: expected class or object definition
+#10 2.085   def outputToStdout(results: AnalysisResults, homicides: List[Homicide]): Unit = {
+#10 2.085   ^
+#10 2.092 BaltimoreHomicideAnalysis.scala:326: error: expected class or object definition
+#10 2.092   def outputToCsv(results: AnalysisResults, homicides: List[Homicide]): Unit = {
+#10 2.092   ^
+#10 2.100 BaltimoreHomicideAnalysis.scala:373: error: expected class or object definition
+#10 2.100   def outputToJson(results: AnalysisResults, homicides: List[Homicide]): Unit = {
+#10 2.100   ^
+#10 2.106 BaltimoreHomicideAnalysis.scala:444: error: expected class or object definition
+#10 2.106   def escapeJson(s: String): String = {
+#10 2.106   ^
+#10 2.107 BaltimoreHomicideAnalysis.scala:455: error: expected class or object definition
+#10 2.107 def getSampleData(): List[Homicide] = {
+#10 2.107 ^
+#10 2.127 6 errors
+#10 ERROR: process "/bin/sh -c scalac BaltimoreHomicideAnalysis.scala" did not complete successfully: exit code: 1
+------
+ > [5/6] RUN scalac BaltimoreHomicideAnalysis.scala:
+2.100 BaltimoreHomicideAnalysis.scala:373: error: expected class or object definition
+2.100   def outputToJson(results: AnalysisResults, homicides: List[Homicide]): Unit = {
+2.100   ^
+2.106 BaltimoreHomicideAnalysis.scala:444: error: expected class or object definition
+2.106   def escapeJson(s: String): String = {
+2.106   ^
+2.107 BaltimoreHomicideAnalysis.scala:455: error: expected class or object definition
+2.107 def getSampleData(): List[Homicide] = {
+2.107 ^
+2.127 6 errors
+------
+Dockerfile:17
+--------------------
+  15 |     COPY src/main/scala/BaltimoreHomicideAnalysis.scala /app/
+  16 |     
+  17 | >>> RUN scalac BaltimoreHomicideAnalysis.scala
+  18 |     
+  19 |     RUN mkdir -p /app/output
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c scalac BaltimoreHomicideAnalysis.scala" did not complete successfully: exit code: 1
