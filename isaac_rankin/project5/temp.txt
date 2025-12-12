@@ -1,16 +1,41 @@
-I keep getting the error:
-[error] Expected symbol
-[error] Not a valid command: --
-[error] Expected 'debug'
-[error] Expected 'info'
-[error] Expected 'warn'
-[error] Expected 'error'
-[error] Expected 'addPluginSbtFile'
-[error] --output=csv
-[error]   ^
+Task: Port Project 5 over to use run in Golang.  It should have the same functionality but using Golang native libraries and functions.  The project should be dockerized and checked into git for submission.  Also, understand the differences between your Scala implementation and Golang.  Include a readme that explains the differences of your program.  You may be quizzed on the differences between the two languages and what Golang's features are.  
 
-here is my run.sh:
-#!/bin/bash
+Golang's official docker image is here;  https://hub.docker.com/_/golangLinks to an external site.. you can use this as your base image along with this example to get started https://www.geeksforgeeks.org/go-language/hello-world-in-golang/Links to an external site.
+
+Here is the official Golang site: https://go.dev/Links to an external site.
+
+
+Dockerfile: # FROM hseeberger/scala-sbt:11.0.6_1.3.10_2.13.1
+
+# WORKDIR /app
+# COPY scala-scraper .
+
+# RUN sbt compile
+# ENTRYPOINT ["sbt", "run", "commands"]
+
+FROM hseeberger/scala-sbt:11.0.6_1.3.10_2.13.1
+
+WORKDIR /app
+
+# Copy the entire scala-scraper directory
+COPY scala-scraper /app
+
+# Compile the project
+RUN sbt compile
+
+# Create output directory
+RUN mkdir -p /app/output
+
+# Create an entrypoint script that uses sbt run with arguments
+RUN echo '#!/bin/bash' > /app/entrypoint.sh && \
+    echo 'cd /app && sbt "run $@"' >> /app/entrypoint.sh && \
+    chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
+
+
+
+run.sh: #!/bin/bash
 
 OUTPUT_FORMAT=""
 
@@ -46,18 +71,8 @@ else
   docker run -v $(pwd)/output:/app/output baltimore-scraper --output=$OUTPUT_FORMAT
 fi
 
-my Dockerfile: 
-FROM hseeberger/scala-sbt:11.0.6_1.3.10_2.13.1
 
-WORKDIR /app
-COPY scala-scraper .
-
-RUN sbt compile
-
-ENTRYPOINT ["sbt", "run", "commands"]
-
-and my Main.scala:
-import org.jsoup.Jsoup
+Main.scala: import org.jsoup.Jsoup
 import org.jsoup.nodes.{Document, Element}
 import scala.jdk.CollectionConverters._
 import java.io.{PrintWriter, File}
@@ -201,3 +216,4 @@ object BaltimoreHomicideScraper {
        .replace("\t", "\\t")
   }
 }
+

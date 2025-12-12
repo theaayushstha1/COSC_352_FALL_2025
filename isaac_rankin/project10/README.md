@@ -1,6 +1,6 @@
 # Project 10: "Ping-Pong" Palindrome Turing Machine
 
-This simulation implements a highly optimized **Bi-directional (Ping-Pong)** Turing Machine to solve the Palindrome problem ($L = \{w w^R\}$).
+This simulation implements a Turing Machine to solve the Palindrome problem ($L = \{w w^R\}$).
 
 ## The Ping-Pong Logic
 
