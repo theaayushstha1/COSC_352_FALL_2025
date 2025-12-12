@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Machine Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Turing Machine Simulator</h1>
+            <p class="subtitle">Interactive Turing Machine Visualizer</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Machine Selector -->
+            <section class="machine-selector">
+                <h2>Select Turing Machine</h2>
+                <div class="machine-cards">
+                    {% for key, machine in machines.items() %}
+                    <div class="machine-card" onclick="selectMachine('{{ key }}')">
+                        <h3>{{ machine.name }}</h3>
+                        <p>{{ machine.description }}</p>
+                        <div class="machine-info">
+                            <strong>Alphabet:</strong> {{ machine.alphabet }}<br>
+                            <strong>Examples:</strong> {{ machine.examples|join(', ') }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Input Section -->
+            <section class="input-section">
+                <h2>Test Input</h2>
+                <form id="simulateForm" onsubmit="runSimulation(event)">
+                    <input type="hidden" id="machineType" value="palindrome">
+                    
+                    <div class="form-group">
+                        <label for="inputString">Input String:</label>
+                        <input 
+                            type="text" 
+                            id="inputString" 
+                            placeholder="e.g., 101" 
+                            required
+                            autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="btn-primary">Run Simulation</button>
+                    
+                    <div class="quick-examples">
+                        <strong>Quick tests:</strong>
+                        <button type="button" class="btn-example" onclick="setInput('101')">101</button>
+                        <button type="button" class="btn-example" onclick="setInput('1001')">1001</button>
+                        <button type="button" class="btn-example" onclick="setInput('111')">111</button>
+                        <button type="button" class="btn-example" onclick="setInput('110')">110</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="results" style="display: none;">
+                <h2>Simulation Results</h2>
+                
+                <div class="result-header" id="resultHeader">
+                    <!-- Will be filled by JavaScript -->
+                </div>
+
+                <div class="result-stats">
+                    <div class="stat">
+                        <strong>Steps Taken:</strong>
+                        <span id="stepCount">-</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Final Tape:</strong>
+                        <span id="finalTape">-</span>
+                    </div>
+                    <div class="stat">
+                        <strong>Reason:</strong>
+                        <span id="reason">-</span>
+                    </div>
+                </div>
+
+                <div class="trace-section">
+                    <h3>State Trace</h3>
+                    <div class="trace-controls">
+                        <button onclick="showAllSteps()" class="btn-secondary">Show All Steps</button>
+                        <button onclick="showFirstN(10)" class="btn-secondary">First 10 Steps</button>
+                    </div>
+                    <div id="traceOutput" class="trace-output">
+                        <!-- Will be filled by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Created by Kayla Trogdon | COSC 352 - Project 10</p>
+        </footer>
+    </div>
+
+    <script>
+        let currentTrace = [];
+        let selectedMachine = 'palindrome';
+
+        function selectMachine(machineKey) {
+            selectedMachine = machineKey;
+            document.getElementById('machineType').value = machineKey;
+            
+            // Highlight selected card
+            document.querySelectorAll('.machine-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            event.target.closest('.machine-card').classList.add('selected');
+            
+            console.log('Selected machine:', machineKey);
+        }
+
+        function setInput(value) {
+            document.getElementById('inputString').value = value;
+        }
+
+        async function runSimulation(event) {
+            event.preventDefault();
+            
+            const inputString = document.getElementById('inputString').value;
+            const machineType = document.getElementById('machineType').value;
+            
+            console.log('Running simulation:', { machineType, inputString });
+            
+            try {
+                const response = await fetch('/simulate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        machine: machineType,
+                        input: inputString
+                    })
+                });
+
+                const result = await response.json();
+                
+                if (result.error) {
+                    alert('Error: ' + result.error);
+                    return;
+                }
+                
+                displayResults(result, inputString);
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Simulation failed: ' + error.message);
+            }
+        }
+
+        function displayResults(result, inputString) {
+            currentTrace = result.trace;
+            
+            // Show results section
+            document.getElementById('results').style.display = 'block';
+            
+            // Update result header
+            const resultHeader = document.getElementById('resultHeader');
+            const accepted = result.accepted;
+            resultHeader.innerHTML = `
+                <div class="result-badge ${accepted ? 'accepted' : 'rejected'}">
+                    ${accepted ? '✓ ACCEPTED' : '✗ REJECTED'}
+                </div>
+                <div class="result-input">Input: "${inputString}"</div>
+            `;
+            
+            // Update stats
+            document.getElementById('stepCount').textContent = result.steps;
+            document.getElementById('finalTape').textContent = result.final_tape;
+            document.getElementById('reason').textContent = result.reason;
+            
+            // Show first 15 steps by default
+            showFirstN(15);
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showAllSteps() {
+            displayTrace(currentTrace);
+        }
+
+        function showFirstN(n) {
+            displayTrace(currentTrace.slice(0, n));
+        }
+
+        function displayTrace(trace) {
+            const traceOutput = document.getElementById('traceOutput');
+            
+            if (trace.length === 0) {
+                traceOutput.innerHTML = '<p>No trace available</p>';
+                return;
+            }
+            
+            let html = '<table class="trace-table"><thead><tr>' +
+                       '<th>Step</th><th>State</th><th>Tape</th><th>Action</th>' +
+                       '</tr></thead><tbody>';
+            
+            trace.forEach(entry => {
+                const tape = entry.tape.split('');
+                const pos = entry.head_position;
+                
+                // Highlight head position
+                let tapeDisplay = tape.map((char, idx) => {
+                    if (idx === pos) {
+                        return `<span class="tape-head">[${char}]</span>`;
+                    }
+                    return char;
+                }).join('');
+                
+                html += `<tr>
+                    <td>${entry.step}</td>
+                    <td>${entry.state}</td>
+                    <td class="tape-display">${tapeDisplay}</td>
+                    <td>${entry.action}</td>
+                </tr>`;
+            });
+            
+            html += '</tbody></table>';
+            
+            if (currentTrace.length > trace.length) {
+                html += `<p class="trace-note">Showing ${trace.length} of ${currentTrace.length} steps</p>`;
+            }
+            
+            traceOutput.innerHTML = html;
+        }
+    </script>
+</body>
+</html>
