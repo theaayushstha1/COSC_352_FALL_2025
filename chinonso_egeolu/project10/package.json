@@ -1,0 +1,17 @@
+{
+  "name": "turing-machine-simulator",
+  "version": "1.0.0",
+  "description": "Interactive Turing Machine Simulator with CLI and Web UI",
+  "main": "turing-machine.js",
+  "scripts": {
+    "start": "node turing-machine.js",
+    "web": "node server.js",
+    "test": "node turing-machine.js --test"
+  },
+  "keywords": ["turing-machine", "automata", "simulator"],
+  "author": "Chinonso Egeolu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
