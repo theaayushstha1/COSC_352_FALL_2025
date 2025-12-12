@@ -1,0 +1,47 @@
+# Binary Palindrome Test Cases
+# Lines starting with # are comments
+
+# Empty string (should accept - palindrome by definition)
+
+# Single characters (all palindromes)
+0
+1
+
+# Two characters
+00
+11
+01
+10
+
+# Three characters
+000
+111
+010
+101
+001
+110
+
+# Even palindromes
+0110
+1001
+001100
+110011
+
+# Odd palindromes
+00100
+10101
+0111110
+
+# Non-palindromes
+0111
+1000
+01101
+11011
+
+# Longer palindromes
+01111110
+10100101
+
+# Longer non-palindromes
+010101010
+111000111

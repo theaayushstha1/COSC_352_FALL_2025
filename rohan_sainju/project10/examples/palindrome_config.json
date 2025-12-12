@@ -1,0 +1,279 @@
+{
+  "name": "Binary Palindrome Checker",
+  "description": "Turing Machine that accepts binary strings that are palindromes (reads the same forwards and backwards)",
+  "states": ["q0", "q1", "q2", "q3", "q4", "q5", "q6", "q7", "q_accept", "q_reject"],
+  "input_alphabet": ["0", "1"],
+  "tape_alphabet": ["0", "1", "X", "Y", "_"],
+  "blank_symbol": "_",
+  "start_state": "q0",
+  "accept_states": ["q_accept"],
+  "reject_states": ["q_reject"],
+  "transitions": [
+    {
+      "current_state": "q0",
+      "read_symbol": "0",
+      "next_state": "q1",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q0",
+      "read_symbol": "1",
+      "next_state": "q2",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q0",
+      "read_symbol": "X",
+      "next_state": "q3",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q0",
+      "read_symbol": "Y",
+      "next_state": "q3",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q0",
+      "read_symbol": "_",
+      "next_state": "q_accept",
+      "write_symbol": "_",
+      "direction": "S"
+    },
+    {
+      "current_state": "q1",
+      "read_symbol": "0",
+      "next_state": "q1",
+      "write_symbol": "0",
+      "direction": "R"
+    },
+    {
+      "current_state": "q1",
+      "read_symbol": "1",
+      "next_state": "q1",
+      "write_symbol": "1",
+      "direction": "R"
+    },
+    {
+      "current_state": "q1",
+      "read_symbol": "X",
+      "next_state": "q1",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q1",
+      "read_symbol": "Y",
+      "next_state": "q1",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q1",
+      "read_symbol": "_",
+      "next_state": "q4",
+      "write_symbol": "_",
+      "direction": "L"
+    },
+    {
+      "current_state": "q2",
+      "read_symbol": "0",
+      "next_state": "q2",
+      "write_symbol": "0",
+      "direction": "R"
+    },
+    {
+      "current_state": "q2",
+      "read_symbol": "1",
+      "next_state": "q2",
+      "write_symbol": "1",
+      "direction": "R"
+    },
+    {
+      "current_state": "q2",
+      "read_symbol": "X",
+      "next_state": "q2",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q2",
+      "read_symbol": "Y",
+      "next_state": "q2",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q2",
+      "read_symbol": "_",
+      "next_state": "q5",
+      "write_symbol": "_",
+      "direction": "L"
+    },
+    {
+      "current_state": "q3",
+      "read_symbol": "X",
+      "next_state": "q3",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q3",
+      "read_symbol": "Y",
+      "next_state": "q3",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q3",
+      "read_symbol": "0",
+      "next_state": "q1",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q3",
+      "read_symbol": "1",
+      "next_state": "q2",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q3",
+      "read_symbol": "_",
+      "next_state": "q_accept",
+      "write_symbol": "_",
+      "direction": "S"
+    },
+    {
+      "current_state": "q4",
+      "read_symbol": "0",
+      "next_state": "q6",
+      "write_symbol": "X",
+      "direction": "L"
+    },
+    {
+      "current_state": "q4",
+      "read_symbol": "1",
+      "next_state": "q_reject",
+      "write_symbol": "1",
+      "direction": "S"
+    },
+    {
+      "current_state": "q4",
+      "read_symbol": "X",
+      "next_state": "q4",
+      "write_symbol": "X",
+      "direction": "L"
+    },
+    {
+      "current_state": "q4",
+      "read_symbol": "Y",
+      "next_state": "q4",
+      "write_symbol": "Y",
+      "direction": "L"
+    },
+    {
+      "current_state": "q4",
+      "read_symbol": "_",
+      "next_state": "q_accept",
+      "write_symbol": "_",
+      "direction": "S"
+    },
+    {
+      "current_state": "q5",
+      "read_symbol": "1",
+      "next_state": "q6",
+      "write_symbol": "Y",
+      "direction": "L"
+    },
+    {
+      "current_state": "q5",
+      "read_symbol": "0",
+      "next_state": "q_reject",
+      "write_symbol": "0",
+      "direction": "S"
+    },
+    {
+      "current_state": "q5",
+      "read_symbol": "X",
+      "next_state": "q5",
+      "write_symbol": "X",
+      "direction": "L"
+    },
+    {
+      "current_state": "q5",
+      "read_symbol": "Y",
+      "next_state": "q5",
+      "write_symbol": "Y",
+      "direction": "L"
+    },
+    {
+      "current_state": "q5",
+      "read_symbol": "_",
+      "next_state": "q_accept",
+      "write_symbol": "_",
+      "direction": "S"
+    },
+    {
+      "current_state": "q6",
+      "read_symbol": "0",
+      "next_state": "q6",
+      "write_symbol": "0",
+      "direction": "L"
+    },
+    {
+      "current_state": "q6",
+      "read_symbol": "1",
+      "next_state": "q6",
+      "write_symbol": "1",
+      "direction": "L"
+    },
+    {
+      "current_state": "q6",
+      "read_symbol": "X",
+      "next_state": "q6",
+      "write_symbol": "X",
+      "direction": "L"
+    },
+    {
+      "current_state": "q6",
+      "read_symbol": "Y",
+      "next_state": "q6",
+      "write_symbol": "Y",
+      "direction": "L"
+    },
+    {
+      "current_state": "q6",
+      "read_symbol": "_",
+      "next_state": "q7",
+      "write_symbol": "_",
+      "direction": "R"
+    },
+    {
+      "current_state": "q7",
+      "read_symbol": "X",
+      "next_state": "q0",
+      "write_symbol": "X",
+      "direction": "R"
+    },
+    {
+      "current_state": "q7",
+      "read_symbol": "Y",
+      "next_state": "q0",
+      "write_symbol": "Y",
+      "direction": "R"
+    },
+    {
+      "current_state": "q7",
+      "read_symbol": "_",
+      "next_state": "q_accept",
+      "write_symbol": "_",
+      "direction": "S"
+    }
+  ]
+}

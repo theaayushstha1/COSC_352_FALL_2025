@@ -1,0 +1,56 @@
+[workspace]
+name = "pdf-search-mojo"
+version = "0.1.0"
+description = "TF-IDF based PDF search tool in Mojo"
+authors = ["Your Name <your.email@example.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64"]
+
+[dependencies]
+python = ">=3.10"
+pypdf2 = ">=3.0.0"
+# Note: Mojo/MAX must be installed separately via modular CLI
+# C compiler for building
+gcc = "*"  # Linux
+# clang = "*"  # macOS alternative
+
+[tasks]
+# Setup: Install Mojo via Modular (one-time)
+setup-mojo = """
+echo 'Installing Mojo via Modular...'
+curl -s https://get.modular.com | sh -
+modular install mojo
+echo 'Add to PATH: export PATH=$HOME/.modular/bin:$PATH'
+"""
+
+# Build the Mojo executable
+build = "mojo build pdfsearch.mojo -o pdfsearch"
+
+# Run with example query on Morgan 2030 document
+test-morgan = "mojo run pdfsearch.mojo 'Morgan 2030-1.pdf' 'research doctoral excellence' 5"
+
+# Run with different queries for testing
+test-enrollment = "mojo run pdfsearch.mojo 'Morgan 2030-1.pdf' 'student enrollment retention' 3"
+test-anchor = "mojo run pdfsearch.mojo 'Morgan 2030-1.pdf' 'anchor institution Baltimore community' 5"
+test-global = "mojo run pdfsearch.mojo 'Morgan 2030-1.pdf' 'international global education' 3"
+
+# Run performance benchmark
+benchmark = "mojo run benchmark.mojo"
+
+# Clean build artifacts
+clean = "rm -f pdfsearch *.o"
+
+# Run all tests
+test-all = { depends-on = ["test-morgan", "test-enrollment", "test-anchor", "test-global"] }
+
+# Development mode - run without building
+dev = "mojo run pdfsearch.mojo"
+
+# Check if everything is set up correctly
+check = """
+echo 'Checking setup...'
+python --version
+mojo --version
+ls -la *.pdf 2>/dev/null || echo 'No PDF files found'
+ls -la *.mojo 2>/dev/null || echo 'No Mojo files found'
+"""
